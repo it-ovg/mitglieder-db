@@ -1,0 +1,11 @@
+MITART;BEZEICHNUNG
+A;Austritt
+ABO;Abonnement
+M;Mitglied
+V;Verzogen
+AD;Adresse
+T;Verstorben
+JB;Jahresbestellung
+VM;Vorstand
+EM;EhrenMitglied
+UM;Unterstützendes Mg

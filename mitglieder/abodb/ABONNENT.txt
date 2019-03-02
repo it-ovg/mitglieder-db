@@ -1,0 +1,213 @@
+KundenNummer;KundenNummeralt;Titel;Vorname;Name-1;Name-2;Name-3;PO-BOX;Strasse;PLZ;Ort;Tel;Fax;UID;Prozent;Rechnungsanzahl;Anrede;Land;Email
+2;2;6;Karl-August;Sovinz;;;;Krenhof 270;8580;Köflach;;;KEINE;0,00;1;3;2;
+3;3;0;;TECHN. UNIVERSITÄT GRAZ;Bibliothek;;;Technikerstraße 4;8010;Graz;;;KEINE;0,00;1;1;2;
+4;4;0;;VEITSCH-RADEX GmbH & Co OG;;Werk Breitenau;;Wienerbergstraße 9;1100;Wien;03866/2201-0;03866/2201-257;KEINE;0,00;1;1;2;
+5;5;0;;TIROLER LANDESREGIERUNG;Abt. Bodenordnung;;;Wilhelm-Greil-Straße 9;6020;Innsbruck;++43(0)512/508-3800;++43(0)512/508-3805;KEINE;0,00;1;7;2;
+6;6;0;;BAUBEZIRKSAMT INNSBRUCK;;;;Valiergasse 1;6010;Innsbruck;0512/5360/320;Hr. Mayerz;KEINE;0,00;1;1;2;
+7;7;0;;MAGISTRAT DER STADT INNSBRUCK;Abteilung Beschaffungsamt;;;Rathaus;6020;Innsbruck;0512/5360320Mair;;KEINE;0,00;1;1;2;
+9;9;6;Gernot;KRASCHL;;;;8. Mai-Straße 47;9020;Klagenfurt;;;ATU65500344;0,00;1;1;2;office@kraschl.at
+10;10;0;;MONTANUNIVERSITÄT LEOBEN;Universitätsbibliothek;;;Franz-Josef-Str.18;8700;Leoben;;;KEINE;0,00;1;1;2;
+11;11;0;;STADTAMT LEOBEN;;;;;8700;Leoben;;;KEINE;0,00;1;1;2;
+12;12;0;;EBSCO INT. INC.;;;;Ignaz-Köck-Straße 9;1210;Wien;;(+43 732) 77 20-21 16 77;ATU52940304;0,00;0;1;2;hloeffler@ebsco.com
+13;13;0;;Landesdienstleistungszentrum;Bibliothek;;;Bahnhofplatz 1/6. OG;4021;Linz;;;KEINE;0,00;1;1;2;praes.post@ooe.gv.at
+14;14;0;;BUNDESBAHNDIREKTION LINZ;Abt. 8.3 Vermessung;Dipl.-Ing. KLÖSCH Rupert;;Bahnhofstraße 3;4020;Linz;0732 /56411-3323;;KEINE;0,00;1;1;2;
+15;15;0;;SALZBURGER LANDESARCHIV;Amtsbibliothek;;;Michael-Pacher-Straße 40;5010;Salzburg;;;KEINE;0,00;1;1;2;
+16;16;0;;BUNDESAMT FÜR EICH- U.VERMESSUNGSWESEN;Bibliothek;;;Schiffamtsgasse 1-3;1020;Wien;;;KEINE;0,25;1;1;2;
+17;17;0;;AUSTRO CONTROL - GMBH;Fachbibliothek;;;Schnirchgasse 11;1030;Wien;;;KEINE;0,00;1;1;2;
+18;18;0;;ÖSTERR. DONAUKRAFTWERKE AG;Hauptverw.Abt.VÖ-Presse 5.Stock;;;Parkring 12;1010;Wien;51538 / 3315;;KEINE;0,00;1;1;2;
+19;19;0;;ÖSTERR. INSTITUT FÜR RAUMPLANUNG;Bibliothek und Dokumentation;;562;;1011;Wien;;;KEINE;0,00;1;1;2;
+20;20;0;;p & g  prachner & godai;;Verlagsauslieferung Ges.m.b.H.;;Talgasse 11;1150;Wien;01 8934105 DW32;01 8934163;KEINE;0,25;1;1;2;abo@prachner.at
+21;21;0;;TECHN. UNIVERSITÄT WIEN;Universitätsbibliothek;Abt. E-Ressourcen und Zeitschriften (E120/5);;Resselgasse 4;1040;Wien;58801 /44267;;KEINE;0,00;1;1;2;
+22;22;0;;BEGAS Netz GmbH;;;;Kasernenstraße 10;7000;Eisenstadt;02682/9015-240;;ATU65080379;0,00;0;1;2;viktoria.barilich@begasnetz.at
+23;23;0;;NÖ.LANDESREGIERUNG;Abt. B/7;;;Landhausplatz 1;3109;St. Pölten;;;KEINE;0,00;1;7;2;
+24;24;0;;Leopold-Franzens-Universität Innsbruck;Quästur;;;Josef-Hirn-Straße 5-7;6020;Innsbruck;0512 507 9043;0512 507 2810;KEINE;0,00;1;1;2;alexander.probst@uibk.ac.at
+25;25;0;;Carl Kravani KG;;;;Burggasse 100;1070;Wien;5237225;;57060156;0,25;1;1;2;
+26;26;0;;Wilhelm Frick GmbH;Abteilung Versand;;;Heizwerkstrasse 8;1230;Wien;616701231;616701240;KEINE;0,25;1;1;2;
+27;27;0;;NÖ.LANDESREGIERUNG;NÖ.Landesbibliothek, Abt.III/4;;;Landhausplatz 1;3109;St. Pölten;;;KEINE;0,00;1;7;2;
+28;28;0;;Stadt Graz;e-rechnungen@stadt.graz.at;A8/3 - Abt. f. Rechnungswesen;;Tummelplatz 9;8011;Graz;0316/872;0316/8725309;KEINE;0,00;1;1;2;
+29;29;0;;Swets Information Services B.V.;UKP;c/o P.O.Box 65;;;;ABINGDON - OXON OX14 1WA;+49 (0) 69 633 988 301;+44 (0) 1235 857501;NL808377632B01;0,25;1;1;9;publisherservice@de.swets.com
+30;30;0;;MEISSNER AG;Zeitschriftenabteilung;;;Bahnhofstraße 41;5001;AARAU;064/2661 71;064/2665 95;KEINE;0,25;1;8;22;
+31;31;0;;BUNDESAMT FÜR RAUMPLANUNG;Bibliothek/Dokumentation;;;;3003;BERN;;;KEINE;0,25;1;1;22;
+32;32;0;;Fachhochschule Bochum;Hochschulbibliothek;Zeitschriftenverwaltung;;Lennershofstr. 140;44801;BOCHUM;;;DE127056614;0,00;1;1;12;zeitschriften@fh-bochum.de
+33;33;0;;Struppe & Winckler;Zweigniederlassung der;Sack Fachmedien GmbH & Co.KG;;Mohrenstr. 34;10117;BERLIN;++49 (0)211 36812-70;++49 (0)211 3681258;DE126048326;0,25;1;10;12;tbachmann@sack-mediengruppe.de
+34;34;0;;Dr. Rudolf Habelt GmbH;;;150104;;53040;BONN;49-228-92383;49-228-92383 6;DE122113397;0,25;1;8;12;
+35;35;0;;Buchhandlung Graff GmbH;;;;Sack 15;38100;BRAUNSCHWEIG;;;DE242857418;0,25;1;1;12;brunke@graff.de
+36;36;0;;NIEHÖRSTER Buchhandel GmbH;;Herrn Dr.Hillejan;;Flughafenstraße 4;44309;DORTMUND 12;;;DE151641131;0,25;1;8;12;
+37;37;6;Kurt;HAAG;;;;Ahlbacherweg 19;65604;ELZ BEI LIMBURG;;;KEINE;0,00;1;1;12;
+38;38;0;;AKATEEMINEN KIRJAKAUPPA;Subscription Services;;23;P.O.BOX 23;00371;HELSINKI;90/122141;+358 0121 4450;FI01141622;0,25;1;1;10;
+39;39;0;;BAEDEKER G.D. GMBH;;;100345;;4300;ESSEN 1;0049-20120680;00492012068100;DE119652470;0,25;1;8;12;
+40;40;0;;VERLAG GLÜCKAUF GmbH;Versandbuchhandlung;;185619;;45206;ESSEN;02054/924200-205;02054/924209;DE119673720;0,25;1;1;12;
+41;41;0;;Fachbuchservice Frankfurt GmbH;;;;Neue Kräme 32;60311;FRANKFURT 1;069/289929;069/289942;DE151269224;0,25;1;1;12;
+42;42;0;;WENNERGREN-WILLIAMS AB;Subscription Department;;1305;;171 25;SOLNA;+46(0)8-7059750;+46(0)8-270071;SE556289884001;0,25;1;1;21;
+43;43;31;Heinrich;EBNER;TU München/LSt. f. Photogr. u. Fernerk.;;;Arcisstraße 21;80290;MÜNCHEN;;;KEINE;0,00;1;1;12;
+44;44;0;;Dr. Claus Steiner GmbH;Abteilung Abonnements;;;Richard-Klinger-Str. 3;65510;IDSTEIN;06434/915120;915110;DE242311439;0,25;1;8;12;service@buch-steiner.de
+45;45;0;Theodor;SCHULZE;;;;Osterstraße 24;30159;HANNOVER;;;DE115533794;0,25;1;8;12;
+46;46;0;;Reinhold Gondrom GmbH & Co.KG;;;;Kerststr. 9-15;67655;KAISERSLAUTERN;(0631) 362 19 982;(0631) 362 19-715;DE148632587;0,25;1;1;12;
+47;47;0;;LINDA HALL LIBRARY;Serials Department;;;5109 Sherry Street;64110;KANSAS CITY MO;;;KEINE;0,25;1;1;29;
+48;48;0;;KELLNER U. MOESSNER;Universitätsbuchhandlung;;;Kaiserstraße 18;76131;KARLSRUHE 1;;;DE143598512;0,25;1;1;12;
+49;49;0;;METZLER`SCHE BUCHHANDLUNG;;Herrn HOFFMANN W.;;Karlstraße 13;76133;KARLSRUHE;;;DE143607524;0,25;1;1;12;
+50;50;0;;Karlsruher Institut für Technologie (KIT);Campus Süd;Geodätisches Institut;;Englerstr. 7;76131;KARLSRUHE;0721 608-42305;0721 608-46552;DE266749428;0,00;1;1;12;
+51;51;0;;LANDESVERMESSUNGSAMT SCHLESWIG-HOLSTEIN;;;5071;;24062;KIEL;;;KEINE;0,00;1;1;12;
+52;52;0;;LANDESAMT für Vermessung und Geobasisinformation;Rheinland-Pfalz;;;Von-KuhlStraße 49;56070;KOBLENZ;;;DE 148 722 907;0,00;1;1;12;
+53;53;0;;REITZELS C.A.;Boghandel A/S;;;Norregade 20;1165;COPENHAGEN;;;DK66406717;0,25;1;1;8;
+54;54;0;; DIETL;;;;Neustadt 458;84028;LANDSHUT/BAYERN;+49 871 22186;+49 871 274278;DE128870922;0,25;1;8;12;
+55;55;0;;Deutsches Geodätisches Forschungsinstitut;TU München;;;Arcisstraße 21;80333;MÜNCHEN 2;;;DE811193231;0,00;1;1;12;
+56;56;0;;FACHHOCHSCHULE OLDENBURG;Bibliothek;;;Ofener Straße 16;26121;OLDENBURG;;;KEINE;0,00;1;1;12;
+57;57;6;Winfried;ROSE;;;;Schließfach 1720;57462;OLPE AM BIGGESEE;;;KEINE;0,00;1;1;12;
+58;58;0;;Manzsche Verlags- und;Universitätsbuchhandlung GmbH;;;Gutheil-Schoder-Gasse 17/C;1230;Wien;01 531 61-0;01 662 8675-5690;ATU37181900;0,25;1;1;2;abonnement@manz.at
+59;59;0;;BMWFW;Zentrale Verwaltungsbibliothek;;;Stubenring 1;1010;Wien;71100 / 5686;Fr.Huber;KEINE;0,00;1;1;2;
+60;60;0;;Librairie Universitaire du Québec Métro;Agence internationale d'abonnement;Pavillon Maurice-Pollack;;22305, rue de l'Université, Local 0112;G1V 0B4;QUÉBEC, QC;418-656-2600 poste 8462;418-656-2665;KEINE;0,25;1;1;5;abonnement@zone.coop
+61;61;0;;UNIVERSITÄTSBIBLIOTHEK STUTTGART;;;104941;;70043;STUTTGART;0771/ 121 3513;0771/ 121 3502;DE147794196;0,00;1;1;12;zeitschriften@ub.uni-stuttgart.de
+62;62;0;;WITTWER KONRAD GESMBH;;;105343;;70046;STUTTGART 10;0711/ 2507-315;    / 2507-350;DE147641321;0,25;1;8;12;
+63;63;0;;BRUNS F.;A/S Tidsskriftavd.;;;Kongens gt. 10;7005;TRONDHEIM;4773510022;;KEINE;0,25;1;8;19;
+64;64;0;;Bibliothek am Guisanplatz (BiG);Herr Walter Hadorn, (swisstopo);;;Papiermühlenstr. 21A;3003;BERN;+41 31 963 2222;+41 31 963 2459;KEINE;0,25;1;1;22;pierre.gerber@swisstopo.ch
+65;65;28;Franz;HILGER;;;;Auf Köhnerrain;56745;WEIBERN;;;KEINE;0,00;1;1;12;
+66;66;0;;BIDER & TANNER AG;Frau Franziska Stocker;;;Aeschenvorstadt 2;4010;BASEL;+4161-2069999;+4161-2069990;KEINE;0,25;1;1;22;info@biderundtanner.ch
+67;67;0;;Morawa GmbH & Co KG;Buchhandlung und Zeitungsbüro;Business Subscription Services;;Postfach 99;1127;Wien;91076-387;91076-325;ATU10240602;0,25;1;4;2;iAndrijanic@morawa.com
+68;68;0;Kurt;NOVAK;;;;Bahnzeile 26;2130;Mistelbach;;;KEINE;0,00;1;9;2;
+69;69;0;;WEIDEMANNS BUCHHANDLUNG;Fachbuchhandlung für techn. Literatur;;;Georgstraße 11, Postfach 6406;3000;HANNOVER;0511 / 16382-0;0511 / 1638266;DE115582157;0,25;1;1;12;
+70;70;12;Leopold;ORSOLITS;;;;Schrottgießergasse 3/12;1020;Wien;;;KEINE;0,00;1;1;2;
+71;71;0;;DEMOCRITUS UNIVERSITY OF THRACE;Library School of engineering;Maria Lekidou;;;671 00;XANTHI;;;KEINE;0,00;1;1;13;
+72;72;0;Hugo;STREISAND;;;;Flurstrasse 32;91230;HAPPURG;;;DE136511053;0,25;1;8;12;
+73;73;0;;OTTO HARRASSOWITZ KG;;;;;65174;WIESBADEN;0049 611 530 381;0049 611 530 560;DE113897518;0,25;1;8;12;urasim@harrassowitz.de
+74;74;0;;GEROLD & CO.;Zeitschriften;;;Graben 31;1011;Wien;;;KEINE;0,25;1;8;2;
+75;75;6;Alexander;LEGAT;;;;Altenmarkter Straße 4;8430;Leibnitz;;;KEINE;0,00;1;1;2;
+76;76;0;;TIROLER LANDESREGIERUNG;Landesforstinspektion;;;Bürgerstraße 36;6010;Innsbruck;;;KEINE;0,00;1;7;2;
+77;77;0;;EBSCO International Inc., USA;c/o EBSCO Info Services GmbH;;;Sachsendamm 2-7;10829;BERLIN;+31 / 297/ 86335;+31 /297/ 321250;ATU52940304;0,25;1;1;12;europe.ps@ebsco.com
+78;78;0;;Mayersche Buchhandlung KG;Buchhaltung MDI;;;Matthiashofstr. 28-30;52064;AACHEN;0241/47 77-555;0241/47 77 - 475;DE811126776;0,25;1;1;12;mayerschedirekt@mayersche.de
+79;79;0;;ims Internationaler Medien Service;GmbH & Co. KG;;;Süderstraße 77;20097;HAMBURG;(0049) 40 347 286 00;(0049) 40 347 186 00;DE814865171;0,25;1;1;12;ims@axelspringer.de
+80;80;0;Georg E.;KARRAS;;;;Lerou 12;113 64;ATHEN;;;KEINE;0,00;1;1;13;
+81;81;0;;AIGNER GmbH;;;;Asenalstr 8 Postfach 120;71638;LUDWIGSBURG;07141 / 923323;07141 / 902793;DE146153843;0,25;1;8;12;
+82;82;0;;IKT Linz GmbH;;;;Gruberstraße 40-42;4020;Linz;;;KEINE;0,00;1;1;2;
+83;83;0;;LANDESVERMESSUNGSAMT SACHSEN;Geodäsie & Kartographie Dresden;;100306;;01073;DRESDEN;;;DE155309101;0,00;1;1;12;
+84;84;0;;MARTINUS NIJHOFF;Subscription Agents;;1853;;2700 CZ;ZOETERMEER; 3179 / 684400; 3179 / 615698;NL007519606B01;0,25;1;1;18;
+85;85;0;;KRISCHE-MENCKE-BLAESING;SUBSCRIPTION AGENCY & BOOKSELLER;;;Universitätsstrasse 16;91011;ERLANGEN;++49-9131-78 06 0;++49-9131-20 56 75;DE812277765;0,25;1;1;12;
+86;86;6;Oliver;SCHMECHTIG;;;;Brunnhäuslsiedlung 66/02;5531;Eben im Pongau;06464 7784;;KEINE;0,00;1;1;2;
+87;87;0;;JOANNEUM RESEARCH;Forschungsgesellschaft mbH;;;Leonhardstraße 59;8010;Graz;;;ATU28781306;0,00;1;1;2;
+88;88;0;Johann;SIMENKO;;;;Sailergasse 13;8430;Kaindorf a.d.Sulm;;;KEINE;0,00;1;1;2;
+89;89;0;;MINERVA GMBH;Scientific Booksellers & Pub.;;;Morgensternstr.37;60596;FRANKFURT/MAIN;(069) 62 3021;;DE114189233;0,25;1;1;12;
+90;90;0;;GEORG LINGENBRINK GMBH & CO.;;;;Gutenbergring 53;22848;NORDERSTEDT;040/53433536;040/53433515;DE117983939;0,25;1;1;12;
+92;92;0;;STADTGEMEINDE KLOSTERNEUBURG;GA IV/1 -  Stadtplanung;;;Rathausplatz 1;3400;Klosterneuburg;;;KEINE;0,25;1;1;2;
+93;93;0;;TOMIK sp z o.o.;;;;ul. Minska 25, pok. 316;03808;WARSZAWA;;;KEINE;0,25;1;1;20;
+94;94;0;Anton;ALLMER;Technisches Büro - Vermessung;;;Ring 271;8230;Hartberg;;;KEINE;0,00;1;1;2;
+95;95;0;Klaus;KATZMAIR;;;;Röpzigerstrasse 15;06110;HALLE;;;KEINE;0,00;1;1;12;
+96;96;0;;EX LIBRIS;Buchhandelsgesellschaft;;;Ferd.-Dirichs-Weg 28;60529;FRANKFURT/MAIN;(069) 355159;(069) 356099;DE114147935;0,25;1;1;12;
+97;97;0;;STADTGEMEINDE WOLFSBERG;;Herrn Dipl.- Ing. Sand;;Rathausplatz 1;9400;Wolfsberg;04352/537-271;;KEINE;0,00;1;1;2;
+98;98;0;;STADTGEMEINDE VÖLKERMARKT;;Herrn Koschier;;Hauptplatz 1;9100;Völkermarkt;04232/2571 - 15;;KEINE;0,00;1;1;2;
+99;99;0;;LIBROTRADE KFT;Periodical Import;;126;;1656;BUDAPEST;256-1672;256-87-27;HU10315642;0,25;1;1;14;periodicals@librotrade.hu
+100;100;0;;MAGISTRAT SALZBURG;Amtsbücherei;;63;;5024;Salzburg;0662/8072;0662/8072-2085;KEINE;0,00;1;1;2;
+101;101;0;;Landeshauptstadt Bregenz;;;;Rathausstraße 4;6900;Bregenz;05574/410-385;05574/410-108;ATU 37170404;0,00;1;;2;
+102;102;0;;STADT DORNBIRN;Abt. Plan- u. Datenservice;Herrn Klocker Elmar;;Rathausplatz 2;6850;Dornbirn;05572/306-517;05572/306-600;KEINE;0,00;1;7;2;
+103;103;0;;MAGISTRAT DER STADT KREMS/DONAU;;;;Obere Landstraße 4;3500;Krems;02732/801253;02732/801269;KEINE;0,00;1;1;2;
+104;105;0;;STUAG;Abt. Techn. Controlling;;;Seilerstätte 18-20;1015;Wien;51557-213;51557-222;KEINE;0,00;1;1;2;
+105;106;0;;STADTGEMEINDE KNITTELFELD;;Herrn Dipl.-Ing. Wölle Nikolai;;Hauptplatz 15;8728;Knittelfeld;;;KEINE;0,00;1;1;2;
+106;107;0;;KÄRNTNER LANDESREGIERUNG;Abt. 20 - Landesplanung;;;Wulfengasse 13;9020;Klagenfurt;0463/536-32003;0463/536-32007;KEINE;0,00;1;1;2;
+107;108;0;;GEMEINDE NEUBERG;Bezirk Güssing;;;;7535;Neuberg;;;KEINE;0,00;1;1;2;
+108;109;0;;STADTGEMEINDE VOITSBERG;Bauamt;;;Hauptplatz 1;8570;Voitsberg;03142/22170-0;03142/2217054;KEINE;0,00;1;1;2;
+109;110;0;;MARKTGEMEINDE NEUDÖRFL;;;;Rathaus;7201;Neudörfl;02622/77277;02622/77277-20;KEINE;0,00;1;1;2;
+110;111;12;Karl;KNOTZER;;;;Rosenhügel 25;7503;Großpetersdorf;;;KEINE;0,00;1;1;2;
+111;112;0;;STEWEAG;Bibliothek;;;Leonhardgürtel 10;8011;Graz;0316/387;0316/387290;KEINE;0,00;1;1;2;
+112;113;0;;MARKTGEMEINDE TELFS;;;;Untermarktstrasse 5-7;6410;Telfs;05262/6961-0;05262/6961-199;KEINE;0,00;1;1;2;
+113;114;0;;MINERVA;Wissenschaftliche Buchhandlung GmbH;;;Ignaz-Köck-Strasse 9;1210;Wien;+43 (0) 1 / 330 24 33-246;+43 (0) 1 / 330 24 39-146;ATU 14893203;0,25;1;1;2;minerva@minerva.at; georg.stern@minerva.at
+114;115;0;Dieter;STRASSER;Informationstechnik GmbH;;;Schillerplatz 3;3100;St. Pölten;02742/235-0;;KEINE;0,00;1;1;2;
+115;116;0;;JOHN MIHALOPOULOS & SON S. A.;International Booksellers;;;75 Hermou Street, P. O. BOX 10073;54110;THESSALONIKI;279695-263786;279695-268562;EL94095703;0,25;1;1;13;
+116;117;0;;Atos IT Solutions and Services GmbH;;;;Siemensstraße 92;1210;Wien;+43/(0)50618-0;+43/(0)50618-57770;ATU66190855;0,00;1;1;2;
+117;118;0;;UMWELT - u. EDV-BERATUNG GmbH;;;;Wiedner Hauptstrasse 19;1040;Wien;01 5051984;01 5051984 43;KEINE;0,00;1;1;2;
+118;119;0;;KUBON & SAGNER;Buchexport;;340108;Heßstraße 39/41;80798;MÜNCHEN;089-54218-0;089-54218-218;DE811194845;0,25;1;1;12;
+119;120;0;;ESIA BOOKS AND JOURNALS SRL.;;;;Via Palestro 30;00185;ROMA RM;4441221;4747743;IT01955411002;0,25;1;1;15;
+120;121;6;Gerolf;LASERER;;;;Salzburgerstrasse 27a;5620;Schwarzach;;;KEINE;0,00;1;1;2;
+121;122;0;;AUFHAUSER-PINZ OEG;Planungsbüro;;;Feldgasse 1;3130;Herzogenburg;02782 5101;;KEINE;0,00;1;1;2;
+122;123;9;Gerhard;HEISS;Arsenal Obj. 219;;;Faradaygasse 3;1030;Wien;79747 252;79747 591;KEINE;0,00;1;1;2;
+123;124;0;;DIGET POLITECNICO;;;;Corso Duca degli Abruzzi 24;10129;TURIN;39 11 5647600;39 11 5647699;KEINE;0,00;1;1;15;
+124;125;6;Arnulf;ZOPP;;;;Hofkirchenstrasse 8a;5020;Salzburg;;;KEINE;0,00;1;1;2;
+126;127;0;;LANGE & SPRINGER;Zeitschriftenabteilung;;;Otto-Suhr-Allee 26/28;10585;BERLIN;030/34005-0;    3420611;DE136665983;0,25;1;1;12;
+127;128;0;;GEODETSKI FAKULTET;;Herrn Prof. Dr. sc. Fiedler Teodor;;Kaciceva 26;10000;ZAGREB;;;KEINE;0,00;1;1;17;
+128;129;0;;MAGISTRAT STEYR;Rathaus;;;Stadtplatz 27;4400;Steyr;;;KEINE;0,00;1;1;2;
+136;0;;;S. Toeche-Mittler;Verlagsbuchhandlung GmbH;;;Hindenburgstraße 33;64295;DARMSTADT;06151 33665;06151 314048;DE111660672;0,25;0;1;12;abo@net-library.de
+139;0;0;;NÖ.LANDESREGIERUNG;Koordinierungsst. f. Umweltschutz;D.I. Steiner;;Neue Herrengasse/ Haus 16;3109;St. Pölten;;;KEINE;0,00;1;7;2;
+140;0;0;;RIEDER & PARTNER GMBH;Herrn Rieder;;;Karriegelstrasse 56a;3021;Preßbaum;0664 2605762;;KEINE;0,00;1;4;2;
+141;0;0;;Witsch und Behrendt;ZNL der Golthe + Schweitzer GmbH;;103743;;50477;KÖLN;0049 221 47697-10;;DE119263102;0,25;1;8;12;
+142;0;0;Wolfgang;STÜRMER;;;;Pettenbacher Strasse 15;4655;Vorchdorf;;;KEINE;0,00;1;3;2;
+143;0;6;Wolfgang;WAAGNER;;;;Bindergasse 8;5020;Salzburg;0662430323;;KEINE;0,00;1;3;2;
+144;0;0;;WASSERSTRASSENDIREKTION;Abteilung 5;Reg.Rat Ing. Wanek;;Hetzgasse 2;1030;Wien;;;KEINE;0,00;1;0;2;
+145;0;0;;TAMARIS;Book Import and Subscription;;;Petrinjska 11;10000;ZAGREB;;;KEINE;0,25;1;0;17;
+146;0;0;;CREPAS Rinaldo;;;;Bosch da Plang 298;39030;LA VILLA;;;KEINE;0,00;1;5;15;
+147;0;0;;DECIUS GmbH;;;;Marktstrasse 52;30159;HANNOVER;0511/3647640;0511/3647644;DE115648560;0,25;1;8;12;
+148;0;6;Edmund;KRONAWETTER;;;;St. Martiner Strasse 25;9500;Villach;;;KEINE;0,00;1;3;2;
+149;0;6;Anton;SCHABL;Schabl & Partner OEG;Technisches Büro & Unternehmensberatung;;Untere Viaduktgasse 53/5a;1030;Wien;+43-(0)1-503 75 90-0, +43-(0)699-1003 60 24;;KEINE;0,00;1;3;2;anton.schabl@schabl.at
+150;0;12;Martin;GASPARICS;Vermessungsbüro;;;Auersperggasse 19;8010;Graz;0316/68 08 78...-0;0316/68 08 78-6;KEINE;0,00;1;3;2;office@vermessung-gasparics.at
+151;0;0;;AOBC;Magazine Agency;;;550 Walnut Street;NJ 07648;NORWOOD;;;KEINE;0,25;1;0;29;
+152;0;0;;PRENAX;Prenax Ab Prenumeration;;15122;;16115;BROMMA;+46 8 56410100;+46 8 56410109;SE556540747401;0,25;1;0;21;
+153;0;0;;NAWIJN & POLAK;Subscription Department;;;Marktplein 24;7311 LR;APELDOORN;0031 55 5212709;;NL812701203B01;0,25;1;0;18;
+154;0;0;;IFG-VERLAG;;;;Odenwaldring 38;63069;OFFENBACH;069 832051;069 843530;DE113603905;0,25;1;0;12;
+155;0;6;Bernhard;WEGMANN;;;;Dr. Wigger-Strasse 16;82467;GARMISCH-PARTENKIRCHEN;;;KEINE;0,00;1;3;12;
+156;0;0;;BRUNNER und STROBL;;;;Karlsgasse 12;3430;Tulln;02272 622 95;;KEINE;0,00;1;5;2;
+157;0;9;Ronald;Ruzicka;Silmutationstechnik;;;Atzgersdorferstrasse 32;1230;Wien;01 888 36 10;01 888 36 10 49;KEINE;0,00;1;0;2;
+158;0;6;Stefan;RUDIG;;;;Templstraße 14;6020;Innsbruck;;;KEINE;0,00;1;3;2;
+159;0;0;;Institut f. Photogr. u. GeoInfo.;Leibniz Universität Hannover;;;Nienburger Strasse 1;30167;HANNOVER;;;DE811245527;0,00;1;0;12;
+160;0;0;;Vyzkumny Ustav Geodeticky;Eva Lhotakova;;;Ustecka 98;25066;ZDIBY;;;CZ00025615;0,00;1;0;26;
+161;0;9;Wolfgang;GOLD;;;;An der Lan-Str. 27/16;6020;Innsbruck;;;KEINE;0,00;1;3;2;
+162;0;0;;Landesamt für Geoinformation; und Landentwicklung (LGL);Bibliothek;;Büchsenstrasse 54;70174;STUTTGART;;;DE147794090;0,00;1;0;12;heike.hackl@lgl.bwl.de
+163;0;0;;GEOSPACE International GmbH;;;;Wasserfeldstraße 21;5020;Salzburg;0662 /45 81 15-0;0662/45 81 15-4;KEINE;0,00;1;0;2;office@geospace.at
+164;0;0;;DIBIT Messtechnik GmbH;;;;Framsweg 16;6020;Innsbruck;;;KEINE;0,00;1;0;2;office@dibit.at
+165;0;0;;Hessisches Landesamt für;Bodenmanagement und Geoinformation;Bibliothek;3249;Schaperstrasse 16;65195;WIESBADEN;0611/535-5332;0611/535-5551;DE113823657;0,00;1;0;12;silke.weber@hvbg.hessen.de
+166;0;0;;Amt für Raumentwicklung und Geoinformation;Vermessung;;;Lämmlisbrunnenstrasse 54;9001;ST. GALLEN;+ 41 58 229 20 39;;KEINE;0,00;1;0;22;mario.graf@sg.ch
+167;0;0;;Brenner Basistunnel EWIV;zH DI Rainer GASSER;;;Neuhauserstrasse 7;6020;Innsbruck;;;KEINE;0,00;1;0;2;
+168;0;0;;KÄRNTNER LANDESREGIERUNG;Abt. 17V Vermessung und Grundverwaltung;;;Mießtalerstrasse 3;9021;Klagenfurt;;;KEINE;0,00;1;0;2;
+169;0;0;;INNENMINISTERIUM;Niedersachsen;;221;;30002;HANNOVER;;;KEINE;0,00;1;0;12;
+170;0;0;;GEODÄTISCHES INSTITUT;;Universität Stuttgart;;Geschwister-Scholl-Strasse 24/D;70174;STUTTGART;;;DE 147794196;0,00;1;0;12;
+171;0;0;;Suomalainen Kirjakauppa Ltd.;Sanoma Finance Shared Services/;Accounts payable;106;;00089;SANOMA;+358 9 8527880;+358 9 8527990;FI02053616;0,25;1;0;10;ostolaskut@rautakirja.fi
+172;0;0;;BIDER & TANNER AG;z.Hd. Frau Franziska Stocker;;;Aeschenvorstadt 2;4010;BASEL;004161/2069999;004161/2069990;KEINE;0,25;1;8;22;
+173;0;0;;"Die Markscheider";DI Emmerich Schuscha;;;Franz Josef-Str. 8;8700;LEOBEN;03842 / 436 26;03842 / 436 26-75,  0664 / 350 06 25;KEINE;0,00;1;0;2;office@die-Markscheider.at
+175;0;0;;ROMBACH GmbH + Co.;Handelshaus KG;;;Bertoldstraße 10;79098;FREIBURG;0761-4500-2400;0761-4500-2499;KEINE;0,00;1;0;12;
+176;0;0;;ETV;Abt. Buchhaltung;;;Montebruchstraße 2;45219;ESSEN;;;KEINE;0,00;1;0;12;
+177;0;0;;Z/I Imaging GmbH;;;;Ulmer Str. 124;73431; AALEN;07361 / 8895-0 Buchhaltung:089961060(München);07361 / 8895-29;DE 129386488;0,00;1;1;12;
+178;0;0;;Schweitzer Sortiment Wien oHG;;;;Canovagasse 7/6;1010;Wien;5041675;;ATU50810706;0,00;1;0;2;
+179;0;0;;LACHNER;;;;Theresienstraße 43+100;80333;MÜNCHEN;089/521350;;KEINE;0,00;1;8;12;
+181;0;0;;STOCKMANN;AKATEEMINEN KIRJAKAUPPA;Subscription Services;23;;00381;HELSINKI;;;KEINE;0,00;1;0;10;
+182;0;0;;Missing Link;;;;Westerstraße 114-116;28199;BREMEN;0421 504348;0421 504316;DE 114583647;0,25;1;8;12;
+183;0;0;;Buchholz;Fachinformationsdienst GmbH;;;Radweg 1;66450;BEXBACH;06826/93430;06826/934343;DE151111785;0,00;1;0;12;
+185;0;0;;Schweitzer Sortiment oHG;Fachbuchhandlung;;;Elsenheimerstraße 41-43;80687;MÜNCHEN;089 5 51 34 - 235, Fr. Schnieders;089 55134-101;DE129985290;0,00;1;1;12;
+186;0;0;;ESIA Books and Journals S.r.l.;;;;Via Palestro, 30;00185;ROMA RM;esia@esia.it;06 4747743;IT 01955411002;0,00;1;1;15;
+187;0;0;;F. Delbanco Jens-Peter Cohrs;GmbH  & Co. KG;;1447;Bessemerstrasse 3;21304;LÜNEBURG;+49 4131 2428-0;+49 4131 2428-12;DE153072089;0,25;1;0;12;
+188;0;0;;Fachbuchhandlung Hennies und Zinkeisen;Inh.: Buchhandlung Decius GmbH;;;Halberstädter Str. 112;39112;MAGDEBURG;0391/6225702 Frau Müller;0391/600798;DE115648560;0,25;1;0;12;
+189;0;0;;Lehmanns Media GmbH;siz /  service internationale Zeitschriften;Abo 121548;;Helmholzstrasse 2-9;10587;BERLIN;+49 (0) 30/61 79 11-54;+49 (0) 30/61 79 11-62;DE811123673;0,25;1;4;12;siz@lehmanns.de
+190;0;0;;A. Stein'sche Buchhandlung GmbH;VN 58013;;;Steinerstraße 10;59457;WERL;++49 2922 / 82011;++49 2922 / 82013;DE126633535;0,00;1;0;12;bestellung@buchversand-stein.de
+191;0;0;;Universitätsbuchhandlung Beneke GmbH;;;;Gartenstraße 18;72074;TÜBINGEN;07071-22803;07071-922972;DE146891228;0,25;1;0;12;beneke@libronet.de
+192;0;0;;Hoser & Mende KG;;;;Charlottenplatz 17;70173;STUTTGART;0711-16354-94;0711-16354-25;DE147514515;0,25;1;0;12;f.kroeschell@schweitzer-online.de
+193;0;0;;Dovoz tisku Praha;Suweco CZ, s.r.o.;;;Klecakova 347/5;180 21;PRAHA 9;00420 266317368;00420 284821646;CZ25094769;0,25;1;0;26;fiserova@suweco.cz
+194;0;0;;Vermessung  Braczek;;;;Hauptstraße 60b/4;3021;Pressbaum;02233 53039;02233 53039-4;KEINE;0,00;1;5;2;tb.braczek@aon.at
+195;0;0;;Oberschule für Geometer;"P. Anich";;;Fagenstraße 8;39100;BOZEN;0471/287406;0471/260854;KEINE;0,00;1;0;15;ofg.bozen@schule.suedtirol.it
+196;0;0;;LSL GmbH;;;;Gerichtsweg 28;04103;LEIPZIG;+49 (0341) 9954 286;+49 (0341) 9954 272;DE141498777;0,25;1;0;12;anke.grossmann@lsl.de
+197;0;0;;Matthäus Truppe;Buchhandlung & Antiquariat;;;Stubenberggasse 7;8010;Graz;0316/ 82 95 52;0316/ 82 95 52;ATU27616407;0,25;1;0;2;truppe@aon.at
+198;0;0;;Buchkaiser GmbH;z.Hd. Fr. Schwarz;;;Kaiserstr. 199;76133;KARLSRUHE;0721/92929-51;0721/9292991;DE143592532;0,00;1;0;12;
+199;0;0;;Vexcel;;;;;;;;;KEINE;0,00;1;0;0;
+200;0;0;Thomas;Hildebrandt;;;;Dornbacherstraße 43 Top 24;1170;Wien;0676 727 80 97;;KEINE;0,00;1;3;2;hildebrandt@aon.at
+201;0;0;;Littrade Literaturservice e.U.;Mag. Tina Nicolussi;;;Währinger Strasse 3/7;1090;Wien;958 15 19, 968 02 65;968 27 52;ATU62002834;0,25;1;0;2;office@littrade.at
+202;0;12;Reimar;Kretz;;;;Hörschinger Str. 7;4063;Hörsching;+43-7221-73783-0;+43-7221-73783-14;ATU63326706;0,00;0;3;2;office@kretzphoto.eu
+203;0;0;;ikon VerlagsGesmbH;;;;Industriestraße B16;2345;Brunn am Gebirge;2236 35600 12;2236 377470;ATU49644201;0,25;1;0;2;cermak@ikon.co.at
+204;0;0;;Tiefbauamt;Dipl. Ing. Peter Jehle;;;Städtle 38;9490;VADUZ;+423 / 236 60 73;+423 / 236 60 79;KEINE;0,00;1;0;32;Waltraud.Marxer@ba.llv.li
+205;0;0;;ABE-IPS;;;;ul. Grzybowska 37A;00-855;WARSZAWA;+48 22 654 06 75 wew. 21;+48 22 652 07 67;PL5260012190;0,25;1;0;20;malgorzata.zdanowska@abc.pl
+206;0;0;;Juergen Ganske;Libri GmbH;CM Zeitschriften / Subscriptions;;Friedensallee 273;22763;HAMBURG;+49 (40) 85398-7236;+49 (40) 85398-7802;DE217908460;0,00;1;1;12;JGanske@libri.de
+207;0;0;;Magistrat der Landeshauptstadt Linz;Planung, Technik und Umwelt;z.h. Frau Magauer;;Hauptstraße 1-5;4041;Linz;0732/7070-3131;;KEINE;0,00;1;0;2;
+208;0;0;;D.E.A S.p.A.;;;;VIA P. BOCCANELLI 27;00138;ROMA;+39 06 852121;+39 06 8543228;IT00901181008;0,25;1;0;15;rmabb@deanet.it
+209;0;0;;Stephanus-Buchhandlung;;;;Herrenstr. 34;76133;Karlsruhe;0721-91952-27;0721-91952-22;DE 230 996 863;0,25;1;0;12;einkauf@stephanusbuch.de
+211;0;0;;LFZ Raumberg-Gumpenstein;Bibliothek;;;Raumberg 38;8952;Irdning;+43 (0)3682/22451-245;+43 (0)3682/22451-210;ATU38701507;0,00;1;0;2;Doris.Schoenthaler@raumberg-gumpenstein.at
+212;0;0;;vub GmbH;Verkehrs-Nr.:41545;;;Sedanstr. 31-33;50668;KÖLN;(0221)20792-0;;DE122649251;0,00;0;0;12;abo@vub.de
+213;0;0;;Licosa S.P.A.;;;;Via Duca di Calabria 1/1;50125;FIRENZE;+3905564831;+39055641257;IT00431920487;0,25;1;1;15;marzia.matteini@licosa.com
+214;0;0;;LeserAuskunft GmbH;;;;Wilhelm-Schickard-Str. 12;76131;KARLSRUHE;0721 9638482;0721 96383482;DE218877919;0,25;1;0;12;buchhandlung@leserauskunft.de
+215;0;0;;PRESS - Import of Scientific Publications;;;;ul. Sienna 63/40, P.O.Box 116;00-820;WARSZAWA;0048228750448;;PL5270164228;0,25;1;0;20;journals@press.com.pl
+216;0;0;;CHZ ARS POLONA;SUBSCRIPTION DEPARTMENT;;;OBRONCOW 25;03-933;WARSAW;+48(22)509-86-00;+48(22)509-86-50;PL5251700016;0,25;1;0;20;arspolona@arspolona.com.pl
+217;0;0;;rmDATA GmbH;;;;Industriestraße 6;7423;Pinkafeld;+43 3357 43333;-76;KEINE;0,00;1;0;2;weiss@rmdatagroup.com
+218;0;0;;Hochschule für Technik Stuttgart;Bibliothek;;;Schellingstr. 24;70174;STUTTGART;+49 (0)711 8926 2609;+49 (0)711 8926 2666;DE811579497;0,00;1;0;12;kerstin.kornmann@hft-stuttgart.de
+219;0;0;;boysen+mauke oHG;Schweitzer Fachinformationen;;;Burchardstraße 21;20095;HAMBURG;+49 40 44183-114;+49 40 44183-140;DE185853340;0,25;1;0;12;
+220;0;0;;Lehmanns Media AG;(vormals: Huber & Lang);;;Schanzenstrasse 1;3008;Bern;;;KEINE;0,25;1;0;22;info@lehmanns.ch
+221;0;0;;Kerst & Schweitzer oHG;;;;Solmsstrasse 75;60486;Frankfurt am Main;+49 (69) 46 09 34 - 62;+49 (0)69 46 09 34 - 11;DE 191164601;0,25;1;0;12;A.Wickstroem@schweitzer-online.de
+222;0;0;;Mladinska knjiga Trgovina;Subscription Department;;;Slovenska 29;1000;LJUBLJANA;;;SI48494216;0,25;1;0;24;Mojca.Kosir@mk-trgovina.s
+223;0;0;;Casalini Libri S.P.A.;;;;Via Benedetto da Maiano 3;50014;Fiesole;;;IT03106600483;0,00;1;4;15;
+224;0;6;Siegfried;Rohrmoser;;;;Palfengasse 43;5600;St. Johann/Pg.;;;KEINE;0,00;1;3;2;vermessung@sbg.at
+225;0;0;;Karger Libri;;;;Allschwilerstrasse 10;4009;Basel;;;KEINE;0,25;1;4;22;
+226;0;0;;ARIANNA CASALINI;;;;Via Benedetto da Maiano 3;50014;Fiesole;;;KEINE;0,00;1;;15;ornella.nembi@casalini.it
+227;0;0;;WIN.PDF-Eingangsrechnung@wienernetze.at;Wiener Netze GmbH;;;Erdbergerstraße 236;1110;Wien;;;;0,00;1;4;2;
+228;0;0;;;;;;;;;;;KEINE;0,00;1;;0;
+229;0;0;;Menschen im Vertrieb;BeratungsgesmbH & Co. KG;;;Stempfergasse 3;8010;Graz;0316 225079;;KEINE;0,00;1;4;2;t.m@menschen-im-vertrieb.at

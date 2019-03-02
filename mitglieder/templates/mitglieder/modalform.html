@@ -1,0 +1,53 @@
+{% load addonns %}
+
+<div>
+  {% if form.subject.errors %}
+    <ol>
+    {% for error in form.subject.errors %}
+        <li><strong>{{ error|escape }}</strong></li>
+    {% endfor %}
+    </ol>
+  {% endif %}
+  <h1>{{ form.non_field_errors }}</h1>
+  <form name="save-form"  class="form-horizontal" id="save-form" action="{{ url }}" method="POST">
+   {% csrf_token %}
+
+
+
+    {% for field in form %}
+        <div class="form-group" >
+            {% if field.errors %}
+              <div class="col-sm-7 col-sm-offset-3">
+                {% for error in field.errors %}
+                  <h5 class="text-danger"><strong>{{ error|escape }}</strong></h5>
+                {% endfor %}
+              </div>
+              {% endif %}
+            <label for="{{ field.label }}" class="col-sm-3 control-label" >{{ field.label }} {% if field.field.required %}<span class="text-danger"> *</span>{% endif %}</label>
+            <div class="col-sm-7 input-group{% if field|klass == 'DateTimeField' %} datepicker{% endif %} {% if field.errors %} has-error{% endif %}" data-type={{ field|klass }}  data-toggle="tooltip" data-placement="right" title="{{ field.help_text }}">
+
+                {{ field|addcss:"form-control" }}
+                {% if field|klass == 'DateTimeField' %}
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+                  {% endif %}
+                <h5><small>{{ field.help_text }}</small></h5>
+            </div>
+        </div>
+
+    {% endfor %}
+  </form>
+</div>
+
+
+
+
+    <script language="javascript" type="text/javascript">
+        $("#deletebutton").data('url','{{ deleteurl }}');
+        $("#deletebutton").data('title','{{ deletetitle }}');
+        $(".modal-title").html('{{ edittitle }}');
+        $('[data-toggle="tooltip"]').tooltip();
+    </script>
+
+</div>

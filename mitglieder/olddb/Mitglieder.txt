@@ -1,0 +1,729 @@
+Mitgliednummer;Anrede;Titel;Vorname;Name1;Name2;Name3;POBOX;Strasse;PLZ;Ort;Land;Tel;Fax;BEIGZ;BEIDAT;STORNODAT;Rückstand;Gutschrift;Mitart;Kost;Versand;Geboren;SUB;Diplom;DiplomORT;Vorttrag;Beruf;rec;Heftanzahl;mail;Anmerkung
+2;1;;;Techn. Universität Wien;Hochschülerschaft (Fachsch.f.Naturw.);;;Karlsplatz 13;1040;Wien;2;;;-;;;0,00;0,00;DA;F;P;;-;;;8;33;22;1;;
+3;1;;;Zentralanstalt f. Meteorologie;z.Hdn. Prof.Dr. Peter Steinhauser;;;Hohe Warte 38;1190;Wien;2;;;;;;0,00;0,00;DA;F;P;;-;;;8;1;23;0;;Heft 3/11 retour ("verzogen"), Heft = 0, Hau, am 1.02.2012
+4;1;;;Bundeskanzleramt;Adm.Bibliothek;;;Herrengasse 23;1010;Wien;2;;;-;;;0,00;0,00;DA;P;P;;-;;;1;1;24;1;;
+5;1;;;MA 9 Wr.Stadt- u.Landesbibliothek;Erwerb/Bibliotheksstücke;z.H. Herr Lewisch;;Rathaus;1082;Wien;2;4000 84973;;;;;0,00;0,00;DA;P;P;;-;;;1;22;25;1;;
+6;1;;;Österreichische Nationalbibliothek;Österr.Dokumentation;;;Josefsplatz 1;1015;Wien;2;;;;;;0,00;0,00;DA;P;P;;-;;;1;1;26;1;;
+7;1;;;Österreichische Nationalbibliothek;Zeitschriftenabteilung;;;Josefsplatz 1;1015;Wien;2;;;;;;0,00;0,00;DA;P;P;;-;;;1;1;27;4;;
+8;1;;;Universität Wien;Universitätsbibliothek;;;Dr.Karl Lueger-Ring 1;1010;Wien;2;0043 1 4277 15161;0043 1 4277 15169;;;;0,00;0,00;DA;P;P;;-;;;1;35;28;3;josef.spacek@univie.ac.at;Bestellnummer 486188
+9;1;6;Reinhard;Wohlfarter;;;;Hackinger Straße 42-44/3/7;1140;Wien;2; 0664/594 3 966;;;;;0,00;0,00;DA;T;P;;-;;;8;23;29;1;eur.wohlfarter@gmx.at;DA-Abonnement, früher unter "ÖBB/PE-RLO-Vermessung", z.H. Wohlfarter, Warum DA??? Adressänderung am 21.03.2007, neue e-mail 11.2013
+10;1;;;Bundesamt für Eich- u.Vermessungswesen;Bibliothek;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;;;0,00;0,00;DA;T;B;;-;;;1;1;30;1;;Von Redaktion evm auf Bibliothek geändert, 20.01.04, Hau
+11;1;;;OICRF;;;;Hofstraak 110;7311;APELDOORN KZ;18;;;-;;;0,00;0,00;DA;F;P;;-;;;1;38;59;1;;
+13;3;6;Gerald;Kohlhofer;Abt. V2;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;2.5.1993 00:00:00;;0,00;0,00;M;M;B;13.1.1962 00:00:00;AG;1.6.1991 00:00:00;W;8;3;65;1;gerald.kohlhofer@bev.gv.at;
+15;1;;;IKMZ / Univ.-Bibliothek;Zeitschriftenstelle;;; Nordstr. 14;03044;COTTBUS;12;03 55/69 2359;03 55/69 2277;-;;;0,00;0,00;DA;T;P;;-;;;1;34;71;1;jurk@tu-cottbus.de;Adressänderung am 10.02.05 durchgeführt
+16;3;;Thomas;Glatthard;Vermessung-Photogramm.-Kulturtechnik;Redaktion VPK;;Museggstrasse 31;6004;LUZERN;22;041/51 22 67;041/51 22 67;-;;;0,00;0,00;DA;T;P;;-;;;1;38;83;1;;
+17;1;;;Bundesamt für Kartographie und Geodäsie;Z 3 Bibliothek;;;Richard-Strauss-Allee 11;60598;FRANKFURT;12;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;84;1;;
+19;1;;;Freie und Hansestadt Hamburg;Landesbetrieb Geoinformation und Vermessung;;;Neuenfelder Straße 19;21109;HAMBURG;12;(040) 428 26 – 52 16;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;90;1;Ute.Ploen@gv.hamburg.de;Adressänderung 21.06.2013
+20;1;;;Techn. Universität Hannover;Geodätisches Institut;;;Nienburgerstraße 1;30167;HANNOVER;12;;;-;;;0,00;0,00;DA;T;P;;-;;;1;34;92;1;;
+21;1;;;VDE VERLAG GMBH;;;;Goethering 58;63067;OFFENBACH;12;0 69/84 00 06; -1399;WV/WE-Fu;29.11.1986 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;38;100;1;gerold.olbrich@vde-verlag.de;früher Wichmann Verlag, Änderung am 24.02.2010, gilt ab VGI 1/2010           Adresse neu ab 2013
+22;1;;;Bund der Öffentlich bestellten;Verm.Ingenieure e.V. - Geschäftsstelle;;;Luisenstrasse 46;10117;BERLIN;12;;;-;;;0,00;0,00;DA;T;P;;-;;;;38;103;1;info@bdvi.de;Änderung der Adresse von Köln auf Berlin am 3.05.05
+24;1;;;M.E. Saltykov-Schedrin State Publ.Lb;Internat.Exchange Section;;;69 Sadovaya UL. 18;;LENINGRAD;34;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;111;1;;
+25;1;;;The Photogrammetric Record Editor;University College;;;Cower Street;WCIE 6BT;LONDON;9;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;114;1;;
+26;3;6;Arturo;Pastorelli;;;4230;Via Beltramina 18A;6904;LUGANO;22;;;-;;;0,00;0,00;DA;F;P;;-;;;1;38;115;1;;
+27;1;;;Redaccion Tecnica Topografica;;;;Avda.de la Reina Victoria, 66-2o C;28003;MADRID;25;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;116;1;;
+28;1;;;Academy Sciences Byelorussian;SSR Yakub Kolas Basic Lib.Int.B.Exch;;;Tipografskaya Str. 15;220601;MINSK;37;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;117;1;;
+29;1;;;Nehezipari Müszaki Egyetem;University of Miskolc;Központi Könyvtár (Central Library);;;3515;MISKOLC-EGYETEMVÁROS;14;(36)46-65 111;(36)46-65 174;416-kö/91;30.11.1990 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;34;118;1;;
+30;1;;;Institut f. Wissenschaftl. Information;d.Akademie d.Wissensch.d.UdSSR VINTI;;;Baltijskaja ul.14;;MOSKAU A-219;34;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;120;1;;
+32;1;;;Deutscher Verein f. Vermessungswesen;Landesverein Bayern E.V.;;;Alexandrastraße 4;80538;MÜNCHEN;12;(089)2162-;(089)2162-1537;-;;;0,00;0,00;DA;T;P;;-;;;;38;122;1;;
+34;3;10;Holger;Magel;;;;Nettelbeckstraße 67;81929;MÜNCHEN;12;;;-;;;0,00;0,00;DA;F;P;3.5.1944 00:00:00;-;;;1;34;124;1;;
+35;1;;;Bibl.Glowna Akad. Rolniczo-Techniczna;;;;Kortowo 41;10-957;OLSZTYN;20;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;130;1;;
+36;1;;;IGN LAREG, Université Paris Diderot;Bât Lamark A;5 Rue Thomas Mann;;Case courrier 7071;75205;PARIS Cedex 13;11;33 (0)1 64 15 32 52;33 (0)1 64 15 32 53;-;;;0,00;0,00;DA;T;P;;-;;;1;34;133;1;;
+37;1;;;Library Institute of Scientific;and Technical Information;;640;;;PEKING;6;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;134;1;;
+38;1;;;Klementinum;Internat. Austausch;;;Klementinum 190;11000;PRAHA 1;26;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;135;1;techlib@stk.cz;aktualisiert 10.2013
+39;1;;;Consiglio Nazionale Geometri;;;;Piazza Colonna 361;00187;ROMA;15;;;134-30/86;24.10.1986 00:00:00;;0,00;0,00;DA;F;P;;-;;;1;38;138;1;;aktualisiert 4.2014
+40;1;;;Wissenschaftl. Techn. Zentralbibliothek;Buchaustausch;;559;;1040;SOFIA;4;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;140;1;;
+41;1;;;Central Research and Technical Library;;;;bul. "D-r G.M.Dimitrow" 52A;1125;SOFIA;4;;;K-178;6.1.1987 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;38;141;1;;
+42;1;;;Hungarian Academy of Sciences;Geodetic a.Geophysic Reas.Institut;;6;;9401;SOPRON;14;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;142;1;;
+43;1;;;The Royal Institute of Technology;Department of Photogrammetry;;;;10044;STOCKHOLM;21;;;142-61/86;14.8.1986 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;38;144;1;;
+44;1;40;;Geomares Publishing;;;112;;8530; AC Lemmer;18;+31 (0) 514 56 18 54;+31 (0) 514 56 38 98;-;3.10.1988 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;38;154;1;;e-mail:marjan.de.vries@reedbusiness.nl
+web site: www.gim-international.com
+45;1;;;Library of Congress Exch. Gift Dio.(IO);;;;10 First Street, SE;20540;WASHINGTON D.C.;29;;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;155;1;;
+46;3;6;Frank;Heinrich;DVW-Schriftleitung;;;Wiesenstr.1;30169;HANNOVER 1;12;0511-108-4171;0511-108-4244;-;;;0,00;0,00;DA;T;P;;-;;;8;38;156;1;;
+47;1;;;Deutscher Verein f. Vermessungswesen;Landesverein Hessen E.V.;;2240;;65012;WIESBADEN;12;;;-;;;0,00;0,00;DA;T;P;;-;;;1;1;158;1;;
+48;1;;;ETH - Institut für Geodäsie und;Photogrammetrie;;;Stefano-Franscini-Platz 5;8093;ZÜRICH;22;0041 44 633 30 55;;-;;;0,00;0,00;DA;T;P;;-;;;1;38;159;1;anke.weinberger@geod.baug.ethz.ch;neue Adresse 11.2013
+49;1;;;ETH - Schweiz. Geodät. Kommission;c/o Inst.f. Geodäsie u.Photogrammetrie;;;Hönggerberg;8093;ZÜRICH;22;;;-;;;0,00;0,00;DA;T;P;;-;;;;38;160;1;;
+50;1;;;Societe Francaise de Photogrammetrie;Et De Teledetection;;;2 Avenue Pasteur;94160;SAINT-MANDE;11;;;Zl. 36-30/88;1.6.1988 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;38;164;1;;
+52;1;;;Österreichische Geodätische Kommission;z.H. DI Höggerl, Abt. V1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;HR Erker-Tel.;31.12.1989 00:00:00;;0,00;0,00;DA;T;B;;-;;;1;1;176;1;;Höggerl seit 2008 OGK-Sekretär
+53;1;;;Budapesti Müszaki Egyetem;Geodeziai Intezet  Prof.Dr.P.Biro;TU-Budapest-Inst.f.höh. Geodäsie;;XI.Müegyetem rkp.3.1.61.;1521;BUDAPEST;14;;;HR.Erker-schriftl.;6.9.1989 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;34;177;1;;
+55;1;;;Geo-Informatie Nederland;ing. J.W. van Eck;;;Postbus 1058;3860 BB;NIJKERK;18;;;;13.2.1990 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;38;187;1;info@geo-info.nl;www.geo-info.nl
+56;1;;;Lange & Springer;Zeitschriftenabteilung;;;Otto-Suhr-Allee 26/28;10585;BERLIN 10;12;;;T 471106;20.12.1990 00:00:00;;0,00;0,00;AD;;-;;-;;;1;38;189;1;;
+57;3;6;Günther;Abart;;;;Johann-Strauß-G 8;8010;Graz;2;0660 359 22 27;;;17.3.1976 00:00:00;;0,00;0,00;EM;F;P;10.12.1947 00:00:00;AG;1.12.1975 00:00:00;G;13;4;202;1;guenther.abart@gmail.co58;3;6;Wolfram;Achleitner;;;;Grenzgasse 4a;4910;Ried im Innkreis;2;;;;11.11.1957 00:00:00;;0,00;0,00;M;M;P;29.6.1930 00:00:00;-;11.6.1956 00:00:00;W;13;12;203;1;elke.achleitner@stadt.graz.at;elke.achleitner@mag.linz.at gelöscht durch neue ersetzt. 18.04.2016 Blauensteiner
+59;3;6;Herbert;Ahrer;;;;Feldgasse 17;4840;Vöcklabruck;2;07672/27777-0;07672/27777-22;;5.5.1975 00:00:00;;0,00;0,00;M;M;P;14.6.1946 00:00:00;-;1.12.1970 00:00:00;G;11;11;204;1;vermessung.ahrer@geocomp.at;
+65;4;;Vermessung;Angst;Ziviltechnikerges.m.b.H.;;;Mayergasse 11;1020;Wien;2;0222/ 21172-0;0222/ 21172-22;;19.4.1968 00:00:00;;0,00;0,00;M;M;P;7.2.1937 00:00:00;-;1.12.1961 00:00:00;W;8;11;212;1;michaela.angst@angst.at;Änderung von DI Josef Angst auf Rechtsnachfolger Vermessung Angst, ZGmbH am 18.08.2004 (Fax von DI Josef Angst)
+66;3;6;Ernst;Antes;BMF, Abt. V/4;Applikation "Grundbuch";;Hintere Zollamtstraße 2b;1030;Wien;2;+43 (0)1-71123-0, +43 (0)676-8210 2629;+43 (0)1-71123-2781;;18.1.1984 00:00:00;;0,00;0,00;M;M;P;21.6.1958 00:00:00;AG;1.6.1982 00:00:00;W;8;39;213;1;ernst.antes@bmf.gv.at;
+68;3;6;Haimo;Arnold;Vermessungsamt Rohrbach;;;Haslacher Straße 7 Postfach 33;4150;Rohrbach;2;;;;4.4.1985 00:00:00;;0,00;0,00;M;M;P;9.3.1956 00:00:00;AG;2.12.1981 00:00:00;G;5;3;215;1;haimo.arnold@bev.gv.at;
+71;3;5;Gert;Augustin;;;;Hinterwaldnerstr.12;6020;Innsbruck;2;0512/ 2184104;0512/ 2184036;;18.11.1982 00:00:00;;0,00;0,00;M;M;P;18.12.1952 00:00:00;-;1.12.1978 00:00:00;G;2;32;220;1;vermessung.augustin@aon.at;
+72;3;12;Herbert;Aussenek;;;;Käferkreuzgasse 13/5;3400;Klosterneuburg;2;(02243) 387 61;;;18.1.1980 00:00:00;;0,00;0,00;M;M;P;5.1.1941 00:00:00;-;;;8;1;221;1;;
+73;3;8;Anton;Avanzini;;;;Schillerstraße 14;6020;Innsbruck;2;;;;4.2.1985 00:00:00;;0,00;0,00;M;M;P;27.7.1952 00:00:00;-;1.1.1974 00:00:00;W;2;11;222;1;vermessung.avanzini@aon.at;
+75;3;6;Matthias;Baar;;;;Anningerstraße 26/10/4;2340;Mödling;2;02236/864340;;;4.3.1975 00:00:00;;0,00;0,00;M;M;P;10.10.1945 00:00:00;AG;4.12.1972 00:00:00;W;8;4;224;1;matthias.baar@kabsi.at;
+78;3;6;Helmut;Barth;;;;Grabengasse 24/38;2500;Baden;2;0660 5243566;;;15.9.1961 00:00:00;;0,00;0,00;M;M;P;3.7.1933 00:00:00;AG;18.12.1959 00:00:00;W;8;4;228;1;baheva@gmx.at;
+79;3;6;Thomas;Baudisch;EVN AG;;;EVN Platz;2344;Maria Enzersdorf;2;;;;18.12.1985 00:00:00;;0,00;0,00;M;M;P;11.7.1962 00:00:00;-;;;8;26;229;1;thomas.baudisch@evn.at;
+84;3;6;Peter;Belada;;;;Wilhelminenstraße 93/14/1;1160;Wien;2;;;;6.6.1975 00:00:00;;0,00;0,00;VM;M;P;29.3.1956 00:00:00;-;3.12.1979 00:00:00;W;8;21;234;1;peter.belada@wien.gv.at;
+85;3;6;Walter;Berg;;;;Rennerstraße 19;4910;Ried im Innkreis;2;;;;26.4.1971 00:00:00;;0,00;0,00;M;M;P;30.8.1943 00:00:00;AG;1.6.1970 00:00:00;G;5;4;235;1;walter.berg@aon.at;
+89;2;6;Ingrid;Pliessnig;BMDW;;;Stubenring 1/7. Stock/69;1011;Wien;2;+43 (0)1 711 00-8213, +43 (0)676 8210 2628;+43 (0)1 711 00-93 8213;;14.4.1986 00:00:00;;0,00;0,00;M;M;P;2.5.1964 00:00:00;AG;;;8;5;240;1;Ingrid.pliessnig@bmdw.gv.at;
+90;1;;;Hochmair & Partner ZT-GmbH;z.Hd. Herrn DI Bernhard Rosa;;;Salzachtaler Bundesstrasse 13;5700;Zell am See;2;06542 73686;DW 20;;11.7.1994 00:00:00;;0,00;0,00;M;M;P;17.7.1968 00:00:00;-;;;2;11;241;1;geometer@hochmair.co.at;BAIK: Salzachtaler Bundesstraße 13, 5700 Zell am See, Email: geometer@hochmair.co.at Url:  www.hochmair.co.at  
+ Tel.: 06542/73 686 Fax: 06542/73 686-20 Mobil: 0676/84 65 61 51
+93;3;6;Hans Peter;Blaha;;;;Castellistraße 4;3180;Lilienfeld;2;01/6623981;;;1.1.1974 00:00:00;;0,00;0,00;M;M;P;2.3.1942 00:00:00;-;10.12.1973 00:00:00;W;8;12;246;1;renateblaha@aon.at;Adressänderung 15.11.2010
+94;3;6;Harald;Blanda;;;;Unter Oberndorf 21;3034; Maria Anzbach;2;02772/51786;;;5.3.1976 00:00:00;;0,00;0,00;M;M;P;1.3.1942 00:00:00;AG;1.6.1966 00:00:00;W;8;4;247;1;harald.blanda@gmx.at;
+95;3;6;Friedrich;Blaschitz;;;;Döblergasse 3;1070;Wien;2;01/523 81 07;01/523 81 07;;1.1.1959 00:00:00;;0,00;515,36;EM;F;P;31.1.1933 00:00:00;AG;9.6.1958 00:00:00;W;8;4;248;1;i.schager@schagers.at;
+96;3;6;Norbert;Bolter;;;;Schmittenstrasse 29;6700;Bludenz;2;0316/845721;;;27.10.1989 00:00:00;;0,00;0,00;M;M;P;17.8.1962 00:00:00;-;;;2;11;250;197;3;19;Gerhard;Brandstätter;;;;Steyrergasse 30;8010;Graz;2;;;;18.7.1967 00:00:00;;0,00;0,00;M;M;P;13.1.1933 00:00:00;-;31.5.1957 00:00:00;G;13;31;252;1;gerhard.brandstaetter@tugraz.at;
+98;3;6;Ernst;Brandstötter;Vermessungsamt Steyr;;205;Tomitzstrasse 7;4402;Steyr;2;0732/ 773881-224;0732/ 795478;;21.6.1986 00:00:00;;0,00;0,00;VM;M;P;7.6.1959 00:00:00;-;23.11.1984 00:00:00;G;5;3;253;1;ernst.brandstoetter@bev.gv.at;
+99;3;6;Meinrad;Breinl;;;;Stubenberggasse 5/1;8010;Graz;2;;;;24.1.1973 00:00:00;;0,00;0,00;M;M;P;13.1.1945 00:00:00;-;1.12.1970 00:00:00;G;3;11;255;1;m.breinl@aon.at;Umschreibung von Meinrad auf Gerhard Breinl 06.2015 gewünscht, Daten fehlen
+101;3;6;Günter;Brettner-Messler;;;;Hermanngasse 16;1070;Wien;2;;;;23.11.1965 00:00:00;;0,00;0,00;M;M;P;6.8.1942 00:00:00;AG;1.6.1966 00:00:00;W;8;4;257;1;;
+102;3;6;Erich;Brezovsky;;;;Barbaraheimstr. 2/5;2230;Gänserndorf;2;;;;22.5.1989 00:00:00;;0,00;0,00;M;M;P;28.10.1961 00:00:00;-;;;8;11;258;1;office@brezovsky.at;BAIK:  2230 Gänserndorf, Email: zivgeoeb@ins.at Url: keine 
+ Tel.: 02282/602 68 Fax: 02282/602 69 Mobil: 0664/224 28 25
+103;3;6;Reinhard;Bruckmüller;;;;Templstraße 24;6020;;2;0512 / 570 551;             /10;;3.1.1971 00:00:00;5.11.2012 00:00:00;0,00;0,00;V;M;P;23.9.1948 00:00:00;-;30.11.1976 00:00:00;W;2;1;259;1;reinhard.bruckmueller@utanet.at;3.01.13: Heft = 0, da Rückstand = 4 Jahre, Adresse Templstraße 24, 6020 Innsbruck ungültig
+104;3;25;Friedrich K.;Brunner; Institut für Ingenieurgeodäsie und Messsysteme;;;Steyrergasse 30/II;8010;Graz;2; ++43/(0)316/873-6320;++43/(0)316/873-6820;;29.11.1967 00:00:00;;0,00;0,00;M;M;P;14.1.1943 00:00:00;-;1.6.1967 00:00:00;W;13;31;260;1;fritz.brunner@tugraz.at;
+108;1;;;Bundesdenkmalamt;Photogrammetr. Abteilung;;;Hofburg-Schweizerhof;1010;Wien;2;;;;24.3.1982 00:00:00;;0,00;0,00;UM;M;P;;-;;;8;;264;1;;
+110;3;6;Thomas;Burtscher;Area Vermessung ZT GmbH;;;Bahngasse 25;2700;Wr. Neustadt;2;;;;20.12.1985 00:00:00;;0,00;0,00;M;M;P;19.6.1964 00:00:00;-;;;8;11;267;1;t.burtscher@area-vermessung.at;
+113;3;6;Johannes;Cutka;;;;Bergstraße 24c;8303;BASSERSDORF;22;;;;29.1.1979 00:00:00;;0,00;0,00;M;M;P;26.3.1960 00:00:00;-;;;1;38;270;1;;
+117;3;6;Franz;Demmel;;;;Brunnenweg 20c;4810;Gmunden;2;;;;5.5.1975 00:00:00;;0,00;0,00;M;M;P;8.8.1948 00:00:00;AG;1.6.1973 00:00:00;G;5;3;276;1;franz.demmel@gmx.at;
+118;3;;Horst;Dettelbacher;;;;Altossiach 51;9570;Ossiach;2;0660 2220822;;;4.6.1980 00:00:00;;0,00;0,00;M;M;P;19.11.1948 00:00:00;-;;;3;11;277;1;vermessung@dettelbacher.at;
+119;3;6;Gunther;Dienst;;;;Hochwassergasse 25/2/8;1230;Wien;2;;;;21.4.1981 00:00:00;;0,00;0,00;M;M;P;19.4.1941 00:00:00;-;;;8;12;278;1;gunther.dienst@inprogress.at;
+121;3;16;Josef;Dorner;;;;Hauptstraße 41;2651;Reichenau;2;;;;7.1.1974 00:00:00;;0,00;0,00;M;M;P;27.9.1941 00:00:00;-;19.12.1968 00:00:00;W;2;32;281;1;;Adresse geändert am 6.11.06
+122;3;6;Hermann;Dreiseitl;;;;Carnerigasse 12;8010;Graz;2;;;;9.5.1977 00:00:00;;0,00;0,00;M;M;P;2.12.1950 00:00:00;AG;1.12.1976 00:00:00;G;3;4;282;1;hermann.dreiseitl@gmail.com;Pension 2015
+123;3;6;Johann;Duregger;;;;Abfaltersbach 177;9913;Abfaltersbach;2;0664 / 73 47 52 84 oder 04846 / 6224;;;3.3.1982 00:00:00;;0,00;0,00;M;M;P;8.2.1958 00:00:00;-;;;2;26;283;1;hans.duregger@aon.at;
+124;1;;;Deutsche Nationalbibliothek;Sachgebiet Auslandserwerbung;Paketausgabe;;Deutscher Platz 1;04103;LEIPZIG;12;;;-;;;0,00;0,00;DA;F;P;;-;;;1;38;284;1;;
+127;3;6;Arnold;Eder;;;;Rathstraße 11/5;1190;Wien;2;0664/6170941, +43193000-33057;+43193000-25614;;25.4.1980 00:00:00;;0,00;0,00;M;M;P;26.2.1957 00:00:00;-;;;8;23;289;1;Arnold.Eder@oebb.at;Firma: ÖBB Infrastruktur Bau AG, 1120 Wien, Vivenotgasse 10
+128;3;6;Herbert;Egger;;;;Kremser Straße 3;3550;Langenlois;2;02734/ 2164;;;8.4.1971 00:00:00;;0,00;0,00;M;M;P;25.9.1942 00:00:00;-;1.3.1969 00:00:00;W;8;11;290;1;egger.geo@aon.at;BAIK: Kremser Str. 3, 3550 Langenlois, Email: egger.geo@aon.at Url: keine 
+ Tel.: 02734/2164 Fax: 02734/2164(15) Mobil: 0664/145 41 49
+132;3;6;Walter;Einicher;;;;Dr.Th.Körnerstr. 14;3100;St. Pölten;2;;;;7.1.1980 00:00:00;;0,00;0,00;M;M;P;6.11.1944 00:00:00;-;1.12.1973 00:00:00;G;8;11137;3;6;Clemens;Enthofer;;;;Römerstr. 4;6063;Rum;2;0512/268966;;;1.12.1980 00:00:00;;0,00;0,00;M;M;P;6.2.1960 00:00:00;-;;;2;19;302;1;c.enthofer@tirol.gv.at;email-Änderung am 27.02.2006
+138;3;6;Walter;Erber;;;;Steinfeldstraße 2a;4820;Bad Ischl;2;0650-6620837;;;22.2.1981 00:00:00;;0,00;0,00;M;M;P;13.1.1950 00:00:00;AG;1.6.1980 00:00:00;G;5;3;303;1;walter.erber@tmo.at;
+139;3;5;Erhard;Erker;;;;Oskar Jascha-Gasse 68;1130;Wien;2;;;;2.7.1969 00:00:00;;0,00;0,00;M;M;P;27.12.1942 00:00:00;AG;1.6.1966 00:00:00;W;8;4;304;1;erhard.erker@gmx.at;
+140;3;6;Julius;Ernst;Gruppe A;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;30.3.1987 00:00:00;;0,00;0,00;VM;M;B;28.2.1959 00:00:00;AG;12.6.1985 00:00:00;W;13;3;305;1;julius.ernst@bev.gv.at;
+143;3;6;Harald;Eysn;;;;Berglandstrasse 7;5700;Zell am See;2;;;;27.9.1981 00:00:00;;0,00;0,00;M;M;P;30.11.1947 00:00:00;-;30.11.1976 00:00:00;W;6;11;308;1;geometer.eysn@aon.at;BAIK: Berglandstraße 7, 5700 Zell am See - Schüttdorf, Email: geometer.eysn@aon.at Url: keine 
+ Tel.: 06542/550 33-0 Fax: 06542/550 33-33 Mobil: 0676/50 16 788
+144;3;6;Gunther;Fally;c/o GEOMETER FALLY ZT GmbH;;;Hofhaymer Allee 9;5020;Salzburg;2;0662/ 824020;0662/824019-12;;21.6.2004 00:00:00;;0,00;0,00;M;M;P;5.4.1966 00:00:00;-;1.1.1993 00:00:00;G;5;11;309;1;fallygeo@aon.at;BAIK: Hofhaymer Allee 9, 5020 Salzburg, Email: fallygeo@aon.at Url: keine 
+ Tel.: 0662/82 40 19, -20 Fax: 0662/82 40 19-12 Mobil: 0664/30 79 520
+146;3;6;Felix;Feldbacher;;;;Carnerig. 9;8010;Graz;2;;;;13.12.1967 00:00:00;;0,00;0,00;M;M;P;21.11.1940 00:00:00;-;1.3.1963 00:00:00;G;3;11;311;1;;
+152;3;6;Fritz;Fleckl;;;;Baumschulgasse 63;8230;Hartberg;2;;;;4.10.1972 00:00:00;;0,00;0,00;M;M;P;4.6.1941 00:00:00;AG;15.12.1969 00:00:00;G;3;3;317;1;fleckl@hotmail.com;
+153;3;6;Günter;Fleischmann;;;;Sterneckstraße 55;5020;Salzburg;2;;;;15.5.1971 00:00:00;;0,00;0,00;M;M;P;18.10.1940 00:00:00;-;1.12.1965 00:00:00;G;5;11;318;1;geometer@fleischmann.co.at;BAIK: Sterneckstraße 55, 5020 Salzburg, Filialen, Email: geometer@fleischmann.co.at Url: keine 
+ Tel.: 0662/87 53 14-0 Fax: 0662/87 53 14-23 Mobil: 0676/55 98 100
+157;3;6;Walter;Frantz;;;;Trauttmannsdorffgasse 32/9;1130;Wien;2;;;;10.2.1972 00:00:00;;0,00;0,00;M;M;P;16.9.1944 00:00:00;-;15.12.1969 00:00:00;W;8;11;323;1;office@argevermessung.at;
+158;3;6;Michael;Franzen;Gruppe V;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;22.3.1985 00:00:00;;0,00;0,00;VM;M;B;9.12.1955 00:00:00;AG;1.1.1982 00:00:00;W;8;3;324;1;michael.franzen@bev.gv.at;
+160;3;6;Gerhard;Freiberger;Vermessungsamt Linz;;;Prunerstraße 5;4020;Linz;2;+43 7242 44825-20;+43 7242 44825-26;;9.4.1985 00:00:00;;0,00;0,00;M;M;P;8.6.1959 00:00:00;AG;31.3.1982 00:00:00;W;5;3;326;1;gerhard.freiberger@bev.gv.at;
+161;3;6;Georg;Friedl;;;;Gersthoferstraße 140/5/1;1180;Wien;2;;;;15.7.1979 00:00:00;;0,00;0,00;M;M;P;20.7.1951 00:00:00;AG;1.12.1978 00:00:00;G;8;4;328;1;georg.friedl@gmx.net;
+163;3;6;Karl;Fröschl;;;;Saxen 38;4351;Saxen;2;;;;14.10.1977 00:00:00;;0,00;0,00;M;M;P;3.1.1966 00:00:00;-;;;5;26;332;1;karl.froeschl@habau.at;alte Adresse: Saxen 123/9, 28.01.08, Hau     HABAU in Perg
+165;3;6;Adolf;Fuchshofer;;;;Frauenberg 19;3500;Krems a.d. Donau;2;;;;13.4.1966 00:00:00;;0,00;0,00;M;M;P;4.8.1940 00:00:00;AG;1.12.1964 00:00:00;W;8;3;334;1;fuchshoferag@tele2.at;E-Mail-Adresse fuchshoferag@tele2.at nicht mehr gültig (Hau, 4.02.2011), erneuert 01.2016
+166;2;6;Susanne;Fuhrmann;;;;Boerhaavegasse 27;1030;Wien;2;;;;9.1.1984 00:00:00;;0,00;0,00;M;M;P;8.4.1959 00:00:00;AG;1.6.1983 00:00:00;W;13;3;336;1;susannefuhrmann@gmx.at;Pension 1.11.2013
+168;3;38;Bernhard;Futter;;;;Ziegelstraße 15b;8045;Graz;2;0699 101 21768;;;25.2.1985 00:00:00;;0,00;0,00;VM;M;P;10.5.1966 00:00:00;-;;;3;1;338;1;bernhard.futter@utanet.at;
+169;3;44;Klaus;Gäbler;;;;Ing. Karl Strycek Strasse 18/1;2326;Lanzendorf;2;;;;1.2.1988 00:00:00;;0,00;0,00;M;M;P;3.11.1963 00:00:00;-;;;8;1;339;1;klaus.gaebler@gmail.com;Adressänderung2017
+170;3;6;Gerhard;Gaigg;;;;Schwayerstraße 18;4020;Linz;2;;;;16.6.1977 00:00:00;;0,00;0,00;M;M;P;19.7.1953 00:00:00;-;;;5;11;340;1;gerhard.gaigg@gmail.com;
+171;3;6;Herbert;Gailinger;;;;An der Goldenen S181;3;6;Klaus;Gillarduzzi;;;;Allerheiligenhofweg 28a;6020;Innsbruck;2;;;;1.1.1973 00:00:00;;0,00;0,00;M;M;P;6.9.1943 00:00:00;-;1.12.1970 00:00:00;G;2;12;351;1;klaus.gillarduzzi@chello.at;
+obiges korrigiert, Go
+183;3;6;Reinhard;Gissing;L/BEV;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;14.9.1984 00:00:00;;0,00;0,00;M;M;B;18.10.1956 00:00:00;AG;30.11.1983 00:00:00;G;8;3;353;1;reinhard.gissing@bev.gv.at;
+185;3;6;Rainer;Gnilsen;;;;Rittlergasse 4;1230;Wien;2;;;;7.6.1987 00:00:00;;0,00;0,00;M;M;P;7.6.1955 00:00:00;-;24.1.1985 00:00:00;W;8;11;356;1;vermessung@gnilsen.com;
+187;3;6;Kurt;Gradwohl;;;;Bahnstraße 39/5;7000;Eisenstadt;2;;;;4.4.1975 00:00:00;;0,00;0,00;M;M;P;28.4.1936 00:00:00;-;1.6.1962 00:00:00;W;1;13;358;1;;
+188;3;6;Josef;Graf;Abt. I3;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;2.12.1986 00:00:00;;0,00;0,00;M;M;B;7.3.1953 00:00:00;AG;1.3.1983 00:00:00;G;8;3;359;1;josef.graf@bev.gv.at;
+191;3;6;Valentin;Grohsnegger;Vermessungsamt Korneuburg;;;;;;2;;;;17.1.1986 00:00:00;;0,00;0,00;M;M;B;24.4.1953 00:00:00;AG;30.11.1983 00:00:00;G;11;3;365;1;valentin.grohsnegger@bev.gv.at;
+192;3;6;Hermann;Gspan;;;;Rußhütte 3a;6170;Zirl;2;;;;10.12.1973 00:00:00;;0,00;0,00;M;M;P;4.1.1949 00:00:00;-;10.12.1973 00:00:00;W;2;12;366;1;h.gspan@aon.at;neue e-mail  7.2015
+193;3;6;Walter;Guggenberger;Ziviltechniker GmbH;;;Hernsteiner Straße 2;2560;Berndorf;2;;;;13.2.1973 00:00:00;;0,00;0,00;M;M;P;16.6.1944 00:00:00;-;18.6.1968 00:00:00;W;8;11;367;1;geometer@guggenberger.co.at;
+194;3;6;Wolfgang;Guggenberger;;;;Alois-Gerstl-Weg 3;8330;Feldbach;2;;;;25.2.1976 00:00:00;;0,00;0,00;M;M;P;5.9.1949 00:00:00;AG;1.3.1974 00:00:00;G;3;3;368;1;w.gu@aon.at;Pension Ende 2014
+196;3;6;Karl;Haas;;;;Löwengasse 49/10;1030;Wien;2;;;;1.1.1966 00:00:00;;0,00;0,00;M;M;P;25.8.1929 00:00:00;-;18.12.1959 00:00:00;W;8;21;370;1;karlhaas17@aon.at;
+201;3;23;Klaus;Hanke;;;;Lohbachweg C 46;6020;Innsbruck;2;;;;18.11.1982 00:00:00;;0,00;0,00;M;M;P;21.8.1954 00:00:00;-;1.12.1981 00:00:00;G;2;32;376;1;klaus.hanke@uibk.ac.at;
+203;3;1;Helmut;Hauer;;;;Weimarer Straße 119/7;1190;Wien;2;369 63 52;369 12 49;;19.9.1968 00:00:00;;0,00;0,00;EM;F;P;22.8.1934 00:00:00;-;1.6.1960 00:00:00;W;12;11;379;1;helmut.hauer@tele2.at;E-Mail-Adresse helmut.hauer@tele2.at
+204;3;5;Ernst Karl;Hauswirth;;;;Zöppelgasse 6;1120;Wien;2;;;;12.3.1974 00:00:00;;0,00;0,00;M;M;P;27.11.1948 00:00:00;-;8.3.1974 00:00:00;W;8;11;380;1;ehauswir@pop.tuwien.ac.at;
+207;1;;;Militär. Immobilien Management Zentrum;Abt. Vermessung und Geoinformation;z Hd. Dipl.-Ing Lehr;;Roßauer Lände 1;1090;Wien;2;;;;6.7.1978 00:00:00;;0,00;0,00;UM;M;P;;-;;;8;24;383;1;;
+213;3;6;Wilhelm;Hernstorfer;;;;Scherfweg 20;1140;Wien;2;;;;12.12.1974 00:00:00;;0,00;0,00;M;M;P;12.1.1947 00:00:00;-;25.6.1973 00:00:00;W;8;12;389;1;;
+214;3;6;Gert;Herunter;;;;Hoppichlerstrasse 21;4040;Linz;2;;;;5.4.1976 00:00:00;;0,00;0,00;M;M;P;9.3.1942 00:00:00;-;24.6.1970 00:00:00;W;5;11;390;1;geometer.herunter@aon.at;BAIK: Einsteinstraße 3, 4020 Linz, Filialen, Email: geometer.herunter@aon.at Url: keine 
+ Tel.: 0732/34 10 16 Fax: 0732/34 51 18 Mobil: 0676/49 87 135
+215;3;6;Dieter;Hess;;;;Grillparzerstrasse 33;4840;Vöcklabruck;2;;;;15.9.1972 00:00:00;;0,00;0,00;M;M;P;8.1.1940 00:00:00;AG;16.12.1963 00:00:00;W;13;4;391;1;d.hess1@gmx.at;
+218;1;;;Fachschaft;Vermessung & Geoinformation;TU-Wien;;Gusshausstraße 27-29;1040;Wien;2;01 58801 49552;;;11.12.1988 00:00:00;;0,00;0,00;DA;F;P;;-;;;10;33;394;5;vginfo@vorsitz.htu.tuwien.ac.at;5 Freiexemplare, Vorstandsbeschluss 26.04.07
+219;3;4;Franz;Hochstöger;Ingenieurkonsulent für Vermessungswesen;;;Schulgasse 3;4372;St. Georgen am Walde;2;07954/26631;07954/26631-99;;25.6.1980 00:00:00;;0,00;0,00;M;M;P;7.6.1960 00:00:00;-;;;5;11;395;1;franz.hochstoeger@geometer-hochstoeger.at;office@vermessung-hochstoeger.at
+220;3;6;August;Hochwartner;Arsenal;;;Objekt 7/6/9;1030;Wien;2;;;;24.6.1975 00:00:00;;0,00;0,00;EM;F;P;3.2.1949 00:00:00;AG;10.3.1975 00:00:00;W;13;4;396;1;august.hochwartner@gmail.com;
+225;3;19;Bernhard;Hofmann-Wellenhof;Abt.f.Landesvermessung;;;Steyrergasse 30;8010;Graz;2;;;;2.1.1987 00:00:00;;0,00;0,00;M;M;P;7.10.1951 00:00:0227;3;6;Kurt;Hojas;;;;Rollfährstrasse 5;3680;Persenbeug;2;;;;9.4.1973 00:00:00;;0,00;0,00;M;M;P;30.6.1941 00:00:00;AG;1.6.1967 00:00:00;W;5;4;404;1;;
+:00;W;11;4;403;1;norbert.hoeggerl@chello.at;Pension 11.2013
+228;3;6;Reinhard;Hölbling;;;;Franz Resl-Straße 12;5280;Braunau am Inn;2;;;;1.1.1976 00:00:00;;0,00;0,00;M;M;P;30.5.1949 00:00:00;AG;20.6.1974 00:00:00;W;5;4;405;1;rhoelbling@gmx.at;
+230;3;6;Anton;Hollaus;;;;Dr.-Richard-Stepski-Str. 14;4053;Haid;2;;;;10.5.1979 00:00:00;;0,00;0,00;M;M;P;19.1.1953 00:00:00;AG;1.12.1978 00:00:00;G;5;4;407;1;anton.hollaus@liwest.at;
+231;3;6;Hermann;Hollenstein;;;;Blumenstr. 7c;6900;Bregenz;2;;;;15.2.1956 00:00:00;;0,00;0,00;M;M;P;13.8.1926 00:00:00;-;1.3.1955 00:00:00;G;2;4;408;1;;
+232;3;6;Kurt;Holler;;;;Hart 17;3661;Artstetten;2;;;;20.9.1983 00:00:00;;0,00;0,00;M;M;P;5.10.1952 00:00:00;AG;;;8;3;409;1;k.holler@outlook.com;holler.kurt@aon.at
+235;3;6;Helge Paul;Höllriegl;Amt der NÖ Landesregierung;Abt. Raumordnung u. Regionalpolitik;;Schwartzstraße 50;2500;Baden bei Wien;2;02252 / 9025 - 11644;02252 / 9025 - 11645;;30.1.1980 00:00:00;;0,00;0,00;M;M;P;11.4.1959 00:00:00;-;1.11.1985 00:00:00;W;8;14;412;1;helge-paul.hoellriegl@noel.gv.at;
+238;3;6;Wolfgang;Höppl;;;;Mannagettaweg 18;8010;Graz;2;0316 / 32 82 52;;;24.11.1984 00:00:00;;0,00;0,00;M;M;P;8.2.1958 00:00:00;-;17.11.1983 00:00:00;W;10;11;415;1;w.hoeppl@geo-hoeppl.at;BAIK: Mannagettaweg 18, 8010 Graz, Email: w.hoeppl@geo-hoeppl.at Url: keine 
+ Tel.: 0316/32 82 52 Fax: 0316/32 82 52-25
+241;3;6;Johann;Horvath;;;;Untere Hauptstraße 106;7100;Neusiedl/See;2;;;;23.2.1987 00:00:00;;0,00;0,00;VM;M;P;24.11.1953 00:00:00;-;1.1.1978 00:00:00;W;10;11;419;1;horvath.vermessung@aon.at;BAIK: Untere Hauptstraße 106, 7100 Neusied am See, Email: horvath.vermessung@aon.at Url: keine 
+ Tel.: 02167/8800 Fax: 02167/8800-9
+242;3;6;Friedrich;Hrbek;;;;Simmeringer Hauptstrasse 69/16;1110;Wien;2;01 /749 56 28;;;1.1.1960 00:00:00;;0,00;0,00;EM;F;P;21.5.1935 00:00:00;AG;18.12.1959 00:00:00;W;13;4;420;1;;03172-825022 (Rettenegg), 03173-8250, 0664 3628722
+245;3;;Peter;Hüthmair;;;;Wittenbauerstrasse 100/14;8042;Graz;2;;;;3.7.1988 00:00:00;;0,00;0,00;M;M;P;17.5.1961 00:00:00;-;;;5;1;427;1;peter.huethmair@utanet.at;
+247;3;6;Franz;Hutterer;;;;Gerengasse 19;3500;Krems;2;;;;12.1.1976 00:00:00;;0,00;0,00;M;M;P;4.12.1944 00:00:00;AG;25.6.1973 00:00:00;W;8;4;429;1;franzhutterer@hotmail.com;
+249;3;6;Erich-Viktor;Imrek;Abt. V1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;31.1.1980 00:00:00;;0,00;0,00;M;M;B;19.8.1953 00:00:00;AG;4.12.1978 00:00:00;W;11;3;431;1;erich.imrek@bev.gv.at;
+251;3;6;Dieter;Irgang;;;;Kadagasse 17;8430;Leibnitz;2;;;;15.6.1976 00:00:00;;0,00;0,00;M;M;P;29.3.1943 00:00:00;-;1.6.1972 00:00:00;G;3;11;433;1;vermessung.irgang@utanet.at;BAIK: Kadagasse 17, 8430 Leibnitz, Email: vermessung.irgang@utanet.at Url: keine 
+ Tel.: 03452/843 42 Fax: 03452/855 75
+253;3;27;Paul;Jackson;;;;Langenaugasse 5/8;1190;Wien;2;;;;1.5.1976 00:00:00;;0,00;0,00;M;M;P;8.1.1932 00:00:00;-;;;8;33;435;1;;
+254;3;6;Reinhard;Jaindl;;;;Awarenweg 5;7000;Eisenstadt;2;+43676/7354490;;;1.3.1973 00:00:00;;0,00;0,00;M;M;P;13.8.1945 00:00:00;AG;4.12.1972 00:00:00;W;8;4;436;1;reinhard.jaindl@bkf.at;
+258;3;6;Franz;Jelinek;;;;Forchhackerweg18 c;6425;Haiming;2;;;;1.4.1982 00:00:00;;0,00;0,00;M;M;P;10.11.1951 00:00:00;AG;;;2;4;441;1;jelinek@aon.at;
+260;1;;;DI Helmut und Markus Jobst GesnbR;;;;Johann Permayerstrasse 11;7000;Eisenstadt;2;;;;16.1.1968 00:00:00;;0,00;0,00;M;M;P;25.11.1939 00:00:00;-;1.3.1964 00:00:00;W;8;11;445;1;office@vermessung.co.at;BAIK: J.Permayerstrasse 11, 7000 Eisenstadt, Email: office@vermessung.co.at Url:  http://www.vermessung.co.at  
+ Tel.: 02682/622 42 Fax: 02682/622 42(18),02626/650 95 (18)
+263;3;6;Bernhard;Jüptner;Abt. I4;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;14.1.1993 00:00:00;;0,00;0,00;M;M;B;8.1.1959 00:00:00;AG;14.1.1988 00:00:00;W;10;3;448;1;bernhard.jueptner@bev.gv.at;
+264;3;6;Ernst;Kafka;;;;Rathausgasse 2;4240;Freistadt;2;;;;5.6.1986 00:00:00;;0,00;0,00;M;M;P;3.10.1954 00:00:00;AG;4.11.1981 00:00:00;W;5;3;449;1;e.kafka@tmo.at;
+265;3;6;Helmut;Kager;;;;Stra275;3;6;Karl;Kast;Eisenstadt;;;J. Permayer-Straße 2a;7000;Eisenstadt;2;+43-(0)2682-62245;+43-(0)2682-67923;;2.5.1984 00:00:00;;0,00;0,00;M;M;P;18.11.1956 00:00:00;-;1.1.1983 00:00:00;W;8;3;462;1;karl.kast@bev.gv.at;
+8 00:00:00;-;;;8;26;457;1;rainer@kalliany.at;
+277;3;6;Karl;Kath;;;;Dorf 17;6330;Schwoich;2;;;;28.10.1971 00:00:00;;0,00;0,00;M;M;P;10.7.1937 00:00:00;AG;1.12.1965 00:00:00;W;2;4;465;1;;
+278;3;4;Viktor;Kaufmann;;;;Puschweg 17;8053;Graz;2;;;;1.4.1987 00:00:00;;0,00;0,00;M;M;P;4.4.1960 00:00:00;-;1.11.1984 00:00:00;G;3;31;466;1;viktor.kaufmann@tu-graz.ac.at;
+285;3;6;Rainer;Kilga;;;;Veitingergasse 53/3/15;1130;Wien;2;;;;26.2.1958 00:00:00;;0,00;0,00;M;M;P;13.4.1934 00:00:00;AG;9.12.1957 00:00:00;W;13;4;473;1;rainer.kilga@aon.at;
+287;3;6;Johann;Kitzmüller;;;;Baumschulgasse 4;8010;Graz;2;;;;1.1.1971 00:00:00;;0,00;0,00;M;M;P;22.5.1937 00:00:00;-;24.6.1970 00:00:00;W;3;12;476;1;;
+292;3;6;Josef;Kobaschitz;;;;Ing. Karl Rabe Strasse 10;2486;Pottendorf;2;;;;2.2.1979 00:00:00;;0,00;0,00;M;M;P;9.10.1947 00:00:00;-;13.6.1977 00:00:00;W;8;12;485;1;;
+294;3;6;Wolfgang;Köchelhuber;;;;Linzer Straße 352/5/4;1140;Wien;2;;;;10.1.1973 00:00:00;;0,00;0,00;M;M;P;24.4.1939 00:00:00;-;1.6.1965 00:00:00;W;8;12;488;1;;
+295;3;6;Alois;Kofler;Vermessung Büro Kofler;;;Gartenland 159;6531;Ried;2;05472 2620;05472 2620 4;;10.5.1989 00:00:00;;0,00;0,00;M;M;P;12.7.1963 00:00:00;-;;;5;26;489;1;a.kofler@buero-kofler.com;BAIK: Gartenland 159, 6531 Ried im Oberinntal
+ Tel.: 05472/2620 Fax: 05472/26204
+297;2;12;Gertrude;Gold;Abt. R3;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;8.2.1985 00:00:00;;0,00;0,00;M;M;B;30.4.1960 00:00:00;-;;;8;3;491;1;gertrude.gold@bev.gv.at;
+298;3;6;Rudolf;Kolbe;;;;Aiser 14;4311;Schwertberg;2;07262/ 61325;;;5.3.1980 00:00:00;;0,00;0,00;VM;M;P;30.12.1957 00:00:00;-;;;11;11;492;1;kolbe@kolbe.at;
+299;3;6;Dietrich;Kollenprat;;;;Rizzistraße 14;9020;Klagenfurt;2;;;;13.5.1978 00:00:00;;0,00;0,00;VM;M;P;24.4.1948 00:00:00;-;1.12.1972 00:00:00;G;3;11;494;1;vermessung@kollenprat.at;
+300;3;6;Ernst;Koller;;;;Reding, Alois Huth-Straße 5;9400;Wolfsberg;2;;;;7.1.1973 00:00:00;;0,00;0,00;M;M;P;16.4.1941 00:00:00;-;16.12.1968 00:00:00;G;3;11;495;1;verm-koller@vermkoller.at;BAIK: Alois-Huth-Straße 5, 9400 Wolfsberg, Email: verm-koller@vermkoller.at Url:  http://www.arching.at/koller  
+ Tel.: 04352/21 01-0 Fax: 04352/21 01-80
+301;3;6;Karl;Koller;Vermessung Koller ZT GmbH;;;Hauptplatz 11;3002;Purkersdorf;2;;;;16.6.1980 00:00:00;;0,00;0,00;M;M;P;30.4.1957 00:00:00;-;;;8;11;496;1;verm.koller@aon.at;BAIK: Hauptplatz 11/19, 3002 Purkersdorf, Email: verm.koller@aon.at Url: keine 
+ Tel.: 02231/643 16 Fax: 02231/643 16 (4)
+302;3;6;Heinz;König;;;;Gersthoferstraße 140/3/4;1180;Wien;2;;;;4.3.1964 00:00:00;;0,00;0,00;M;M;P;26.7.1941 00:00:00;AG;1.12.1965 00:00:00;W;8;4;497;1;heinz.koenig@akis.at;
+306;3;6;Erich;Korschineck;;;;Tiefer Graben 19;1010;Wien;2;;;;1.1.1972 00:00:00;;0,00;0,00;M;M;P;19.7.1933 00:00:00;-;1.6.1959 00:00:00;W;8;33;504;1;korschineck@kopa.at;BAIK:  Wiedner Hauptstraße 17, 1040 Wien, Email: korschineck@kopa.at Url:  http://www.kopa.at  
+ Tel.: 01/505 18 92-11 Fax: 01/505 18 92-21 Mobil: 0699/18189211
+307;3;6;Anton;Kossina;;;;Wäschergasse 11/4;5020;Salzburg;2;;;;16.3.1967 00:00:00;;0,00;0,00;M;M;P;16.10.1941 00:00:00;AG;18.6.1968 00:00:00;W;5;4;505;1;;
+308;3;5;Robert;Kostka;;;;Felix-Dahn-Platz 4;8010;Graz;2;0316/876343;;;28.3.1975 00:00:00;;0,00;0,00;M;M;P;29.11.1935 00:00:00;-;1.3.1960 00:00:00;G;3;31;506;1;;Adresse auf Erlagschein von MB 2009 auf Felix-Dahn-Platz korrigiert. 09.07.2009 Go
+310;3;6;Hans;Krainer;;;;Prinz-Eugenstr. 72;6020;Innsbruck;2;;;;30.11.1988 00:00:00;;0,00;0,00;M;M;P;11.2.1953 00:00:00;-;15.6.1981 00:00:00;G;2;23;508;1;krainer.hans@aon.at;
+312;3;6;Reinhard;Kraml;Vermessungsamt Linz;;;Prunerstraße 5;4010;Linz;2;;;;15.5.1985 00:00:00;;0,00;0,00;M;M;P;29.6.1960 00:00:00;AG;;;5;3;510;1;reinhard.kraml@bev.gv.at;
+313;3;6;Karl;Kratky;;;;Utendorfgasse 3/30;1140;Wien;2;;;;16.6.1975 00:00:00;;0,00;0,00;M;M;P;4.3.1945 00:00:00;-;1.3.1969 00:00:00;W;8;9;511;1;karl.kratky@gmail.com;
+320;3;6;Karl;Kropatschek;;;;G327;3;6;Friedrich;Kunzelmann;;;;Buchenweg 6;9063;Maria Saal;2;04223 / 35 00;;;11.10.1978 00:00:00;;0,00;0,00;M;M;P;13.4.1941 00:00:00;AG;1.6.1974 00:00:00;G;3;4;528;1;;
+bev.gv.at;
+ail.com;e-mail neu 11.2013
+328;3;6;Andreas;Kuprian;Vermessungsamt Baden;;;Konrad von Hötzendorf-Platz 6;2500;Baden;2;;;;3.3.1982 00:00:00;;0,00;0,00;M;M;P;6.11.1957 00:00:00;AG;11.6.1986 00:00:00;W;8;3;529;1;andreas.kuprian@bev.gv.at;
+329;3;6;Manfred;Kurzwernhart;;;;Gerlweg 10;4040;Linz;2;0732-736764;0732/7890-346;;13.5.1985 00:00:00;;0,00;0,00;M;M;P;22.9.1959 00:00:00;-;1.3.1986 00:00:00;W;5;26;530;1;manfred.kurzwernhart@aon.at;
+330;3;6;Eckhard;Küttler;;;;Seeweg 10;9081;Reifnitz;2;;;;2.6.1969 00:00:00;;0,00;0,00;M;M;P;13.1.1944 00:00:00;AG;16.12.1968 00:00:00;G;3;4;531;1;;
+331;3;6;Stephan;Lackner;;;;Sebastianstraße 3a;6850;Dornbirn;2;;;;10.5.1977 00:00:00;;0,00;0,00;M;M;P;14.6.1942 00:00:00;-;29.11.1971 00:00:00;W;2;11;532;1;hilde.breier@aon.at;alt: s.lackner@aon.at
+333;1;;;Landesvermessungsamt Feldkirch;;;;Johannitergasse 6;6800;Feldkirch;2;05522/75482 /10;Fr. Vonier;;2.4.1981 00:00:00;;0,00;0,00;UM;M;P;;-;;;2;20;535;1;;
+342;3;6;Adolf;Lehr;;;;Laurenz v. Kurz-G. 1;2070;Retz;2;02942 / 25;;;1.1.1965 00:00:00;;0,00;0,00;M;M;P;17.2.1927 00:00:00;AG;1.6.1953 00:00:00;W;8;3;545;1;;
+343;3;6;Rudolf;Lepuschitz;;;;Seestraße 4;9500;Villach;2;;;;23.5.1978 00:00:00;;0,00;0,00;M;M;P;24.7.1954 00:00:00;-;13.6.1976 00:00:00;W;7;33;546;1;vermessung.lepuschitz@aon.at;BAIK:  Seestraße 4, 9500 Villach, Email: vermessung.lepuschitz@aon.at Url: keine 
+ Tel.: 04242/423 22 Fax: 04242/423 22-14 Mobil: 0664/984 02 58
+346;3;;Helmut;Lindner;;;;Auerbach 12/1;5301;Eugendorf;2;0664 6368609;;;9.1.1986 00:00:00;;0,00;0,00;M;M;P;9.1.1964 00:00:00;-;;;5;1;549;1;Helmut_Lindner@gmx.at;
+349;3;6;Johann;Loidl;;;;Myrthengasse 18/6;1070;Wien;2;;;;5.4.1973 00:00:00;;0,00;0,00;M;M;P;27.10.1932 00:00:00;-;19.12.1955 00:00:00;W;8;4;552;1;;
+350;3;6;Gerhard;Loidolt;;;;Söderblomstraße 5;4052;Ansfelden;2;;;;8.4.1984 00:00:00;;0,00;0,00;M;M;P;21.3.1944 00:00:00;-;18.6.1968 00:00:00;W;5;11;553;1;gerhardloidolt@aon.at;
+351;3;6;Günther;Lorber;;;;Hafnerriegel 5;8010;Graz;2;;;;18.3.1982 00:00:00;;0,00;0,00;M;M;P;3.5.1953 00:00:00;-;1.12.1979 00:00:00;G;3;31;554;1;hg.lorber@chello.at;
+354;3;6;Gerhard;Lubowski;Dipl.-Ing. Gerhard Lubowski ZT GmbH;;;Bahnhofstraße 24;3350;Haag;2;0 74 34/42 4 76-0;42 4 76-15;;30.1.1986 00:00:00;;0,00;0,00;M;M;P;15.8.1954 00:00:00;-;;;11;11;557;1;gerhard.lubowski@lubowski.at;BAIK: 3350 Stadt Haag, Email: lubowski@aon.at Url: keine 
+ Tel.: 07434/424 76 Fax: 07434/424 76 (15)
+355;3;6;Horst-Dieter;Luhn;;;;Martin Luther Str. 10;8600;Bruck an der Mur;2;;;;23.2.1972 00:00:00;;0,00;0,00;M;M;P;23.9.1943 00:00:00;AG;15.12.1969 00:00:00;G;3;4;558;1;;
+356;3;39;Johann Martin;Lun;;;;Bahnhofstrasse 5;39025;NATURNS (BZ);15;;;;1.1.1983 00:00:00;;0,00;0,00;M;M;P;24.11.1945 00:00:00;-;;;1;11;559;1;lun@dnet.it;
+358;3;6;Eduard;Macek;;;;Schillerstraße 48;8160;Weiz;2;;;;31.8.1977 00:00:00;;0,00;0,00;M;M;P;18.7.1946 00:00:00;AG;1.12.1976 00:00:00;G;3;3;561;1;hedy.macek@aon.at;
+359;1;;;Magistrat der Landeshauptstadt;Abt. Vermessung;;;Paulitschgasse 13;9010;Klagenfurt;2;;;;1.1.1975 00:00:00;;0,00;0,00;UM;M;P;;-;;;3;22;562;1;;
+360;1;;;Magistratsabteilung 41;Stadtvermessung Wien;z.H. Dipl.-Ing. Belada;;Muthgasse 62;1190;Wien;2;;;;24.10.1980 00:00:00;;0,00;0,00;UM;M;P;;-;;;8;22;563;1;post@ma41.wien.gv.at;Rechnungsadresse: Wolfganggasse 58-60/4, 1120 Wien (Info vom 9.11.2012)
+362;3;6;Karl Heinz;Mallaun;;;;Öde 61;6491;Schönwies;2;0664 / 210 35 63;;;5.7.1989 00:00:00;;0,00;0,00;M;M;P;30.8.1963 00:00:00;-;8.6.1989 00:00:00;;2;11;565;1;;
+366;3;6;Reinfried;Mansberger;;;;Goldschlagstr. 161-167/3/1;1140;Wien;2;;;;2.4.1987 00:00:00;;0,00;0,00;VM;M;P;22.5.1958 00:00:00;-;1.11.1982 00:00:00;W;8;6;569;1;mansberger@boku.ac.at;
+367;3;6;Roman;Markowski;;;120;Eichenweg 42;6460;Imst;2;05412/6930-0;05412/6930-26;;3.3.2006 00:00:00;;0,00;0,00;M;M;P;6.3.1973 00:00:00;-;1.6.1999 00:00:00;G;2;11;570;1;r.markowski@avt.at;Änderung vom Vater auf den Sohn am 03.03.2006 (telefonisch)
+368;1;40;;Vermess376;3;6;Helmut;Meckel;;;;Bennogasse 5/Stg. 2/4;1080;Wien;2;;;;11.2.1972 00:00:00;;0,00;0,00;M;M;P;15.3.1940 00:00:00;AG;1.6.1965 00:00:00;W;8;4;581;1;ghmeckel@aon.at;
+akt@mayr-vermessung.at;neue Adresse 6.2014kontakt@mayr-vermessung.at
+ vermessung@markowski.at Url:  www.markowski.at  
+ Tel.: 05522/76601 Fax: 05522/79306
+380;3;5;Harald;Meixner;;;;Linke Wienzeile 4;1060;Wien;2;(++43 1) 587 9616;(++43 1) 587 3432;;3.5.1973 00:00:00;;0,00;0,00;M;M;P;8.1.1948 00:00:00;-;24.6.1970 00:00:00;W;10;11;585;1;meixner@meixner.com;
+388;3;6;Jürgen;Milborn;;;;Luis Zuegg-Straße 14;6020;Innsbruck;2;;;;17.12.1985 00:00:00;;0,00;0,00;M;M;P;31.8.1940 00:00:00;-;;;2;19;597;1;;E-Mail-Adresse j.milborn@tirol.gv.att nicht mehr gültig (Hau, 4.02.2011)
+389;3;6;Rudolf;Missoni;;;;Neuer Platz 26;9800;Spittal/Drau;2;;;;1.3.1978 00:00:00;;0,00;0,00;M;M;P;15.10.1948 00:00:00;-;20.6.1972 00:00:00;W;3;11;598;0;missoni.geometer@aon.at;3.01.13: Heft = 0, da Rückstand = 6 Jahre
+390;3;6;Anton;Mitteregger;;;;Sartorigasse 18;8047;Graz;2;;;;3.2.1954 00:00:00;8.6.2016 00:00:00;0,00;0,00;T;M;P;16.11.1928 00:00:00;-;1.12.1955 00:00:00;G;3;9;600;1;;
+394;3;6;Wilhelm;Morgenbesser;;;;Rohowetzgasse 9;2620;Neunkirchen;2;;;;16.2.1975 00:00:00;;0,00;0,00;M;M;P;13.4.1948 00:00:00;AG;9.12.1974 00:00:00;W;8;4;605;1;morgenbesser@aon.at;
+395;3;21;Helmut;Moritz;;;;Steyrergasse 30;8010;Graz;2;;;;2.2.1959 00:00:00;;0,00;0,00;M;M;P;1.11.1933 00:00:00;-;1.3.1956 00:00:00;G;13;31;606;1;helmut.moritz@tu-graz.ac.at;
+397;3;6;Karl;Mosbacher;;;;Zifres 18;6094;Axams;2;;;;16.11.1973 00:00:00;;0,00;0,00;M;M;P;2.12.1941 00:00:00;-;14.12.1967 00:00:00;W;2;12;608;1;mosbacher@tirol.com;Alternativ:mosbacher.k@gmail.com
+398;3;6;Günther;Moser;;;;Sonnenweg 2;8501;Lieboch;2;;;;6.2.1979 00:00:00;;0,00;0,00;M;M;P;24.9.1941 00:00:00;-;1.6.1971 00:00:00;G;3;11;609;1;vermessung.moser@utanet.at;BAIK: Sonnenweg 2, 8501 Lieboch, Email: vermessung.moser@utanet.at Url:  http://www.vermessen.at  
+ Tel.: 03136/622 12-0 Fax: 03136/622 12-5
+400;3;6;Walter;Mück;Vermessungsamt Krems;;;Rechte Kremszeile 60;3500;Krems;2;;;;5.11.1973 00:00:00;;0,00;0,00;M;M;P;3.2.1955 00:00:00;AG;18.6.1979 00:00:00;W;8;3;613;1;walter.mueck@bev.gv.at;
+401;3;7;Gerhard;Muggenhuber;Abt. I2;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;23.1.1984 00:00:00;;0,00;0,00;VM;M;B;17.3.1958 00:00:00;AG;19.1.1983 00:00:00;W;13;3;614;1;geomugg@gmx.at;
+402;3;6;Heinz;Murlasits;;;;Seidelmanngasse 3;7431;Bad Tatzmannsdorf;2;;;;1.1.1973 00:00:00;;0,00;0,00;M;M;P;16.9.1936 00:00:00;AG;1.12.1960 00:00:00;G;10;4;615;1;;
+404;1;;;Vorarlberger Kraftwerke AG;z.H. Dipl.-Ing. Helmut Muxel;;;Weidachstr. 6;6901;Bregenz  Postfach 31;2;;;;24.11.1988 00:00:00;;0,00;0,00;M;M;P;7.1.1956 00:00:00;-;12.6.1980 00:00:00;G;2;8;617;1;;
+406;3;6;Franz Josef;Nagele;;;;Hötzendorfplatz 3b;6060;Hall in Tirol;2;;;;1.12.1959 00:00:00;;0,00;0,00;M;M;P;21.8.1933 00:00:00;-;9.12.1957 00:00:00;W;2;9;619;1;;
+408;3;6;Manfred;Neubauer;;;;Kleine Tullnbachgasse 3;3430;Tulln;2;;;;22.10.1986 00:00:00;;0,00;0,00;M;M;P;26.7.1946 00:00:00;AG;7.12.1972 00:00:00;W;8;4;622;1;manfred_neubauer@utanet.at;
+409;3;6;Walter;Neugebauer;;;;Floridsdorfer Hauptstraße 22/2;1210;Wien;2;;;;1.1.1975 00:00:00;;0,00;0,00;M;M;P;27.2.1927 00:00:00;-;1.6.1960 00:00:00;W;8;12;623;1;;
+411;3;6;Rudolf;Neumayr;;;;Albin Egger-Straße 10;9900;Lienz;2;04852/ 68 5 68;     / 68 5 6817;;2.2.1977 00:00:00;;0,00;0,00;M;M;P;16.2.1948 00:00:00;-;1.12.1972 00:00:00;G;2;11;625;1;neumayr@zt-gis.at;
+412;3;6;Wolfgang;Niedermayr;;;;Mitterweg 160;6020;Innsbruck-Hötting;2;0660 5790830;;;23.2.1977 00:00:00;;0,00;0,00;M;M;P;15.10.1950 00:00:00;AG;4.12.1975 00:00:00;W;2;3;626;1;wolfgang.niedermayr@chello.at;
+413;3;5;Heinrich;Noe;;;;20 Lancaster Close;RG1 5HB;Reading;9;0044(0)118 987 5677;;;2.1.1985 00:00:00;;0,00;0,00;M;M;P;17.2.1948 00:00:00;AG;18.3.1976 00:00:00;G;3;4;627;1;heinrich.noe@gmx.at;
+415;3;6;Michael;Foltin;Vermessungsamt Judenburg;;;Herrengasse 26;8750;Judenburg;2;;;;1.5.1991 00:00:00;;0,00;0,00;M;M;P;18.6.1961 00:00:00;AG;12.12.1986 00:00:00;G;7;3;630;1;michael.foltin@bev.gv.at;
+417;3;6;Martin;Obex;;;;Pizachweg 462;6073424;3;6;Klaus;Pabstmann;Vermessungsamt Gänserndorf;;;Eichamtsstraße 1-3;2230;Gänserndorf;2;+43-(0)2282-2231;+43-(0)2282-2231-22;;22.10.1985 00:00:00;;0,00;0,00;M;M;P;20.1.1957 00:00:00;AG;24.6.1983 00:00:00;G;8;3;641;1;klaus.pabstmann@bev.gv.at;
+Dipl.-Ing. Peter Ranak
+425;3;8;Johann;Pacher;;;;Johannagasse 18/18;1050;Wien;2;;;;31.5.1974 00:00:00;;0,00;0,00;M;M;P;26.2.1950 00:00:00;AG;1.3.1973 00:00:00;G;8;4;642;1;j.pacher@gmx.at;
+427;3;6;Gerhard;Paul;Abt. V3;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;6.6.1975 00:00:00;;0,00;0,00;M;M;B;3.10.1956 00:00:00;AG;;;8;3;644;1;gerhard.paul@bev.gv.at;
+428;3;6;Karl;Pauler;;;;Hagengasse 14;3424;Zeiselmauer;2;;;;6.3.1978 00:00:00;;0,00;0,00;M;M;P;14.7.1940 00:00:00;-;24.6.1970 00:00:00;W;8;11;645;1;pauler.vermessung@aon.at;BAIK: Bahnhofstraße 9, 3430 Tulln, Email: pauler.vermessung@aon.at Url: keine 
+ Tel.: 02272/646 18 Fax: 02272/646 18
+429;3;6;Karl;Pazourek;;;;Neunkircherstrasse 34;2700;Wr.Neustadt;2;;;;30.4.1986 00:00:00;;0,00;0,00;M;M;P;16.11.1958 00:00:00;-;19.1.1983 00:00:00;W;8;11;647;1;geometer.pazourek@aon.at;BAIK: Neunkirchner Straße 34, 2700 Wiener Neustadt, Email: geometer.pazourek@aon.at Url: keine 
+ Tel.: 02622/280 73 Fax: 02622/280 73 (4)
+430;3;6;Walter;Perdich;;;;Kalvarienberggasse 67/8;1170;Wien;2;0222 4076196;;;10.1.1974 00:00:00;;0,00;0,00;M;M;P;27.11.1943 00:00:00;-;1.6.1967 00:00:00;W;8;33;649;1;geometric@aon.at;
+435;3;6;Hubert;Plainer;Gruppe A - Innsbruck;;;Bürgerstraße 34;6010;Innsbruck;2;0512/ 588411;0512/ 589768-26;;17.3.1987 00:00:00;;0,00;0,00;M;M;P;2.4.1960 00:00:00;AG;7.11.1985 00:00:00;W;9;3;655;1;Hubert.Plainer@bev.gv.at;
+441;3;6;Hans;Polly;;;;Holzplatz 1;2620;Neunkirchen;2;02635 62082;02635 65 922;;10.3.1977 00:00:00;;0,00;0,00;M;M;P;3.12.1949 00:00:00;-;20.6.1974 00:00:00;W;10;11;661;1;vermessung@neunkirchen.at;BAIK: Holzplatz 1, 2620 Neunkirchen, Email: vermessung@neunkirchen.at Url: keine 
+ Tel.: 02635/620 82,02635/620 91 Fax: 02635/659 22 Mobil: 0664/230 63 51
+444;3;6;Martin;Posch;Sollereder Peter;;;Sebastian Kneipp-Weg 17;6020;Innsbruck;2;0512/ 304968;      307048;;20.1.1977 00:00:00;;0,00;0,00;M;M;P;2.12.1947 00:00:00;-;29.3.1976 00:00:00;W;2;11;664;1;verm-gps1@tirol.com;BAIK: Sebastian-Kneipp-Weg 17, 6020 Innsbruck, Email: verm-gps1@tirol.com Url: keine 
+ Tel.: 0512/281555 Fax: 0512/281557
+446;3;6;Erwin;Postmann;;;;Tuchmachergasse 7;7423;Pinkafeld;2;;;;11.2.1970 00:00:00;;0,00;0,00;M;M;P;13.9.1941 00:00:00;AG;19.12.1968 00:00:00;W;3;4;666;1;;
+447;3;6;Wolfgang;Prager;;;;Hauptstraße 33B/4;8042;Graz;2;;;;14.10.1977 00:00:00;;0,00;0,00;M;M;P;18.3.1947 00:00:00;-;1.12.1975 00:00:00;G;3;12;667;1;;
+449;3;6;Wolfgang;Pretl;;;;Hainzenbachstr. 31;4060;Leonding;2;;;;1.1.1973 00:00:00;;0,00;0,00;M;M;P;26.5.1940 00:00:00;-;1.12.1966 00:00:00;W;5;11;669;1;;
+451;3;6;Adolf;Pum;;;;Landsteinergasse 3/7;1160;Wien;2;;;;17.8.1980 00:00:00;;0,00;0,00;M;M;P;14.12.1934 00:00:00;AG;1.6.1975 00:00:00;G;8;4;671;1;adolf.pum@gmx.at;
+453;3;6;Gunther;Rabl;Vermessungsamt Kufstein;;;Oskar-Pirlo-Straße 15;6333;Kufstein;2;;;;9.6.1975 00:00:00;;0,00;0,00;EM;F;P;28.11.1953 00:00:00;AG;1.6.1983 00:00:00;W;13;3;673;1;gunther.rabl@bev.gv.at;
+454;3;6;Peter;Ranak;;;;Leschetitzkygasse 78;1180;Wien;2;;;;20.3.1988 00:00:00;;0,00;0,00;M;M;P;6.2.1949 00:00:00;-;19.6.1979 00:00:00;;8;25;677;1;;
+455;3;6;Helmut;Ranftl;;;;Dimmelstraße 22a;4010;Linz;2;;;;4.3.1975 00:00:00;;0,00;0,00;M;M;P;9.10.1942 00:00:00;AG;25.6.1973 00:00:00;W;5;4;678;1;;
+459;3;6;Friedrich;Reichhart;;;;Schachnerstraße 53;1220;Wien;2;0222-203 73 51;0222-204 42 71;;10.7.1975 00:00:00;;0,00;0,00;M;M;P;9.8.1948 00:00:00;-;10.3.1975 00:00:00;W;13;11;684;1;reichhart@geoinfo.at;
+462;3;6;Albin;Rentenberger;;;;Castellezgasse 29;1020;Wien;2;0222/ 245 9984;;;11.2.1966 00:00:00;;0,00;0,00;M;M;P;20.9.1941 00:00:00;-;1.6.1967 00:00:00;W;8;11;689;1;a.rentenberger@chello.at;BAIK: Castellezgasse 29, 1020 Wien, Email: a.rentenberger@chello.at Url: keine 
+ Tel.: 01/214 98 37 Fax: 01/214 98 37 (5) Mobil: 0664/415 21 57
+467;3;6;Harald;Riessner;;;;13546 244;V0C1H0;FORT ST. JOHN, B.C.;5;;;;6.4.1989 00:00:00;1.7.2015 00:00:00;0,00;0,478;3;6;Johann;Rosenthaler;;;;Eggersdorfer Strasse 49;3300;Amstetten;2;;;;24.4.1980 00:00:00;;0,00;0,00;M;M;P;25.3.1957 00:00:00;-;1.3.1982 00:00:00;W;8;11;706;1;georos@comteam.at;
+men
+Privat
+: di.riha@aon.at Url: keine 
+ Tel.: 04276/24 25-0,23 97-0 Fax: 04276/24 25-22
+480;1;;;Leica Geosystems Austria GmbH;;;;Gudrunstraße 179;1100;Wien;2;01 / 98 122 - 0;01 / 98 122 - 50;;12.2.1973 00:00:00;;0,00;0,00;UM;M;P;;-;;;1;1;708;1;lgs.austria@leica-geosystems.com;
+481;3;9;Diethard;Ruess;;;;Zieglergasse 35/12;1070;Wien;2;963 8693;;;19.10.1981 00:00:00;;0,00;0,00;M;M;P;19.7.1952 00:00:00;AG;;;8;4;710;1;diethard.ruess@univie.ac.at;diethard.ruess@chello.at
+484;3;12;Gerd;Satzinger;;;;Witthauergasse 24/8;1180;Wien;2;;;;11.12.1966 00:00:00;;0,00;0,00;M;M;P;5.12.1941 00:00:00;-;;;8;12;717;1;gerd.satzinger@chello.at;
+485;3;6;Manfred;Schachinger;;;;Oberer Stadtplatz 45;4780;Schärding;2;07712/ 2231;07712/ 223124;;9.4.1973 00:00:00;;0,00;0,00;M;M;P;19.4.1943 00:00:00;-;17.12.1970 00:00:00;W;5;11;718;1;office@geometer-schachinger.at;BAIK: Oberer Stadtplatz 45, 4780 Schärding, Email: office@geometer-schachinger.at Url:  www.geometer-schachinger.at  
+ Tel.: 07712/22 31-0 Fax: 07712/22 31-24 Mobil: 0664/33 66 017
+486;3;6;Kurt;Schafranek;Vermessungsamt Völkermarkt;;;Klagenfurter Straße 18;9100;Völkermarkt;2;+43 699 1732 6488;;;1.1.1978 00:00:00;;0,00;0,00;M;M;P;31.5.1951 00:00:00;AG;1.6.1976 00:00:00;G;3;3;720;1;kurt.schafranek@gmx.at;
+491;3;19;Günther;Schelling;;;;Montjolastraße 38;6780;Schruns;2;;;;29.12.1955 00:00:00;;0,00;0,00;M;M;P;1.11.1923 00:00:00;-;1.6.1950 00:00:00;G;13;31;725;1;guenther_schelling@vol.at;
+492;2;6;Gerda;Schennach;;;;CLemens Holzmeister-Straße 16/6;6020;Innsbruck;2;;;;5.3.1979 00:00:00;;0,00;0,00;VM;M;P;3.4.1956 00:00:00;AG;;;2;3;727;1;gerda.schennach@bev.gv.at;
+493;3;6;Herwig;Schiffner;;;;Dreisteinstr. 38;2371;Hinterbrühl;2;;;;29.3.1974 00:00:00;;0,00;0,00;M;M;P;16.5.1942 00:00:00;AG;4.12.1972 00:00:00;W;8;4;728;1;;E-Mail-Adresse herwig.schiffner@tele2.at nicht mehr gültig (Hau, 4.02.2011)
+494;3;6;Franz;Schilcher;;;;Untere Marktwiese 5;8410; Wildon;2;;;;1.4.1975 00:00:00;;0,00;0,00;M;M;P;17.9.1948 00:00:00;AG;1.12.1973 00:00:00;G;3;4;729;1;sepp.schilcher@aon.at;
+495;3;6;Roland;Schillinger;Vermessungsamt St. Johann/Pongau;;;Ing. Ludwig Pech-Straße 12;5600;St. Johann/P.;2;;;;18.3.1977 00:00:00;31.5.2017 00:00:00;0,00;0,00;T;M;P;22.10.1948 00:00:00;AG;30.11.1976 00:00:00;W;5;3;730;1;roland.schillinger@gmx.at;
+497;3;7;Ferdinand;Schlögelhofer;;;;Wagmeisterstr. 13;3300;Amstetten;2;07472/62620;07472/62620-4;;27.1.1987 00:00:00;;0,00;0,00;M;M;P;21.2.1957 00:00:00;-;;W;11;11;733;1;schloegelhofer.vermessung@aon.at;
+498;3;6;Kurt;Schlögl;;;;Turmgasse 4;3262;Wang;2;;;;30.5.1961 00:00:00;;0,00;0,00;M;M;P;6.11.1930 00:00:00;AG;28.11.1958 00:00:00;W;11;4;734;1;;adresse update 07/15
+502;3;7;Werner;Schneider;;;;Wallrißstraße 62/4;1180;Wien;2;;;;3.3.1981 00:00:00;;0,00;0,00;M;M;P;17.7.1944 00:00:00;-;;;8;33;739;1;Werner.Schneider@boku.ac.at;
+503;3;6;Herwig;Schnutt;;;;Kapellenweg 7;8750;Judenburg;2;;;;23.2.1972 00:00:00;;0,00;0,00;M;M;P;25.2.1941 00:00:00;AG;1.6.1970 00:00:00;G;3;4;740;1;hg.schnutt@tele2.at;
+505;3;6;Johann;Schönbacher;;;;Magaretenweg 12 a;8054;Seiersberg;2;;;;1.4.1975 00:00:00;;0,00;0,00;M;M;P;17.5.1932 00:00:00;-;1.6.1973 00:00:00;G;3;12;743;1;;
+509;3;6;Hanns H.;Schubert;Vermessung Schubert;ZT GmbH;;Kremser Landstraße 2;3100;St. Pölten;2;02742/362564;02742/362568-36;;19.10.1972 00:00:00;;0,00;0,00;M;M;P;9.7.1941 00:00:00;-;1.12.1966 00:00:00;W;8;11;747;1;Vermessung@schubert.at;BAIK: Kremser Landstraße 2/2, 3100 St. Pölten, Filialen, Email: office@vermessung.net Url:  www.vermessung.net  
+ Tel.: 02742/362 56 4 Fax: 02742/362 56 8
+512;3;6;Günter;Schuster;;;;Johann Leutner Gasse 35;2460;Bruck/Leitha;2;;;;9.2.1972 00:00:00;;0,00;0,00;EM;F;P;21.11.1940 00:00:00;AG;14.12.1967 00:00:00;W;13;4;750;1;schu.gue@aon.at;
+514;3;6;Wolfgang;Schwarzbauer;;;;Schlossallee 25;3150;Wilhelmsburg;2;;;;13.3.1978 00:00:00;;0,00;0,00;M;M;P;31.3.1947 00:00:00;AG;20.6.1974 00:00:00;W;8;4;752;1;w.schwarzbauer@utanet.at;
+519;3;533;3;7;Ludwig;Starkl;;;;Kreuzpointstraße 16/5/46;4600;Wels;2;;;;20.5.1948 00:00:00;;0,00;0,00;M;M;P;30.5.1925 00:00:00;-;1.12.1952 00:00:00;W;5;16;777;1;;
+l@oeaw.ac.at;
+;
+;3;4;760;1;wosecw@aon.at;
+537;3;6;Johannes;Steiner;;;;Märzstraße 76-78/4/8;1150;Wien;2;;;;4.9.1986 00:00:00;;0,00;0,00;M;M;P;25.2.1962 00:00:00;-;;;8;11;781;1;steiner@meixner.com;privat: johannes.steiner@chello.at
+538;3;6;Gert;Steinkellner;Abt. I2;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;15.6.1979 00:00:00;;0,00;0,00;EM;F;B;4.9.1956 00:00:00;AG;1.3.1983 00:00:00;W;13;3;782;1;gert.steinkellner@bev.gv.at;
+539;3;6;Peter;Stix;;;;Kalvarienberggasse 67/10;1170;Wien;2;4076202;;;6.6.1975 00:00:00;;0,00;0,00;M;M;P;11.4.1955 00:00:00;-;11.6.1986 00:00:00;W;8;11;783;1;stix.vermessung@aon.at;BAIK: Kalvarienberggasse 67/Tür 10, 1170 Wien, Email: stix.vermessung@aon.at Url:  www.members.aon.at/peterstix  
+ Tel.: 01/407 62 02 Fax: 01/407 62 02 (4)
+540;3;6;Gerhard;Stöhr;;;;Doppelngasse 26a;3400;Klosterneuburg-Kierling;2;0664-73080718;;;22.1.1976 00:00:00;;0,00;0,00;M;M;P;3.5.1948 00:00:00;AG;4.12.1975 00:00:00;W;8;4;784;1;stoehr.gerhard@gmail.com;
+541;3;49;Gerhard;STOLITZKA;;;;Woltergasse 6;1130;Wien;2;;;;30.3.1960 00:00:00;;0,00;0,00;M;M;P;2.4.1931 00:00:00;-;6.6.1954 00:00:00;W;13;33;785;1;office@vermessungfuchs.at;
+545;3;6;Leopold;Strenn;;;;Habichergasse 31/19;1160;Wien;2;0043/676/42 56 384;;;7.7.1980 00:00:00;;0,00;0,00;M;M;P;28.4.1952 00:00:00;AG;3.12.1979 00:00:00;W;8;4;789;1;leopold.strenn@yahoo.de;
+547;3;7;Karl;Strobl;;;;Heßstraße 14;3100;St. Pölten;2;0662 8044 5203;;;27.1.1987 00:00:00;;0,00;0,00;M;M;P;23.7.1956 00:00:00;-;1.12.1982 00:00:00;G;8;1;792;1;karl.strobl@aon.at;
+548;3;6;Dieter;Sueng;;;;Körblergasse 56;8010;Graz;2;0316-347053;;;1.1.1966 00:00:00;;0,00;0,00;M;M;P;31.1.1940 00:00:00;AG;1.3.1965 00:00:00;G;12;4;793;1;;
+549;3;19;Hans;Sünkel;;;;Steyrergasse 30;8010;Graz;2;0316 / 873 /6346;;;29.5.1981 00:00:00;;0,00;0,00;EM;F;P;4.10.1948 00:00:00;-;1.3.1973 00:00:00;G;13;31;794;1;suenkel@geomatics.tu-graz.ac.at;
+550;3;6;Gerhard;Swatschina;;;;Franz Josef-Straße 75;2130;Mistelbach;2;;;;18.8.1981 00:00:00;31.12.2014 00:00:00;0,00;0,00;A;M;P;15.7.1949 00:00:00;-;4.12.1975 00:00:00;W;8;11;795;1;swatschina@nanet.at;gekündigt 15.06.2015 Go
+552;3;6;Gernot;Taubenschuss;;;;Dorfstraße 61;2465;Höflein;2;02162 / 66430 - 12;02162 / 66430 – 18;;21.9.1988 00:00:00;;0,00;0,00;M;M;P;8.1.1960 00:00:00;-;1.6.1988 00:00:00;W;8;11;798;1;vermessung-taubenschuss@aon.at;BAIK:  Parndorfer Straße 4, 2460 Bruckneudorf, Email: vermessung-taubenschuss@aon.at, gernot@taubenschuss.com Url: keine 
+ Tel.: 02162/664 30 Fax: 02162/664 30 (18)
+553;3;6;Hans;Tekautz;;;;Steingasse 18a;4020;Linz;2;0732/ 584 2535;;;1.1.1980 00:00:00;;0,00;0,00;M;M;P;12.2.1944 00:00:00;-;1.12.1970 00:00:00;G;5;16;799;1;hans.tekautz@gmail.com;seit Sept. 2004 in Pension
+555;3;6;Peter;Tomasi;;;;Mettigweg 59;5023;Salzburg-Gnigl;2;;;;19.5.1967 00:00:00;;0,00;0,00;M;M;P;23.1.1940 00:00:00;-;1.12.1964 00:00:00;W;5;11;803;1;p.tomasi@utanet.at;Adresse auf obige am Zahlschein MB 2011 korrigiert
+558;3;6;Franz;Trappl;;;;Bahnstraße 8;3580;Horn;2;;;;14.4.1986 00:00:00;;0,00;0,00;M;M;P;7.3.1963 00:00:00;-;;;8;11;806;1;office@trappl-vermessung.at;
+559;3;6;Peter;Trefalt;;;27;Breitenwanger Straße 12;6600;Reutte;2;05672/2246-0;05672/224676;;28.11.1987 00:00:00;;0,00;0,00;M;M;P;17.6.1956 00:00:00;-;1.6.1981 00:00:00;;2;11;807;1;reutte@avt.at;BAIK: Breitenwangerstraße 12, 6600 Reutte, Email: reutte@avt.at Url:  www.avt.at  
+ Tel.: 05672/622460 Fax: 05672/6224676
+562;3;6;Klemens;Troger;;;;Asten 273a;6232;Münster;2;;;;20.4.1989 00:00:00;;0,00;0,00;M;M;P;13.2.1962 00:00:00;-;;;2;19;810;1;k.troger@tirol.com;
+563;3;6;Erwin;Truttmann;;;;Lindenbauergasse 7/RH2;1110;Wien;2;0699-197 418 33;;;13.11.1987 00:00:00;;0,00;0,00;M;M;P;27.12.1949 00:00:00;-;28.3.1977 00:00:00;;8;26;811;1;e.truttmann@ares-geo.at;
+564;3;6;Josef;Tschaikner;;;;Gerhard-Hauptmann-Strasse 50;6010;Innsbruck;2;;;;12.1.1981 00:00:00;;0,00;0,00;M;M;P;31.12.1952 00:00:00;AG;1.6.1978 00:00:00;G;2;3;812;1;j.tschaikner@chello.at;Pension Ende 2014
+565;3;8;Christo578;10;;;Ziviltechniker-OEG;DI. Herman Hainzl;;;Dr. Schober-Strasse 17;4320;Perg;2;;;;23.7.1979 00:00:00;;0,00;0,00;M;M;P;25.1.1962 00:00:00;-;;;5;11;834;1;hainzl.partner@aon.at;BAIK: Dr.-Schober-Straße 17, 4320 Perg, Email: hainzl.partner@aon.at Url: keine 
+ Tel.: 07262/52 444 Fax: 07262/52 444-44 Mobil: 0676/95 34 610
+579;3;19;Peter;Waldhäusl;;;;Weimarer Straße 114/2;1190;Wien;2;58801 / 3814;;;1.1.1957 00:00:00;;0,00;0,00;M;M;P;30.7.1932 00:00:00;-;11.6.1956 00:00:00;W;13;33;835;1;pw@ipf.tuwien.ac.at;
+580;3;;Ernst;Wallnöfer;;;;Innrain 36A;6020;Innsbruck;2;;;;18.1.1981 00:00:00;;0,00;0,00;M;M;P;25.10.1952 00:00:00;-;;;2;11;837;1;vermessung.wallnoefer@tele2.at;
+581;3;6;Georg;Walter;;;;Burschlweg 16;6500;Landeck;2;;;;15.4.1982 00:00:00;;0,00;0,00;M;M;P;24.9.1953 00:00:00;AG;4.12.1978 00:00:00;W;2;4;838;1;georg-walter@aon.at;Pension Ende 2014
+585;3;6;Udo;Weidenthaler;;;;Am Haidenhof 32;9900;Lienz;2;;;;21.11.1973 00:00:00;;0,00;0,00;M;M;P;17.1.1944 00:00:00;AG;1.6.1972 00:00:00;G;4;4;843;1;udo.weidenthaler@direkt.at;
+587;3;6;Edmund;Weiser;;;;Gilmstraße 5;6130;Schwaz;2;;;;8.7.1970 00:00:00;;0,00;0,00;M;M;P;28.2.1942 00:00:00;-;15.12.1969 00:00:00;G;2;11;847;1;;BAIK Gilmstrass 5, 6130 Schwaz Email: weiser@vermessung-weiser.at Url: keine 
+ Tel.: 05242/64369 Fax: 05242/71051; E-Mail-Adresse weiser@vermessung-weiser.at nicht mehr gültig (Hau, 4.02.2011)
+589;3;6;Dieter;Wenter;;;;Lacknerstraße 2;4600;Wels;2;07242/41167-0;07242/41167-20;;19.3.1971 00:00:00;;0,00;0,00;M;M;P;29.11.1939 00:00:00;-;1.6.1967 00:00:00;W;5;12;849;1;gerda.wenter@liwest.at;
+591;3;6;Hubert;Wild;;;;Purnhofweg 64;6020;Innsbruck;2;;;;13.6.1985 00:00:00;;0,00;0,00;M;M;P;4.5.1960 00:00:00;-;;;2;11;852;1;vermessung.wild@aon.at;BAIK: Grabenweg 3, 6020 Innsbruck, Email: vermessung.wild@aon.at Url: keine 
+ Tel.: 0512/390822 Fax: 0512/397179 Mobil: 0664/1614234
+593;3;6;Bernd;Withalm;;;;Diabellistraße 9;5020;Salzburg;2;;;;18.8.1983 00:00:00;;0,00;0,00;M;M;P;30.7.1938 00:00:00;-;1.6.1961 00:00:00;W;5;9;855;1;;
+596;3;5;Thomas;Wunderlich;Institut für Geodäsie;;;Arcisstrasse 21;80290;MÜNCHEN;12;;;;6.6.1975 00:00:00;;0,00;0,00;M;M;P;1.5.1955 00:00:00;-;3.12.1979 00:00:00;W;8;33;860;1;th.wunderlich@bv.tum.de;
+599;3;6;Alois;Zehentner;;;;Leogang Nr.16;5771;Leogang;2;;;;19.1.1981 00:00:00;;0,00;0,00;M;M;P;20.3.1953 00:00:00;-;1.12.1978 00:00:00;G;2;11;866;1;vermessung.zehentner@aon.at;
+601;3;6;Helmut;Zierhut;;;;Geiselbergstraße 34-36/2B/47;1110;Wien;2;;;;4.12.1984 00:00:00;;0,00;0,00;M;M;P;30.8.1949 00:00:00;AG;4.12.1978 00:00:00;W;8;4;868;1;helmut.zierhut@chello.at;Pension 11.2013
+602;3;6;Viktor;Zill;Abt. V4;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;12.11.1980 00:00:00;;0,00;0,00;M;M;B;12.11.1953 00:00:00;AG;1.12.1979 00:00:00;G;8;3;870;1;viktor.zill@bev.gv.at;
+605;3;6;Christian;Kainmüller;;;;Sandleiten 17;4230;Pregarten;2;;;;25.5.1988 00:00:00;;0,00;0,00;M;M;P;1.4.1957 00:00:00;-;25.3.1987 00:00:00;W;5;11;874;1;kainmueller@gmx.de;
+607;3;6;Erwin;Hynst;;;;Ferchenbauergasse 10;1210;Wien;2;01 271 85 89, 0650 371 85 89;;;22.11.1989 00:00:00;;0,00;0,00;M;M;P;13.10.1943 00:00:00;-;1.1.1966 00:00:00;W;13;22;877;1;erwin.hynst@chello.at;
+610;3;6;Herbert;Nowakowski;;;;Siccardsburggasse 4/1/17;1100;Wien;2;01/6044127;;;16.1.1966 00:00:00;;0,00;0,00;M;M;P;2.7.1940 00:00:00;-;1.12.1964 00:00:00;W;8;;880;1;herbert.nowokowski@chello.at;
+611;3;6;Hubert;Leissler;;;;Linzer Straße 456/4/1;1140;Wien;2;;;;22.11.1989 00:00:00;;0,00;0,00;M;M;P;20.12.1944 00:00:00;-;26.6.1970 00:00:00;W;8;12;882;1;hubert.leissler@chello.at;
+612;3;6;Manfred;Huber;;;;Meierhof 11;2475;Neudorf;2;+43 (0)676 974 18 39;;;6.11.1989 00:00:00;;0,00;0,00;M;M;P;8.9.1964 00:00:00;-;;;8;11;883;1;mh@geoweb.at;auch aon.914662051@aon.at
+614;3;6;Peter;Bargehr;Vermessungsamt Bregenz;;;Bergmannstraße 1;6900;Bregenz;2;;;;1.10.1990 00:00:00;;0,00;0,00;M;M;P;5.11.1959 00:00:00;AG;9.6.1988 00:00:00;W;2;3;885;1;peter.bargehr@bev.gv.at;
+615;3;6;Richard;Malits;rmDATA GmbH;;;Industriestraße 6;7423;Pinkafeld;2;;;;1.2.1990 00:00:00;;0,00;0,00;M;M;P;1.2.1957 00:00:00;-;1.1.1981 00:00:00;G;10;7;886;1;malits@rmdata.at;
+618;3;6;Helmu623;3;5;Wolfram;Höflinger;;;;Maria-Theresien-Straße 21-23;6020;Innsbruck;2;;;;27.11.1990 00:00:00;;0,00;0,00;M;M;P;17.10.1970 00:00:00;;;;13;11;896;1;innsbruck@vbh-zt.com;E-Mail-Adresse mail@vbh-zt.com nicht mehr gültig (Hau, 4.02.2011)
+624;3;6;Günter;Patka;;;;Elsbethen 71;6361;Hopfgarten;2;05335/40013;;;27.11.1990 00:00:00;;0,00;0,00;M;M;P;5.8.1972 00:00:00;;;;2;11;897;1;geo.patka@aon.at;patka@telering.at funktioniert nicht (10.11.11)
+626;3;;Thomas;Täuber;;;;Industriestraße 105;1220;Wien;2;0676 3625990;;;1.1.1991 00:00:00;;0,00;0,00;M;M;P;1.6.1966 00:00:00;-;;;8;1;899;1;t.taeuber@utanet.at;
+627;3;6;Christian;Maletz;Vermessungskanzlei;;;Richard Wagner-Straße 7;9500;Villach;2;;;;11.12.1990 00:00:00;;0,00;0,00;M;M;P;23.12.1956 00:00:00;-;3.6.1981 00:00:00;;3;11;900;1;vermessung@maletz.biz;BAIK: Richard-Wagner-Straße 7, 9500 Villach, Filialen, Email: vermessung@maletz.biz Url:  http://www.maletz.biz  
+ Tel.: 04242/274 56-0 Fax: 04242/274 56-25 Mobil: 0664/307 47 89
+628;3;6;Helmut;Meissner;Abt. I2;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;1.1.1991 00:00:00;;0,00;0,00;M;M;B;31.8.1957 00:00:00;AG;20.3.1985 00:00:00;;8;3;901;1;helmut.meissner@bev.gv.at;
+629;1;;;Vexcel Imaging GmbH;z.H. Herrn Dr. Michael Gruber;;;Anzengrubergasse 8/4;8010;Graz;2;0043/316/849066-19;0043/316/849066-9;;2.4.1991 00:00:00;;0,00;0,00;M;M;P;27.6.1959 00:00:00;;28.11.1990 00:00:00;G;3;31;902;1;;funktioniert nicht: bettb@microsoft.com
+631;3;6;Rudolf;Schöffmann;Vermessungskanzlei Dipl.-Ing. Schöffmann;;;Welser Straße 26;4060;Leonding;2;0732-682968-0;0732-682968-68;;18.2.1991 00:00:00;;0,00;0,00;M;M;P;7.4.1967 00:00:00;;;;11;11;904;1;r.schoeffmann@vermessungskanzlei.at;
+632;3;6;Helmut;Skorpil;Gruppe A;;;Schiffamtsgasse 1-3;1020;Wien;2;02773/44719, 0699/19523929;;;13.3.1991 00:00:00;;0,00;0,00;M;M;B;20.12.1970 00:00:00;AG;;G;8;3;912;1;Skorpil@gmx.at;
+634;2;6;Irmgard;Mandl;;;;Bad Stichstrasse 21a;9201;Krumpendorf;2;;;;16.4.1991 00:00:00;;0,00;0,00;M;M;P;19.12.1961 00:00:00;-;1.6.1990 00:00:00;G;3;15;914;1;;
+635;3;6;Franz;Wurzinger;;;;Auerspergstr. 10;4020;Linz;2;;;;22.2.1991 00:00:00;;0,00;0,00;M;M;P;20.9.1954 00:00:00;-;;W;5;16;915;1;franz.wurzinger@ooe.gv.at;
+636;3;9;Herbert;Döller;;;;Raiffeisenpromenade 2/1/8;3830;Waidhofen/Thaya;2;02842/52148-0;02842/52148-20;;4.6.1991 00:00:00;;0,00;0,00;M;M;P;18.6.1963 00:00:00;-;10.6.1988 00:00:00;W;8;34;917;1;office.waidhofen@doeller.biz;BAIK: Raiffeisenpromenade 2/1/8, 3830 Waidhofen an der Thaya, Filialen, Email: office.waidhofen@doeller.biz Url:  http://www.geocomp.at/doeller  
+ Tel.: 02842/521 48 Fax: 02842/521 48 (20) Mobil: 0664/325 62 22
+638;3;4;Klaus;Chmelina;;;;Dr. Buchwiesergasse 6/3;2372;Gießhübl;2;02236/869128;;;27.5.1991 00:00:00;;0,00;0,00;M;M;P;4.1.1967 00:00:00;-;;;8;33;919;1;klaus.chmelina@geodata.at;Adressänderung am 23.07.07 eingetragen; chmelina@geodata.at funktioniert nicht (10.11.11) klaus.chmelina@geodata.at aus Internet (08.10.2015)
+639;3;6;Robert;Miedler;;;;Südtirolerstr. 48;2344;Maria Enzersdorf;2;02236 / 23 5 29-0;02236 / 23 5
+02236 / 23 5 29-5;;5.6.1991 00:00:00;;0,00;0,00;M;M;P;17.4.1963 00:00:00;-;12.1.1989 00:00:00;W;8;11;929;1;office@zt-miedler.at;ZIVILGEOMETERKANZLEI Dipl.-Ing. Robert MIEDLER 
+Staatl. befugter und beeideter Ingenieurkonsulent fur Vermessungswesen
+A-2340 MÖDLING, Wiener Str. 39
+640;3;6;Otto;Aleksa;;;;Waldrandweg 48;1170;Wien;2;01 440 30 07, 0664 914 47 38;;;16.7.1991 00:00:00;;0,00;0,00;M;M;P;8.5.1944 00:00:00;-;25.6.1967 00:00:00;W;11;14;930;1;otto.aleksa@aon.at;
+641;1;;;Bundeskammer d. Arch. u. Ingenieurkons.;Bundesfachgruppe Vermessungswesen;;;Karlsgasse 9;1040;Wien;2;;;;7.6.1991 00:00:00;;0,00;0,00;M;M;P;;-;;;13;1;931;1;office@arching.at;
+644;3;6;Hubert;Plank;Abt. V3;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;24.7.1991 00:00:00;;0,00;0,00;M;M;B;18.3.1954 00:00:00;AG;1.6.1979 00:00:00;W;8;3;935;1;hubert.plank@bev.gv.at;
+645;3;11;Robert;Weber;;;;Gußhausstraße 27-29;1040;Wien;2;;;;29.8.1991 00:00:00;;0,00;0,00;M;M;P;27.6.1958 00:00:00;-;1.1.1983 00:00:00;W;8;33;936;1;robert.weber@tuwien.ac.at;
+646;1;;Geodetski Vestnik;FGG UL;Editorial staff;;;Jamova c. 2;10651;3;6;Josef;Wintner;;;;Oberarnsdorf 66;3621;Oberarnsdorf;2;;;-;16.6.1992 00:00:00;;0,00;0,00;M;M;P;18.12.1964 00:00:00;-;;;8;26;946;1;;e-mail veraltet
+1;wolfgang.gold@bev.gv.at;
+eoinfo.tuwien.ac.at;
+654;3;6;Stefan;Riedler;;;;Virchowstr. 29;4600;Wels;2;;;;11.3.1992 00:00:00;;0,00;0,00;M;M;P;29.6.1971 00:00:00;-;;;11;16;952;1;stefan.riedler@ooe.gv.at;
+655;1;;;Fric;Techn.Fachbuchhandlung;;;Wiedner Hauptstr. 13;1040;Wien;2;0222/5056452;;;;;0,00;0,00;AD;;-;;;;;1;1;954;1;;
+657;6;;Siegfried;Tischler;SBL-Stadtbetriebe Linz GmbH;;;Huemerstr. 3-5;4020;Linz;2;0732/7890-346;;;;;0,00;0,00;AD;;-;;;;;1;22;959;1;;
+658;1;;;Slovenská Technická Iniverzita;Katedra Geodézie;Geodätisches Institut der STU;;Radlinského 11;81368;BRATISLAVA;23;591 51 / 9;49 90 27;49-12/92;22.10.1991 00:00:00;;0,00;0,00;DA;T;P;;;;;;38;960;1;;
+659;1;;;Intergraph  GmbH;z.Hd.Herrn Winfried Rausch;Palais Waagner;;Margaretenstrasse 70/1/2;1050;Wien;2;797 35 /-0;797 35 /35;Gisssing;30.4.1993 00:00:00;;0,00;0,00;AD;;-;;;;;1;36;961;1;;
+660;3;6;Christian;Gamper;;;;Guln Nr.23;39040;FELDTHURNS (BZ);15;;;;7.7.1992 00:00:00;;0,00;0,00;M;M;P;21.11.1965 00:00:00;-;;;2;38;962;1;christian.gamper@rolmail.net;
+661;3;6;Otmar;Lex;LReg Burgenland;;;Freiheitsplatz 1;7000;Eisenstadt;2;;;;30.7.1992 00:00:00;;0,00;0,00;M;M;P;28.12.1962 00:00:00;;12.1.1989 00:00:00;W;8;13;963;1;otmar.lex@bgld.gv.at;
+666;3;6;Kurt;Huber;;;;Mariatrosterstraße 243;8044;Graz;2;0316/ 464630;;-;15.12.1992 00:00:00;;0,00;0,00;M;M;P;;;;;10;11;969;1;huber@mapsys.at;BAIK: Mariatrosterstraße 243, 8044 Graz, Email: huber@mapsys.at Url: keine 
+ Tel.: 0316/46 46 30 Fax: 0316/46 46 30-6
+667;3;6;Wolfgang;Jäger;;;;Siedlung 10;6152;Trins;2;;;;18.6.1992 00:00:00;;0,00;0,00;M;M;P;17.3.1970 00:00:00;-;;W;2;11;970;1;vermessung.jaeger@aon.at;
+670;3;6;Karl;Koppelhuber;Vermessungskanzlei;;;Hauptplatz 20;4560;Kirchdorf an der Krems;2;07582 60793 oder 0664 2032123;07582 / 609 46;;27.10.1992 00:00:00;;0,00;0,00;M;M;P;11.4.1953 00:00:00;;1.6.1983 00:00:00;G;3;11;973;1;geo.koppelhuber@inode.at;
+675;1;;;ARGE Digitalplan ZT GmbH;;;;Münzgrabenstraße 4/1;8010;Graz;2;0316/ 823570;0316/ 823579-22;;;;0,00;0,00;AD;;-;;;;;1;1;979;1;;
+677;3;5;Camillo;Ressl;;;;Rosasgasse 38/Stg. 1/22;1120;Wien;2;;;;4.6.1993 00:00:00;;0,00;0,00;M;M;P;16.6.1971 00:00:00;-;;W;8;30;981;1;car@ipf.tuwien.ac.at;
+683;1;;;Stadtgemeinde St.Veit;G.Stipanitz / E.Winkler/ J.Kirisits;;;Rathaus;9300;St.Veit a.d.Glan;2;04212/ 5555-0;04212/ 5555-80;;;;0,00;0,00;AD;;-;;;;;1;22;987;1;;
+684;1;;;Tauernkraftwerke;Vermessungsabteilung;;;;5710;Kaprun;2;06547/ 7151-436;06547/ 7151-444;;;;0,00;0,00;AD;;-;;;;;1;1;988;1;;
+687;1;;;EVN Abt.7b;;;;Johann Steinböck Str.1;2344;Maria Enzerdorf;2;02236/ 200-2598;02236/ 200-2600;;;;0,00;0,00;AD;;-;;;;;1;1;991;1;;
+690;4;;;Geoconsult;Ingenieurgemeinschaft;;;Kaiserstr.45;1070;Wien;2;0222/ 933544-0;0222/ 933544-15;;;;0,00;0,00;AD;;-;;;;;1;1;994;1;;
+692;2;6;Elke;Achleitner;;;;Kellergasse 2/9;4910;Ried im Innkreis;2;;;;30.4.1997 00:00:00;;0,00;0,00;M;M;P;2.4.1964 00:00:00;-;1.6.1990 00:00:00;W;12;22;996;1;elke.achleitner@stadt.graz.at;
+693;1;;ZT GmbH;Senftner Vermessung;z.H. Dipl.-Ing. Gerhard Senftner;;;Eichendorffstraße 65;3100;St. Pölten;2;02742 356381;02742 356385;;30.9.1992 00:00:00;;0,00;0,00;M;M;P;27.9.1960 00:00:00;;1.4.1988 00:00:00;W;8;11;997;1;vermessung@senftner.at;BAIK: Eichendorffstrasse 65, 3100 St. Pölten, Filialen, Email: vermessung@senftner.at Url: keine 
+ Tel.: 02742/35 63 81 Fax: 02742/35 63 81(40),02742/356 38 (5)
+694;3;5;Werner;Daxinger;;;;Wögererweg 13;4400;Garsten;2;07252  531 47, 0699 - 120 254 21;07252  531 47 - 11;;29.10.1992 00:00:00;;0,00;0,00;M;M;P;9.2.1970 00:00:00;;;W;11;11;1000;1;office@daxinger.at;
+695;3;6;Gernot;Tutsch;;;;Fernkorngasse 56/1/301;1100;Wien;2;2642253, 676 5971318;;;21.11.1992 00:00:00;;0,00;0,00;M;M;P;23.10.1969 00:00:00;;;;8;26;1002;1;g.tutsch@mysynergis.com;
+697;3;6;Volker;Sturm;Abt. I3;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;26.10.1993 00:00:00;;0,00;0,00;M;M;B;25.2.1967 00:00:00;AG;1.6.1992 00:00:00;W;8;3;1004;1;volker.sturm@bev.gv.at;
+698;3;57;Helmut;Fuchs;;;;Germergasse 46;2500;704;3;6;Christoph;Bauer;;;;Hasnerstraße 18;4020;Linz;2;0732/65 73 48;0732/65 73 48-10;;17.12.1992 00:00:00;;0,00;0,00;M;M;P;21.5.1952 00:00:00;;;W;5;11;1011;1;office@vermessung-bauer.at;
+G;2;11;1009;1;vermessung@pogoreutz.com;http://www.pogoreutz.com
+om Url:  http://www.hasitschka.com  
+ Tel.: 03613/35 87 Fax: 03613/35 87-6 Mobil: 0664/153 20 76
+705;2;6;Margot;Graf;;;;Steigenteschgasse 35;1220;Wien;2;;;;20.1.1993 00:00:00;;0,00;0,00;M;M;P;4.1.1971 00:00:00;-;;W;11;3;1012;1;margot.graf@bev.gv.at;
+706;1;;;Technical University;Laborytory of Photogrammetry;;;9,Iroon Polytechniou Str.;157 73;ZOGRAFOS;13;;;;;;0,00;0,00;AD;;-;;;;;1;38;1016;1;;
+708;3;6;Hans;Frotschnig;Vermessungsamt Imst;;;Rathausstr. 14;6460;Imst;2;;;;26.3.1993 00:00:00;;0,00;0,00;M;M;P;30.1.1963 00:00:00;AG;8.6.1989 00:00:00;W;2;3;1020;1;johann.frotschnig@bev.gv.at;
+710;3;15;Michael;Hiermanseder;;;;Sommerergasse 11/5;1130;Wien;2;+43 664 534 52 86 od. +43 1 8773003;;;5.1.1995 00:00:00;;0,00;0,00;M;M;P;18.11.1959 00:00:00;;;W;13;28;1022;1;hiermanseder@gmx.net;CONSENT Personal- und Managementberatung, Dommayergasse 4, 1130 Wien
+711;1;6;Peter;Skalicki - Weixelberger;;;;Ringsteinerweg 60;8075;Hart/Graz;2;;;;18.1.1994 00:00:00;;0,00;0,00;M;M;P;14.6.1965 00:00:00;;27.2.1991 00:00:00;G;3;11;1023;1;weixelberger@geoinfograz.at;BAIK: Zwerggasse 13, 8010 Graz, Email: weixelberger@geoinfograz.at Url:  http://www.geoinfograz.at  
+ Tel.: 0316/38 18 20 Fax: 0316/38 18 20-20 Mobil: 0676/404 25 65
+712;3;6;Karl;Haussteiner;L/BEV;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;4.5.1993 00:00:00;;0,00;0,00;M;M;B;11.6.1965 00:00:00;AG;13.1.1992 00:00:00;W;8;3;1024;1;karl.haussteiner@bev.gv.at;
+713;3;27;Andreas;Wieser;ETH Zürich;Inst. F. Geodäsie und Photogrammetrie;;Stefano Franscini-Platz 5;8093;ZÜRICH;22;+41 44 633 05 55;+41 44 633 11 01;;23.4.1993 00:00:00;;0,00;0,00;M;M;P;17.3.1969 00:00:00;-;;W;10;33;1025;1;wieser@geod.baug.ethz.ch;
+715;3;6;Michael;Haas;;;;Scheibe 69;6167;Neustift;2;;;;16.6.1993 00:00:00;;0,00;0,00;M;M;P;16.8.1964 00:00:00;;;W;9;11;1027;1;michael.haas@utanet.at;
+716;3;;Martin;Kerschner;;;;Schweglerstraße 45/25;1150;Wien;2;;;;20.6.1993 00:00:00;;0,00;0,00;M;M;P;25.4.1970 00:00:00;;;;8;29;1028;1;martin.kerschner@gmx.at;24.04.12 und 15.06.12: Email nicht mehr aktuell? martin.kerschner@nolimits.at
+717;1;;;Blackwell's;Periodicals Division;Miss M.Edney;40;Hythe Bridge Street;OX1 2EU;OXFORD;9;;;Info May 1993;;;0,00;0,00;AD;;-;;;;;1;38;1029;1;;
+719;1;;;Infra-Systems;Organisations- u. Betriebs GmbH;;;Arzlerstr.43;6020;Innsbruck;2;;;;;;0,00;0,00;AD;;-;;;;;1;1;1031;1;;
+720;1;;;Arbeitsgemeinschaft DV;;;;Tattnerhof 2;1010;Wien;2;533 0913;533 0913/77;;;;0,00;0,00;AD;;-;;;;;1;1;1032;1;;
+722;3;6;Gerhard;Rabanser;;;;J.-Mitter-Platz 2;4070;Efferding;2;;;;;;0,00;0,00;M;M;P;27.1.1962 00:00:00;;1.6.1987 00:00:00;G;11;11;1034;1;rabanser@rvg.co.at;
+ Tel.: 07272/60 88 Fax: 07272/60 89
+724;1;;;Ebsco Subscription Services;Title Information Dept.;;1943;;35201-1943;BIRMINGHAM AL;29;;;Price-Info;31.7.1993 00:00:00;;0,00;0,00;AD;;-;;;;;1;38;1036;1;;
+725;1;;;Saur Verlag;Redaktion Wiss. Ges.;;701620;;81316;MÜNCHEN;12;;;;;;0,00;0,00;AD;;-;;;;;1;38;1037;1;;
+726;1;;;Springer for Science;;;503;Kanaalstraat 2;1975 BE;IJMUIDEN;18;;;subscript-info;30.11.1992 00:00:00;;0,00;0,00;AD;;-;;;;;1;38;1038;1;;
+727;1;;;Gisteldruck Ges.mbH;;;;;2722;Weikersdorf;2;;;6251-25063;8.8.1993 00:00:00;;0,00;0,00;AD;;-;;;;;1;1;1039;1;;
+730;3;;Mario;Fondelli;Comité Int. de Photo Architecturale;CIPA ICOMOS-ISPRS;;Via S.Marta 3;50139;FIRENZE;15;;39-55-495333;;31.5.1993 00:00:00;;0,00;0,00;AD;;-;;;;;1;38;1042;1;;
+732;1;6;Gerald;Fuxjäger;Vermessung ADP Rinner;;;Münzgrabenstr.4;8010;Graz;2;0316 /823570 / 0;;;20.10.1993 00:00:00;;0,00;0,00;M;M;P;23.5.1961 00:00:00;;1.1.1988 00:00:00;G;3;11;1046;1;gerald.fuxjaeger@adp-rinner.at;BAIK: Haberwaldgasse 25, 8047 Hart bei Graz, Email: gerald.fuxjaeger@adp.co.at Url: keine 
+ Tel.: 0316/30 11 20
+734;1;;;H. Stam Verlag GmbH;z.Hd. Frau Rieck;;;Fuggerstrasse 7;51149;KÖLN;12;;;Höggerl;10.10.1993 00:00:00;;0,00;0,00;DA;T;P;;;;;1;38;1048;0;;Adresse ungenügend (rückmeldung Po742;3;6;Ronald;Krieglsteiner;Abt. I1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;29.11.1993 00:00:00;;0,00;0,00;M;M;B;18.4.1961 00:00:00;AG;11.1.1993 00:00:00;;8;3;1064;1;ronald.krieglsteiner@bev.gv.at;
+en.at;
+743;3;6;Gerhard;Walter;;;;Wolkenbergstrasse;9445;REBSTEIN;22;+41 (0)71 7772768;;;3.1.1994 00:00:00;;0,00;0,00;M;M;P;14.3.1968 00:00:00;-;29.3.1993 00:00:00;W;8;38;1065;1;Gerhard.Walter@leica-geosystems.com;Adressänderung nach email von Stefan Klotz 030903
+744;3;6;Gerhard;Pfahler;;;;Badenerstrasse 8;2512;Tribuswinkel;2;;;;2.2.1994 00:00:00;;0,00;0,00;M;M;P;4.10.1968 00:00:00;;8.11.1993 00:00:00;W;11;11;1066;1;g.pfahler@gmail.com;BAIK: Badenerstrasse 8, 2512 Tribuswinkel, Email: pfahler@agis.at Url:  http://www.agis.at  
+ Tel.: 02252/259078
+746;2;6;Andrea;Stummer;BMDW;;;Stubenring 1/7. Stock/69;1011;Wien;2;;;;17.3.1994 00:00:00;;0,00;0,00;M;M;B;4.8.1968 00:00:00;AG;;W;8;5;1068;1;andrea.stummer@bmdw.gv.at;
+749;3;7;Robert;Ecker;;;;Budaugasse 21;1220;Wien;2;0664 756 99 46;;;17.5.1994 00:00:00;;0,00;0,00;M;M;P;12.4.1961 00:00:00;;30.1.1985 00:00:00;W;12;26;1074;1;;e-mail veraltet
+751;3;11;Wolfgang;Rieger;;;;Gobergasse 34/1/3;1130;Wien;2;;;;1.8.1994 00:00:00;;0,00;0,00;M;M;P;24.7.1961 00:00:00;;1.1.1986 00:00:00;W;8;11;1079;1;w.rieger@avt.at;
+752;1;;;International Federation of Surveyors, FIG;;;;Kalvebod Brygge 31-33;1780;COPENHAGEN V;8;+ 45 38861081;+ 45 38860252;;;;0,00;0,00;DA;F;P;;;;;1;38;1080;1;tine.svendstorp@fig.net;
+754;3;6;Martin;Brunner;;;;Kaiserschützenstrasse 26;5280;Braunau/Inn;2;;;;17.8.1994 00:00:00;;0,00;0,00;M;M;P;26.4.1962 00:00:00;;1.4.1990 00:00:00;W;12;11;1082;1;office@geobrunner.at;BAIK: Kaiserschützenstraße 26, 5280 Braunau am Inn, Email: geo.brunner@aon.at Url: keine 
+ Tel.: 07722/849 09 Fax: 07722/849 09-18
+756;1;;;Mondial Ges. mbH;Frau Jirasek;;;Faulmanngasse 4;1040;Wien;2;58804/112;5869185;;;;0,00;0,00;AD;;-;;;;;1;1;1089;1;;
+760;3;5;Martin;Ehrhart;c/o AVD Vermessung ZT GmbH;;;Eisengasse 2;6850;Dornbirn;2;;;;3.11.1994 00:00:00;;0,00;0,00;M;M;P;4.11.1959 00:00:00;;6.3.1985 00:00:00;G;2;11;1100;1;avd@aon.at;BAIK: Eisengasse 2, 6850 Dornbirn, Email: avd@aon.at Url: keine 
+ Tel.: 05572/23149 Fax: 05572/31449 Mobil: 0664/2080326
+761;3;6;Ewald;Musser;;;;Tyroltgasse 18a/54;8020;Graz;2;;;;24.10.1994 00:00:00;;0,00;0,00;M;M;P;24.2.1957 00:00:00;;1.11.1989 00:00:00;G;3;3;1101;1;Ewald.Musser@bev.gv.at;wurde auch unter Mitgliedsnr. 671 geführt (aus Studienzeit, die Nr. 671 wurde am 23.09.2003 von Hau gelöscht nach Rückfrage Musser)
+762;3;6;Rainer;Schlögl;;;;Wagmeisterstrasse 16;3300;Amstetten;2;;;;24.10.1994 00:00:00;;0,00;0,00;M;M;P;22.12.1963 00:00:00;;6.6.1994 00:00:00;W;8;3;1102;1;rainer.schloegl@bev.gv.at;
+764;3;9;Josef;Strobl;Inst. f. Geographie;;;Hellbrunnerstraße 34;5020;Salzburg;2;;;;11.9.1994 00:00:00;;0,00;0,00;M;M;P;2.9.1958 00:00:00;;1.1.1982 00:00:00;W;1;24;1105;1;josef.strobl@sbg.ac.at;
+765;3;6;Georg;Falch;Vermessungsamt Bludenz;;;Sparkassenplatz 4/2;6700;Bludenz;2;;;;11.11.1994 00:00:00;;0,00;0,00;M;M;P;15.9.1961 00:00:00;AG;1.1.1988 00:00:00;W;2;3;1106;1;georg.falch@bev.gv.at;
+766;3;14;Michael;Doneus;Inst. f. Ur- und Frühgeschichte;;;Franz-Kleingasse 1;1190;Wien;2;;;;21.11.1994 00:00:00;;0,00;0,00;M;M;P;31.3.1967 00:00:00;;3.4.1992 00:00:00;W;8;24;1107;1;michael.doneus@univie.ac.at;
+768;3;19;Heribert;Kahmen;;;;Lawieser Straße 33;3013;Tullnerbach;2;;;;7.12.1994 00:00:00;;0,00;0,00;M;M;P;23.3.1940 00:00:00;-;1.1.1965 00:00:00;;13;33;1115;1;hkahmen@pop.tuwien.ac.at;
+769;3;6;Werner;Stiglitz;;;;Haindorferstraße 24B;3550;Langenlois;2;02734/23892;;;16.12.1994 00:00:00;;0,00;0,00;M;M;P;6.7.1971 00:00:00;;;;8;11;1121;1;werner.stiglitz@aon.at;
+770;3;;Erwin;Kopstahl;Nds. Landesverwaltungsamt/Landesverm.;;;Warmbüchenkamp 2;3000;HANNOVER 1;12;;;;;;0,00;0,00;AD;;-;;;;;1;38;1122;1;;
+771;3;6;Andreas;Halmer;;;;Leobersdorferstraße 209;2560;Berndorf II;2;;;;22.12.1994 00:00:00;;0,00;0,00;M;M;P;5.8.1967 00:00:00;;21.3.1994 00:00:00;W;11;24;1123;1;;
+772;3;6;Werner;Peham;;;;Dammstrasse 30/25;1200;Wien;2;;;;18.1.1995 00:00:00;;0,00;0,00;M;M;P;;;;;8;1;1126;1;peham.werner@aon.at;
+774;3;6;Karl;Santer783;3;6;Reinhold;Hintermayr;;;;Pramhof 17;4780;Schärding;2;;;;14.3.1995 00:00:00;;0,00;0,00;M;M;P;16.12.1971 00:00:00;;;;11;16;1140;1;reinhold.hintermayr@ooe.gv.at;
+ummer@bev.gv.at;
+r@aon.at;BAIK: Znaimerstraße 32, 2070 Retz, Email: geohofbauer@aon.at Url: keine 
+ Tel.: 02942/2339 Fax: 02942/2339(5)
+785;3;;Erich;Viehböck;;;;Obermühl 5;4131;Obermühl;2;;;;27.4.1995 00:00:00;1.1.2016 00:00:00;0,00;0,00;V;M;P;16.9.1971 00:00:00;-;;;3;;1144;0;;Heft auf 0 gesetzt, da VGI 3/11 retour ("verzogen), Hau,am  1.02.2012 storno 2016
+787;3;6;Helmut;Isep;;;;Feldgasse 1A;9583;Faak am See;2;0663 9223296;04242 57703;;3.7.1995 00:00:00;;0,00;0,00;M;M;P;5.5.1960 00:00:00;;28.1.1987 00:00:00;W;8;11;1146;1;isku@aon.at;BAIK: F.-X.-Wulfen-Straße 9, 9500 Villach, Email: isku@aon.at Url: keine 
+ Tel.: 04242/577 03 Fax: 04242/577 03-4 Mobil: 0664/522 07 84
+788;3;6;Gerald;Kucher;;;;Auenweg 1;9300;St. Veit an der Glan;2;04212 / 287 59;04212 / 450 18;;3.6.1995 00:00:00;;0,00;0,00;M;M;P;;;;;8;11;1147;1;gerald.kucher@geo-vermessung.at;
+789;3;6;Robert;Ditz;;;;Hetzendorfer Strasse 29-31/7/8;1120;Wien;2;+43 1 804 29 94, +43 664 4815279;;;6.9.1995 00:00:00;;0,00;0,00;M;M;P;10.10.1965 00:00:00;;14.11.1994 00:00:00;W;8;1;1148;1;robert.ditz@chello.at;
+791;3;4;Florian;Helm;Fa. Korschinek & Partner, Vermessung ZT-GmbH;;;Wiedner Hauptstraße 17;1040;Wien;2;;;;19.9.1995 00:00:00;;0,00;0,00;M;M;P;8.3.1967 00:00:00;;30.4.1995 00:00:00;W;8;11;1151;1;helm@kopa.at;früher: Herrn Dipl.-Ing. Dr. Florian Helm
+Espenweg 16, 1220 Wien
+793;3;6;Martin;Seebacher;;;;Kreuzstallweg 15;6781;Bartholomäberg;2;+43.664.6255.281, Büro: +43.5522.75482 DW 60210;+43.5522.75482 DW 6 
+ +43.5522.75482 DW 6;;5.10.1995 00:00:00;;0,00;0,00;M;M;P;26.8.1970 00:00:00;-;;;13;20;1153;1;martin.seebacher@vorarlberg.at;
+795;3;6;Hartmuth;Schachinger;;;;Oberer Stadtplatz 45;4780;Schärding;2;07712/2231;07712/223124;;2.10.1995 00:00:00;;0,00;0,00;M;M;P;5.6.1972 00:00:00;-;;;11;11;1155;1;office@geometer-schachinger.at;BAIK: Oberer Stadtplatz 45, 4780 Schärding, Email: office@geometer-schachinger.at Url:  www.geometer-schachinger.at  
+ Tel.: 07712/22 31-0 Fax: 07712/22 31-24
+796;3;9;Martin;Staudinger;;;;Ruzickagasse 88-104/14;1230;Wien;2;;;;5.10.1995 00:00:00;;0,00;0,00;M;M;P;8.1.1966 00:00:00;-;12.6.1995 00:00:00;W;8;11;1156;1;martin.staudinger@fernfh.ac.at;
+799;3;9;Klaus;Steinnocher;;;;Johann Klerr-Straße 23;2500;Baden bei Wien;2;0664 2244231;;;17.11.1995 00:00:00;;0,00;0,00;M;M;P;26.6.1962 00:00:00;-;30.11.1988 00:00:00;W;8;26;1160;1;klaus.steinnocher@ait.ac.at;
+800;3;4;Helge;Grafinger;;;;Imbergstraße 11/7;5020;Salzburg;2;+43 664 24 35 391;+43 662 421066-10;;20.12.1995 00:00:00;;0,00;0,00;M;M;P;25.10.1960 00:00:00;-;4.3.1987 00:00:00;G;2;26;1163;1;helge.grafinger@rhombergrail.com;
+801;2;6;Cora;Stöger;c/o Geounit;;;Industriezeile 36a;4020;Linz;2;+43 732 662420;+43 732 662421;;22.1.1996 00:00:00;;0,00;0,00;M;M;P;27.11.1973 00:00:00;-;;;7;11;1164;1;cora.stoeger@geounit.at;E-Mail-Adresse office@zt-stoeger.at nicht mehr gültig (Hau, 4.02.2011)
+803;1;;;Bundeskammer d. Arch. u. Ingenieurkons.;Bundesfachgruppe Vermessungswesen;;;Karlsgasse 9;1040;Wien;2;;;;12.2.1996 00:00:00;;0,00;0,00;DA;F;P;;-;;;1;1;1166;1;;
+804;1;;;Wißner-Verlag;;;;Im Tal 12;86179;AUGSBURG;12;;;;1.1.2004 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;38;1167;1;;
+805;1;;;Förderkreis;Vermessungstechnisches Museum e. V.;c/o Museum für Kunst und Kulturgeschichte;;Hansastraße 3;44137;DORTMUND;12;;;;28.2.1996 00:00:00;;0,00;0,00;DA;F;P;;-;;;1;38;1169;1;;
+806;2;6;Elke-Maria;Umnig;;;;Hagenmüllergasse 1/19;1030;Wien;2;;;;1.2.1996 00:00:00;;0,00;0,00;M;M;P;;-;;;10;;1172;1;;geändert lt. Angaben am Zahlschein vom 11.11.2009. Alte Adresse: 9170 Ferlach, Neubaugasse 10. Wolfgang Gold
+807;3;6;Andreas;Hornyik;HP-Vermessung;DI. Andreas Hornyik & Partner;;Hauptplatz 17/C/2 (Arkadia);2514;Traiskirchen;2;02252 / 508 500;02252 / 508 450;;28.3.1996 00:00:00;;0,00;0,00;M;M;P;7.12.1959 00:00:00;-;24.3.1988 00:00:00;W;8;11;1174;1;office@hp-vermessung.at;BAIK: Hauptplatz 17/c/2, 2514 Traiskirchen, Email: office@hp-vermessung.at Url:  http://www.hp-vermessung.at 817;3;6;Rolf;Bull;;;;Eckner Strasse 12;53757;SANKT AUGUSTIN;12;;;;13.3.1997 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;0;0;1;;
+.1970 00:00:00;-;;;10;26;1191;1;albrecht.prader@wwg.co.at;
+;;-;;;1;38;1184;1;poststelle@lvg.bayern.de;
+818;0;0;;Deutsche Nationalbibliothek;Sachgebiet Auslandserwerbung;Paketausgabe;;Deutscher Platz;04103;LEIPZIG;12;0341 2271 340;0341 2271-265;Ö/T;22.1.1997 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;0;0;1;erwerbausl@dnb.de;
+819;2;6;Birgit;Riemer;;;;Römerweg 7;8062;Kumberg;2;03133/38365 Handy: 0650/5892701;0650/5892700-2;;16.4.1997 00:00:00;;0,00;0,00;M;M;P;3.5.1965 00:00:00;-;17.12.1992 00:00:00;G;10;24;0;1;b.riemer@gmx.at;
+822;3;9;Wilhelm;Kolb;Vermessungsamt Liezen;;;Hauptstraße 36;8940;Liezen;2;;;;7.5.1997 00:00:00;;0,00;0,00;M;M;P;14.11.1955 00:00:00;AG;11.12.1981 00:00:00;G;3;3;0;1;wilhelm.kolb@bev.gv.at;
+823;3;6;Markus;Rehbichler;;;;Farberweg 1E;6380;St. Johann;2;;;;18.4.1997 00:00:00;;0,00;0,00;M;M;P;2.4.1970 00:00:00;-;;;9;1;0;1;office@georeh.at;
+824;3;27;Faruk;Seleskovic;Univerzitet u Sarajevu;;;Obala 7/II;71000;SARAJEVO;32;;;;4.4.1997 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;34;0;1;;
+826;3;6;Werner;Burgholzer;Zivilgeometer;;;Stadtplatz 40;4600;Wels;2;07242/55 952;0664/31 45 778;;26.5.1997 00:00:00;;0,00;0,00;M;M;P;16.1.1968 00:00:00;-;;;11;26;0;1;office@burgholzer.com;
+828;3;6;Gjergji;Qeleshi;Shoqata e Gjeodeteve Shqiptare;Shoqeria Anonime Gjeologji-Gjeodezi;;Rr. Sami Frasheri Nr. 31;;TIRANE;33;;;;21.4.1997 00:00:00;2.12.2013 00:00:00;0,00;0,00;T;-;P;;-;;;1;38;0;;;
+829;0;0;;Russian Academy of Sciences Library;Exchange Departament;;;1 Birzhevaya Liniya;199034;ST. PETERSBURG;34;+7(812) 328 3592;+7(812) 328 7436;;5.6.1997 00:00:00;;0,00;0,00;DA;T;P;;;;;1;38;0;1;;morozova@spbrc.nw.ru (Sekretariat)
+830;3;6;Benedikt;Tuttner;;;;Ludersdorf 257;8200;Gleisdorf;2;03112 6570;;;17.7.1997 00:00:00;;0,00;0,00;M;M;P;15.7.1961 00:00:00;-;12.11.1987 00:00:00;G;3;11;0;1;office@zt-tuttner.at;BAIK: Ludwig-Binder-Straße 1/1, 8200 Gleisdorf, Email: office@zt-tuttner.at Url: keine 
+ Tel.: 03112/65 70 Fax: 03112/65 70 Mobil: 0664/102 05 39
+831;3;45;Ernst;Primas;Vermessungsamt Graz;;;Körblergasse 25;8010;Graz;2;;;;30.12.1997 00:00:00;;0,00;0,00;M;M;P;31.12.1973 00:00:00;AG;;G;13;3;0;1;ernst.primas@bev.gv.at;auch VA Weiz
+832;3;0;Johannes;Vallant;;;;Prangelgasse 17/19;8020;Graz;2;+43 4734 44738;+43 664 5045301;;24.11.1997 00:00:00;;0,00;0,00;M;M;P;19.4.1973 00:00:00;-;;;10;26;0;1;johannes@zt-vallant.at;
+833;3;6;Andreas;Schramm;Abteilung I2;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;10.11.1997 00:00:00;;0,00;0,00;M;M;B;20.5.1974 00:00:00;-;;;10;3;0;1;andreas.schramm@bev.gv.at;
+835;6;6;Johannes;Anegg;Amt der Tiroler Landesregierung;Abteilung Geoinformation;;Herrengasse 1-3;6020;Innsbruck;2;0512/508-4300;0512/508-4305;;24.11.1997 00:00:00;;0,00;0,00;M;M;P;24.6.1959 00:00:00;-;1.1.1991 00:00:00;G;2;19;0;1;j.anegg@tirol.gv.at;
+836;0;0;;Geoinformatics;;;231;;8300 AE;EMMELOORD;18;;;;5.9.1997 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;0;0;1;;
+844;3;28;Wolfgang;Kresse;;;;Franz-Liszt-Str. 7;17033;NEUBRANDENBURG;12;;;;21.3.1998 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;38;0;1;;Änderung am 27.06.11, E-Mail Prof. Mayer -> Prof. Kresse nuer Adressat; PFG-Tausschexemplar
+847;2;6;Regina;Gegenleitner;;;;Fernkorngasse 54-58/1/301;1100;Wien;2;0676/6874583, 01/2642253;;;28.12.1998 00:00:00;;0,00;0,00;M;M;P;18.1.1975 00:00:00;-;;W;8;26;0;1;gegenleitner@gmx.at;
+848;0;0;;Exchange Centre for Scientific Literature;;;;Snellmaninkatu 13;00170;HELSINKI;10;;;;12.1.1999 00:00:00;;0,00;0,00;M;T;P;;-;;;1;0;0;1;exchange.centre@tsv.fi;Kontakt: Georg Strien, georg.strien@tsv.fi, +358-9-22869238
+849;3;6;Christian;Holaus;;;;Petzoldstrasse 1;3100;St. Pölten;2;;;;30.10.1998 00:00:00;;0,00;0,00;M;M;P;24.1.1967 00:00:00;-;1.6.1995 00:00:00;W;11;26;0;1;christian.holaus@geometer-strobl.at;
+850;3;4;Christian;Briese;;;;Flurgasse 53;7011;Siegendorf;2;;;;18.1.1999 00:00:00;;0,00;0,00;M;M;P;25.10.1975 00:00:00;-;;W;8;33;0;1;cb@ipf.tuwien.ac.at;
+852;3;6;Guntram;Zündel;;;;Moosmahdstrasse 42;6850;Dornbirn;2;;;;1.1.1999 00:00:00;;0,00;0,00;M;M;P;6.5.1950 00:00:00;;;;2;11;0;1;zuendel-vermess858;0;0;;Landmark;;;;Bahnhofstrasse 8b;6961;Wolfurt;2;;;;8.2.2000 00:00:00;;0,00;0,00;UM;M;P;;-;;;1;1;0;1;;
+:00;-;13.1.1998 00:00:00;G;9;26;0;1;lienhart.troyer@socher.at;Adressänderung am 18.08.08 (vorher Schweiz)
+859;0;0;;Norwegian University of Life Sciences;UMB;Institutt for kartfag;5003;;1432;Aas;19;;;;15.11.1999 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;38;0;0;;aktualisiert 10.2013
+861;3;6;Hermann;Müllner;;;;Sonnenweg 10;7412;Wolfau;2;0699/18189228;;;17.12.1999 00:00:00;;0,00;0,00;M;M;P;5.10.1970 00:00:00;-;21.6.1999 00:00:00;W;8;26;0;1;hermann.muellner@gmx.net;
+862;3;5;Erwin;Heine;Inst. F. Verm., Fernerk. Und Landinfo.;Universität f. Bodenkultur;;Peter-Jordan-Strasse 82;1190;Wien;2;;;;23.2.2000 00:00:00;;0,00;0,00;M;M;P;17.3.1964 00:00:00;-;1.6.1992 00:00:00;G;8;6;0;1;erwin.heine@boku.ac.at;
+863;3;16;Harald;Schuh;;;;Bahnhofstr. 51;82041;Deisenhofen;12;;;;1.3.2000 00:00:00;;0,00;0,00;M;M;P;27.2.1956 00:00:00;;1.1.1979 00:00:00;;8;33;0;1;harald.schuh@tuwien.ac.at;Adresse lt. Email v. 18.01.2016, Go
+864;3;6;Helmut;Titz;Abt. V1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;29.2.2000 00:00:00;;0,00;0,00;M;M;B;14.7.1966 00:00:00;-;3.4.1995 00:00:00;W;13;3;0;1;helmut.titz@bev.gv.at;
+865;4;0;;Am - Laser u. Baugeräte;Handels GmbH;;;Am Bahnhof, Gewerbestrasse 4;2281;Raasdorf;2;;;;22.3.2000 00:00:00;;0,00;0,00;UM;M;P;;-;;;8;1;0;1;;
+869;3;6;Gerhard;Donau;c/o Dipl.-Ing. Donau ZT GmbH;;;Lederergasse 44/1/7;4020;Linz;2;0732/774177-0;0732/774177-15;;2.6.2000 00:00:00;;0,00;0,00;M;M;P;8.3.1965 00:00:00;-;1.12.1995 00:00:00;;5;28;0;1;vermessung@geometer-linz.at;
+870;3;7;Elmar;Wasle;;;;Puch 29;8182;Puch bei Weiz;2;;;;13.6.2000 00:00:00;;0,00;0,00;M;M;P;27.4.1975 00:00:00;-;;;4;29;0;1;ewasle@gmx.at;
+871;3;9;Christoph;Abart;;;;Kirschenweg 3;8046;Stattegg;2;0676/6371395;;;7.8.2000 00:00:00;;0,00;0,00;VM;M;P;5.11.1979 00:00:00;-;;G;10;26;0;1;abartch@gmail.com;
+872;3;6;Gerald;Pöltl;;;;Silberweisring 3;3300;Amstetten;2;;;;4.10.2000 00:00:00;;0,00;0,00;M;M;P;5.1.1970 00:00:00;-;25.3.1996 00:00:00;W;13;14;0;1;gerald.poeltl@aon.at;private Email geändert am 22.12.2015 FB
+873;0;0;Abteilung 5;Ministerium des Innern und für Sport;;;;Schillerplatz 3-5;55116;MAINZ;12;;;;23.10.2000 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;38;0;1;;
+875;3;0;Jürgen;Mayer;;;;Rietstrasse 16a;9443;WIDNAU;22;;;;2.3.2001 00:00:00;;0,00;0,00;M;M;P;15.2.1973 00:00:00;-;14.6.1999 00:00:00;W;13;26;0;1;hubelmayer@bluewin.ch;
+878;3;9;Franz;Rottensteiner;Institut für Photogrammetrie und Geoinformation;Leibniz Universität Hannover;;Nienburger Str. 1;30167;HANNOVER;12;;;;1.1.2001 00:00:00;;0,00;0,00;M;M;P;;;;;;33;0;1;fr.rottensteiner@gmx.at;Adresse in Österreich: c/o Institut für Photogrammetrie und Fernerkundung, früher  Silbergasse 8/4, 1190 Wien, fr@ipf.tuwien.ac.at
+879;2;0;Sabine;Schalwig;c/o Wißner-Verlag;;;Im Tal 12;86179;AUGSBURG;12;;;;15.10.2001 00:00:00;;0,00;0,00;DA;T;P;;-;;;1;0;0;1;;Adressänderung am 18.12.2007 auf Grund Mitteilung DVW
+880;3;6;Anton;Margreiter;;;;Wiesing 400f;6200;Wiesing;2;;;;2.5.2001 00:00:00;;0,00;0,00;M;M;P;28.4.1955 00:00:00;-;1.1.1983 00:00:00;;9;11;0;1;geo.margreiter@aon.at;
+881;3;6;Philip;Zeisler;;;;Raugasse 28D;2700;Wiener Neustadt;2;;;;10.10.2001 00:00:00;;0,00;0,00;M;M;P;5.4.1973 00:00:00;-;14.6.1999 00:00:00;W;8;26;0;1;p.zeisler@gmx.at;
+882;3;27;Wolfgang;Wagner;Inst. für Photogrammetrie u. Fernerkundung;TU Wien;;Gusshausstraße 27-29;1040;Wien;2;;;;7.1.2002 00:00:00;;0,00;0,00;M;M;P;20.1.1969 00:00:00;-;7.6.1995 00:00:00;;8;33;0;1;ww@ipf.tuwien.ac.at;
+883;3;6;Erwin;Kraus;;;;Norwegerstraße 8;4690;Schwanenstadt;2;;;;5.2.2002 00:00:00;;0,00;0,00;M;M;P;21.1.1959 00:00:00;-;16.6.1997 00:00:00;W;11;16;0;1;erwin.kraus@ooe.gv.at;
+885;3;7;Johannes;Otepka;;;;Ottensheimerstrasse 64;4040;Linz;2;;;;8.7.2002 00:00:00;;0,00;0,00;M;M;P;29.10.1975 00:00:00;-;15.10.2001 00:00:00;W;8;33;0;1;jo@ipf.tuwien.ac.at;
+886;3;6;Michael;Pregesbauer;;;;Lambrechtsgasse 11/2;2500;Baden;2;0664/5206512;;;18.6.2002 00:00:00;;0,00;0,00;M;M;P;26.5.1978 00:00:00;-;1.6.2001 00:00:00;W;8;26;0;1;pregesbauer.michael@aon.at;
+887;3;6;Christian;Klug;Wiener Netze GmbH;;785;Erdbergerstraße 23892;3;6;Georg;Rieser;;;;Rennfeld 4a;6370;Kitzbühel;2;;;;26.6.1984 00:00:00;;0,00;0,00;M;M;P;20.11.1960 00:00:00;;;;1;11;0;1;kitz@vermessung.or.at;
+893;3;7;Gerhard;Navratil;;;;Hollergasse 29/12;1150;Wien;2;;;;5.3.2003 00:00:00;;0,00;0,00;M;M;P;25.8.1969 00:00:00;-;8.6.1998 00:00:00;W;8;33;0;1;navratil@geoinfo.tuwien.ac.at;
+894;3;0;Christian;Schirmer;;;;Pazmanitengasse 28/25a;1020;Wien;2;+43 1 33 777 369;+43 1 33 777 398;42/2003-50;12.5.2003 00:00:00;;0,00;0,00;M;M;P;5.3.1970 00:00:00;-;;;8;26;0;1;christian.schirmer@oracle.com;neue adresse 8.2013
+896;3;6;Andreas;Pammer;Abt. V4;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;31.7.2003 00:00:00;;0,00;0,00;VM;M;B;24.4.1968 00:00:00;AG;31.1.1993 00:00:00;W;8;3;0;1;andreas.pammer@bev.gv.at;
+897;11;0;;DI Gressl u. DI Oberressl;Ziviltechniker OEG;;;Mettingerstraße 21;9100;Völkermarkt;2;;;;12.8.2003 00:00:00;31.12.2015 00:00:00;0,00;0,00;AD;M;P;;-;;;3;11;0;1;evelyn.sauerschnig@gressl.at;
+898;3;6;Thomas;Kochberger;;;;Bahnzeile 5;3390;Melk an der Donau;2;0676/615 98 18;;;26.9.2003 00:00:00;;0,00;0,00;M;M;P;4.10.1970 00:00:00;-;20.3.2000 00:00:00;W;12;11;0;1;tom.kochberger@aon.at;Adressänderung am 21.08.07 eingetragen
+899;3;6;Walter;Wurzer;Abt. V3;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;29.10.2003 00:00:00;;0,00;0,00;M;M;B;18.8.1975 00:00:00;AG;15.3.2001 00:00:00;W;8;3;0;1;walter.wurzer@bev.gv.at;
+900;3;34;Johannes;Böhm;;;;Gußhausstrasse 27-29;1040;Wien;2;;;;29.10.2003 00:00:00;;0,00;0,00;M;M;P;12.7.1972 00:00:00;;18.1.1999 00:00:00;W;8;33;0;1;johannes.boehm@tuwien.ac.at;
+901;3;6;Herbert;Böhm;;;;Taborstraße 52a/24;1020;Wien;2;0699 81214157;;;19.11.2003 00:00:00;;0,00;0,00;M;M;P;28.9.1971 00:00:00;-;;;12;14;0;1;herbert.boehm@gmx.at;
+902;2;6;Sigrid;Böhm;;;;Taborstraße 52a/24;1020;Wien;2;;;;14.11.2003 00:00:00;;0,00;0,00;M;M;P;19.4.1980 00:00:00;-;;;12;33;0;1;sigrid@englich.org;
+903;3;11;Paulo Jorge;Mendes Cerveira;;;;Platanengasse 18;2333;Leopoldsdorf;2;;;;3.12.2003 00:00:00;;0,00;0,00;M;M;P;4.2.1976 00:00:00;-;11.3.2002 00:00:00;W;13;26;0;1;paulo.mendes@energieburgenland.at;
+904;2;6;Brigitte;Rudel;Fachhochschule Wiener Neustadt;;;Johannes Gutenberg-Straße 3;2700;Wiener Neustadt;2;;;;5.1.2004 00:00:00;;0,00;0,00;M;M;P;19.9.1963 00:00:00;-;1.1.1991 00:00:00;W;8;26;0;1;brigitte.rudel@fhwn.ac.at;
+905;3;6;Josef C.;Prattes;;;;Lamberger Straße 7;8551;Wies;2;;;;13.1.2004 00:00:00;;0,00;0,00;M;M;P;31.5.1959 00:00:00;-;27.11.1985 00:00:00;G;3;28;0;1;geo.prattes@aon.at;
+906;3;6;Johannes;Berthold;;;;Groß-Inzersdorf 55;2225;Zistersdorf;2;(1) 98122 - 10,  Handy: +43 (0)664 4627652;(1) 98122 - 50;;2.2.2004 00:00:00;;0,00;0,00;M;M;P;19.2.1976 00:00:00;-;17.11.2003 00:00:00;W;8;26;0;1;Johannes.Berthold@leica-geosystems.com;Email geändert am 16.12.2016 durch FB
+907;3;14;Christian;Ullrich;Abt. V1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;13.4.2004 00:00:00;;0,00;0,00;M;M;B;10.5.1967 00:00:00;AG;1.3.1999 00:00:00;W;12;3;0;1;christian.ullrich@bev.gv.at;
+908;2;7;Christine;Ressl;Abt. V2;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;14.5.2004 00:00:00;;0,00;0,00;M;M;B;19.6.1971 00:00:00;AG;20.6.1997 00:00:00;W;8;3;0;1;christine.ressl@bev.gv.at;Namensänderung wegen Hochzeit
+909;2;6;Christina;Weißenböck;;;;Gymnasiumstr. 2;3950;Gmünd;2;;;;4.6.2004 00:00:00;;0,00;0,00;M;M;P;17.1.1968 00:00:00;-;1.4.1994 00:00:00;W;8;28;0;1;christina.weissenboeck@dervermesser.at;
+910;3;6;Erich;Sammer;;;;Auergasse 9;9020;Klagenfurt;2;;;;17.6.2004 00:00:00;;0,00;0,00;M;M;P;24.8.1978 00:00:00;;17.11.2003 00:00:00;W;13;11;0;1;office@sammerzt.at;
+911;3;34;Wolfgang;Kainz;Institut für Geographie u. Regionalforschung;Universität Wien;;Universitätsstraße 7;1010;Wien;2;+43 (1) 4277 48640, +43 (664) 817 5066;+43 (1) 4277 9486;;21.6.2004 00:00:00;;0,00;0,00;VM;M;P;20.11.1954 00:00:00;;29.6.1979 00:00:00;G;10;35;0;1;wolfgang.kainz@univie.ac.at;
+914;3;16;Günter;Chesi;;;;Archengasse 9;6130;Schwaz;2;;;;6.3.1986 00:00:00;;0,00;0,00;M;M;P;24.10.1941 00:00:00;-;1.1.1971 00:00:00;G;3;32;0;1;vermessung.chesi@aon.at;(früher Nr. 111, jetzt 914), 18.10.04; Adressänderung 28.03.2011 (früher Technikerstraße 13, 6020 Innsbruck)
+915;3;42;Stephan Rupert;Gruber;Abt. I3;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;28.10.2004 00:00:00;;0,00;0,00;M;M;B;4.12.1962 00:00:00;-;;;13;3;0;1;stephan.r.gruber@gmx.at;Privatadresse: Untere Bachstrasse 16, 3452 Hütteldorf
+916;3;6;Friedrich;Chitil;Vermessungsamt Wien;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;3.11.2004 00:00:00;;0,00;0,00;M;M;B;11.12.1965 00:00:00;AG;19.9.1997 00:00:00;W;13;3;0;1;friedrich.chitil@bev.gv.at;
+917;3;6;Roland;Krois;;;;Grazerstraße 6;8510;Stainz;2;03462 30836;DW 35;;3.11.2004 00:00:00;;0,00;0,00;M;M;P;6.2.1965 00:00:00;-;15.1.1997 00:00:00;G;3;28;0;1;office@vermessung-krois.at;http://www.vermessung-krois.at/
+919;3;6;Hartwig;Ortbauer;;;;Strobachgasse 5/8;1050;Wien;2;;;;12.11.2004 00:00:00;;0,00;0,00;M;M;P;13.7.1975 00:00:00;-;25.11.2002 00:00:00;W;11;26;0;1;hartwig@ortbauer.cc;neue Adresse, email fom 28.11.2010
+924;3;5;Klaus;Legat;;;;Eichenweg 42;6460;Imst;2;++43 (0)5412 6930-0;++43 (0)5412 6930-26;;18.4.2005 00:00:00;;0,00;0,00;M;M;P;8.9.1975 00:00:00;-;1.6.1999 00:00:00;G;4;26;0;1;k.legat@avt.at;
+925;3;6;Josef;Wagneder;;;;Dr.-Dorfwirth-Str. 3;4910;Ried im Innkreis;2;;;;25.5.2005 00:00:00;;0,00;0,00;M;M;P;20.2.1962 00:00:00;-;1.1.1987 00:00:00;G;5;28;0;1;josef@wagneder.at;24.04.12: Email nicht mehr aktuell?
+926;3;0;Lukas;Patri;;;;Zeitling 65;4320;Perg;2;;;;19.6.2005 00:00:00;;0,00;0,00;M;M;P;15.10.1982 00:00:00;-;;;11;28;0;1;lukas_patri@yahoo.com;
+927;3;5;Richard;Ladstädter;Institut f. Fernerkundung u. Photogrammetrie;;;Laboratoriumstr. 29b;8053;Graz;2;;;;21.6.2005 00:00:00;;0,00;0,00;M;M;P;23.6.1972 00:00:00;-;20.9.2004 00:00:00;G;3;31;0;1;richard.ladstaedter@alumni.tugraz.at;
+928;3;6;Peter;Rittinger;GeoSystem ZT-Vermessungsbüro;;;Risa-Areal, Sagl 2A;6410;Telfs;2;;;;27.6.2005 00:00:00;;0,00;0,00;M;M;P;7.4.1972 00:00:00;;1.1.1998 00:00:00;G;2;0;0;1;vermessung@geosystem.at;neue Email siehe oben! Alt:rittinger-florian@telfs.com
+929;3;46;Roland;Mittermaier;Abt. V3;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;30.6.2005 00:00:00;;0,00;0,00;M;M;B;9.10.1962 00:00:00;AG;6.5.2004 00:00:00;W;8;3;0;1;roland.mittermaier@bev.gv.at;
+930;3;47;Bernhard;Klingseisen;;;;Kirchdorf am Inn 43;4982;Kirchdorf am Inn;2;;;;25.8.2005 00:00:00;;0,00;0,00;M;M;P;20.7.1978 00:00:00;-;12.7.2004 00:00:00;V;11;38;0;1;bernhard.klingseisen@gmail.com;
+932;3;6;Michael;Brunner;;;;Hörgas 239/D3;8103;Eisbach-Rein;2;;;;28.9.2005 00:00:00;;0,00;0,00;M;M;P;4.11.1972 00:00:00;-;1.4.2000 00:00:00;L;3;18;0;1;michael.brunner@stmk.gv.at;
+933;3;10;Andreas;Eichhorn;;;;Brüder-Knauss-Str. 80;64285;DARMSTADT;12;+49 (0)6151 / 16-2147;+49 (0)6151 / 16-2347;;14.10.2005 00:00:00;;0,00;0,00;M;M;P;15.3.1967 00:00:00;-;24.7.1996 00:00:00;;12;34;0;1;eichhorn@geod.tu-darmstadt.de;
+934;3;6;Gerhard;Neuner;;;;Häusern 13;6060;Ampass;2;;;;29.11.2005 00:00:00;;0,00;0,00;M;M;P;10.2.1961 00:00:00;-;1.1.1989 00:00:00;G;2;11;0;1;g.neuner@necon.at;
+939;2;6;Eva-Maria;Unger;;;;Meiselstrasse 37/6;1150;Wien;2;;;;30.1.2006 00:00:00;;0,00;0,00;VM;M;P;17.3.1986 00:00:00;AG;;W;13;3;0;1;unger.eva@gmail.com;
+941;3;6;Dieter;Leitner;;;;Messendorfberg 140;8042;Graz;2;;;;8.2.2006 00:00:00;;0,00;0,00;M;M;P;7.9.1969 00:00:00;-;1.6.2001 00:00:00;G;10;26;0;1;dieter.leitner@zt.co.at;
+942;2;47;Doris;Payrer;;;;Geyersbergweg 1;9360;Friesach;2;;;;9.2.2006 00:00:00;;0,00;0,00;M;M;P;27.8.1980 00:00:00;-;15.7.2004 00:00:00;V;13;26;0;1;doris.payrer@gmail.com;derzeit Perth!Australien 2015
+943;2;6;Doris;Fürst;;;;Blumensteinstraße 6;5020;Salzburg;2;;;;16.2.2006 00:00:00;;0,00;0,00;M;M;P;10.1.1977 00:00:00;-;1.11.2001 00:00:00;W;6;26;0;1;doris@fuerst.cc;
+944;3;6;Thomas;Zalka;Amt der Burgenländ. Landesreg.;LAD-Gis Koordination;;Europaplatz 1;7000;Eisenstadt;2;;;;28.2.2006 00:00:00;;0,00;0,00;VM;M;P;31.5.1961 00:00:00;-;1.6.1988 00:00:00;W;10;13;0;1;thomas.zalka@bgld.gv.at;
+945;3;6;Thomas;Auzinger;;;;Bahnhofplatz 1;4600;Wels;2;;;;7.3.2006 00:00:00;;0,00;0,00;M;M;P;21.6.1972 00:00:00;-;1.6.1997 00:00:00;G;5;28;0;1;office@zivilgeometer.at;
+946;3;6;Jürgen;Otter;Abt. V1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;17.3.2006 00:00:00;;0,00;0,00;M;M;B;31.8.1976 00:00:00;AG;3.7.2006 00:00:00;W;10;3;0;1;juergen.otter@bev.gv.at;
+947;0;0;;Staatsbibliothek zu Berlin;Preußischer Kulturbesitz;Haus 2/Abt. Bestandsaufbau;;Potsdamer Str. 33;10785;Berlin;12;+49 (0) 30 - 266 2253;+49 (0) 30 - 266 2230;;1.1.2006 00:00:00;;0,00;0,00;DA;T;P;;-;;;0;0;0;1;aboverwaltung@sbb.spk-berlin.de;Wolfgang.crom@sbb.spk-berlin.de
+948;3;0;Daniel;Rieser;;;;Salvenberg 2;6363;Westendorf;2;;;;14.4.2006 00:00:00;;0,00;0,00;M;M;P;2.4.1983 00:00:00;-;;G;10;29;0;1;;
+949;3;0;Gottfried;Thaler;;;;Rechte Bahnzeile 16;7202;Bad Sauerbrunn;2;;;;2.5.2006 00:00:00;;0,00;0,00;M;M;P;11.7.1982 00:00:00;-;;;10;8;0;1;thalerg@gmx.at;
+950;3;0;Clemens;Draxler;;;;Hötzelsdorf 77;3753;Hötzelsdorf;2;;;;4.5.2006 00:00:00;;0,00;0,00;M;M;P;19.1.1984 00:00:00;-;;;8;26;0;1;clemens_draxler@hotmail.com;
+952;2;0;Denise;Jonchon Wun;;;;Hackergasse 5/9/11;1100;Wien;2;;;;4.5.2006 00:00:00;;0,00;0,00;M;M;P;14.2.1986 00:00:00;-;;;8;22;0;1;jonchon.wun@gmail.com;
+953;3;0;Thomas;Hohäuser;;;;Ottakringer Straße 242/7/29;1160;Wien;2;;;;4.5.2006 00:00:00;;0,00;0,00;M;M;P;17.9.1983 00:00:00;-;;;8;26;0;1;thohaeuser@hotmail.com;
+954;2;7;Michaela;Haberler-Weber;;;;Höchsmannweg 22;1220;Wien;2;;;;31.5.2006 00:00:00;;0,00;0,00;M;M;P;17.9.1974 00:00:00;-;28.4.2000 00:00:00;w;8;23;0;1;michaela.haberler-weber@oebb.at;
+956;3;34;Norbert;Pfeifer;;;;Leopold Steiner-Gasse 5;1190;Wien;2;;;;13.10.2006 00:00:00;;0,00;0,00;VM;M;P;27.5.1971 00:00:00;;1.8.1997 00:00:00;W;13;28;0;1;np@ipf.tuwien.ac.at;
+959;3;6;Rainer;Prager;;;;Plenkerstrasse 51;3340;Waidhofen an der Ybbs;2;;;;2.1.2007 00:00:00;;0,00;0,00;M;M;P;13.2.1960 00:00:00;;24.6.1987 00:00:00;W;8;14;0;1;rainer.prager@aon.at;
+960;3;6;Edgar;Blumauer;;;;Heiligstr. 29/5/2;2020;Hollabrunn;2;;;;15.1.2007 00:00:00;;0,00;0,00;M;M;P;3.12.1977 00:00:00;-;18.4.2005 00:00:00;w;8;24;0;1;edgar.blumauer@gmx.at;
+962;3;58;Georg;Gartner;;;;Carminweg 6/1/8;1210;Wien;2;;;;8.3.2007 00:00:00;;0,00;0,00;VM;M;P;9.7.1966 00:00:00;;1.1.1989 00:00:00;W;8;33;0;1;georg.gartner@tuwien.ac.at;
+963;3;6;Thomas;Illy;;;;Westbahngasse 95;8054;Graz;2;;;;30.3.2007 00:00:00;;0,00;0,00;M;M;P;15.5.1963 00:00:00;-;1.1.1997 00:00:00;;3;28;0;1;info@geo-illy.at;
+964;3;47;Andreas;Wahl;;;;Gerberstraße 6;6900;Bregenz;2;;;;27.3.2007 00:00:00;;0,00;0,00;M;M;P;6.5.1968 00:00:00;-;;F;2;28;0;1;a.wahl@klocker-wahl.at;
+965;0;0;;Fachschaft Geodäsie;;;;Steyrergasse 30 / AE05;8010;Graz;2;++43 - 316 - 873 5127;;;12.4.2007 00:00:00;;0,00;0,00;DA;F;P;;-;;;10;31;0;5;geodesy@htu.tugraz.at;5 Freiexemplare, Vorstandsbeschluss 26.04.07
+967;3;0;Leonhard;Suchenwirth;;;;Piaristengasse 33/6;1080;Wien;2;;;;17.4.2007 00:00:00;;0,00;0,00;M;M;P;15.6.1981 00:00:00;-;;;8;34;0;1;lomjs@gmx.de;
+969;0;6;Birgit;Gattringer;;;;Am Tiefen Weg 1;4221;Steyregg;2;;;;8.5.2007 00:00:00;;0,00;0,00;M;M;P;19.10.1980 00:00:00;-;12.6.2006 00:00:00;w;13;26;0;0;bgattringer@gmx.at;3.01.13: Heft = 0, da Rückstand = 5 Jahre
+970;0;6;Martin;Schier;;;;Fliegerschulweg 18/5;4810;Gmunden;2;;;;21.5.2007 00:00:00;;0,00;0,00;M;M;P;6.3.1981 00:00:00;-;24.11.2009 00:00:00;W;5;1;0;1;schier.m@gmx.at;bei geometer vana angestellt
+971;2;47;Ursula;Ramusch;;;;Mozartweg 10;58239;SCHWERTE;12;;;;29.5.2007 00:00:00;;0,00;0,00;M;M;P;19.8.1962 00:00:00;-;1.11.1988 00:00:00;B;10;26;0;1;U.Ramusch@T-Online.de;
+972;3;0;Hubert;Lehner;;;;Hochstraße 17;2222;Kollnbrunn;2;;;;1.6.2007 00:00:00;;0,00;0,00;M;M;P;13.2.1982 00:00:00;-;;;13;22;0;1;hubert_lehner@gmx.at;
+974;3;6;Wolfgang;Winkler;;;;Bleibergerstrasse 348;9500;Villach;2;;;;2.7.2007 00:00:00;;0,00;0,00;M;M;P;2.1.1979 00:00:00;-;20.11.2006 00:00:00;W;9;26;0;1;winkler.wolfi@gmx.at;
+975;3;6;Georg;Worsche;;;;Robert Musil-Straße 12;9500;Villach;2;;;;20.7.2007 00:00:00;;0,00;0,00;M;M;P;4.2.1971 00:00:00;-;1.1.2000 00:00:00;G;3;11;0;1;georg@worsche.at;katharina@worsche.at (Mitteilung vom 6.07.09)
+977;3;6;Philipp;Berglez;;;;Theodor Körnerstraße 138;8044;Graz;2;;;;9.8.2007 00:00:00;;0,00;0,00;M;M;P;11.5.1981 00:00:00;-;24.1.2006 00:00:00;G;13;24;0;1;pberglez@tca.at;alternativ: pberglez@teleconsult-austria.at
+978;3;0;Gerhard;Götsch;;;;Platzergasse 27;39021;Latsch/Morter;39;;;;19.9.2007 00:00:00;;0,00;0,00;M;M;P;1.4.1967 00:00:00;-;1.1.1986 00:00:00;;2;28;0;0;g.goetsch@tin.it;3.01.13: Heft = 0, da Rückstand = 4 Jahre
+981;0;6;Wolfgang;Tschida;;;;Freiheitsplatz 7;2340;Mödling;2;0664/355 75 27;02236/ 410 52;;5.12.2007 00:00:00;;0,00;0,00;M;M;P;1.5.1963 00:00:00;-;;W;8;11;0;1;tschida@zivilgeometer.com;
+982;3;6;Anton;Edler;Vermessungsamt Leibnitz;;;Kadagasse 6;8430;Leibnitz;2;;;;6.12.2007 00:00:00;;0,00;0,00;M;M;P;20.2.1973 00:00:00;AG;31.1.2003 00:00:00;G;8;3;0;1;anton.edler@bev.gv.at;
+984;3;7;Markus;Jobst;Abt. I1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;19.12.2007 00:00:00;;0,00;0,00;M;M;B;9.2.1972 00:00:00;-;1.9.2003 00:00:00;W;8;3;0;1;markus.jobst@bev.gv.at;
+985;3;52;Christian;Greifeneder;;;;Antoniusweg 6;4692;Niederthalheim;2;;;;28.12.2007 00:00:00;;0,00;0,00;M;M;P;1.5.1977 00:00:00;-;5.6.2007 00:00:00;S;13;24;0;1;chris.greifeneder@gmx.at;
+986;2;6;Christina;Zebedin;;;;Ostriach 79;9570;Ossiach;2;;;;5.2.2008 00:00:00;;0,00;0,00;M;M;P;26.1.1983 00:00:00;-;29.4.2007 00:00:00;G;10;3;0;1;christina.zebedin@bev.gv.at;
+988;3;6;Michael;Schauer;;;;Kirchenstraße 2;4521;Schiedlberg;2;;;;28.2.2008 00:00:00;;0,00;0,00;M;M;P;22.4.1986 00:00:00;-;;;7;11;0;1;schauer@zgeo.at;
+989;3;6;Wilfried;Karel;;;;Severin-Schreibergasse 35/4;1180;Wien;2;;;;16.4.2008 00:00:00;;0,00;0,00;M;M;P;16.1.1980 00:00:00;-;17.1.2005 00:00:00;W;8;33;0;1;willi.karel@gmx.at;
+990;2;6;Regina;Waldner-Groß;;;;Lindenstraße 22/2;9130;Poggersdorf;2;;;;23.5.2008 00:00:00;;0,00;0,00;VM;M;P;17.1.1965 00:00:00;-;;G;10;3;0;1;regina.waldner-gross@bev.gv.at;
+991;3;6;Hannes Geri;Hofstätter;;;;Eichengasse 3;7422;Riedlingsdorf;2;;;;11.7.2008 00:00:00;;0,00;0,00;M;M;P;27.12.1977 00:00:00;AG;23.11.2004 00:00:00;W;13;3;0;1;hannes.hofstaetter@bev.gv.at;
+993;3;5;Klaus;Macheiner;;;;Neufeldweg 147f/3;8041;Graz;2;;;;8.10.2008 00:00:00;;0,00;0,00;M;M;P;16.2.1978 00:00:00;-;28.9.2004 00:00:00;G;3;11;0;1;klaus.macheiner@gmail.com;
+995;3;6;Roland;Frischling;c/o Frischling&Partner ZT KG;;;Attergaustraße 17;4880;St. Georgen im Attergau;2;;;;2.12.2008 00:00:00;;0,00;0,00;M;M;P;13.9.1974 00:00:00;-;16.6.2003 00:00:00;W;11;28;0;1;office@fixpunkt.at;
+996;3;6;Christian;Danzberger;;;;Winkelweg 11b;6070;Ampass;2;;;;5.1.2009 00:00:00;;0,00;0,00;M;M;P;3.8.1965 00:00:00;-;12.12.1991 00:00:00;G;2;28;0;1;danzi@chello.at;
+997;3;34;Werner;Lienhart;Technische Universität Graz;Inst. f. Ingenieurgeod. u. Messsysteme;;Steyrergasse 30/II;8010;Graz;2;++43/(0)316/873-6321;++43/(0)316/873-6820;;18.2.2009 00:00:00;;0,00;0,00;VM;M;P;23.7.1976 00:00:00;-;21.11.2006 00:00:00;G;15;26;0;1;werner.lienhart@tugraz.at;
+998;3;6;Reinhard;Eder;;;;Gradau 10;4591;Molln;2;;;;10.3.2009 00:00:00;;0,00;0,00;M;M;P;1.6.1973 00:00:00;AG;6.6.2008 00:00:00;G;1;3;0;1;reinhard.eder@bev.gv.at;
+1000;3;6;Gerold;Pacher;;;;Theresiengasse 5/11;1180;Wien;2;;;;28.4.2009 00:00:00;;0,00;0,00;M;M;P;17.6.1980 00:00:00;-;3.4.2006 00:00:00;w;8;26;0;1;pa.ge@gmx.at;
+1001;2;6;Ulrike;Scheuer;Vermessungsamt Bruck an der Mur;;;An der Postwiese 8;8600;Bruck an der Mur;2;;;;5.5.2009 00:00:00;;0,00;0,00;M;M;P;5.4.1976 00:00:00;AG;;G;13;3;0;1;ulrike.scheuer@bev.gv.at;
+1002;3;5;Ismail;Kabashi;;;;Heinrich-Öschl-Gasse 19/1/8;3430;Tulln;2;;;;18.5.2009 00:00:00;;0,00;0,00;M;M;P;8.8.1964 00:00:00;-;5.11.2003 00:00:00;W;8;24;0;1;ikabashi@gmx.net;
+1004;3;14;Thomas;Strobl;Abt. R2;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;28.5.2009 00:00:00;;0,00;0,00;M;M;B;12.12.1976 00:00:00;AG;9.1.2002 00:00:00;S;8;3;0;1;thomas.strobl@bev.gv.at;
+1005;3;6;Klemens;Lagler;;;;Aigner Straße 9A/132;5020;Salzburg;2;;;;28.5.2009 00:00:00;;0,00;0,00;M;M;P;2.7.1987 00:00:00;-;;;8;2;0;1;klemens.lagler@gmail.com;
+1006;3;0;Martin;Fleischhacker;;;;Reitschacherstraße 26;7100;Neusiedl/See;2;;;;28.5.2009 00:00:00;;0,00;0,00;M;M;P;6.12.1984 00:00:00;-;;;8;29;0;1;;
+1007;3;6;Hannes;Maar;;;;Pongartgasse 6/5;6850;Dornbirn;2;;;;28.5.2009 00:00:00;;0,00;0,00;M;M;P;30.9.1985 00:00:00;-;;;10;26;0;1;hannes.maar@gmx.net;
+1009;3;0;Bernd;Moser;;;;Monspergstraße 20;8850;Murau;2;;;;10.6.2009 00:00:00;;0,00;0,00;M;M;P;20.11.1986 00:00:00;-;;;8;29;0;1;bernd_moser@gmx.at;
+1010;2;0;Julia;Schwarz;;;;Rosensteingasse 96/3;1170;Wien;2;;;;29.6.2009 00:00:00;;0,00;0,00;M;M;P;2.12.1983 00:00:00;-;;;8;29;0;1;schwarz.julia@aon.at;
+1011;3;4;Ekkehart;Grillmayer;;;;Reithofferstr. 63;4451;Garsten;2;;;;27.10.2005 00:00:00;;0,00;0,00;M;M;P;6.1.1969 00:00:00;;13.4.1997 00:00:00;W;13;11;0;1;grillmayer@geoat.at;bis März 2012:ekkehart.grillmayer@geoat.at
+1016;2;0;Nina;Magnat;;;;Lavaterstraße 6/2/12;1220;Wien;2;;;;;;0,00;0,00;M;M;P;22.9.1985 00:00:00;-;;;13;30;0;1;nina.magnat@gmail.com;
+1017;3;6;Norbert;Zehentner;;;;Leogang 16;5771;Leogang;2;;;;6.7.2009 00:00:00;;0,00;0,00;M;M;P;27.11.1984 00:00:00;-;;;4;31;0;1;zehentner@tugraz.at;
+1020;3;0;Robert;Illnar;;;;Linzerstraße 298/8;1140;Wien;2;;;;28.7.2009 00:00:00;;0,00;0,00;M;M;P;7.8.1982 00:00:00;-;;;8;26;0;1;r.illnar@hotmail.com;
+1021;2;0;Angelika;Xaver;;;;Schlöglgasse 45/1/9;1120;Wien;2;;;;13.8.2009 00:00:00;;0,00;0,00;M;M;P;21.4.1981 00:00:00;-;;;8;29;0;1;Angelika.Xaver@gmx.net;
+1024;3;0;Dominik;Spangl;;;;Riengasse 17;3443;Elsbach;2;;;;17.8.2009 00:00:00;;0,00;0,00;M;M;P;21.12.1984 00:00:00;-;;;8;29;0;1;dominik.spangl@gmx.at;
+1025;3;0;Max;Mustermann;;;;Musterstraße 1;0000;Musterort;2;;;;;;0,00;0,00;DA;-;P;;;;;0;0;0;1;;Musterdatensatz, der von der Druckerei Becvar benötigt wird!
+1026;3;0;Martin;Sehnal;;;;Balderichgasse 31/24;1170;Wien;2;;;;24.8.2009 00:00:00;;0,00;0,00;M;M;P;7.6.1987 00:00:00;-;;;10;29;0;1;martin.sehnal@gmx.at;
+1027;3;0;Reinhard;Demberger;;;;Menzelgasse 15/16;1160;Wien;2;;;;7.9.2009 00:00:00;;0,00;0,00;M;M;P;13.9.1981 00:00:00;-;;;1;11;0;1;r.demberger@gmail.com;
+1028;3;0;Gernot;Felfernig;Abt. V4;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;11.9.2009 00:00:00;;0,00;0,00;M;M;B;27.4.1989 00:00:00;-;;;13;29;0;1;gernot.felfernig@bev.gv.at;
+1029;3;0;Herold;Cerny;;;;Hießgasse 2/20;1030;Wien;2;;;;15.9.2009 00:00:00;;0,00;0,00;M;M;P;28.11.1984 00:00:00;-;;;10;29;0;1;heroldcerny@gmail.com;
+1032;3;6;Michael;Lechner;;;;Ramingtalstraße 206;4441;Behamberg;2;;;;25.9.2009 00:00:00;;0,00;0,00;M;M;P;17.2.1985 00:00:00;-;;;11;29;0;1;michaellechner@aon.at;Nov. 2017 neue Adresse und DI
+1033;3;0;Benedikt;Soja;;;;Gregor Mendel-Str. 5/2;1180;Wien;2;;;;25.9.2009 00:00:00;;0,00;0,00;M;M;P;10.10.1988 00:00:00;-;;;8;29;0;1;b.soja@gmx.at;
+1034;3;60;Roland Martin;Hohensinn;Hochkuchl 22;;;;4923;Lohnsburg am Kobernaußerwald;2;;;;29.9.2009 00:00:00;;0,00;0,00;M;M;P;15.10.1984 00:00:00;-;;;11;29;0;1;roland.hohensinn@gmail.com;
+1035;3;6;Wernher;Hoffmann;L/BEV;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;22.10.2009 00:00:00;;0,00;0,00;M;M;B;5.9.1960 00:00:00;AG;1.1.1987 00:00:00;W;13;3;0;1;wernher.hoffmann@bev.gv.at;
+1036;3;6;Franz;Blauensteiner;Abt. V1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;31.10.2009 00:00:00;;0,00;0,00;VM;M;B;20.8.1981 00:00:00;-;21.4.2008 00:00:00;W;13;3;0;1;franz.blauensteiner@bev.gv.at;
+1037;3;6;Siegfried;Siegele;;;;Leharweg 9;6380;St. Johann in Tirol;2;;;;28.8.2009 00:00:00;;0,00;0,00;M;M;P;8.7.1952 00:00:00;-;18.6.1979 00:00:00;W;2;11;0;1;s.siegele@avt.at;
+1038;3;6;Paul;Störi;c/o Ferd. Graf GmbH, Geodaesie Austria;;;Ennser Str. 83;4407;Steyr-Gleink;2;;;;7.10.2009 00:00:00;;0,00;0,00;M;M;P;30.12.1955 00:00:00;-;;W;13;26;0;1;p.stoeri@geodaesie.at;
+1039;3;6;Rudolf;Hütter;;;;Schulstr. 9A;8071;Dörfla;2;;;;7.10.2009 00:00:00;;0,00;0,00;M;M;P;2.1.1956 00:00:00;-;1.1.1984 00:00:00;G;3;18;0;1;rudolf.huetter@stmk.gv.at;
+1040;3;6;Wolfgang;Dachsberger;Vermessung Loschnigg ZT OG;;;Wienerstraße 8;3250;Wieselburg;2;;;;5.10.2009 00:00:00;;0,00;0,00;M;M;P;25.12.1983 00:00:00;-;;W;8;11;0;1;dachsberger@loschnigg.at;
+1041;3;9;Bernhard;Höfle;;;;Rudolf-Wild-Straße 29;69214;Eppelheim;12;;;;2.10.2009 00:00:00;;0,00;0,00;M;M;P;22.5.1981 00:00:00;-;;;8;34;0;1;hoefle@uni-heidelberg.de;
+1042;3;0;Björn;Schmidt;;;;Weißenwolffgasse 89;1210;Wien;2;;;;1.12.2009 00:00:00;;0,00;0,00;M;M;P;10.10.1977 00:00:00;-;;;8;1;0;1;bjoern.schmidt@airwave.at;
+1043;3;6;Christian;Günther;c/o Linsinger ZT GmbH;;;Hauptstraße 31;5600;St. Johann/Pg.;2;+43/6412/4314;+43/6412/4314-15;;15.1.2010 00:00:00;;0,00;0,00;M;M;P;3.3.1980 00:00:00;-;18.1.2006 00:00:00;D;2;11;0;1;office@linsinger.at;
+1044;1;;;Pöyry Infra GmbH;zH DI Gerolf Laserer;;;Rainerstr. 29;5020;Salzburg;2;;;;4.3.2010 00:00:00;;0,00;0,00;M;M;P;20.8.1967 00:00:00;-;23.6.1994 00:00:00;G;1;26;0;1;gerolf.laserer@poyry.com;
+1046;2;6;Christine;Knötzl;;;;Hauptstraße 18;2483;Weigelsdorf;2;;;;20.4.2010 00:00:00;;0,00;0,00;M;M;P;1.11.1984 00:00:00;-;8.3.2010 00:00:00;W;15;26;0;1;c.knoetzl@gmx.at;
+1047;0;0;;Bundesministerium für Digitalisierung und Wirtscha;Clusterbibliothek - Bereich BEV;z.Hd. Herrn Thomas Rzehak;;Stubenring 1;1010;Wien;2;;;;1.1.2010 00:00:00;;0,00;0,00;DA;;B;;;;;0;0;0;1;;geändert 2014 Mai, Jänner 2018
+1048;3;6;Edgar;Hutter;Vermessungsamt Villach;;;Meister-Friedrich-Straße 3;9500;Villach;2;;;2010.05;18.8.1989 00:00:00;;0,00;0,00;M;M;P;25.1.1959 00:00:00;AG;3.6.1987 00:00:00;w;2;3;0;1;edgar.hutter@bev.gv.at;auch VA Spittal an der Drau
+1049;3;9;Hannes;Kleindienst;GRID-IT GmbH;;;Technikerstr. 21a;6020;Innsbruck;2;0512 507 4861; 0676 844543 200;0512 507 4869;;1.7.2010 00:00:00;;0,00;0,00;M;M;P;25.4.1969 00:00:00;-;1.1.1996 00:00:00;I;9;28;0;1;kleindienst@grid-it.at;
+1050;2;6;Claudia;Artner;Vermessungsamt Gmünd;;;Schremser Straße 9;3950;Gmünd;2;;;;10.8.2010 00:00:00;;0,00;0,00;M;M;P;7.1.1982 00:00:00;AG;17.10.2008 00:00:00;W;12;3;0;1;claudia.artner@bev.gv.at;
+1051;2;6;Birgit;Braumann;;;;Bahnstraße 52, RH 3;2345;Brunn am Gebirge;2;0650 6236 076;;;13.9.2010 00:00:00;;0,00;0,00;M;M;P;5.4.1973 00:00:00;-;12.6.2006 00:00:00;W;8;26;0;1;office@braumann-geodaten.com;
+1053;3;6;Stefan;Dürauer;;;;Sandgasse 22a/5;1190;Wien;2;;;;30.9.2010 00:00:00;;0,00;0,00;M;M;P;8.8.1973 00:00:00;-;24.6.2003 00:00:00;W;10;24;0;1;stefan.duerauer@wien.gv.at;
+1055;3;6;Johann;Gaugl;;;;Alserbachstrasse 35/6;1090;Wien;2;;;;10.10.2010 00:00:00;;0,00;0,00;M;M;P;13.6.1969 00:00:00;-;1.6.1997 00:00:00;G;15;26;0;1;johann.gaugl@strabag.com;
+1056;3;6;Loschnigg;Martin;;;;Wiener Straße 8;3250;Wieselburg;2;;;;9.12.2010 00:00:00;;0,00;0,00;M;M;P;30.1.1971 00:00:00;-;1.11.1998 00:00:00;W;13;11;0;1;vermessung@loschnigg.at;
+1057;3;47;Georg;Topf;Abt. I1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;14.1.2011 00:00:00;;0,00;0,00;VM;M;B;7.3.1974 00:00:00;AG;24.10.2008 00:00:00;V;8;3;0;1;georg.topf@bev.gv.at;
+1059;2;6;Irene;Stix;;;;Triesterstraße 29/1/6;2620;Neunkirchen;2;;;;28.3.2011 00:00:00;;0,00;0,00;M;M;P;5.6.1984 00:00:00;-;5.11.2010 00:00:00;W;10;26;0;1;irene.stix@gmx.at;14.03.12: Adresse "unbekannt" lt. Post, E-Mail am 14.03.12 an Stix
+1061;3;6;Gregor;Möller;;;;Heinzelmanngasse 6/4;1200;Wien;2;;;;10.5.2011 00:00:00;;0,00;0,00;M;M;P;28.1.1984 00:00:00;-;10.11.2010 00:00:00;W;8;33;0;1;gregor.moeller@tuwien.ac.at;
+1062;3;0;Andreas;Roncat;;;;Sperrgasse 14/15;1150;Wien;2;;;;10.5.2011 00:00:00;;0,00;0,00;M;M;P;4.10.1981 00:00:00;-;20.3.2006 00:00:00;W;13;33;0;1;andreas.roncat@geo.tuwien.ac.at;
+1063;2;0;Alexandra;von Beringe;;;;Boltzmanngasse 20/2/3;1190;Wien;2;;;;16.5.2011 00:00:00;;0,00;0,00;M;M;P;18.12.1985 00:00:00;-;;;8;30;0;1;a.vonberinge@gmail.com;
+1064;2;0;Annika;Lehner;;;;Troststrasse 114/10;1100;Wien;2;;;;16.5.2011 00:00:00;;0,00;0,00;M;M;P;11.1.1991 00:00:00;-;;;8;29;0;1;annika.lehner@gmx.at;
+1065;6;0;Jakob Franz;Gruber;;;;Mürzsteg 12;8693;Mürzsteg;2;;;;16.5.2011 00:00:00;;0,00;0,00;M;M;P;28.2.1991 00:00:00;-;;;8;29;0;1;ja.f.gruber@gmail.com;
+1066;3;0;Josef;Schwarz;;;;Eichberg 260;2832;Thernberg;2;;;;16.5.2011 00:00:00;;0,00;0,00;M;M;P;14.1.1990 00:00:00;-;;;8;29;0;1;josef.b.schwarz@gmx.at;
+1067;2;0;Jeannine;Hafner;;;;Südweg 4;9241;Wernberg;2;;;;16.5.2011 00:00:00;;0,00;0,00;M;M;P;19.9.1987 00:00:00;-;;;8;29;0;1;jeannine_hafner@hotmail.com;
+1068;3;6;Bernhard;Pammer;Abt. V2;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;16.5.2011 00:00:00;;0,00;0,00;M;M;B;26.2.1988 00:00:00;-;;;8;3;0;1;bernhard.pammer@bev.gv.at;
+1069;2;0;Anna Maria;Altreiter;;;;Bräuhausgasse 48/63;1050;Wien;2;;;;16.5.2011 00:00:00;;0,00;0,00;M;M;P;21.12.1988 00:00:00;-;;;8;29;0;1;altreiteranna@yahoo.de;12.2014 neue Adresse
+1072;3;0;Stefan;Pegritz;;;;Pfeilgasse 48/9;1080;Wien;2;;;;18.5.2011 00:00:00;;0,00;0,00;M;M;P;21.6.1989 00:00:00;-;;;8;29;0;1;stefan.pegritz@gmx.at;
+1073;2;0;Pleuni;van Hoorne;;;;Seepark Weiden Hi 5/1;7121;Weiden am See;2;;;;20.5.2011 00:00:00;;0,00;0,00;M;M;P;10.8.1989 00:00:00;-;;;8;29;0;1;pleuni@gmx.net;
+1074;3;0;Tomas;Thalmann;;;;Seewiese 15;9583; Faak am See;2;;;;23.5.2011 00:00:00;;0,00;0,00;M;M;P;4.4.1989 00:00:00;-;;;8;30;0;1;tthalmann@gmail.com;
+1077;3;6;Robert;Zölß-Horcicka;;;;Samhaberweg 4;4560; Kirchdorf/Krems;2;;;;11.6.2011 00:00:00;;0,00;0,00;M;M;P;4.1.1968 00:00:00;-;1.6.1997 00:00:00;G;15;28;0;1;office@zoelss.at;
+1079;3;6;Michael;Opitz;;;;Quergasse 17;7143;Apetlon;2;;;;17.10.2011 00:00:00;;0,00;0,00;M;M;P;7.8.1980 00:00:00;-;1.1.2005 00:00:00;W;15;28;0;1;office@geopitz.at;
+1081;2;0;Astrid;Denk;;;;Seeufergasse 10;7143;Apetlon;2;;;;24.10.2011 00:00:00;;0,00;0,00;M;M;P;19.2.1993 00:00:00;-;;;10;29;0;1;astrid-denk@gmx.at;
+1083;3;6;Jürgen;Friedrich;;;;Steingrubenweg 4K;2352;Gumpoldskirchen;2;;;;9.1.2012 00:00:00;;0,00;0,00;M;M;P;22.11.1983 00:00:00;-;30.6.2011 00:00:00;W;10;28;0;1;juergen.friedrich@aon.at;neue Adresse 2015
+1084;3;14;Wolfgang;Jörg;;;;Scheibenbergstraße 27/2;1180;Wien;2;+1 4000/91611;;;28.2.2012 00:00:00;;0,00;0,00;M;M;P;13.7.1967 00:00:00;-;1.1.1991 00:00:00;W;15;24;0;1;wolfgang.joerg@wien.gv.at;
+1085;3;6;Fabian;Hinterberger;;;;Aubrunnerweg 25/5;4040;Linz;2;;;;21.3.2012 00:00:00;;0,00;0,00;M;M;P;10.4.1984 00:00:00;-;25.3.2010 00:00:00;w;8;33;0;1;fabian.hinterberger@gmail.com;
+1086;3;6;Werner;Mücke;;;;Traunaustraße 20;4600;Wels;2;;;;29.3.2012 00:00:00;;0,00;0,00;M;M;P;9.11.1981 00:00:00;-;18.12.2008 00:00:00;W;15;26;0;1;wermuc@gmail.com;
+1087;3;6;Paul;Thurner;;;;Schillerplatz 3;3100;St. Pölten;2;;;;19.4.2012 00:00:00;;0,00;0,00;VM;M;P;11.8.1965 00:00:00;-;1.6.1994 00:00:00;W;8;11;0;1;vermessung@zt-thurner.at;
+1088;3;6;Stefan;Wailzer;;;;Jochingergasse 1;2100;Korneuburg;2;;;;25.4.2012 00:00:00;;0,00;0,00;M;M;P;12.12.1965 00:00:00;-;;w;10;28;0;1;wailzer@argevermessung.at;
+1089;3;6;Ilias;Mokos;;;;Voutsina 66;15561;CHOLARGOS ATTIKIS;13;;;;26.4.2012 00:00:00;;0,00;0,00;M;M;P;19.3.1964 00:00:00;-;7.10.1987 00:00:00;;8;28;0;1;mokosoe@otenet.gr;
+1090;2;0;Anna;Purkhauser;;;;Helbetschlag 14;4264;Grünbach;2;0699/11282494;;;4.5.2012 00:00:00;;0,00;0,00;VM;M;P;16.3.1990 00:00:00;-;;;3;29;0;1;;
+1091;3;0;Matthias;Göttinger;;;;Untere Hauptstr. 19;2111;Tresdorf;2;;;;10.5.2012 00:00:00;;0,00;0,00;M;M;P;10.3.1987 00:00:00;-;;;8;29;0;1;matthias.goettinger@gmx.net;
+1094;2;0;Romina;Messner;;;;Vogelsanggasse 2;2230;Gänserndorf;2;;;;20.7.2012 00:00:00;;0,00;0,00;M;M;P;10.3.1991 00:00:00;-;;;8;29;0;1;romina.messner@gmx.at;
+1096;3;0;Martin;Puhm;;;;Ungergasse 15/21;8020;Graz;2;;;;20.7.2012 00:00:00;;0,00;0,00;M;M;P;21.1.1987 00:00:00;-;;;3;29;0;1;martin.puhm@live.at;
+1099;3;0;Patrick;Greimeister;;;;Konrad Poll Strasse 22/18;2540;Bad Vöslau;2;;;;24.7.2012 00:00:00;25.5.2015 00:00:00;0,00;0,00;A;M;P;15.3.1990 00:00:00;-;;;8;29;0;1;patrick_greimeister@hotmail.com;Austritt 2015, Go
+1102;3;0;Simon;Hochstöger;;;;Hanriederstrasse 19;4240;Freistadt;2;;;;2.8.2012 00:00:00;;0,00;0,00;M;M;P;30.8.1990 00:00:00;-;;;8;29;0;1;simon.hochstoeger@gmx.net;
+1103;2;0;Isabella;Pfeil;;;;Niedergleinkerstraße 22;4407;Dietach;2;;;;6.8.2012 00:00:00;;0,00;0,00;M;M;P;1.7.1992 00:00:00;-;;;8;29;0;1;isy.pfeil@gmx.at;
+1104;3;0;Markus;Pöchtrager;;;;Simaden 27;4171;St. Peter am Wimberg;2;;;;7.8.2012 00:00:00;;0,00;0,00;M;M;P;26.1.1990 00:00:00;-;;;8;29;0;1;poechtma@gmail.com;
+1105;3;6;Philipp;Mitterschiffthaler;Abt. V1;c/o VA Graz;;;;;;;;;10.9.2012 00:00:00;;0,00;0,00;M;M;B;5.5.1982 00:00:00;-;13.4.2011 00:00:00;G;10;3;0;1;philipp.mitterschiffthaler@bev.gv.at;
+1106;2;0;Heidemarie;Zöchling, MSc;;;;Goethestraße 26/4;3385;Prinzersdorf;2;;;;9.10.2012 00:00:00;;0,00;0,00;M;M;P;25.2.1974 00:00:00;-;19.12.2005 00:00:00;S;8;24;0;1;heidi.zoechling@noel.gv.at;
+1107;2;0;Melanie;Metzger;;;;Gollweg 25/16;8053;Graz;2;;;;15.10.2012 00:00:00;;0,00;0,00;M;M;P;14.7.1992 00:00:00;-;;;10;29;0;1;melanie.metzger@gmx.at;
+1108;3;6;Michael;Scherr;;;;Bahnhofstraße 6/5;3133;Traismauer;2;;;;5.12.2012 00:00:00;;0,00;0,00;M;M;P;19.9.1983 00:00:00;-;;W;10;29;0;1;scherr@senftner.at;
+1109;3;6;Markus;Baumgartner;;;;Wildensteinweg 6;72488;SIGMARINGEN;12;;;2. Aufnahme;2.1.2013 00:00:00;;0,00;0,00;M;M;P;14.6.1982 00:00:00;-;;;1;0;0;1;baumgartner.markus@gmx.net;
+1110;2;61;Petra;Helmholz;;;;31 Second Avenue;6054;BASSENDEAN;1;;;;14.1.2013 00:00:00;;0,00;0,00;M;M;P;25.4.1979 00:00:00;;1.10.2003 00:00:00;;8;24;0;1;petra.helmholz@gmail.com;
+1112;3;6;Patrick;Schwalbe;;;;Fuchsröhrenstraße 11/2/18;1110;Wien;2;;;;9.4.2013 00:00:00;;0,00;0,00;M;M;P;28.4.1990 00:00:00;-;;;8;29;0;1;seiser.patrick@gmail.com;ehem. Seiser seit 10.2016 Schwalbe
+1114;;0;;;;;;;;;0;;;;;;0,00;0,00;;;;;;;;0;0;0;1;;
+1115;3;6;Harald;Wirnsberger;;;;Krausgasse 28/1;8020;Graz;2;;;;27.6.2013 00:00:00;;0,00;0,00;M;M;P;21.4.1986 00:00:00;-;25.10.2012 00:00:00;G;10;24;0;1;harald.wirnsberger@oeaw.ac.at;
+1116;3;6;Philipp;Glira;;;;Bauernfeldgasse 3/5;2230;Gänserndorf;2;;;;29.11.2016 00:00:00;;0,00;0,00;M;M;P;30.12.1983 00:00:00;;30.3.2012 00:00:00;w;8;26;0;1;philipp.glira@gmail.com;
+1117;3;46;Josef;Wallner;;;;Burgegger Straße 9;8530;Deutschlandsberg;2;;;;27.8.2013 00:00:00;;0,00;0,00;M;M;P;5.10.1960 00:00:00;AG;1.1.1994 00:00:00;;10;3;0;1;josef.wallner@deutschlandsberg.at;
+1119;2;0;;;;;;;;;0;;;;;;0,00;0,00;M;M;;;;;;0;0;0;1;;
+1120;2;14;Regina;Falkensteiner;Abt. V4;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;2.12.2013 00:00:00;;0,00;0,00;M;M;B;4.6.1973 00:00:00;;22.11.2001 00:00:00;W;8;3;0;1;regina.falkensteiner@bev.gv.at;
+1122;3;27;Hans;Neuner;TU Wien;Dep. Für Geodäsie und Geoinformation;;Gußhausstrasse 27-29/E120-5;1040;Wien;2;;;;1.2.2014 00:00:00;;0,00;0,00;M;M;P;19.8.1975 00:00:00;;31.7.1998 00:00:00;;15;33;0;1;hans.neuner@geo.tuwien.ac.at;
+1123;0;0;;;;;;;;;0;;;;;;0,00;0,00;;;;;;;;0;0;0;0;;
+1124;;0;;;;;;;;;0;;;;;;0,00;0,00;;;;;;;;0;0;0;1;;
+1125;3;6;Joachim;Feldes;;;;Innsbrucker Straße 77;6130;Schwaz;2;;;;4.3.2014 00:00:00;;0,00;0,00;M;M;P;15.4.1975 00:00:00;;23.6.2003 00:00:00;G;3;28;0;1;feldes@trigonos.at;
+1126;3;9;Lothar;Beckel;;;;Kühbergstrasse 50;5324;Faistenau;2;;;;28.4.2014 00:00:00;;0,00;0,00;M;M;P;15.8.1934 00:00:00;;1.1.1962 00:00:00;w;8;28;0;1;igm@euro-acad.eu;
+1127;;0;;;;;;;;;0;;;;;;0,00;0,00;;;;;;;;0;0;0;1;;
+1128;3;6;Matthias;Fuchs;;;;Möwenstrasse 11;5201;Seekirchen;2;;;;19.9.2014 00:00:00;;0,00;0,00;M;M;P;19.7.1982 00:00:00;;21.6.2013 00:00:00;g;1;26;0;1;mf.fuchs@aon.at;
+1129;3;9;Peter;Dorninger;;;;Gartenweg 16;2511;Pfaffstätten;2;;;;20.10.2014 00:00:00;;0,00;0,00;M;M;P;18.3.1976 00:00:00;;22.5.2000 00:00:00;w;10;11;0;1;p.dorninger@4D-IT.COM;
+1130;3;14;Martin;Müller-Fembeck;Abt. R1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;1.1.2015 00:00:00;;0,00;0,00;M;M;B;12.2.1966 00:00:00;;;w;8;0;0;1;martin.mueller-fembeck@bev.gv.at;
+1131;;0;;;;;;;;;0;;;;;;0,00;0,00;;;;;;;;0;0;0;1;;
+1132;;0;arn;;;;;;;;0;;;501;;;0,00;0,00;;;;;;;;0;0;0;1;;
+1133;3;0;Thomas;Smutny;;;;Antonsgasse 9;2531;Gaaden;2;;;;1.1.2015 00:00:00;;0,00;0,00;M;M;P;1.12.1990 00:00:00;;;;13;29;0;1;a1167667@unet.univie.ac.at;
+1134;3;14;Marc;Adams;BFW;Institut für Naturgefahren;; HofburgRennweg 1;6020;Innsbruck;2;;;;13.1.2015 00:00:00;;0,00;0,00;M;M;P;17.10.1981 00:00:00;;;I;15;24;0;1;marc.adams@uibk.ac.at;
+1135;3;6;Lothar;Eysn;;;;Schönbrunnerstrasse 16/1515;1050;Wien;2;;;;26.1.2015 00:00:00;;0,00;0,00;M;M;P;9.4.1980 00:00:00;;27.4.2009 00:00:00;w;10;22;0;1;ovg@eysn.eu;
+1136;2;0;;;;;;;;;0;;;;;;0,00;0,00;;;;;;;;0;0;0;1;;
+1137;2;14;Marlene;Dreiseitel;Abt. R1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;1.3.2015 00:00:00;;0,00;0,00;M;M;B;3.2.1975 00:00:00;;30.4.2002 00:00:00;w;8;3;0;1;marlene.dreiseitel@bev.gv.at;alternativ: dreiseitel@gmx.net
+1138;3;44;Hansjörg;Ragg;;;;Tschaffinis;6166;Fulpmes;2;;;;1.3.2015 00:00:00;;0,00;0,00;M;M;P;26.4.1981 00:00:00;;6.12.2011 00:00:00;I;2;28;0;1;hansjoerg.ragg@REDcatch.at;
+1139;3;6;Sven;Egger;;;;Kapruner Generator Straße 51;8160;Weiz;2;;;;24.4.2015 00:00:00;;0,00;0,00;M;M;P;4.9.1973 00:00:00;;3.12.2004 00:00:00;g;10;28;0;1;sven.egger@vermessung-se.at;
+1140;0;0;;;;;;;;;0;;;;;;0,00;0,00;;;;;;;;0;0;0;1;;
+1141;3;1;Wolfgang;Meixner;;;;Dornbacherstrasse 89;1170;Wien;2;;;;13.5.2015 00:00:00;;0,00;0,00;M;M;P;10.8.1951 00:00:00;;19.6.1973 00:00:00;w;9;28;0;1;wolfgang@meixner.at;
+1143;3;60;Johannes;Falkner;;;;Zinckgasse 10/31-33;1150;Wien;2;;;;25.6.2015 00:00:00;;0,00;0,00;VM;M;P;24.9.1990 00:00:00;;;w;8;29;0;1;johannes.falkner@gmx.at;
+1144;3;6;Heimo;Scharler;VSP Stolizka@Partner;Ziviltechniker Gmbh.;;Schottenfeldgasse 79;1070;Wien;2;;;;25.6.2015 00:00:00;;0,00;0,00;M;M;P;12.1.1967 00:00:00;;17.12.1992 00:00:00;g;8;28;0;1;heimo.scharler@vsp.co.at;Mitgliedsart auf M geaendert am 19.10.2015 durch FB
+1145;3;6;Martin;Schuler;;;;Quadratsch 30;6551;Pians;2;;;;1.7.2015 00:00:00;;0,00;0,00;M;M;P;14.12.1985 00:00:00;;27.4.2015 00:00:00;w;2;26;0;1;martinjosef.schuler@gmail.com;
+1146;3;6;Martin;Friedl;;;;Röntgenstrasse 3;82256;Fürstenfeldbruck;12;;;;8.9.2015 00:00:00;;0,00;0,00;M;M;P;;;20.10.1973 00:00:00;;2;38;0;1;martin@friedl-ffb.de;
+1147;3;6;Martin;Hauser;;;;Eidenberger Strasse 12;4040;Lichtenberg;2;;;;8.9.2015 00:00:00;;0,00;0,00;M;M;P;11.2.1976 00:00:00;;1.1.2003 00:00:00;w;8;3;0;1;martin.hauser@bev.gv.at;
+1148;3;6;Christian;Lidl;;;;Dr. Emanuel Jörgnerstrasse 11;5310;Mondsee;2;;;;1.10.2015 00:00:00;;0,00;0,00;M;M;P;22.4.1962 00:00:00;;17.12.1988 00:00:00;G;13;11;0;1;office@vermessung-lidl.at;
+1149;3;7;Gottfried;Mandlburger;;;;Linzerstrasse 15;3382;Loosdorf;2;;;;12.10.2015 00:00:00;;0,00;0,00;M;M;P;4.9.1969 00:00:00;;1.1.1995 00:00:00;w;11;33;0;1;gottfried.mandlburger@geo.tuwien.ac.at;
+1150;3;60;Michael;Schott;;;;Auersperggasse 12a;8010;Graz;2;;;;10.12.2015 00:00:00;;0,00;0,00;M;M;P;13.6.1989 00:00:00;;;;3;31;0;1;michael.schott@edu.uni-graz.at;
+1151;3;0;Ingobert;Krank;IBV-KRANK GmbH;;;Franz-Josef-Strasse 33;5020;Salzburg;2;;;;22.12.2015 00:00:00;;0,00;0,00;M;M;P;22.2.1968 00:00:00;;;;13;0;0;1;office@ibv-krank.at;
+1152;3;6;Boris;Bogensberger;;;;Hahngasse 18/4-5;1090;Wien;0;;;;19.1.2016 00:00:00;;0,00;0,00;M;M;P;26.9.1978 00:00:00;;30.11.2015 00:00:00;w;8;28;0;1;boris.bogensberger@bogensberger.com;
+1153;3;6;Christoph;Pöllabauer;;;;Brockmanngasse 58;8010;Graz;0;;;;21.1.2016 00:00:00;;0,00;0,00;M;M;P;29.6.1982 00:00:00;;15.12.2011 00:00:00;g;10;26;0;1;christoph.poellabauer@adp-rinner.at;
+1154;3;60;Peter;Bauer;;;;Viktor Kaplanstraße 31;8720;Knittelfeld;2;;;;21.3.2016 00:00:00;;0,00;0,00;M;M;P;19.3.1992 00:00:00;;;G;3;29;0;1;peter.bauer92@gmx.at;
+1155;3;6;Andreas;Schmaldienst;;;;Technologiepark 10;8380;Jennersdorf;2;;;;1.4.2016 00:00:00;;0,00;0,00;M;M;P;13.5.1965 00:00:00;;1.10.1994 00:00:00;g;10;28;0;1;jenn@vpw.at;
+1156;3;6;Mario;Hackl;;;;Stadtplatz 34;4400;Steyr;2;;;;1.4.2016 00:00:00;;0,00;0,00;M;M;P;5.8.1975 00:00:00;;;w;5;28;0;1;m.hackl@geo-steyr.at;
+1157;3;0;Georg;Kofler;;;;Andreas-Hofer-Straße 13;6020;Innsbruck;2;;;;25.4.2016 00:00:00;;0,00;0,00;M;M;;10.12.1991 00:00:00;;;;9;29;0;1;info@georg-kofler.com;
+1158;3;6;Georg;Schlögl;;;;Perthalergasse 7;6020;Innsbruck;2;;;;1.6.2016 00:00:00;;0,00;0,00;M;M;P;3.1.1983 00:00:00;;12.1.2009 00:00:00;W;9;26;0;1;schloegl.georg@gmx.at;
+1159;3;6;Florian;Moser;;;;Ranggerweg 20a;6170;Zirl;2;;;;1.6.2016 00:00:00;;0,00;0,00;M;M;P;25.4.1985 00:00:00;;4.3.2011 00:00:00;G;2;3;0;1;florian.moser@bev.gv.at;
+1160;2;60;Christina;Ehrhart;;;;Alberstraße 17;8010;Graz;2;;;;6.7.2016 00:00:00;;0,00;0,00;M;M;;19.6.1992 00:00:00;;;G;4;29;0;1;christina.erhart@aon.at;
+1161;3;6;Kurt;Stubenvoll;;;;Erzherzog Jojann Straße 423;8623;AFLENZ - Kurort;2;;;;15.7.2016 00:00:00;;0,00;0,00;M;M;P;9.7.1950 00:00:00;;1.1.1974 00:00:00;g;10;24;0;1;kurt.stubenvoll@gmail.com;
+1162;3;0;Fabian;Buchmayer;;;;Ragnitzstraße 163/2;8047;Graz;2;;;;20.7.2016 00:00:00;;0,00;0,00;M;M;P;16.5.1991 00:00:00;;;g;3;29;0;1;fbuchmayer@gmx.at;
+1163;3;0;Jakob;Lidl;;;;Schubertstraße 66;8010;Graz;2;;;;10.8.2016 00:00:00;;0,00;0,00;M;M;P;12.2.1993 00:00:00;;;g;3;29;0;1;lidl@student.tugraz.at;
+1164;3;6;Matthias;Ehrhart;TU Graz;Institut für Ingenieur Geodäsie und Messsysteme;;Steyrergasse 30;8010;Graz;2;;;;10.8.2016 00:00:00;;0,00;0,00;M;M;;11.7.1988 00:00:00;;4.10.2012 00:00:00;g;3;30;0;1;matthias.erhart@tugraz.at;
+1166;3;6;Markus;Mayr;;;;Embelgasse 2-8/1/212;1050;Wien;2;;;;22.8.2016 00:00:00;;0,00;0,00;M;M;P;11.5.1984 00:00:00;;19.11.2012 00:00:00;w;11;24;0;1;markusmayr@gmx.net;
+1167;3;52;Bernhard;Kosar;;;;Gabesstraße 10;4030;Linz;2;;;;13.9.2016 00:00:00;;0,00;0,00;M;M;P;12.11.1986 00:00:00;;19.10.2012 00:00:00;;11;16;0;1;bernhard.kosar@ooe.gv.at;
+1168;3;9;Matthias;Madzak;Abt. V1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;19.9.2016 00:00:00;;0,00;0,00;M;M;B;16.6.1986 00:00:00;;7.3.2011 00:00:00;w;13;3;0;1;matthias.madzak@bev.gv.at;
+1169;2;6;Vera;Leopoldseder;;;;Dr. Rudolf Klafsky - Straße 18;2500;Baden;2;;;;26.9.2016 00:00:00;;0,00;0,00;;;P;29.8.1970 00:00:00;;27.10.2015 00:00:00;w;13;1;0;1;v.leopoldseder@gmx.at;
+1170;3;0;David;Tscheppen;;;;Engerthstraße 215/37;1020;Wien;2;;;;5.10.2016 00:00:00;;0,00;0,00;M;M;P;17.9.1991 00:00:00;;;w;8;29;0;1;d.tscheppen@gmx.net;
+1171;3;0;Milutin;Milenkovic;;;;Leopoldauer Straße 163/4/413;1210;Wien;2;;;;1.12.2016 00:00:00;;0,00;0,00;M;M;P;21.10.1980 00:00:00;;;;8;33;0;1;milutin.milenkovic@geo.tuwien.ac.at;
+1172;3;6;Peter;Pavetich;;;;Hauptstraße 134;7302;Nikitsch;2;;;;15.12.1964 00:00:00;;0,00;0,00;M;M;P;30.6.1985 00:00:00;;11.6.2012 00:00:00;w;8;26;0;1;peter.pavetich@aon.at;
+1173;2;6;Fabia;Distefano;;;;Leopold Figl Straße 1/1/6;2361;Laxenburg;2;;;;19.12.2016 00:00:00;;0,00;0,00;M;M;P;;;1.1.2004 00:00:00;w;8;26;0;1;fabia.distefano@gistech.at;
+1174;3;6;Martin;Kropf;;;;Artteilweg 21;7000;Eisenstadt;2;;;;25.12.2016 00:00:00;;0,00;0,00;M;M;P;22.5.1988 00:00:00;;11.1.2016 00:00:00;w;12;28;0;1;mk@icb.at;
+1175;3;6;Gregor;Schiller;Vermessung Schmid ZT GMBH;;;Inkustraße  1-7/3/EG;3400;Klosterneuburg;2;;;;17.1.2017 00:00:00;;0,00;0,00;M;M;P;25.5.2019 00:00:00;;1.7.2004 00:00:00;w;8;28;0;1;office@geoserve.co.at;
+1176;3;6;Alexander;Ebner;;;;Buchenweg 20;4492;Hofkirchen im Traunkreis;2;;;;6.2.2017 00:00:00;;0,00;0,00;M;M;P;6.12.1982 00:00:00;;28.4.2008 00:00:00;g;13;1;0;1;alexander-ebner@gmx.at;
+1177;3;60;Rafael;Milos;;;;Storkgasse 17/34;1050;Wien;2;;;;22.2.2017 00:00:00;;0,00;0,00;M;M;P;29.12.1986 00:00:00;;;w;8;26;0;1;rafael.milos@gmail.com;
+1178;3;52;Thomas;Winkler;;;;Aubrunnerweg 19/II/27;4040;Linz;2;;;;23.3.2017 00:00:00;;0,00;0,00;M;M;P;23.7.1983 00:00:00;;27.9.2016 00:00:00;v;11;0;0;1;thomas.winkler@outlook.at;
+1179;3;0;Hannes;Fleckl;;;;Merangasse 42;8010;Graz;2;;;;3.4.2017 00:00:00;;0,00;0,00;M;M;P;30.4.1986 00:00:00;;;g;13;29;0;1;hannes.fleckl@gmail.com;
+1180;2;0;;;;;;;;;0;;;;;;0,00;0,00;;;;;;;;0;0;0;1;;
+1181;3;6;Markus;Gutmann;;;;Hegelgasse 21/8;1010;Wien;2;;;;12.5.2017 00:00:00;;0,00;0,00;M;M;P;28.9.1973 00:00:00;;1.1.2001 00:00:00;w;8;11;0;1;mg@dgza.at;
+1182;2;6;Sarah;Leidenmühler;Abteilung V2;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;17.5.2017 00:00:00;;0,00;0,00;M;M;B;10.1.1992 00:00:00;;6.6.2016 00:00:00;w;11;24;0;1;sarah.leidenmuehler@aon.at;
+1183;0;0;Samuel;Jost;;;;Moserhofgasse 20/36;8010;Graz;2;;;;29.8.2017 00:00:00;;0,00;0,00;M;M;P;29.11.1991 00:00:00;;;;3;29;0;1;samuel.jost@gmx.at;
+1184;3;52;Gerhard;Loub;Abt. I1;;;Schiffamtsgasse 1-3;1020;Wien;2;;;;31.10.2017 00:00:00;;0,00;0,00;M;M;B;24.7.1972 00:00:00;;;;12;3;0;1;gerhard.loub@bev.gv.at;
+1185;3;6;Erwin;Rapatz;;;;Leusbündtweg 49a;6800;Feldkirch;2;;;;1.10.2017 00:00:00;;0,00;0,00;M;M;P;5.5.1960 00:00:00;;;;2;28;0;1;vermessung@rapatz-zt.at;
+1186;2;6;Sabine;Gottwald;Abt. I1;;;;;;;;;;1.11.2017 00:00:00;;0,00;0,00;M;M;B;29.7.1982 00:00:00;;30.8.2016 00:00:00;w;11;3;0;1;sabine.gottwald@bev.gv.at;
+1187;3;6;Paul;Gnilsen;;;;Wittgensteinstraße 113A;1230;Wien;2;paulgnilsen@icloud.com;;;21.11.2017 00:00:00;;0,00;0,00;M;M;P;8.11.1989 00:00:00;;3.3.2016 00:00:00;w;8;26;0;1;;
+1188;2;6;Carmen;Jandrisevits;;;;Nußbaumerstraße 45/8;8042;Wien;2;;;;21.10.2017 00:00:00;;0,00;0,00;M;M;P;15.2.1981 00:00:00;;10.6.2005 00:00:00;g;3;3;0;1;carmen.janQa1.net;
+1189;3;6;Karl;Reichsthaler;;;;Gnaserstraße 2a;8330;Feldbach;2;;;;27.11.2017 00:00:00;;0,00;0,00;M;M;P;29.1.1953 00:00:00;;20.3.1980 00:00:00;;10;28;0;1;karl.reichsthaler@reichsthaler.com;
+1190;3;6;David;Reifeltshammer;;;;Hirschengasse 19/1/8;1060;Wien;2;;;;27.11.2017 00:00:00;;0,00;0,00;M;M;P;26.9.1988 00:00:00;;27.11.2017 00:00:00;w;8;29;0;1;david.reifeltshammer@gmail.com;
+1191;3;6;Zlatko;Tokic;;;;Maria-Kuhn-Gasse 6/1/B5;1100;Wien;2;;;;11.1.2018 00:00:00;;0,00;0,00;M;M;P;29.7.1965 00:00:00;;20.2.1991 00:00:00;;13;28;0;1;zlatko.tokic@zt-vermessung.at;
+1192;3;6;Wilhelm;Jachs;;;;Rudmanns 221;3910;Zwettl;2;;;;21.1.2018 00:00:00;;0,00;0,00;M;M;P;24.5.1971 00:00:00;;18.6.1997 00:00:00;w;12;28;0;1;wilhelm.jachs@doeller.biz;
+1193;3;6;Werner;Weber;;;;Roman Scholz-Platz 4;3400;Klosterneuburg;2;;;;22.1.2018 00:00:00;;0,00;0,00;M;M;P;27.3.1970 00:00:00;;1.1.1997 00:00:00;w;8;28;0;1;office@geoweber.at;

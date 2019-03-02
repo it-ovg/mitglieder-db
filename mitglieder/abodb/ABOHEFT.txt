@@ -1,0 +1,248 @@
+AboNummer;KundenNummer;KundenNummeralt;Anrede;Titel;Vorname;Name-1;Name-2;Name-3;PO-BOX;Strasse;PLZ;Ort;Tel;Fax;Heftanzahl;BEIGZ;BEIDAT;STORNODAT;ABOART;Land;Rückstand;Gutschrift;ABOAnfang;ABOEnde;Anmerkung
+3;67;1;0;0;;Kienreich Jos. A.;Zeitungs-Abo;Universitätsbuchhandlung;828;Sackstraße 6;8011;Graz;;;1;FZA/HA;30.9.1993 00:00:00;;DA;2;0,00;0,00;1.1.1993 00:00:00;31.12.2006 00:00:00;Geschäft Ende 2006 geschlossen, Storno   10.07.07
+5;2;2;0;6;Karl-August;Sovinz;;;;Krenhof 270;8580;Köflach;;;1;;1.5.1980 00:00:00;;DA;2;0,00;0,00;1.1.1980 00:00:00;31.12.2003 00:00:00;Hefte 2004 nicht bezahlt u. nicht angenommen.
+6;3;3;0;0;;Techn. Universität Graz;Bibliothek;;;Technikerstraße 4;8010;Graz;;;1;;11.1.1979 00:00:00;31.12.2001 00:00:00;DA;2;0,00;0,00;1.1.1979 00:00:00;31.12.2001 00:00:00;
+8;4;4;0;0;;Veitsch-Radex GmbH & Co;;;;Werk Breitenau;8614;St. Jakob;01750213-0;;1;;6.2.1951 00:00:00;;DA;2;0,00;0,00;1.1.1951 00:00:00;;
+9;5;5;7;0;;Tiroler Landesregierung;Abt. Bodenordnung;;;Wilhelm-Greil-Straße 9;6020;Innsbruck;++43(0)512/508-3800;++43(0)512/508-3805;1;102/1-1950;9.10.1950 00:00:00;;DA;2;0,00;0,00;1.1.1950 00:00:00;;
+10;6;6;0;0;;Baubezirksamt Innsbruck;;;;Valiergasse 1;6010;Innsbruck;;;1;ZL.a 110/13-80;10.12.1980 00:00:00;1.8.2000 00:00:00;DA;2;0,00;0,00;1.1.1980 00:00:00;1.1.2002 00:00:00;
+11;7;7;0;0;;Magistrat der Stadt Innsbruck;Abteilung Beschaffungsamt;;;Rathaus;6020;Innsbruck;;;1;;7.10.1948 00:00:00;;DA;2;0,00;0,00;1.1.1948 00:00:00;;
+13;9;9;0;6;Gernot;Kraschl;;;;8. Mai-Straße 47;9020;Klagenfurt;0463 55930;;1;;8.1.1971 00:00:00;9.5.2011 00:00:00;DA;2;0,00;0,00;1.1.1971 00:00:00;31.12.2010 00:00:00;nachträgl. Storno wegen Büro-Übernahme,  9.05.11
+15;11;11;0;0;;Stadtamt Leoben;;;;;8700;Leoben;;;1;;7.10.1948 00:00:00;;JB;2;0,00;0,00;1.1.1948 00:00:00;;
+16;12;12;0;0;;Amt der OOE  Landesregierung;Amtsbibliothek;;;Bahnhofplatz 1/(LDZ);4021;Linz;(+43 732) 77 20-121 72;(+43 732) 77 20-21 16 77;1;;1.1.1972 00:00:00;;DA;2;0,00;0,00;1.1.1972 00:00:00;;Kündigung per 31.12.2013, neu Abo über EBSCO
+17;13;13;1;0;;Landesdienstleistungszentrum;Bibliothek;;;Bahnhofplatz 1/6. OG;4021;Linz;;;1;127/1948;21.10.1948 00:00:00;20.7.2011 00:00:00;DA;2;0,00;0,00;1.1.1948 00:00:00;31.12.2011 00:00:00;Kündigung per E-Mail am 20.07.11
+18;14;14;0;0;;ÖBB Bau AG;Abt. Forschung u. Entwicklung;Herrn Dipl.-Ing. KLÖSCH Rupert;;Bahnhofstraße 3;4020;Linz;;;1;;20.11.1948 00:00:00;22.10.2008 00:00:00;DA;2;0,00;0,00;1.1.1948 00:00:00;31.12.2007 00:00:00;22.10.08: Klösch verstorben, Heft 2/2008  retour
+20;15;15;0;0;;Salzburger Landesarchiv;Amtsbibliothek;;;Michael-Pacher-Straße 40;5010;Salzburg;;;1;4.12-5/151-1979;3.12.1979 00:00:00;;DA;2;0,00;0,00;1.1.1979 00:00:00;;
+32;17;17;0;0;;Austro Control - GmbH;Fachbibliothek;;;Schnirchgasse 11;1030;Wien;;;1;Nr. 64173;28.9.1979 00:00:00;;DA;2;0,00;0,00;1.1.1979 00:00:00;31.12.2010 00:00:00;Kündigung am 16.05.11 (noch kein VGI 1/11 ausgel.)
+34;178;74;8;0;;Schweitzer Sortiment;;;;Canovagasse;1010;Wien;;;1;21120-01/14808121;14.4.1992 00:00:00;18.2.2003 00:00:00;JB;2;0,00;0,00;1.1.1992 00:00:00;31.12.2002 00:00:00;
+36;19;19;0;0;;Österr. Institut für Raumplanung;Bibliothek und Dokumentation;;562;;1011;Wien;;;1;Nr. 127;31.3.1981 00:00:00;27.11.2007 00:00:00;DA;2;0,00;0,00;1.1.1981 00:00:00;31.12.2007 00:00:00;Kündigung am 27.11.07 per Fax
+38;21;21;0;0;;Techn. Universität Wien;Universitätsbibliothek;Abteilung E-Ressourcen und Zeitschriften;;Resselgasse 4;1040;Wien;;;1;;2.10.1948 00:00:00;;DA;2;0,00;0,00;1.1.1948 00:00:00;;
+41;22;22;0;0;;BEGAS Netz GmbH;;;;Kasernenstraße 10;7000;Eisenstadt;02682/9015-240;;0;Nr.10442;1.2.1984 00:00:00;31.12.2013 00:00:00;DA;2;0,00;0,00;1.1.1984 00:00:00;31.12.2013 00:00:00;Firma besteht nicht mehr
+42;23;23;7;0;;NÖ. Landesregierung;Abt. B/7;;;Landhausplatz 1;3109;St. Pölten;;;2;;26.3.1986 00:00:00;;DA;2;0,00;0,00;1.1.1986 00:00:00;;
+44;24;24;0;0;;Universität Innsbruck;Baufakultäts-Bibliothek;;;Technikerstraße 13;6020;Innsbruck;;;1;;17.6.1986 00:00:00;;DA;2;0,00;0,00;1.1.1986 00:00:00;31.12.2010 00:00:00;Kündigung per E-Mail vom 1.09.10 mit Ende 2010
+45;25;25;0;0;;Allgemeine Baugesellschaft - A.Porr AG;;z.H. Herrn DI Stefan Götz;;Absbergasse 47;1100;Wien;;;1;;9.12.1986 00:00:00;27.5.2008 00:00:00;DA;2;0,00;0,00;1.1.1986 00:00:00;31.12.2007 00:00:00;2007 nicht  bezahlt, Rechnung 2008: verzogen
+46;26;26;1;0;;Wilhelm Frick GmbH;Abteilung Versand;;;Heizwerkstrasse 8;1230;Wien;01/616 70 12/33;01/616 70 12 40;1;sp;28.9.1992 00:00:00;;DA;2;0,00;0,00;1.1.1992 00:00:00;;
+47;27;27;7;0;;NÖ. Landesregierung;NÖ.Landesbibliothek, Abt.III/4;;;Landhausplatz 1;3109;St. Pölten;;;1;DVR:0059986;10.6.1987 00:00:00;;DA;2;0,00;0,00;1.1.1987 00:00:00;;
+48;77;114;0;0;;Vorarlberger Illwerke A.G.;Bibliothek;;;Weidachstraße 6;6900;Bregenz;;;1;C5785444;7.12.1993 00:00:00;;JB;2;0,00;0,00;1.1.2015 00:00:00;31.12.2016 00:00:00;verlängert 2015
+50;28;28;0;0;;Magistrat Graz;Abteilung 10/6;Stadtvermessungsamt;;Europaplatz 20;8020;Graz;;;1;A 20-9/4-88;24.5.1988 00:00:00;;DA;2;0,00;0,00;1.1.1988 00:00:00;;
+52;77;127;0;0;;Fachhochschule Mainz;Bibliothek;;;Holzstraße 36;55116;MAINZ;;;1;ST7370667;9.10.1993 00:00:00;16.5.2012 00:00:00;JB;12;0,00;0,00;1.1.1993 00:00:00;31.12.2012 00:00:00;Kündigung per E-Mail vom 05/16/2012 (EBSCO)
+55;29;29;0;0;;Universitet for Miljoe &;Biovitenskap;IMT Biblioteket TF Kvartalet;5003;;1432;AAS;;;1;49270044;27.6.1996 00:00:00;;JB;19;0,00;0,00;1.1.1996 00:00:00;31.12.2007 00:00:00;verlängert für 2007 am 13.11.06
+58;32;32;0;0;;Fachhochschule Bochum;Hochschulbibliothek;Zeitschriftenverwaltung;;Lennershofstr. 140;44801;BOCHUM;+49 (0)234 32-10756;+49 (0)234 32-14220;1;BZ/Sch;3.9.1987 00:00:00;;DA;12;0,00;0,00;1.1.1987 00:00:00;;Dipl.-Bibl. Sabine Westermann
+63;33;33;1;0;;Struppe & Winckler GmbH & Co. KG;Fachbuchhandlung;;;Mohrenstr. 34 / Emporium;10117;BERLIN;++49 (0)30-215 091-58;++49 (0)30-262 96 11;1;192339.1.4408295;23.6.2003 00:00:00;15.9.2004 00:00:00;DA;12;0,00;0,00;1.1.2002 00:00:00;31.12.2004 00:00:00;
+64;34;34;1;;;Dr. Rudolf Habelt GmbH;Versandbuchhandlung;;150104;;53040;BONN;;;1;;1.1.1990 00:00:00;;DA;12;0,00;0,00;1.1.1990 00:00:00;31.12.2006 00:00:00;Kündigung mit Ende 2006 v. 27.09.06
+67;35;35;1;0;;Buchhandlung Graff GmbH;;;;Sack 15;38100;BRAUNSCHWEIG;;;1;200142/12662;1.1.1965 00:00:00;21.4.2017 00:00:00;DA;12;0,00;0,00;1.1.1965 00:00:00;31.12.2016 00:00:00;
+72;29;29;0;0;;Bibliotheek TU Delft;Mediaverwerking / Periodieken;114427;;Postbus 98;2600;MG DELFT;;;1;48887610;10.10.1993 00:00:00;;JB;18;0,00;0,00;1.1.1993 00:00:00;;verlängert für 2014 am 30.10.13
+78;171;38;0;0;;TKK;Maanmittausos/ Kirjasto;;;PL 1200 (Otakaari 1);02015;TKK;;;1;112122/21;2.3.2004 00:00:00;;DA;10;0,00;0,00;1.1.1993 00:00:00;31.12.2007 00:00:00;verlängert für 07 am 20.11.06
+80;39;39;8;0;;Baedeker g.d. GmbH;;;100345;;4300;ESSEN 1;;;1;RHE-811;12.10.1989 00:00:00;8.7.2002 00:00:00;JB;12;0,00;0,00;1.1.1989 00:00:00;31.12.2002 00:00:00;
+81;40;40;0;0;;Verlag Glückauf GmbH;Versandbuchhandlung;;185619;;45206;ESSEN;;;1;;27.3.1976 00:00:00;7.8.2003 00:00:00;DA;12;0,00;0,00;1.1.1976 00:00:00;31.12.2003 00:00:00;
+85;41;41;0;0;;Fachbuchservice Frankfurt GmbH;;;;Neue Kräme 32;60311;FRANKFURT;069/289929;069/289842;1;FHS;14.10.1994 00:00:00;;DA;12;0,00;0,00;1.1.1994 00:00:00;;fachbuchservice-ffm@t-online.de
+89;43;43;0;28;Heinrich;Ebner;TU München/LSt. f. Photogr. u. Fernerk.;;;Arcisstraße 21;80290;MÜNCHEN;;;1;;20.5.1971 00:00:00;24.1.2001 00:00:00;DA;12;0,00;0,00;1.1.1971 00:00:00;31.12.2001 00:00:00;
+91;29;44;0;0;;HafenCity Universität Hamburg;Informations- und Medienzentrum;;;Hebebrandstr. 1;22297;HAMBURG;;;1;42650570;23.12.1981 00:00:00;;DA;12;0,00;0,00;1.1.1981 00:00:00;31.12.2011 00:00:00;verlängert für 2011 am 29.10.10
+95;46;46;1;0;;Reinhold Gondrom GmbH & Co.KG;;;;Kerststr. 9-15;67655;KAISERSLAUTERN;(0631) 362 19-982;(0631) 362 19-715;1;Zt/UNI;26.11.1980 00:00:00;10.2.2010 00:00:00;DA;12;0,00;0,00;1.1.1980 00:00:00;31.12.2010 00:00:00;Kündigung per Fax vom 10.02.10 mit Ende 2010
+96;73;47;0;0;;Linda Hall Library;Serials Department;;;5109 Cherry Street;64110-2498;KANSAS CITY, MO;tarab@lindahall.org;;1;740780;27.11.1974 00:00:00;;DA;29;525,00;0,00;1.1.1974 00:00:00;31.12.2017 00:00:00;
+97;48;48;0;0;;Kellner u. Moessner;Universitätsbuchhandlung;;;Kaiserstraße 18;76131;KARLSRUHE;;;1;AZ/FH;6.4.1981 00:00:00;15.2.2007 00:00:00;DA;12;0,00;0,00;1.1.1981 00:00:00;31.12.2006 00:00:00;Insolvenz - neues Abo für KD = 1311
+99;50;50;0;0;;Karlsruher Institut für Technologie (KIT);Campus Süd;Geodätisches Institut;;Englerstr. 7;76131;KARLSRUHE;;;1;;1.1.1955 00:00:00;;DA;12;0,00;0,00;1.1.1955 00:00:00;;
+101;51;51;0;0;;Landesvermessungsamt Schleswig-Holstein;;;5071;;24062;KIEL 1;;;1;;26.1.1967 00:00:00;;DA;12;0,00;0,00;1.1.1967 00:00:00;;
+102;52;52;0;0;;Landesamt für Vermessung und Geobasisinformation;Rheinland-Pfalz;;100341;;56033;KOBLENZ;;;1;o.1320/80;16.6.1980 00:00:00;;DA;12;0,00;0,00;1.1.1980 00:00:00;;
+104;53;53;0;0;;Reitzels C.A.;Boghandel A/S;;;Norregade 20;1165;COPENHAGEN;;;1;3974;22.3.1968 00:00:00;20.6.2002 00:00:00;DA;8;0,00;0,00;1.1.1968 00:00:00;31.12.2002 00:00:00;
+107;54;54;0;0;;Landesamt für;Digitalisierung, Breitband und Vermessung;Regionalabteilung Ost;;Gestütstr. 10;84028;LANDSHUT;;;1;;15.1.1963 00:00:00;;DA;12;0,00;0,00;1.1.1963 00:00:00;;
+113;178;74;0;0;;Gozdarski Institut Sloveniji;Gozdarska knjiz;;;Vecna pot 2;01000;LJUBLJANA;;;1;255060/0002|14001509;10.12.1996 00:00:00;;JB;24;0,00;0,00;1.1.2006 00:00:00;31.12.2006 00:00:00;verlängert 2006 am 30.11.05
+128;189;56;0;0;;Lehmanns Media GmbH;siz service internationale Zeitschriften;;;Helmholtzstr. 2-9;10587;BERLIN;;;1;78926;18.5.1971 00:00:00;;DA;12;0,00;0,00;1.1.1971 00:00:00;;
+131;58;58;1;0;;MANZ'sche Verlags- und;Universitätsbuchhandlung GmbH;;;Gutheil-Schoder-Gasse 17, Halle C3;1230;Wien;66286755694;;1;288000/1;17.12.1992 00:00:00;;DA;2;0,00;0,00;1.1.1992 00:00:00;31.12.2009 00:00:00;Storne mit Ende 2009, FAX v. 23.09.09
+132;58;59;0;0;;IAG Office;c/o Deutsches Geodätisches Forschungsinstitut;;;Alfons Goppelstrasse 11;80539;München;;;2;;31.12.1975 00:00:00;;DA;12;0,00;0,00;1.1.1975 00:00:00;1.7.2015 00:00:00;
+136;60;60;0;0;;Bibliothèque de l'Université Laval;Section des Acquisitions;Pav. J.-C. Bonenfant local 155;;2345 Allée des Bibliothèques;G1V 0A6;QUÉBEC;;;1;12592-505353;1.9.1993 00:00:00;;JB;5;0,00;0,00;1.1.2018 00:00:00;31.12.2018 00:00:00;verlängert jährlich
+145;61;61;0;0;;Universitätsbibliothek Stuttgart;;;104941;;70043;STUTTGART;+49(711)685-83950;+49(711)685-83502;1;sc;7.5.1973 00:00:00;;DA;12;0,00;0,00;1.1.1973 00:00:00;;
+146;62;62;0;0;;Fachhochschule für Technik;Fachbereich Vermessungswesen;;101452;;70013;STUTTGART;;;1;44197;19.10.1993 00:00:00;;JB;12;0,00;0,00;1.1.1993 00:00:00;31.12.2006 00:00:00;Kündigung mit 31.12.06 vom 19.09.06
+153;64;64;0;0;;Bibliothek am Guisanplatz (BiG);;Herr Walter Hadorn, (swisstopo);;Papiermühlestrasse 21A;3003;BERN;;;1;;13.3.1971 00:00:00;30.6.2010 00:00:00;DA;22;0,00;0,00;1.1.1971 00:00:00;31.12.2010 00:00:00;Kündigung per E-Mail am 30.06.2010
+170;172;66;0;0;;FHNW;Fachhochschule Nordwestschweiz;Bibliothek;;Gründenstrasse 40;4132;MUTTENZ;;;1;1190933;22.10.1993 00:00:00;;JB;22;0,00;0,00;1.1.1993 00:00:00;31.12.2015 00:00:00;für 2015 verlängert
+174;113;114;0;0;;OMV Austria Exploration &;Production GmbH;AUT-P Surveying & Geoinformation;;Protteser Strasse 40;2230;Gänserndorf;;;1;915240/1;7.12.1993 00:00:00;;JB;2;0,00;0,00;1.1.1993 00:00:00;31.12.2006 00:00:00;Kündigung mit Ende 2006 am 2.11.06
+178;68;68;0;7;Kurt;Novak;;;;5671 Sheehan Court;USA-43017;DUBLIN, OHIO;;;1;;1.7.1980 00:00:00;28.5.2004 00:00:00;DA;29;0,00;0,00;1.1.1980 00:00:00;31.12.2003 00:00:00;
+181;70;70;0;12;Leopold;Orsolits;;;;Schrottgießergasse 3/12;1020;Wien;;;1;B1;3.2.1990 00:00:00;;DA;2;0,00;0,00;1.1.1990 00:00:00;;
+193;191;72;1;0;;Universitätsbuchhandlung Beneke GmbH;;;;Gartenstraße 18;72074;TÜBINGEN;07071-22803;07071-922972;1;Streisand-fs;24.12.2004 00:00:00;;DA;12;0,00;0,00;1.1.2005 00:00:00;31.12.2006 00:00:00;gekündigt per Fax am 9.06.06 mit 31.12.06
+196;73;73;0;0;;UCSB Library;ARMS Department - Serials;University of California;;Bldg. 525, UCEN Road;93106-9010;SANTA BARBARA, CA;;;1;ZS /00084557;23.11.1993 00:00:00;;JB;29;0,00;0,00;1.1.1993 00:00:00;;
+198;73;73;0;0;National Research Council;Canada Institute for Sti (mn);Serial Acquisitions;GST-No. R129347480;;Building M55 Montreal Road;K1A OS2;OTTAWA/ONTARIO;;;1;ZS /00556629;23.11.1993 00:00:00;15.10.2003 00:00:00;JB;5;0,00;0,00;1.1.1993 00:00:00;31.12.2003 00:00:00;
+199;73;73;0;0;;Library Tech Center;Ohio State University Libraries;Serials/Electronic Resources;;1165 Kinnear Road;;COLUMBUS, OH 43212;;;1;96154812;4.8.2004 00:00:00;;JB;29;0,00;0,00;1.1.2005 00:00:00;;Adresse aktualisiert 2016
+201;73;73;0;0;;UCLA Maps & Govt Serials;11020 Kinross;Box 957230;;;;LOS ANGELES, CA 90095-7230;;;1;ZS /00556688;23.11.1993 00:00:00;;JB;29;0,00;0,00;1.1.1993 00:00:00;31.12.2013 00:00:00;Kündigung mit Ende 2013 (e-mail 26.06.2013)
+439;147;69;0;0;;Decius GmbH;Fachbuchhandlung;;;Postfach 13 64;30013;HANNOVER;05113647610;05113647644;1;24245-0001/24002480/;6.12.1997 00:00:00;;JB;12;0,00;0,00;1.1.1997 00:00:00;;
+906;78;78;8;0;;Mayersche direkt;Versandhandel und Service;;;Prager Ring 106;52070;AACHEN;;;1;32791;13.12.1993 00:00:00;;DA;12;0,00;0,00;1.1.1993 00:00:00;31.12.2005 00:00:00;nur bis 31.12.2005! Fax vom 03.03.06
+909;79;79;0;0;;ims Internationaler Medien Service;c/o Logwin Solutions Media GmbH;;;;13578;BERLIN;anke.grossmann@axelspringer.de;;1;BE2014906;21.10.1993 00:00:00;;JB;12;525,00;0,00;1.1.1993 00:00:00;31.12.2012 00:00:00;Storno der Verlängerung für 2013 am 24.10.12
+911;80;80;0;0;Georg E.;Karras;;;;Lerou 12;113 64;ATHEN;;;1;tel.Bestellg/Hög;2.11.1992 00:00:00;5.5.2004 00:00:00;DA;13;0,00;0,00;1.1.1992 00:00:00;31.12.2003 00:00:00;
+916;29;29;0;0;;SLUB Dresden;Referat Zeitschriften;;;Zellescher Weg 18;01069;DRESDEN;;;1;40920119;6.9.1993 00:00:00;;JB;12;0,00;0,00;1.1.1993 00:00:00;;verlängert für 2014 am 30.10.13
+922;81;81;0;0;;Landesamt f. Flurneuordnung;& Landentwicklung Bad.-Württ.;;;Stuttgarter Str. 161;70806;KORNWESTHEIM;;;1;Z/Li-Land;27.4.1992 00:00:00;1.10.2003 00:00:00;JB;12;0,00;0,00;1.1.1992 00:00:00;31.12.2003 00:00:00;
+925;82;82;0;0;;IKT Linz GmbH;;;;Gruberstraße 40-42;4020;Linz;;;1;72803;3.1.1991 00:00:00;26.5.2011 00:00:00;DA;2;0,00;0,00;1.1.1991 00:00:00;31.12.2011 00:00:00;Kündigung Ende 2011 per E-Mail v. 26.05.11
+927;83;83;0;0;;Landesvermessungsamt Sachsen;Geodäsie & Kartographie Dresden;;100306;;01073;DRESDEN;;;1;011/D01;27.6.1991 00:00:00;19.8.2003 00:00:00;DA;12;0,00;0,00;1.1.1991 00:00:00;31.12.2002 00:00:00;
+943;29;29;0;0;;Swets Blackwell B.V.;;;845;;2160 SZ;LISSE;;;1;45560307;25.1.1996 00:00:00;22.9.2003 00:00:00;JB;18;0,00;0,00;1.1.1996 00:00:00;31.12.2002 00:00:00;
+955;85;85;0;0;;Krische-Mencke-Blaesing;Subscription Agency & Bookseller;;;Universitätsstrasse 16;91011;ERLANGEN;++49-9131-78 06 0;++49-9131-20 56 75;1;;27.4.2004 00:00:00;;DA;12;0,00;0,00;1.1.2004 00:00:00;31.12.2007 00:00:00;Storno mit 31.12.07 vom 27.09.07 (Brief)
+957;86;86;0;6;Oliver;Schmechtig;;;;Brunnhäuslsiedlung 66/02;5531;Eben im Pongau;;;1;;31.3.1992 00:00:00;;DA;2;0,00;0,00;1.1.1992 00:00:00;;
+964;87;87;0;0;;Joanneum Research;Digital - Fer;;;Steyrergasse 17;8010;Graz;03168761735;;1;Schumnik G.;9.9.1992 00:00:00;;DA;2;0,00;0,00;1.1.1992 00:00:00;;
+998;178;74;8;0;;Schweitzer Sortiment;;;;Canovagasse 7/6;1010;Wien;;;1;21120-01/14809431;16.10.1992 00:00:00;18.2.2003 00:00:00;JB;2;0,00;0,00;1.1.1992 00:00:00;31.12.2002 00:00:00;
+999;88;88;0;0;Johann;Simenko;;;;Sailergasse 13;8430;Kaindorf a.d.Sulm;;;1;schriftl.;6.11.1992 00:00:00;5.5.2004 00:00:00;DA;2;0,00;0,00;1.1.1992 00:00:00;31.12.2003 00:00:00;
+1043;89;89;0;0;;Fachhochschule Magdeburg;Hochschulbibliothek;;;Breitscheidstr. 2 Haus 1;39114;MAGDEBURG;;;1;E - Z 2021193;1.10.1993 00:00:00;;JB;12;0,00;0,00;1.1.1993 00:00:00;31.12.2003 00:00:00;
+1061;90;90;0;0;;Cvut - Fakulta Stavebni;Ustredni knihovna;;;Thakurova 7;166 29;PRAHA 6;;;1;97920/2773;1.1.1994 00:00:00;29.7.2003 00:00:00;JB;26;0,00;0,00;1.1.1994 00:00:00;31.12.2001 00:00:00;
+1062;67;91;0;0;;Ennskraftwerke AG;;Frau Blach;17;;4403;Steyr;;;1;;24.12.1993 00:00:00;;JB;2;0,00;0,00;1.1.1993 00:00:00;;
+1069;92;92;0;0;;Stadtgemeinde Klosterneuburg;GA IV/1 -  Baubehörde;;;Rathausplatz 1;3400;Klosterneuburg;;;1;;31.3.1994 00:00:00;;DA;2;0,00;0,00;1.1.1994 00:00:00;;
+1078;94;94;0;0;Anton;Allmer;Technisches Büro - Vermessung;;;Ring 271;8230;Hartberg;;;1;;25.7.1994 00:00:00;5.2.2013 00:00:00;DA;2;0,00;0,00;1.1.1994 00:00:00;31.12.2012 00:00:00;Kündigungsschreiben  vom 18.01.12
+1086;96;96;0;0;;Universitätsbibliothek BW;;;;Werner-Heisenberg-Weg 39;85579;NEUBIBERG;;;1;6612.0;21.7.1994 00:00:00;;DA;12;0,00;0,00;1.1.2015 00:00:00;31.12.2016 00:00:00;verlängert 2015       Storno Ende 2016
+1087;97;97;0;0;;Stadtgemeinde Wolfsberg;;Herrn Dipl.- Ing. Sand;;Rathausplatz 1;9400;Wolfsberg;;;1;;10.10.1994 00:00:00;;DA;2;0,00;0,00;1.1.1994 00:00:00;;
+1090;98;98;0;0;;Stadtgemeinde Völkermarkt;;Herrn Koschier;;Hauptplatz 1;9100;Völkermarkt;;;1;;11.10.1994 00:00:00;21.4.2005 00:00:00;DA;2;0,00;0,00;1.1.1994 00:00:00;31.12.2004 00:00:00;telef.Storno rückwirkend mit Ende 2004 am 21.04.05
+1094;193;99;0;0;;NyME Geoinformatikai Kar;Konyvtara;;;Pirosalma U. 1-3.;8002;SZÉKESFEHÉRVAR;;;1;290480;13.10.1994 00:00:00;;JB;14;0,00;0,00;1.1.1994 00:00:00;31.12.2009 00:00:00;Kündigung mit Ende 2009 (E-Mail 7.09.09)
+1096;100;100;0;0;;STADT:SALZBURG - Magistrat;Stadtarchiv und Statistik;für Vermessungsamt;;Glockengasse 8;5024;Salzburg;;;1;B 265/94 ZV/03;20.10.1994 00:00:00;;JB;2;0,00;0,00;1.1.1994 00:00:00;;
+1097;101;101;7;0;;Stadt Bregenz;;Herrn Bischof Hans;;Belruptstraße 1;6900;Bregenz;;;1;;19.10.1994 00:00:00;;DA;2;0,00;0,00;1.1.1994 00:00:00;;
+1098;102;102;7;0;;Stadt Dornbirn;Abt. Plan- u. Datenservice;zH Herrn Arnold Weiß;;Rathausplatz 2;6850;Dornbirn;;;1;3352/510;28.10.1994 00:00:00;;DA;2;0,00;0,00;1.1.1994 00:00:00;31.12.2011 00:00:00;Kündigung am 30.11.11 per Einschreiben
+1108;67;91;0;0;;Magistrat der Stadt Wels;Einlaufstelle;;;Stadtplatz 1;4600;Wels;;;1;;22.11.1994 00:00:00;26.6.2002 00:00:00;JB;2;0,00;0,00;1.1.1994 00:00:00;31.12.2002 00:00:00;
+1112;105;106;0;0;;Stadtgemeinde Knittelfeld;;Herrn Dipl.-Ing. Wölle Nikolai;;Hauptplatz 15;8728;Knittelfeld;;;1;;12.10.1994 00:00:00;;DA;2;0,00;0,00;1.1.1994 00:00:00;;
+1113;106;107;0;0;;Kärntner Landesregierung;Abt. 20 - Landesplanung;;;Wulfengasse 13;9020;Klagenfurt;;andrea.moser@ktn.gv.at;1;;12.12.1994 00:00:00;16.6.2004 00:00:00;DA;2;0,00;0,00;1.1.1994 00:00:00;31.12.2004 00:00:00;
+1116;107;108;0;0;;Gemeinde Neuberg;Bezirk Güssing;;;;7535;Neuberg;;;1;;15.12.1994 00:00:00;23.12.2002 00:00:00;DA;2;0,00;0,00;1.1.1994 00:00:00;31.12.2002 00:00:00;
+1118;109;110;0;0;;Marktgemeinde Neudörfl;;;;Rathaus;7201;Neudörfl;;;1;;2.1.1995 00:00:00;;DA;2;0,00;0,00;1.1.1995 00:00:00;31.12.2014 00:00:00;
+1120;110;111;0;12;Karl;Knotzer;;;;Rosenhügel 25;7503;Großpetersdorf;;;0;;24.12.1994 00:00:00;;DA;2;0,00;0,00;1.1.1994 00:00:00;31.12.2005 00:00:00;Heftstop bis Einzahlung erfolgt(21.02.2006)
+1131;113;114;0;0;;BM f. Landesverteidigung;Kdo FüU;IMG;;AG Stiftgasse 2a;1070;Wien;;;1;959086/1;31.1.1995 00:00:00;;JB;2;0,00;0,00;1.1.1995 00:00:00;31.12.2007 00:00:00;Kündigung mit Ende 2007 am 7.11.07
+1134;114;115;0;0;Dieter;Strasser;Informationstechnik GmbH;;;Schillerplatz 3;3100;St. Pölten;;;1;;20.2.1995 00:00:00;26.6.2002 00:00:00;DA;2;0,00;0,00;1.1.1995 00:00:00;31.12.2002 00:00:00;
+1149;116;117;0;0;;Atos IT Solutions and Services GmbH & Co KG;Herr Klein;;;Siemensstraße 92;1210;Wien;+43 1 50618-0;+43 1 50618-57770;1;MS 74/95;27.7.1995 00:00:00;;DA;2;0,00;0,00;1.1.1995 00:00:00;31.12.2015 00:00:00;Storno Dez. 2015
+1159;117;118;0;0;;Umwelt- u. EDV-Beratung GmbH;;Herrn Dipl.-Ing. Paul Seibitz;;Wiedner Hauptstrasse 19;1040;Wien;;;1;;23.10.1995 00:00:00;5.5.2004 00:00:00;DA;2;0,00;0,00;1.1.1995 00:00:00;31.12.2003 00:00:00;
+1171;120;121;0;6;Gerolf;Laserer;;;;Salzburgerstrasse 27a;5620;Schwarzach;;;1;;28.2.1995 00:00:00;5.5.2004 00:00:00;DA;2;0,00;0,00;1.1.1995 00:00:00;31.12.2003 00:00:00;
+1177;113;123;0;;;Minerva;Wissenschaftliche Buchhandlung GmbH;;;Ignaz-Köck-Strasse 9;1210;Wien;;;1;982582/1;17.11.1997 00:00:00;31.12.2001 00:00:00;DA;2;660,00;0,00;1.1.1997 00:00:00;31.12.2001 00:00:00;
+1181;124;125;0;6;Arnulf;Zopp;;;;Hofkirchenstrasse 8a;5020;Salzburg;;;1;;21.6.1996 00:00:00;;DA;2;0,00;0,00;1.1.1996 00:00:00;31.12.2008 00:00:00;Kündigung mit Ende 2008, email vom 8.05.08
+1182;29;29;0;0;;Swets Blackwell B.V.;;;845;;2160 SZ;LISSE;;;1;46041729;25.1.1996 00:00:00;22.7.2002 00:00:00;JB;18;0,00;0,00;1.1.1996 00:00:00;31.12.2002 00:00:00;
+1187;77;114;0;0;;Szechenyi Istvan Egyetem;Szechenyi Istvan Univ. Library;Egytemi Könyvar / Ms. Lencse;701;;9007;GYOER;;;1;C5799717;5.12.1996 00:00:00;;JB;14;0,00;0,00;1.1.1996 00:00:00;31.12.2011 00:00:00;verlängert für 2011 am 10.02.11
+1188;29;29;0;0;;Swets Information Services;;;45;;6930;AA WESTERVOORT;;;1;51643790;23.10.1996 00:00:00;;JB;18;0,00;0,00;1.1.1996 00:00:00;31.12.2010 00:00:00;verlängert für 2010 am 30.10.09
+1192;145;128;0;0;;Geodetski Fakultet;Zavod Za Kartografifu/N/R;Prof.Dr.SC. W. Francula;;Fra A. Kacica Miosica 26;10000;ZAGREB;;;1;1592-22-579/2002;13.11.1996 00:00:00;;DA;17;0,00;0,00;1.1.1996 00:00:00;31.12.2004 00:00:00;
+1193;128;129;0;0;;Magistrat Steyr;Rathaus;;;Stadtplatz 27;4400;Steyr;;;1;GHJ 1 - 170, le;1.1.1997 00:00:00;;DA;2;0,00;0,00;1.1.1997 00:00:00;;
+1195;29;0;0;0;;Swets Blackwell BV;;;845;;2160;SZ LISSE;;;1;54750105;10.1.1997 00:00:00;;;18;0,00;0,00;1.1.1997 00:00:00;31.12.2003 00:00:00;
+1201;136;0;0;0;;Bibliothek Geodäsie;Fachbereich 13;Techn. Univ. Darmstadt;;Petersenstrasse 13;64287;DARMSTADT;;;1;;12.3.1997 00:00:00;;;12;0,00;0,00;1.1.1997 00:00:00;;richterkille@geod.tu-darmstadt.de
+1204;141;0;8;0;;Witsch,  Behrendt & Schweitzer OHG;Fach- u. Universitätsbuchhandlung;;103743;;50477;KÖLN;0221/47697-10 od. 11 od. 25 od. 40;0221/476 97-39;1;41540;16.5.1997 00:00:00;;;12;0,00;0,00;1.1.1997 00:00:00;31.12.2006 00:00:00;Kündigungsfax mit 31.12.06 vom 26.09.06
+1205;77;0;0;0;;Earth Sciences Info Center;Natural Resources Canada;;;RM 121 - 615 Booth St.;K1A OE9;OTTAWA ON;;;1;BU6102074;5.5.1997 00:00:00;;;5;0,00;0,00;1.1.1997 00:00:00;31.12.2004 00:00:00;nach Reklamation 12/04 wieder verlängert
+1207;142;0;3;0;;Stürmer;Wolfgang;;;Pettenbacher Strasse 15;4655;Vorchdorf;;;1;;1.1.1990 00:00:00;;;2;0,00;0,00;1.1.1990 00:00:00;;
+1208;143;0;3;6;Wolfgang;Waagner;;;;Bindergasse 8;5020;Salzburg;0662430323;;1;;1.1.1990 00:00:00;;;2;0,00;0,00;1.1.1990 00:00:00;;
+1209;144;0;0;0;;Wasserstrassendirektion;Abteilung 5;;;Hetzgasse 2;1030;Wien;;;1;;17.11.1997 00:00:00;20.6.2002 00:00:00;;2;0,00;0,00;1.1.1997 00:00:00;31.12.2002 00:00:00;
+1210;77;0;0;0;;US Geological Survey Lib;NATL CTR MS 950;;;12201 Sunrise Valley Dr;;RESTON VA 20192;;;1;BC0231571;29.10.1997 00:00:00;;;29;0,00;0,00;1.1.2008 00:00:00;31.12.2008 00:00:00;reaktiviert (2007 keine Bestellung)
+1211;146;0;5;0;;Crepas Rinaldo;;;;Bosch da Plang 298;39030;LA VILLA;;;0;;19.1.1998 00:00:00;;;15;0,00;0,00;1.1.1998 00:00:00;31.12.2005 00:00:00;Heftstop bis Einzahlung erfolgt(21.02.2006)
+1213;113;0;1;0;;Eötvös Lorand University;Egyetemi Könyvtar;;233;;1364;BUDAPEST;;;1;983830/1;1.12.1997 00:00:00;15.12.2003 00:00:00;;14;0,00;0,00;1.1.1997 00:00:00;31.12.2003 00:00:00;
+1214;148;0;3;6;;Kronawetter;Edmund;;;St. Martiner Strasse 25;9500;Villach;;;1;;10.3.1998 00:00:00;23.5.2005 00:00:00;;2;0,00;0,00;1.1.1998 00:00:00;31.12.2005 00:00:00;Storno-Email am 23.05.2005
+1216;149;0;3;6;Anton;Schabl;Schabl & Partner OEG;Technisches Büro & Unternehmensberatung;;Untere Viaduktgasse 53/5a;1030;Wien;+43-(0)1-503 75 90-0, +43-(0)699-1003 60 24;;1;;4.6.1998 00:00:00;21.4.2010 00:00:00;;2;0,00;0,00;1.1.1998 00:00:00;31.12.2009 00:00:00;Bezahlung seit 2006 offen
+1217;150;0;3;12;Martin;Gasparics;Vermessungsbüro;;;Auersperggasse 19;8010;Graz;0316/68 08 78...-0;0316/68 08 78-6;1;;4.6.1998 00:00:00;28.11.2015 00:00:00;;2;0,00;0,00;1.1.1998 00:00:00;31.12.2015 00:00:00;neue Adresse 2014
+1218;145;0;0;0;;Nima;1998 SUBS;;;3200 South Second Street;GIMSC/L-83;ST. LOUIS;;;1;159815M;28.5.1998 00:00:00;5.5.2004 00:00:00;;29;525,00;0,00;1.1.1998 00:00:00;31.12.2003 00:00:00;
+1219;29;0;0;0;;Drzavna Geodetska Uprava;Sanja Zekusic;;;Gruska 20;10000;ZAGREB;;;1;68441967;3.10.1998 00:00:00;22.9.2003 00:00:00;;17;0,00;0,00;1.1.1998 00:00:00;31.12.2002 00:00:00;
+1220;152;0;0;0;;lantmäteriverket;Biblioteket;;;;80182;GÄVLE;;;1;69741;23.10.1998 00:00:00;5.5.2004 00:00:00;;21;0,00;0,00;1.1.1998 00:00:00;31.12.2003 00:00:00;
+1221;193;0;0;0;;Vysoke Uceni Technicke  v Brne;Ustredni knihovna;CR01/1751;;Antoninska 548/1;662 98;BRNO;;;1;991059/1;29.10.1998 00:00:00;;;26;0,00;0,00;1.1.1998 00:00:00;31.12.2006 00:00:00;verlängert für 2006 am 22.12.05
+1223;153;0;0;0;;Nawijn & Polak;Subscription Department;;;Marktplein 24;7311 LR;APELDOORN;;;1;;29.12.1998 00:00:00;10.11.2006 00:00:00;;18;0,00;0,00;1.1.1998 00:00:00;31.12.2006 00:00:00;Storno am 10.11.06 per Brief
+1224;154;0;0;0;;IFG-Verlag;;;;Odenwaldring 38;63069;OFFENBACH;069 832051;069 843530;1;;1.1.1990 00:00:00;5.5.2004 00:00:00;;12;0,00;0,00;1.1.1990 00:00:00;31.12.2003 00:00:00;
+1225;67;0;4;0;;Morawa & Co.KG;Buchhandlung und Zeitungsbüro;Business Subscription Services;;Postfach 99;1127;Wien;91076-378;910 76/325;1;;10.11.1998 00:00:00;;;2;0,00;0,00;1.1.1998 00:00:00;;
+1228;29;0;1;0;;Swets Blackwell;Subscription Service;;845;;2160;SZ LISSE;;;1;72144297;12.2.1999 00:00:00;;;18;0,00;0,00;1.1.1999 00:00:00;31.12.2003 00:00:00;
+1231;156;0;5;0;;Brunner und Strobl;;;;Karlsgasse 12;3430;Tulln;02272 622 95;;1;;1.1.1990 00:00:00;;;2;0,00;0,00;1.1.1990 00:00:00;;
+1233;158;0;3;6;Stefan;Rudig;;;;Templstraße 14;6020;Innsbruck;;;1;;17.12.2000 00:00:00;28.1.2003 00:00:00;;2;0,00;0,00;1.1.2000 00:00:00;31.12.2003 00:00:00;
+1234;113;0;0;0;;Österreichische Bundesbahnen;Personalentwicklung/RC;z.H. Herrn Bräuer;;Elisabethstraße 9;1010;Wien;;;1;908231/1;22.11.1999 00:00:00;28.1.2003 00:00:00;;2;0,00;0,00;1.1.1999 00:00:00;31.12.2003 00:00:00;
+1235;159;0;0;0;;Institut f. Photogr. u. GeoInformation;Leibniz Universität Hannover;;;Nienburger Strasse 1;30167;HANNOVER;;;1;;15.3.2000 00:00:00;;;12;0,00;0,00;1.1.2000 00:00:00;;
+1236;160;0;0;0;;Vyzkumny Ustav Geodeticky;Eva Lhotakova;;;Ustecka 98;25066;ZDIBY;;Eva.Lhotakova@vugtk.cz;1;;3.4.2000 00:00:00;;;26;0,00;0,00;1.1.2000 00:00:00;;
+1238;162;0;0;0;;Landesamt für Geoinformation;und Landentwicklung (LGL);Bibliothek;;Büchsenstrasse 54;70174;STUTTGART;0711 123-2896;0711 123-2979;1;;18.4.2000 00:00:00;;;12;0,00;0,00;1.1.2000 00:00:00;;heike.hackl@lgl.bwl.de
+1239;163;0;0;0;;GEOSPACE International GmbH;;;;Wasserfeldstraße 21;5020;Salzburg;0662 /45 81 15-0;0662/45 81 15-4;1;;9.5.2000 00:00:00;21.4.2010 00:00:00;;2;0,00;0,00;1.1.2000 00:00:00;31.12.2009 00:00:00;Bezahlung seit 2006 offen
+1240;164;0;0;0;;DIBIT Messtechnik GmbH;;;;Framsweg 16;6020;Innsbruck;;;1;;1.1.1990 00:00:00;;;2;0,00;0,00;1.1.1990 00:00:00;;
+1241;165;0;0;0;;Hessisches Landesamt für;Bodenmanagement und Geoinformation;Fachbibliothek;3249;Schaperstrasse 16;65195;WIESBADEN;0611/535-5332;0611/535-5551;1;1470 B - Z 315;16.6.2000 00:00:00;;;12;0,00;0,00;1.1.2000 00:00:00;;silke.weber@hvbg.hessen.de
+1242;58;0;1;0;;MANZ'sche Verlags- und;Universitätsbuchhandlung;;;Gutheil-Schoder-Gasse 17, Halle C3;1230;Wien;66286755694;;1;BZ 150/00;26.5.2000 00:00:00;26.2.2015 00:00:00;;2;0,00;0,00;1.1.2000 00:00:00;31.12.2014 00:00:00;
+1243;166;0;0;0;;Amt für Raumentwicklung und Geoinformation;Vermessung;;;Lämmlisbrunnenstrasse 54;9001;ST. GALLEN;;;1;;26.6.2000 00:00:00;;;22;0,00;0,00;1.1.2000 00:00:00;;Adress- u. Namensänderung (28.9.12)
+1244;167;0;0;0;;Brenner Basistunnel EWIV;zH DI Rainer Gasser;;;Neuhauserstrasse 7;6020;Innsbruck;;;1;;1.6.2000 00:00:00;26.6.2002 00:00:00;;2;0,00;0,00;1.1.2000 00:00:00;31.12.2002 00:00:00;
+1245;168;0;0;0;;Amt der Kärntner Landesregierung;Abt. 9 Vermessung und Grundverwertung;;;Flatschacher Straße 70;9021;Klagenfurt;;;1;;3.7.2000 00:00:00;;;2;0,00;0,00;1.1.2000 00:00:00;;neue Adresse 2014
+1246;169;0;0;0;;Innenministerium;Niedersachsen;Vermessungs- u. Katasterverwaltung;221;Lavesalle 6;30002;HANNOVER;;;1;16-02424 N;27.7.2000 00:00:00;;;12;0,00;0,00;1.1.2000 00:00:00;;
+1248;29;0;1;0;;Swets Information Services;;;45;;6930;AA WESTERVOORT;;;1;92608426;3.11.2000 00:00:00;;;18;0,00;0,00;1.1.2000 00:00:00;31.12.2010 00:00:00;verlängert für 2010 am 30.10.09
+1249;29;0;1;0;;Swets Information Services;;;45;;6930;AA WESTERVOORT;;;1;92931642;3.11.2000 00:00:00;;;18;0,00;0,00;1.1.2000 00:00:00;31.12.2011 00:00:00;verlängert für 2011 am 29.10.10
+1250;77;0;0;0;;Universitätsbibliothek der;Montanuniversität Leoben;;;Franz Josef Str. 18;8700;Leoben;;;1;C5789908;19.3.2000 00:00:00;;;2;0,00;0,00;1.1.2000 00:00:00;;
+1252;171;0;0;0;;Finnish Geodetic Institute;Lybrary;;;Geodeetinrinne 2 (Pl 15);02430;MASALA;;;1;820307/2;22.9.2000 00:00:00;5.5.2004 00:00:00;;10;0,00;0,00;1.1.2000 00:00:00;31.12.2003 00:00:00;
+1254;173;0;0;0;;"Die Markscheider";DI Emmerich Schuscha;;;Franz Josef-Str. 8;8700;LEOBEN;03842/ 43626;;1;;10.11.2000 00:00:00;;;2;0,00;0,00;1.1.2000 00:00:00;;
+1255;77;0;0;0;;Nima St Louis;Dogiie2 L-83 Geonames;;830839;;35283;BIRMINGHAM AL;;;1;BT1501895;11.1.2001 00:00:00;5.5.2004 00:00:00;;29;0,00;0,00;1.1.2001 00:00:00;31.12.2003 00:00:00;EBSCO April 2005:  für 2003 nicht bestellt!
+1258;76;0;7;0;;Tiroler Landesregierung;Landesforstinspektion;;;Bürgerstraße 36;6010;Innsbruck;;;1;;1.1.1990 00:00:00;;;2;0,00;0,00;1.1.1990 00:00:00;;
+1259;99;0;0;0;;Nyugat-Magyarorsz. Egyetem;Egyetemi Kvt.Közp;;132;;9401;SOPRON;;;1;;1.1.2001 00:00:00;;;14;0,00;0,00;1.1.2001 00:00:00;31.12.2004 00:00:00;
+1260;175;0;0;0;;Rombach GmbH + CO;Handelshaus KG;;;Bertoldstraße 10;79098;FREIBURG;0761-4500-2400;0761-4500-2499;1;;25.4.2001 00:00:00;5.8.2003 00:00:00;;12;0,00;0,00;1.1.2001 00:00:00;1.1.2001 00:00:00;
+1261;175;0;0;0;;Rombach GmbH + CO;Handelshaus KG;;;Bertoldstraße 10;79098;FREIBURG;0761-4500-2400;0761-4500-2499;1;;25.4.2001 00:00:00;12.6.2002 00:00:00;;12;0,00;0,00;1.1.2001 00:00:00;31.12.2002 00:00:00;
+1262;77;0;0;0;;Technische Universität Wien;Universitätsbibliothek;Zeitschriften-Abteilung;;Resselgasse 4;1040;Wien;;;1;C5785748;27.9.2001 00:00:00;;;2;0,00;0,00;1.1.2001 00:00:00;31.12.2013 00:00:00;verlängert für 2013 am 12.11.12
+1263;77;0;0;0;;Sagan Library;;;830470;;35283;BIRMINGHAM AL;;;1;BX5364457;15.11.2001 00:00:00;;;29;0,00;0,00;1.1.2001 00:00:00;31.12.2006 00:00:00;gekündigt am 31.01.2007
+1264;190;0;0;0;Dr. Dietmar Sperling;RWE Systems AG;Abt. GIGV;;;Bamlerstraße 61;45141;ESSEN;;;1;9999;1.12.2001 00:00:00;28.11.2004 00:00:00;;12;0,00;0,00;1.1.2001 00:00:00;31.12.2004 00:00:00;
+1265;67;0;0;0;;Austrian Research centers GmbH;Abt. ER & T/Sekretariat;z.H. Dr. Gerhard Heiss;;;2444;Seibersdorf;;;1;;18.12.2001 00:00:00;;;2;0,00;0,00;1.1.2001 00:00:00;31.12.2005 00:00:00;
+1266;177;0;1;0;;Z/I Imaging GmbH;;;;Carl Zeiss Straße 22;73447;OBERKOCHEN;07364/208002;;1;O/BE13631;19.11.2001 00:00:00;5.5.2004 00:00:00;;12;0,00;0,00;1.1.2001 00:00:00;31.12.2003 00:00:00;
+1267;77;0;0;0;;Dip. Ing. Territorio;Ambiente e Geotecnologie;Politecnico di Torino;;C.So Duca Degli Abruzzi, 24;10129;TORINO;;;1;BC3292983;1.1.2002 00:00:00;;;15;0,00;0,00;1.1.2002 00:00:00;31.12.2008 00:00:00;verlängert am 11.04.08
+1268;20;0;1;0;;p & g  prachner & godai;;Verlagsauslieferung Ges.m.b.H.;;Talgasse 11;1150;Wien;;;1;;13.12.2001 00:00:00;6.3.2008 00:00:00;;2;0,00;0,00;1.1.2001 00:00:00;31.12.2007 00:00:00;Schließung der Firma 2008
+1269;178;0;0;0;;Faculteta za Gradbenistvo;in Geodezijo;;;Knijznica Jamova c.2;01000;LJUBLJANA;;;1;25506-0001/14001509;22.3.2002 00:00:00;;;24;0,00;0,00;1.1.2006 00:00:00;31.12.2016 00:00:00;verlängert für 2006 am 19.12.05
+1270;185;0;1;0;;Schweitzer Sortiment oHG;Fachbuchhandlung;;;Elsenheimerstraße 41-43;80687;MÜNCHEN;089 55134-235, Fr. Schnieders;089 55134-101, b.schnieders@schweitzer-online.de;1;ZA108750/01-14117090;7.10.2003 00:00:00;;;12;0,00;0,00;1.1.2008 00:00:00;31.12.2012 00:00:00;Verlängerung für 2012 am 14.10.11
+1271;29;0;0;0;;Lantmateriverket;Biblioteket;;;;801 82;GAVLE;;;1;17861228;1.11.2002 00:00:00;;;21;0,00;0,00;1.1.2002 00:00:00;31.12.2006 00:00:00;storniert mit 31.12.06 (Nachtrag 31.08.07)
+1272;171;0;0;0;;TKK;Maanmittausos/ Kirjasto;;;Otakaari 1;02150;ESPOO 15;;;1;51733;20.12.2002 00:00:00;5.5.2004 00:00:00;;10;0,00;0,00;1.1.2002 00:00:00;31.12.2003 00:00:00;
+1275;78;0;1;0;;Mayersche Buchhandlung;Zentraler Vertrieb;;;Matthiashofstrasse 28-30;52064;AACHEN;0241/47 77-0;0241/4777-479;1;2504543;15.10.2002 00:00:00;;;12;0,00;0,00;1.1.2002 00:00:00;31.12.2004 00:00:00;
+1277;29;0;0;0;;ETH Zürich;ETH-Bibliothek / Zeitschriften;;;Raemistrasse 101;8092;ZÜRICH;;;1;21622003;13.4.2003 00:00:00;;;22;0,00;0,00;1.1.2015 00:00:00;31.12.2015 00:00:00;verlängert für 2014 am 30.10.13
+1280;171;0;0;0;;Geodeettinen Laitos;Tietopalvelu;;;PL 15;02431;MASALA;;;1;186683/3;19.12.2003 00:00:00;;;10;0,00;0,00;1.1.2003 00:00:00;31.12.2005 00:00:00;
+1281;182;0;0;0;;Hennies und Zinkeisen GmbH;Fachbuchhandlung und Antiquariat;;;Halberstädter Straße 112;39112;MAGDEBURG;;;1;2848;7.2.2003 00:00:00;3.9.2003 00:00:00;;12;0,00;0,00;1.1.2003 00:00:00;31.12.2003 00:00:00;
+1282;183;0;0;0;;Landesamt für Flurneuordnung;und Landentwicklung;Baden Württemberg;;Stuttgarter Straße 161;70806;KORNWESTHEIM;;;1;23105434/129710;28.3.2003 00:00:00;10.8.2004 00:00:00;;12;0,00;0,00;1.1.2004 00:00:00;31.12.2004 00:00:00;z.H. Herr Geier
+1283;178;0;0;0;;Schweitzer Sortiment;;;;Canovagasse 7/6;1010;Wien;5041675;;1;;25.6.2003 00:00:00;;;2;0,00;0,00;1.1.2002 00:00:00;31.12.2005 00:00:00;Kündigung mit 31.12.2005, Email v. 13.09.05
+1284;33;0;1;0;;Struppe & Winckler GmbH & CO KG;Fachbuchhandlung u. Antiquariat;;;Mohrenstr. 34;10117;BERLIN;++49 (0)30-215 091-58;++49 (0)30-262 96 11;1;192266.1.44080328;23.6.2003 00:00:00;13.10.2006 00:00:00;;12;0,00;0,00;1.1.2002 00:00:00;31.12.2006 00:00:00;Abbestellung per Fax v. 2.10.06
+1285;33;0;1;0;;Struppe & Winckler GmbH & CO KG;Fachbuchhandlung u. Antiquariat;;;Mohrenstr. 34;10117;BERLIN;++49 (0)30-215 091-58;++49 (0)30-262 96 11;1;192338.1.44080050;23.6.2003 00:00:00;;;12;0,00;0,00;1.1.2002 00:00:00;;
+1288;170;0;0;0;;Geodätisches Institut;Universität Stuttgart;;;Geschwister-Scholl-Strasse 24/D;70174;STUTTGART;;;1;;28.11.2000 00:00:00;;;12;0,00;0,00;1.1.2000 00:00:00;;
+1289;186;0;1;0;;Rag. Pietro Germani;c/o ESIA Books and Journals;;;Via Palestro, 30;00185;ROMA RM;esia@esia.it;06 4747743;1;OEZVWGI*GERMANI*01;2.2.2004 00:00:00;;;15;0,00;0,00;1.1.2004 00:00:00;31.12.2007 00:00:00;verlängert am 09.03.07 für 2007
+1291;187;0;0;0;;F. Delbanco Jens-Peter Cohrs;GmbH  & Co. KG;;1447;;21304;LÜNEBURG;+49 4131 2428-0;+49 4131 2428-12;1;Y13559;2.4.2004 00:00:00;;;12;0,00;0,00;1.1.2016 00:00:00;31.12.2017 00:00:00;neu für 2016
+1293;73;0;1;0;;Harrassowitz;Buchhandlung & Antiquariat;Booksellers & Subscription Agents;;z.H. Undine Rasim;65174;WIESBADEN;0049 611 530 381;0049 611 530 560;1;96156306;27.4.2004 00:00:00;;;12;0,00;0,00;1.1.2004 00:00:00;1.1.2004 00:00:00;Keine Teillieferung ! Alle  4 Hefte auf einmal !
+1294;192;0;0;0;;Hoser & Mende KG;;;;Charlottenplatz 17;70173;STUTTGART;0711-16354-95;0711-16354-25;1;200108/0001-14001395;14.12.2004 00:00:00;30.4.2009 00:00:00;;12;0,00;0,00;1.1.2005 00:00:00;31.12.2008 00:00:00;f.kroeschell@schweitzer-online.de
+1295;193;0;0;0;;Nyugat-Magyarorszagi Egyetem;Kozponti Konyvtara;;;Bajcsy-Zsilinsky u. 4.;9400;SOPRON;;;1;255154;23.11.2004 00:00:00;;;14;0,00;0,00;1.1.2005 00:00:00;1.12.2006 00:00:00;
+1296;58;0;1;0;;MANZ'sche Verlags- und;Universitätsbuchhandlung GmbH;;;Gutheil-Schoder-Gasse 17, Halle C3;1230;Wien;;;2;215071/0/27;4.6.2008 00:00:00;30.10.2009 00:00:00;;2;0,00;0,00;1.1.2008 00:00:00;31.12.2009 00:00:00;
+1297;29;0;1;0;;Swets Information Services;;;45;;6930;AA WESTERVOORT;+31 252 435111;+31 252 415888;1;31214129;14.1.2005 00:00:00;;;18;0,00;0,00;1.1.2005 00:00:00;31.12.2010 00:00:00;verlängert für 2010 am 25.01.10
+1298;194;0;5;0;;Vermessung  Braczek;;;;Hauptstraße 60b/4;3021;Pressbaum;02233 53039;02233 53039-4;1;;;;;2;0,00;0,00;1.1.2005 00:00:00;31.12.2005 00:00:00;
+1299;195;0;0;0;;Oberschule für Geometer;"P. Anich";;;Fagenstraße 8;39100;BOZEN;0471/287406;0471/260854;1;;21.7.2005 00:00:00;19.9.2007 00:00:00;;15;0,00;0,00;1.1.2005 00:00:00;31.12.2007 00:00:00;Storno per Brief am 19.09.07
+1300;78;0;1;0;;Mayersche direkt;Versandhandel und Service;;;Prager Ring 106;52070;AACHEN;0241/47 77-400;0241/47 77 - 475;1;46141;16.11.2006 00:00:00;;;12;0,00;0,00;1.1.2006 00:00:00;31.12.2006 00:00:00;
+1301;29;0;1;0;;Swets Information Services;;;45;;6930;AA WESTERVOORT;+31 252 435111;+31 252 415888;1;34141360;2.12.2005 00:00:00;;;18;0,00;0,00;1.1.2006 00:00:00;31.12.2012 00:00:00;verlängert für 2012 am 30.11.11
+1302;29;0;0;0;;Geodeettinen Iaitos;Geodeetinrinne 2;Tietopalvelu;;PL 15;02431;MASALA;;;1;33779612;11.11.2005 00:00:00;;;10;0,00;0,00;1.1.2006 00:00:00;31.12.2006 00:00:00;Eingabe am 23.02.06
+1303;78;0;1;0;;Mayersche Buchhandlung GmbH & Co KG;WE MDI-Versandhandel;;;Prager Ring 106;52070;AACHEN;0241/47 77-471/469;0241/47 77 - 479;1;50637;25.10.2006 00:00:00;;;12;0,00;0,00;1.1.2007 00:00:00;31.12.2007 00:00:00;
+1304;113;0;1;0;;MINERVA;Wissenschaftliche Buchhandlung GmbH;;;Ignaz-Köck-Strasse 9;1210;Wien;;;1;960142/1;;;;2;0,00;0,00;1.1.2007 00:00:00;31.12.2007 00:00:00;Kündigung mit Ende 2007
+1305;77;0;1;0;;Fakulta stavebni VUT v Brne;Knihovnicke informacni centrum;;;Veveri 331/95;602 00;BRNO;;;1;C5809780;7.11.2006 00:00:00;;;26;0,00;0,00;1.1.2007 00:00:00;31.12.2015 00:00:00;
+1306;141;0;1;0;;ULB Bonn;Abteilungsbibliothek MNL; Periodika  Agrar;;Nussallee 15a;53115;BONN;;;1;121250/0001-14300885;27.11.2006 00:00:00;;;12;0,00;0,00;1.1.2007 00:00:00;;
+1307;196;0;0;0;;OMV Austria Exploration & Production GmbH;AUT-P Surveying & Geoinformation;;;Protteser Strasse 40;2230;Gänserndorf;;;1;OMV-ID 189236;24.11.2006 00:00:00;20.7.2011 00:00:00;;2;0,00;0,00;1.1.2007 00:00:00;31.12.2011 00:00:00;Kündigung per E-Mail vom 20.07.11
+1308;73;0;1;0;;Acquisitions Services, C&RD;Serials, Bodleian Libraries;Osney One Building;;Osney Mead;;OXFORD OX2 0EW;;;1;96225226;13.12.2006 00:00:00;;;9;0,00;0,00;1.1.2006 00:00:00;;
+1309;197;0;0;0;;Matthäus Truppe;Buchhandlung & Antiquariat;;;Stubenberggasse 7;8010;Graz;++43 (0)316 - 829552;++43 (0)316 - 829552;1;;23.11.2006 00:00:00;;;2;0,00;0,00;1.1.2007 00:00:00;;ab 1.1.08 neue Lieferadresse!
+1310;113;0;1;0;;MINERVA;Wissenschaftliche Buchhandlung GmbH;;;Ignaz-Köck-Strasse 9;1210;Wien;;;1;971636/1;1.2.2007 00:00:00;;;2;0,00;0,00;1.1.2006 00:00:00;31.12.2007 00:00:00;für 2007 verlängert am  22.3.07
+1311;198;0;0;0;;Buchkaiser GmbH;z.Hd. Fr. Schwarz;;;Kaiserstr. 199;76133;KARLSRUHE;0721/92929-51;0721/9292991;1;;14.2.2007 00:00:00;15.2.2010 00:00:00;;12;0,00;0,00;1.1.2007 00:00:00;31.12.2008 00:00:00;Kündigung eingetragen am 15.02.2010!
+1312;113;0;1;0;;FAKULTETA GRADBENISTVO;IN GEODEZIJO - Knjiznica;;;Jamova c.2;1000;LJUBLJANA;;;1;972870/1;12.6.2007 00:00:00;31.12.2008 00:00:00;;24;0,00;0,00;1.1.2007 00:00:00;31.12.2008 00:00:00;Ende 2008 lt. Brief aus 2014
+1313;113;0;1;0;;GOZDARSKI INSTITUT SLOVENIJE;Gozdarska knjiznica;;;Vecna pot 2;1000;LJUBLJANA;;;1;972871/1;12.6.2007 00:00:00;;;24;0,00;0,00;1.1.2007 00:00:00;31.12.2008 00:00:00;Verlängert  jährlich
+1314;200;0;3;0;Thomas;Hildebrandt;;;;Dornbacherstraße 43 Top 24;1170;Wien;0676 727 80 97;;1;-;2.10.2007 00:00:00;;;2;0,00;0,00;1.1.2008 00:00:00;31.12.2008 00:00:00;
+1315;201;0;0;0;;BMLV;Kdo. FüUZ;IMG;;Stiftgasse 2a;1070;Wien;;;1;1978;5.11.2007 00:00:00;;;2;0,00;0,00;1.1.2013 00:00:00;31.12.2014 00:00:00;verlängert für 2013 am 3.12.12 (2012 ausgesetzt)
+1316;29;0;0;0;;China International Book Trading Corporation;Shanghai Branch;;;9/F 355 Fu Zhou Road;200001;SHANGHAI;;;1;40375814;23.11.2007 00:00:00;;;6;0,00;0,00;1.1.2008 00:00:00;31.12.2008 00:00:00;
+1317;113;0;1;0;;Austrian Research Centers GmbH.;Wareneingangsstelle-Zentralmag.;Abt. UW Sekretariat Sandra Wolf;;;2444;Seibersdorf;;;1;975174/1;27.11.2007 00:00:00;15.1.2009 00:00:00;;2;0,00;0,00;1.1.2008 00:00:00;31.12.2007 00:00:00;15.01.09: Heft 3/08 retour, nich mehr im Unternehm
+1318;29;0;1;0;;TKK Maanmittaustekniikan;kirjasto;;;PL 1200;02015;TKK;;;1;40454005;4.12.2007 00:00:00;;;10;0,00;0,00;1.1.2008 00:00:00;31.12.2011 00:00:00;verlängert für 2011 am 29.10.10
+1320;77;0;0;0;;Lantmateriet;Kontorsservice, KVL;;;;801;82 GAVLE;;;1;BC0885922;10.1.2008 00:00:00;;;21;0,00;0,00;1.1.2008 00:00:00;31.12.2010 00:00:00;verlängert für 2010 am 14.12.09
+1321;202;0;0;0;;KretzPhoto e.U.;;;;Hörschinger Str. 7;4063;Hörsching;+43-7221-73783-0;+43-7221-73783-14;1;;10.1.2008 00:00:00;5.5.2014 00:00:00;;2;0,00;0,00;1.1.2008 00:00:00;31.12.2014 00:00:00;
+1322;77;0;0;0;;AMS/IDRAULICA TRASPORTI;;;750;;1430;AE AALSMEER;;;1;A ZQ-9506033 #NE#;23.1.2008 00:00:00;;JB;18;0,00;0,00;1.1.2015 00:00:00;31.12.2015 00:00:00;
+1323;203;0;0;0;;Magistrat der Stadt Wien;MA 18 Stadtentwicklung und Stadtplanung;Referat Wissensmanagement;;Rathausstraße 14-16;1010;Wien;;;1;20080291;16.6.2008 00:00:00;;;2;0,00;0,00;1.1.2008 00:00:00;31.12.2016 00:00:00;
+1324;188;0;0;0;;Fachhochschule Magdeburg;Hochschulbibliothek;Haus 1;;Breitscheidestr. 2;39114;MAGDEBURG;;;1;VNR 28028;1.1.2008 00:00:00;;;12;0,00;0,00;1.1.2008 00:00:00;;angelegt am 23.06.08, Ersatz Abo 1292
+1326;204;0;0;0;;Tiefbauamt;Dipl. Ing. Peter Jehle;;;Städtle 38;9490;VADUZ;+423 / 236 60 73;+423 / 236 60 79;1;;22.10.2008 00:00:00;;;32;0,00;0,00;1.1.2008 00:00:00;31.12.2008 00:00:00;E-Mail 20.10.08+23.10.08
+1327;205;0;0;0;;Abe Marketing;;;;Ul. Grzybowska 37A;00855;WARSZAWA;+48 22 654 06 75;+48 22 652 07 67;1;;27.10.2008 00:00:00;;;20;0,00;0,00;1.1.2008 00:00:00;31.12.2008 00:00:00;
+1328;58;0;1;0;;Manzsche Verlags- und;Universitätsbuchhandlung GmbH;;;Gutheil-Schoder-Gasse 17-C;1230;Wien;66 28 675 - 5692 od. 5694;;1;215071/0/27;9.12.2008 00:00:00;;;2;0,00;0,00;1.1.2009 00:00:00;31.12.2010 00:00:00;verlängert für 2010 am 10.12.09
+1329;29;0;0;0;;AIT - Austrian Institute of Technology;Abt. HET;Dr. Gerhard Heiss;;;2444;Seibersdorf;;;1;44453356;19.12.2008 00:00:00;;;2;0,00;0,00;1.1.2009 00:00:00;31.12.2010 00:00:00;erneuert am 6.04.10 (2. Schreiben vom Nov.09 !!)
+1330;206;0;0;0;;Gozdarski Institut Slovenije;Gozdarska knjiznica;;;Vecna pot 2;1000;LJUBLJANA;;;1;26460;11.2.2009 00:00:00;;;24;0,00;0,00;1.1.2009 00:00:00;31.12.2012 00:00:00; verlängert f. 2012 am 23.01.12
+1331;206;0;0;0;;Fakulteta za Gradbenistvo in Geodezijo;Knjiznica;;;Jamova c. 2;1000;LJUBLJANA;;;1;26460;11.2.2009 00:00:00;;;24;0,00;0,00;1.1.2009 00:00:00;31.12.2012 00:00:00;verlängert f. 2012 am 23.01.2012
+1332;207;0;0;0;;Magistrat der Landeshauptstadt Linz;Planung, Technik und Umwelt;zH Fr. Roswitha Magauer;;Hauptstraße 1-5;4041;Linz;0732/7070-3131;;1;;10.3.2009 00:00:00;;;2;0,00;0,00;1.1.2009 00:00:00;;
+1333;208;0;0;0;;D.E.A S.p.A.;;;;VIA P. BOCCANELLI 27;00138;ROMA;+39 06 852121;+39 06 8543228;1;09RA0909256;12.3.2009 00:00:00;;;15;0,00;0,00;1.1.2009 00:00:00;31.12.2009 00:00:00;
+1334;209;0;0;0;;Stephanus-Buchhandlung;;;;Herrenstr. 34;76133;Karlsruhe;0721-9 19 52-0;0721-91952-22;1;CE-900;20.5.2009 00:00:00;;;12;0,00;0,00;1.1.2009 00:00:00;;www.stephanusbuch.de
+1335;78;0;1;0;;Mayersche Buchhandlung GmbH & Co KG;Buchhaltung MDI;;;Matthiashofstr. 28-30;52064;AACHEN;0241/47 77-400;0241/47 77 - 475;1;81802;20.11.2009 00:00:00;;;12;0,00;0,00;1.1.2010 00:00:00;31.12.2011 00:00:00;verlängert für 2011 am 6.12.10
+1337;211;0;0;0;;LFZ Raumberg-Gumpenstein;Bibliothek;;;Raumberg 38;8952;Irdning;+43 (0)3682/22451-245;+43 (0)3682/22451-210;1;;24.11.2009 00:00:00;;;2;0,00;0,00;1.1.2010 00:00:00;;
+1338;212;0;0;0;;VERBUND Hydro Power AG;Dipl.-Ing. Benjamin Kaden;Abt. EBN;;Badstubenweg 40;9500;Villach;;;1;1548933/1;4.1.2010 00:00:00;;;2;0,00;0,00;1.1.2015 00:00:00;;Erneuert 12.2016
+1339;213;0;1;0;;Dip. Idraulica Trasp. Strade - 73300 Rm;;c/o Li.Co.Sa. Spa;;Via Duca di Calabria 1/1;50125;FIRENZE FI;+3905564831;+39055641257;1;B/297819/10;27.5.2010 00:00:00;;;15;0,00;0,00;1.1.2010 00:00:00;31.12.2010 00:00:00;
+1340;214;0;3;0;Christoph;Krause;;;;Östergården 120;186 37;VALLENTUNA;;;1;12039;12.8.2010 00:00:00;12.12.2020 00:00:00;;21;0,00;0,00;1.1.2010 00:00:00;31.12.2015 00:00:00;Rechnung 2016 im Dez. 2016 zurückgewiesen. Go
+1341;215;0;0;0;;Szkoła Glowna Gospodarstwa;Wiejskiego. Wydzial Lesny.;Katedra Urzadzania Lasu;;ul. Nowoursynowska 159;02-776;WARSZAWA;;;1;17919;;;;20;0,00;0,00;1.1.2010 00:00:00;31.12.2010 00:00:00;
+1342;201;0;0;0;;Universität Innsbruck;Bibliothekszentrum West - Magazin;;;Technikerstrasse 19;6020;Innsbruck;;;1;8298;21.10.2010 00:00:00;;;2;0,00;0,00;1.1.2015 00:00:00;;neu gestartet mit email vom 29.09.2015
+1343;58;0;1;0;;Manzsche Verlags- und;Universitätsbuchhandlung GmbH;;;Kohlmarkt 16;1014;Wien;01 531 61-0;01 662 8675-5690;1;270251/0/5;8.2.2011 00:00:00;;;2;0,00;0,00;1.1.2011 00:00:00;;
+1344;77;0;0;0;;AMS/ITU LIBR;;;750;;1430;AT AALSMEER;;;1;D4887661;25.2.2011 00:00:00;;;18;0,00;0,00;1.1.2011 00:00:00;31.12.2013 00:00:00;verlängert am 8.01.13 für 2013
+1345;216;0;0;0;;CHZ ARS POLONA;SUBSCRIPTION DEPARTMENT;;;OBRONCOW 25;03-933;WARSAW;+48(22)509-86-00;+48(22)509-86-50;1;AP/1667/11;18.3.2011 00:00:00;;;20;0,00;0,00;1.1.2011 00:00:00;31.12.2012 00:00:00;nachtr. Erneuerung 4.10.12
+1346;217;0;0;0;;rmDATA GmbH;;;;Industriestraße 6;7423;Pinkafeld;+43 3357 43333;-76;1;-;2.5.2011 00:00:00;;;2;0,00;0,00;1.1.2011 00:00:00;31.12.2011 00:00:00;Bestellung per E-Mail am 2.05.11
+1347;58;0;1;0;;Manzsche Verlags- und;Universitätsbuchhandlung GmbH;;;Kohlmarkt 16;1014;Wien;01 531 61-0;01 662 8675-5690;1;123261;14.6.2011 00:00:00;16.7.2012 00:00:00;;2;0,00;0,00;1.1.2011 00:00:00;31.12.2011 00:00:00;nachträglich storniert (Ersatz ist 1350)
+1348;218;0;0;0;;Hochschule für Technik Stuttgart;Bibliothek;;;Schellingstr. 24;70174;STUTTGART;+49 (0)711 8926 2609;+49 (0)711 8926 2666;1;;11.8.2011 00:00:00;;;12;0,00;0,00;1.1.2012 00:00:00;;
+1349;219;0;0;0;;boysen+mauke oHG;Schweitzer Fachinformationen;;;Burchardstraße 21;20095;HAMBURG;+49 40 44183-114;;1;4707554.1.45989797;2.5.2011 00:00:00;;;12;0,00;0,00;1.1.2012 00:00:00;;verlängert bis auf Widerruf
+1350;58;0;1;0;;Manzsche Verlags- und;Universitätsbuchhandlung GmbH;;;Gutheil-Schoder-Gasse 17, Halle C3;1230;Wien;+43 1 66 28 675-5696;+43 1 66 28 675-5690;1;215071/0/27;9.12.2011 00:00:00;;;2;0,00;0,00;1.1.2012 00:00:00;31.12.2014 00:00:00;eva.friczmann@manz.at
+1351;77;0;0;0;;Aalto University;Library of Surveying;;17000;;00076;AALTO;;;1;E0284048;13.12.2011 00:00:00;;;10;0,00;0,00;1.1.2012 00:00:00;31.1.2013 00:00:00;verl. Am 28.11.12
+1352;78;0;1;0;;Mayersche Buchhandlung KG;WE MDI-Versandhandel;;;Prager Ring 106;52070;AACHEN;0241/47 77-555;0241/47 77 - 475;1;85683;14.12.2011 00:00:00;;;12;0,00;0,00;1.1.2012 00:00:00;31.12.2012 00:00:00;
+1353;189;0;0;0;;Bundesamt für Landestopographie;swisstopo;Ressort Führungsunterstützung;;Seftigenstrasse 264;3084;WABERN;;;1;156140/1;30.1.2012 00:00:00;;;22;0,00;0,00;1.1.2016 00:00:00;31.12.2018 00:00:00;
+1354;221;0;0;0;;Kerst & Schweitzer oHG;;;;Solmsstrasse 75;60486;Frankfurt am Main;+49 (69) 46 09 34 - 62;+49 (0)69 46 09 34 - 11;1;;25.9.2012 00:00:00;;;12;0,00;0,00;1.1.2013 00:00:00;;
+1355;222;0;0;0;;FAKULTETA ZA GRADBENISTVO;IN GEODEZIJO;Knjiznica;;Jamova cesta 2;1000;LJUBLJANA;;;1;;28.12.2015 00:00:00;;;24;0,00;0,00;1.1.2016 00:00:00;31.12.2017 00:00:00;
+1356;222;0;0;0;;GOZDARSKI INSTITUT SLOVENIJE;Gozdarska knjiznica;;;Vecna pot 2;1000;LJUBLJANA;;;1;637;14.11.2012 00:00:00;;;24;0,00;0,00;1.1.2013 00:00:00;31.12.2013 00:00:00;
+1357;212;0;0;0;;vub GmbH;Postfach 11 04 29;;;;10834;Berlin;;;1;1659473/1;22.11.2012 00:00:00;1.1.2014 00:00:00;;12;0,00;0,00;1.1.2013 00:00:00;1.1.2014 00:00:00;
+1358;29;0;1;0;;Swets Information Services;;;45;;6930;AA WESTERVOORT;;;1;53889480;7.12.2012 00:00:00;;;18;0,00;0,00;1.1.2013 00:00:00;31.12.2014 00:00:00;
+1359;214;0;3;0;Maximilian Lars;Brummel;;;;Heithoferwinkel 16;59071;HAMM;;;1;38789;19.2.2013 00:00:00;;;12;0,00;0,00;1.1.2013 00:00:00;31.12.2013 00:00:00;
+1360;205;0;0;0;;Abe-IPS;;;;ul. Grzybowska 37A;00-855;WARSZAWA;+48 22 654 06 75 wew. 21;+48 22 652 07 67;1;371301;24.5.2013 00:00:00;;;20;0,00;0,00;1.1.2013 00:00:00;31.12.2013 00:00:00;
+1361;67;0;1;0;;Morawa GmbH & Co KG;Buchhandlung und Zeitungsbüro;Business Subscription Services;;Postfach 99;1127;Wien;91076-387;91076-325;1;82047/BSS;16.5.2013 00:00:00;;;2;0,00;0,00;1.1.2013 00:00:00;;ab 1.06.13 bis auf Widerruf
+1362;58;0;0;0;;;;;;;;;;;1;;;31.12.2013 00:00:00;;0;0,00;0,00;;31.12.2013 00:00:00;irrläufer
+1363;29;0;1;0;;Swets Information Services B.V.;UKP;c/o P.O.Box 65;;;;ABINGDON - OXON OX14 1WA;+49 (0) 69 633 988 301;+44 (0) 1235 857501;1;;;;;9;0,00;0,00;;30.11.2016 00:00:00;verzogen
+1364;29;0;4;0;;Swets Information Services;;;45;;6930 AA;Westervoort;;;1;55946651;1.1.2014 00:00:00;;;18;0,00;0,00;1.1.2014 00:00:00;31.12.2014 00:00:00;
+1365;29;0;4;0;;Swets Information Service;;;45;;6930 AA;Westervoort;;;1;56780382;1.1.2014 00:00:00;;;18;0,00;0,00;1.1.2014 00:00:00;31.12.2014 00:00:00;
+1366;225;0;0;0;;ETH Zürich;ETH Bibliothek / Zeitschriften;;;Rämistraße 101;8092;Zürich;;;1;80061282.1;19.11.2014 00:00:00;;;22;0,00;0,00;1.1.2015 00:00:00;;Übernahme des bisherigen Abo 1277 von Swets
+1367;227;0;4;0;;Wiener Netze GmbH;Dienststelle Simmering;;;Erdbergerstraße 236;1110;Wien;;;1;;;;;2;0,00;0,00;1.1.2016 00:00:00;31.12.2016 00:00:00;Storno nur mehr Hr. Klug Mitglied
+1368;223;0;4;0;Arianna;Casalini;;;;Via Benedetto da Maiano 3;50014;Fiesole;;;1;;18.5.2016 00:00:00;;;15;0,00;0,00;1.1.2016 00:00:00;;neu seit 19.5.2016

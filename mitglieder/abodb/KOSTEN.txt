@@ -1,0 +1,5 @@
+KOSTEN;BEZEICHNUNG
+R;Rechnung
+M;Mitgliedsbeitrag
+F;Frei
+T;Tausch

@@ -1,0 +1,36 @@
+{% extends "mitglieder/index.html" %}
+{% block sbcontent %}
+
+<div class="row">
+  <button type="button" class="btn btn-primary editdata" data-object="Land" data-id="0"> land hinzufügen </button><br><br>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Staat</th>
+                <th>ISO-Kürzel</th>
+                <th>inside EU</th>
+                <th>Anzahl</th>
+            </tr>
+        </thead>
+        <tbody>
+          {% for m in land %}
+            <tr>
+                <td>
+                  <a class="editdata" data-object="Land" data-id="{{ m.id }}" href="/ovg/land/{{ m.id }}/">{{ m.land }}</a></td>
+                <td>{{ m.iso }}</td>
+                <td>{% if m.EU %} <i class="fa fa-check fa-fw" style="color:green"></i> {% else %}<i class="fa fa-times fa-fw" style="color:red">{% endif %}</i> </td>
+                <td><a class="filter" href="{% url 'ovgmitglieder:mitglied_filter' obj='Land' pk=m.id %}"><i class="fa fa-user"></i> {{ m.vereinsmitglied_set.count }} Mitglieder</a></td>
+            </tr>
+          {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+
+
+
+</div>
+
+{% endblock sbcontent %}

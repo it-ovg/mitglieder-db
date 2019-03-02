@@ -1,0 +1,42 @@
+
+ <li>
+     <a href="{% url 'ovgmitglieder:index' %}" class="menu" id="menu_dashboard"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+ </li>
+ <li class="dropdown">
+   <a href="#" class="dropdown-toggle" id="menu_"><i class="fa fa-bars fa-fw"></i> unsere Schäfchen</a>
+   <ul class="dropdown-menu">
+       <li>
+	   <a href="{% url 'ovgmitglieder:mitglieder' %}" class="menu" id="menu_Mitglieder"><i class="fa fa-user fa-fw"></i> Mitglieder</a>
+       </li>
+       <li>
+	   <a href="{% url 'ovgmitglieder:jubilare' %}" class="menu" id="menu_Jubilare"><i class="fa fa-birthday-cake fa-fw"></i> Jubilare</a>
+       </li>
+       <li><a href="{% url 'ovgmitglieder:land' %}" class="menu" id="menu_Land"><i class="fa fa-globe fa-fw"></i> Länder</a></li>
+       <li><a href="{% url 'ovgmitglieder:beruf' %}" class="menu" id="menu_Beruf"><i class="fa fa-wrench fa-fw"></i> Beruf</a></li>
+       <li><a href="{% url 'ovgmitglieder:mitgliedsart' %}" class="menu" id="menu_Mitgliedsart"><i class="fa fa-user fa-fw"></i> Mitgliedsart</a></li>
+       <li><a href="{% url 'ovgmitglieder:kosten' %}" class="menu" id="menu_Kosten"><i class="fa fa-dollar fa-fw"></i> Kosten</a></li>
+   </ul>
+ </li>
+
+ <li class="dropdown">
+    <a href="#" class="dropdown-toggle" id="menu_"><i class="fa fa-money fa-fw"></i> WOGO-Teil</span></a>
+       <ul class="dropdown-menu">
+	<li>
+   	    <a href="{% url 'ovgmitglieder:mitgliedsbeitraege' %}" class="menu" id="menu_"><i class="fa fa-eur fa-fw"></i>Mitgliedsbeitraege</a>
+	</li>
+	<li>
+	   <a href="{% url 'ovgmitglieder:mitgliedsbeitraege_neu' %}" class="menu" id="menu_"><i class="fa fa-dollar fa-fw"></i> Jahresbeitrag anlegen</a>
+	</li>
+	<li>
+	   <a href="{% url 'ovgmitglieder:emails_ausschicken' pk=0 %}" class="menu" id="menu_"><i class="fa fa-email fa-fw"></i> EMails ausschicken</a>
+	</li>
+       </ul>
+ </li>
+ <li class="dropdown">
+    <a href="#" class="dropdown-toggle" id="menu_"><i class="fa fa-money fa-fw"></i> VGI-Teil</span></a>
+       <ul class="dropdown-menu">
+	<li>
+   	    <a href="{% url 'ovgmitglieder:vgiuebersicht' %}" class="menu" id="menu_"><i class="fa fa-book fa-fw"></i>Uebersicht</a>
+	</li>
+       </ul>
+ </li>

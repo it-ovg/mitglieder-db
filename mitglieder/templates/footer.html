@@ -1,0 +1,92 @@
+{% load staticfiles %}
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-ribbon">
+                <span>OVG</span>
+            </div>
+            {% comment %}
+                    <div class="col-md-3">
+                            <div class="newsletter">
+                                    <h4>Newsletter</h4>
+                                    <p>Bleib am Laufenden mit unserem OVG-Newsletter.</p>
+
+                                    <div class="alert alert-success hidden" id="newsletterSuccess">
+                                            <strong>Gratulation!</strong> Du wurdest erfolgreich zu unserer Email-Liste hinzugefügt.
+                                    </div>
+
+                                    <div class="alert alert-danger hidden" id="newsletterError"></div>
+
+                                    <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST">
+                                            <div class="input-group">
+                                                    <input class="form-control" placeholder="Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
+                                                    <span class="input-group-btn">
+                                                            <button class="btn btn-default" type="submit">Los</button>
+                                                    </span>
+                                            </div>
+                                    </form>
+                            </div>
+                    </div>
+                    <div class="col-md-3">
+                            &nbsp;
+                    </div>
+		{% endcomment %}
+            <div class="col-md-6">
+                <div class="col-md-12">
+                    <div class="contact-details">
+                        <h4>Kontakt</h4>
+                        <ul class="contact">
+                            <li><p><i class="fa fa-map-marker"></i> <strong>Adresse:</strong> Schiffamtsgasse 1-3,
+                                A-1020 Wien</p></li>
+                            {% comment %}
+                                            <li><p><i class="fa fa-phone"></i> <strong>Telefon:</strong> (01) 21110-3703</p></li>
+					{% endcomment %}
+                            <li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a
+                                    href="mailto:office@ovg.at">office@ovg.at</a></p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="col-md-6">
+                {% if show_search %}
+                <form action="{% url "vgi:search" %}" method="post">
+                    {% csrf_token %}
+                    <div class="input-group input-group-lg">
+                        <input class="form-control" placeholder="Suche..." name="search" id="search" type="text">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-primary btn-lg"><i
+                                    class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+
+                </form>
+                {% endif %}
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1">
+                        <a href="/" class="logo">
+                            <img alt="ovg_logo" class="img-responsive" src="{% static "navi_ovg_logo.gif" %}">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <p>© Copyright 2017. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <nav id="sub-menu">
+                            <ul>
+                                <li><a href="/vgi-die-zeitschrift/impressum/">Impressum</a></li>
+                                <li><a href="mailto:office@ovg.at">Kontakt</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

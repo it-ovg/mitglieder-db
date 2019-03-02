@@ -1,0 +1,43 @@
+{% extends "mitglieder/index.html" %}
+
+{% block menu %}
+{% endblock menu %}
+
+{% block sbcontent %}
+
+<h3>Hallo {{ e.mitglied.first_name }} {{ e.mitglied.nachname }}</h3>
+<p>Schön, dass Sie auch weiterhin die OVG unterstützen wollen!</p>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Beitrag für </th>
+                    <th>offener Betrag</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for o in e.offeneposten.all %}
+                <tr>
+                    <td>{{ o.description }}</td>
+                    <td>€ {{ o.offen }}</td>
+                </tr>
+              {% endfor %}
+                <tr>
+                  <td><strong>Gesamt</strong></td>
+                  <td><strong> € {{ total }}</strong></td>
+                </tr>
+
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<button type="button" class="btn btn-primary">Jetzt bezahlen</button>
+
+</div>
+
+{% endblock sbcontent %}

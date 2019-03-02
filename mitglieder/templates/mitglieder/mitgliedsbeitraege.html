@@ -1,0 +1,51 @@
+{% extends "mitglieder/index.html" %}
+{% block sbcontent %}
+
+<div class="row">
+
+
+
+<div class="row">    <!-- Nav tabs -->
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+          <div class="tab-pane fade in active">
+              <div class="table-responsive" >
+                  <table class="table table-striped" id="offen" class="display">
+                      <thead>
+                          <tr>
+                              <th>#</th>
+                              <th>erstellt am</th>
+                              <th>Beschreibung</th>
+                              <th>Betrag offen</th>
+                              <th>Mitglied</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        {% for o in offeneposten %}
+                            <tr>
+                                <td><a class="editdata" data-object="offenePosten" data-id="{{ o.id }}" href="/ovg/offenePosten/{{ o.id }}/">{{ o.id }}</a></td>
+                                <td>{{ o.erstellt|date:"j.m.y" }}</td>
+                                <td>{{ o.description }}</td>
+                                <td>€ {{ o.offen }}</td>
+                                <td><a href="{% url 'ovgmitglieder:mitglied_details' pk=o.mitglied.id %}">{{ o.mitglied.first_name }} {{ o.mitglied.last_name }}</a></td>
+                            </tr>
+                        {% endfor %}
+
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+
+</div>
+
+{% endblock sbcontent %}
+{% block scriptFoot %}
+
+<script>
+$(document).ready(function() {
+  $("#offen").DataTable();
+})
+</script>
+{% endblock scriptFoot %}

@@ -1,0 +1,10 @@
+MITART;BEZEICHNUNG;Anmerkung
+A;Austritt;
+M;Mitglied;
+V;Verzogen;
+AD;Adresse;nur Adresse, kein Mitglied
+T;Verstorben;
+VM;Vorstand;
+EM;Ehrenmitglied;
+UM;Unterstützendes Mitglied;
+DA;Dauerauftrag;

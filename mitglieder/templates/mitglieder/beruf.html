@@ -1,0 +1,36 @@
+{% extends "mitglieder/index.html" %}
+
+
+{% block sbcontent %}
+
+<button type="button" class="btn btn-primary editdata" data-object="Beruf" data-id="0"> Beruf hinzufügen </button><br><br>
+<div class="row">
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Beruf</th>
+                <th>Bezeichnung</th>
+                <th>Anzahl</th>
+            </tr>
+        </thead>
+        <tbody>
+          {% for m in beruf %}
+            <tr>
+              <td>
+                <a class="editdata" data-object="Beruf" data-id="{{ m.id }}" href="/ovg/beruf/{{ m.id }}/">{{ m.beruf }}</a></td>
+                <td>{{ m.bezeichnung }}</td>
+                <td><a class="filter" href="{% url 'ovgmitglieder:mitglied_filter' obj='Beruf' pk=m.id %}"><i class="fa fa-user"></i> {{ m.vereinsmitglied_set.count }} Mitglieder</a></td>
+
+            </tr>
+          {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+
+
+
+</div>
+
+{% endblock sbcontent %}
