@@ -2,15 +2,20 @@ from django.contrib.auth.models import User, Group
 from mitglieder.models import VereinsMitglied, offenePosten, Land, Beruf, Mitgliedsart, Kosten, Vortragsort, Adresse, Institution
 from mitglieder.models import offenePosten, AboHeft, Abonnent
 from django.http import JsonResponse
+
+from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
-from rest_framework import viewsets, generics, permissions
+from rest_framework import viewsets, generics
+from rest_framework.views import APIView
+from rest_framework.metadata import SimpleMetadata
+from rest_framework.relations import ManyRelatedField, RelatedField
+from rest_framework.permissions import AllowAny
+
 from datetime import datetime as dt
 from .serializers import UserSerializer, GroupSerializer, VereinsMitgliedSerializer, CountrySerializer, BerufeSerializer, MitgliedsartSerializer
 from .serializers import KostenSerializer, VortragsortSerializer, AdresseSerializer, InstitutionenSerializer
 from .serializers import AboHeftSerializer, AbonnentSerializer, offenePostenSerializer, CreateUserSerializer, LoginUserSerializer
 from django.utils.encoding import force_text
-from rest_framework.metadata import SimpleMetadata
-from rest_framework.relations import ManyRelatedField, RelatedField
 from django.views import View
 from django.db.models import Q
 from knox.models import AuthToken
@@ -22,7 +27,7 @@ from invoice.rechnung import createInvoice
 from django.core.files.base import ContentFile
 from PyPDF2 import PdfFileMerger
 from django.core.mail import EmailMultiAlternatives
-
+import os
 
 
 class MyMetaData(SimpleMetadata):
@@ -95,24 +100,30 @@ def merger(output_path, input_paths):
  
 
 
-class InvoiceView(View):
-    permission_classes = [permissions.AllowAny, ]
 
-    def get(self, request, *args, **kwargs):
-        vm = VereinsMitglied.objects.get(id=kwargs['id'])
+
+@api_view(['GET', 'POST'])
+@permission_classes((AllowAny, ))
+def InvoiceView(request, pk):
+
+    if request.method == 'GET':
+        vm = VereinsMitglied.objects.get(id=pk)
         x = make_invoice(vm)
     
         response = HttpResponse(content_type='application/pdf')
-        response['Content-Disposition'] = 'inline; filename="mypdf.pdf"'
+        response['Content-Disposition'] = 'inline; filename={}'.format(os.path.basename(vm.rechnung.file.name))                                                                   
+
 
         response.write(x)
-        s = sendmail(vm)
+        # s = sendmail(vm)
 
         return response
 
-    def post(self, request, *args, **kwargs):
-        pass
-
+    if request.method == 'POST':
+        vm = VereinsMitglied.objects.get(id=pk)
+        x = make_invoice(vm)
+        s = sendmail(vm)
+        return HttpResponse("das war ok")
 
 
 def erlagscheine_anlegen(request):
@@ -150,7 +161,7 @@ class UserAPI(generics.RetrieveAPIView):
 
 
 class LoginAPI(generics.GenericAPIView):
-    permission_classes = [permissions.AllowAny, ]
+    permission_classes = [AllowAny, ]
     serializer_class = LoginUserSerializer
 
     def post(self, request, *args, **kwargs):

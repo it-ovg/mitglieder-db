@@ -21,13 +21,12 @@ router.register(r'aboheft', views.AboHeftViewSet)
 router.register(r'abonnent', views.AbonnentViewSet)
 router.register(r'offeneposten', views.offenePostenViewSet)
 
-
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^dashboard/$', views.dashboard, name='dashboard'),
-    re_path(r'^rechnung/(?P<id>[0-9]+)/', views.InvoiceView.as_view()),
+    path(r'rechnung/<int:pk>/', views.InvoiceView),
     url(r'^jahresbeitrag_anlegen/$', views.jahresbeitrag_anlegen, name='jahresbeitrag_anlegen'),
     url(r'^erlagscheine_anlegen/$', views.erlagscheine_anlegen, name='erlagscheine_anlegen'),
     url(r'^auth/register/$', views.RegistrationAPI.as_view()),
