@@ -38,19 +38,29 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         read_only_fields = ('date_joined', 'last_login')
 
 class BerufeSerializer(serializers.HyperlinkedModelSerializer):
-    vereinsmitglied_inaktiv_count = serializers.SerializerMethodField('get_members_count')
-    institution_inaktiv_count = serializers.SerializerMethodField('get_inst_count')
+    vereinsmitglied_inactive_count = serializers.SerializerMethodField('get_inactive_members_count')
+    vereinsmitglied_count = serializers.SerializerMethodField('get_members_count')
+    institution_inactive_count = serializers.SerializerMethodField('get_inactive_inst_count')
+    institution_count = serializers.SerializerMethodField('get_inst_count')
 
-    def get_members_count(self, id):
+    def get_inactive_members_count(self, id):
         return VereinsMitglied.objects.filter(storndat__isnull=False).filter(berufsgruppe=id).count()
 
+    def get_members_count(self, id):
+        return VereinsMitglied.aktive.all().filter(berufsgruppe=id).count()
+
     def get_inst_count(self, id):
+        return Institution.aktive.all().filter(berufsgruppe=id).count()
+
+    def get_inactive_inst_count(self, id):
         return Institution.objects.filter(storndat__isnull=False).filter(berufsgruppe=id).count()
 
     class Meta:
         model = Beruf
-        fields = ('url', 'id', 'beruf', 'bezeichnung', 'vereinsmitglied_set', 'institution_set', 'vereinsmitglied_inaktiv_count', 'institution_inaktiv_count' )
-        read_only_fields = ('id', 'vereinsmitglied_set', 'institution_set', 'vereinsmitglied_inaktiv_count', 'institution_inaktiv_count')
+        fields = ('url', 'id', 'beruf', 'bezeichnung', 
+                     'vereinsmitglied_count', 'vereinsmitglied_inactive_count', 'institution_count', 'institution_inactive_count',
+        )
+        read_only_fields = ('id', )
 
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
@@ -60,36 +70,56 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class MitgliedsartSerializer(serializers.HyperlinkedModelSerializer):
-    vereinsmitglied_inaktiv_count = serializers.SerializerMethodField('get_members_count')
-    institution_inaktiv_count = serializers.SerializerMethodField('get_inst_count')
+    vereinsmitglied_inactive_count = serializers.SerializerMethodField('get_inactive_members_count')
+    vereinsmitglied_count = serializers.SerializerMethodField('get_members_count')
+    institution_inactive_count = serializers.SerializerMethodField('get_inactive_inst_count')
+    institution_count = serializers.SerializerMethodField('get_inst_count')
 
-    def get_members_count(self, id):
+    def get_inactive_members_count(self, id):
         return VereinsMitglied.objects.filter(storndat__isnull=False).filter(mitgliedsart=id).count()
 
+    def get_members_count(self, id):
+        return VereinsMitglied.aktive.all().filter(mitgliedsart=id).count()
+
     def get_inst_count(self, id):
+        return Institution.aktive.all().filter(mitgliedsart=id).count()
+
+    def get_inactive_inst_count(self, id):
         return Institution.objects.filter(storndat__isnull=False).filter(mitgliedsart=id).count()
 
     class Meta:
         model = Mitgliedsart
-        fields = ('id', 'url', 'mitart', 'bezeichnung', 'anmerkung', 'vereinsmitglied_set', 'institution_set',
-            'vereinsmitglied_inaktiv_count', 'institution_inaktiv_count')
-        read_only_fields = ('id', 'vereinsmitglied_set', 'institution_set', 'vereinsmitglied_inaktiv_count', 'institution_inaktiv_count')
+        fields = ('id', 'url', 'mitart', 'bezeichnung', 'anmerkung',
+             'vereinsmitglied_count', 'vereinsmitglied_inactive_count', 'institution_count', 'institution_inactive_count',
+             )
+        read_only_fields = ('id', 'vereinsmitglied_count', 'institution_count', 'vereinsmitglied_inactive_count', 'institution_inactive_count')
+
 
 
 class KostenSerializer(serializers.HyperlinkedModelSerializer):
-    vereinsmitglied_inaktiv_count = serializers.SerializerMethodField('get_members_count')
-    institution_inaktiv_count = serializers.SerializerMethodField('get_inst_count')
+    vereinsmitglied_inactive_count = serializers.SerializerMethodField('get_inactive_members_count')
+    vereinsmitglied_count = serializers.SerializerMethodField('get_members_count')
+    institution_inactive_count = serializers.SerializerMethodField('get_inactive_inst_count')
+    institution_count = serializers.SerializerMethodField('get_inst_count')
 
-    def get_members_count(self, id):
+    def get_inactive_members_count(self, id):
         return VereinsMitglied.objects.filter(storndat__isnull=False).filter(kostenart=id).count()
 
+    def get_members_count(self, id):
+        return VereinsMitglied.aktive.all().filter(kostenart=id).count()
+
     def get_inst_count(self, id):
+        return Institution.aktive.all().filter(kostenart=id).count()
+
+    def get_inactive_inst_count(self, id):
         return Institution.objects.filter(storndat__isnull=False).filter(kostenart=id).count()
 
     class Meta:
         model = Kosten
-        fields = ('id', 'url', 'art', 'bezeichnung', 'betrag', 'vereinsmitglied_set', 'institution_set', 'vereinsmitglied_inaktiv_count', 'institution_inaktiv_count')
-        read_only_fields = ('id', 'vereinsmitglied_set', 'institution_set', 'vereinsmitglied_inaktiv_count', 'institution_inaktiv_count')
+        fields = ('id', 'url', 'art', 'bezeichnung', 'betrag',
+             'vereinsmitglied_count', 'vereinsmitglied_inactive_count', 'institution_count', 'institution_inactive_count',
+         )
+        read_only_fields = ('id',)
 
 
 class VortragsortSerializer(serializers.HyperlinkedModelSerializer):
@@ -165,30 +195,33 @@ class InstitutionenSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('wohnadresse', 'lieferadresse', 'rechnungsadresse', 'email', 'url', 'id', 'mitgliedsnummer', 
                     'institution_name', 'name2', 'name3', 'tel', 'fax', 'homepage',
                     'beigz', 'beidat', 'storndat', 'mitgliedsart', 'kostenart', 'versand', 'dsgvo',
-                    'sub', 'berufsgruppe', 'heftanzahl', 'anmerkung')
+                    'sub', 'berufsgruppe', 'heftanzahl', 'anmerkung', 'aktiv')
   
 
 
+
 class CountrySerializer(serializers.HyperlinkedModelSerializer):
-    vereinsmitglied_set = serializers.SerializerMethodField('get_members_count')
-    institution_set = serializers.SerializerMethodField('get_inst_count')
-    vereinsmitglied_inaktiv_count = serializers.SerializerMethodField('get_members_inaktiv_count')
-    institution_inaktiv_count = serializers.SerializerMethodField('get_inst_inaktiv_count')
+    vereinsmitglied_inactive_count = serializers.SerializerMethodField('get_inactive_members_count')
+    vereinsmitglied_count = serializers.SerializerMethodField('get_members_count')
+    institution_inactive_count = serializers.SerializerMethodField('get_inactive_inst_count')
+    institution_count = serializers.SerializerMethodField('get_inst_count')
 
     def get_members_count(self, land):
-        return VereinsMitglied.objects.filter(wohnadresse__country__land=land.land).count()
+        return VereinsMitglied.aktive.filter(wohnadresse__country__land=land.land).count()
 
     def get_inst_count(self, land):
-        return Institution.objects.filter(wohnadresse__country__land=land.land).count() 
+        return Institution.aktive.filter(wohnadresse__country__land=land.land).count() 
 
-    def get_members_inaktiv_count(self, land):
+    def get_inactive_members_count(self, land):
         return VereinsMitglied.objects.filter(wohnadresse__country__land=land.land).filter(storndat__isnull=False).count()
 
-    def get_inst_inaktiv_count(self, land):
+    def get_inactive_inst_count(self, land):
         return Institution.objects.filter(wohnadresse__country__land=land.land).filter(storndat__isnull=False).count() 
 
     class Meta:
         model = Land
-        fields = ('url', 'id', 'land', 'iso', 'EU', 'vereinsmitglied_set', 'institution_set', 'vereinsmitglied_inaktiv_count', 'institution_inaktiv_count' )
-        read_only_fields = ('id', 'vereinsmitglied_set', 'institution_set', 'vereinsmitglied_inaktiv_count', 'institution_inaktiv_count')
+        fields = ('url', 'id', 'land', 'iso', 'EU',
+             'vereinsmitglied_count', 'vereinsmitglied_inactive_count', 'institution_count', 'institution_inactive_count',
+          )
+        read_only_fields = ('id', )
 

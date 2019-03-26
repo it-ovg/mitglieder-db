@@ -26,9 +26,6 @@ router.register(r'offeneposten', views.offenePostenViewSet)
 urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^dashboard/$', views.dashboard, name='dashboard'),
-    path(r'rechnung/<int:pk>/', views.InvoiceView),
-    url(r'^jahresbeitrag_anlegen/$', views.jahresbeitrag_anlegen, name='jahresbeitrag_anlegen'),
-    url(r'^erlagscheine_anlegen/$', views.erlagscheine_anlegen, name='erlagscheine_anlegen'),
     url(r'^auth/register/$', views.RegistrationAPI.as_view()),
     url(r'^auth/login/$', views.LoginAPI.as_view()),
     url(r'^auth/user/$', views.UserAPI.as_view()),

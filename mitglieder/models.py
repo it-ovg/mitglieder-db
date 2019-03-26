@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, AbstractUser
 from django.utils import timezone
 import uuid
 from django.db.models import Sum
@@ -129,6 +129,12 @@ class Institution(models.Model):
     objects = models.Manager()
     aktive = AktivMitgliedManager()
 
+    @property
+    def aktiv(self):
+        if self.storndat:
+            return False
+        return True
+
 
 class Abonnent(models.Model):
     kundennummer = models.IntegerField()
@@ -144,6 +150,7 @@ class Abonnent(models.Model):
     dsgvo = models.BooleanField('Datenschutzgrundverordnung', default=False, blank=False, null=False, help_text='Mitglied hat zur Datenschutzgrundverordnung zugestimmt.')
     email = models.CharField(max_length=100,blank=True, null=True)
     rechnungsanschrift = models.ForeignKey(Adresse, on_delete=models.CASCADE, related_name='Anschrift')
+    rechnung = models.FileField(upload_to='aboinvoices/', blank=True)
     objects = models.Manager()
     aktive = AktivAbonnentManager()
 
@@ -155,13 +162,11 @@ class Abonnent(models.Model):
         
     @property
     def inaktiv(self):
-        if self.aboheft_set.filter(aboende__isnull=True).count() > 0:
-            return False
-        return True
+        return not self.aktiv
 
     @property
     def heftsum(self):
-        return self.aboheft_set.filter(aboende__isnull=False).aggregate(Sum('heftanzahl'))['heftanzahl__sum']
+        return self.aboheft_set.filter(aboende__isnull=True).aggregate(Sum('heftanzahl'))['heftanzahl__sum']
 
 
 
@@ -194,6 +199,7 @@ class AboHeft(Adresse):
 
 class VereinsMitglied(User):
     mitgliedsnummer = models.IntegerField(blank=False, null=False, editable=False)
+    # email = models.EmailField('Email address', unique=True, null=False, blank=False)
     anrede = models.CharField(max_length=100,blank=True, null=True)
     titel = models.CharField(max_length=100,blank=True, null=True)
     namenszusatz = models.CharField(max_length=100,blank=True, null=True)

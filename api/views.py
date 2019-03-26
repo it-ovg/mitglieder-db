@@ -2,10 +2,11 @@ from django.contrib.auth.models import User, Group
 from mitglieder.models import VereinsMitglied, offenePosten, Land, Beruf, Mitgliedsart, Kosten, Vortragsort, Adresse, Institution
 from mitglieder.models import offenePosten, AboHeft, Abonnent
 from django.http import JsonResponse
+import uuid
 
-from rest_framework.decorators import api_view, permission_classes
+from rest_framework.decorators import api_view, permission_classes, action
 from rest_framework.response import Response
-from rest_framework import viewsets, generics
+from rest_framework import viewsets, generics, status
 from rest_framework.views import APIView
 from rest_framework.metadata import SimpleMetadata
 from rest_framework.relations import ManyRelatedField, RelatedField
@@ -24,10 +25,13 @@ import datetime
 from reportlab.pdfgen import canvas
 from io import BytesIO
 from invoice.rechnung import createInvoice
+from invoice.abo import create_abo_invoice
+from invoice.anniversary import create_anniversary
 from django.core.files.base import ContentFile
 from PyPDF2 import PdfFileMerger
 from django.core.mail import EmailMultiAlternatives
 import os
+import shutil
 
 
 class MyMetaData(SimpleMetadata):
@@ -88,6 +92,38 @@ def make_invoice(vm):
     return x
 
 
+def make_abo_invoice(vm):
+    book_price = 50.0
+    invoice_date = datetime.datetime.now()
+
+    m = { 'customer_id': vm.kundennummer, 'customer_vat_id': vm.uid,
+            'abo_id': vm.kundennummer,
+            'abo_year': 2019,
+            'debt_claim': 100, 'discount': vm.heftsum*book_price*vm.prozent,
+            'book_amount': vm.heftsum,
+            'book_price': book_price,
+            'invoice_date_str': invoice_date,
+            'inv_company': vm.name,
+            'inv_department': vm.name2,
+            'inv_name': vm.name3,
+            'inv_street': vm.rechnungsanschrift.strasse,
+            'inv_zip':vm.rechnungsanschrift.plz ,
+            'inv_city': vm.rechnungsanschrift.ort,
+            'inv_country': vm.rechnungsanschrift.country.land,
+            }
+
+    x = create_abo_invoice(**m)
+    invoice_filename = "ovg_inv_abo_{}_{}.pdf".format(vm.id, invoice_date.strftime("%Y") )
+
+    vm.rechnung.save(invoice_filename, ContentFile(x))
+    
+    return x
+
+
+
+
+
+
 def merger(output_path, input_paths):
     pdf_merger = PdfFileMerger()
     file_handles = []
@@ -99,55 +135,6 @@ def merger(output_path, input_paths):
         pdf_merger.write(fileobj)
  
 
-
-
-
-@api_view(['GET', 'POST'])
-@permission_classes((AllowAny, ))
-def InvoiceView(request, pk):
-
-    if request.method == 'GET':
-        vm = VereinsMitglied.objects.get(id=pk)
-        x = make_invoice(vm)
-    
-        response = HttpResponse(content_type='application/pdf')
-        response['Content-Disposition'] = 'inline; filename={}'.format(os.path.basename(vm.rechnung.file.name))                                                                   
-
-
-        response.write(x)
-        # s = sendmail(vm)
-
-        return response
-
-    if request.method == 'POST':
-        vm = VereinsMitglied.objects.get(id=pk)
-        x = make_invoice(vm)
-        s = sendmail(vm)
-        return HttpResponse("das war ok")
-
-
-def erlagscheine_anlegen(request):
-    merged_filename = 'merged_pdf.pdf'
-    v = VereinsMitglied.aktive.exclude(mitgliedsart__mitart="EM")
-    vms = [vm for vm in v if vm.offeneposten_set.filter(bezahlt=False)] 
-    # vms = vms[0:10]
-    if vms:
-        for vm in vms:
-            make_invoice(vm)
-
-        pfade = [vm.rechnung.path for vm in vms]
-        merger(merged_filename, pfade)
-
-        f = open(merged_filename, 'r')
-        pdf = f.read()
-        f.close()
-
-        response = HttpResponse(content_type='application/pdf')
-        response['Content-Disposition'] = 'inline; filename={}'.format(merged_filename)
-        response.write(pdf)
-        return response 
-
-    return HttpResponse("alle Beitraege sind einbezahlt")
 
 
 
@@ -166,6 +153,8 @@ class LoginAPI(generics.GenericAPIView):
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
+        if not serializer.is_valid():
+            return Response(status=status.HTTP_401_UNAUTHORIZED)
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data
         return Response({
@@ -228,10 +217,43 @@ class AdresseViewSet(viewsets.ModelViewSet):
     metadata_class = MyMetaData
 
 
+
+class AbonnentViewSet(viewsets.ModelViewSet):
+    queryset = Abonnent.objects.all()
+    serializer_class = AbonnentSerializer
+    metadata_class = MyMetaData
+
+    def get_queryset(self):
+        if 'aktiv' in self.request. GET:
+            abos = Abonnent.aktive.all()
+        else:
+            abos = Abonnent.objects.all()
+        if 'wer' in self.request.GET:
+            abos = abos.filter(Q(name__icontains=self.request.GET['wer']))
+        return abos
+
+
+    @action(detail=True, methods=['get'])
+    def create_invoice(self, request, pk=None):
+        vm =self.get_object()
+        x = make_abo_invoice(vm)
+        return HttpResponse(x)
+
+    @action(detail=True, methods=['get'])
+    def send_mail(self, request, pk=None):
+        vm =self.get_object()
+        x = make_abo_invoice(vm)
+        s = sendmail(vm)
+        return HttpResponse("das war ok")
+
+
+
+
 class VereinsMitgliedViewSet(viewsets.ModelViewSet):
     queryset = VereinsMitglied.objects.all()
     serializer_class = VereinsMitgliedSerializer
     metadata_class = MyMetaData
+
 
     def get_queryset(self):
         if 'aktiv' in self.request.GET:
@@ -239,13 +261,129 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         else:
             vm = VereinsMitglied.objects.all()
 
-        if 'wer' in self.request.GET:
-            sn = self.request.GET['wer']
-            vm = vm.filter(Q(last_name__icontains=sn) | Q(first_name__icontains=sn))
         if 'key' in self.request.GET and 'value' in self.request.GET:
             kwargs = {'{}'.format(self.request.GET['key']): self.request.GET['value'] }
-            return vm.filter(**kwargs)
+            vm = vm.filter(**kwargs)
+
+        namefilter = self.request.query_params.get('namefilter')
+        if namefilter:
+            vm = vm.filter(Q(last_name__icontains=namefilter) | Q(first_name__icontains=namefilter))
         return vm
+
+
+    @action(detail=True, methods=['get'])
+    def create_invoice(self, request, pk=None):
+        vm =self.get_object()
+        x = make_invoice(vm)
+        return HttpResponse(x)
+
+    @action(detail=True, methods=['get'])
+    def send_mail(self, request, pk=None):
+        vm =self.get_object()
+        x = make_invoice(vm)
+        s = sendmail(vm)
+        return HttpResponse("das war ok")
+
+    @action(detail=False, methods=['get'])
+    def jahresbeitrag_anlegen(self, request):
+        d = request.query_params.get('jahr')
+        if d:
+            year = int(d)
+            stud_gebjahr = year-30
+            vms = VereinsMitglied.aktive.exclude(mitgliedsart__mitart="EM")
+
+            juniors = vms.filter(gebdat__year__gt=stud_gebjahr)
+            for m in juniors:
+                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=30, bezahlt=False, erstellt=dt.now())
+                o.save()
+
+            seniors = vms.filter(gebdat__year__lt=1945)
+            for m in seniors:
+                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=30, bezahlt=False, erstellt=dt.now())
+                o.save()
+
+            normale = vms.exclude(id__in=[s.id for s in seniors]).exclude(id__in=[j.id for j in juniors])
+            for m in normale:
+                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=55, bezahlt=False, erstellt=dt.now())
+                o.save()
+
+            message = 'Der Beitrag "{}" wurde {} x erfolgreich angelegt!'.format(d, vms.count())
+            return Response(data=message, status=status.HTTP_200_OK)
+        return Response(data="Sie haben ein leeres Feld übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
+
+    @action(detail=False, methods=['get'])
+    def erlagscheine_anlegen(self, request):
+        merged_filename = 'merged_pdf.pdf'
+        v = VereinsMitglied.aktive.exclude(mitgliedsart__mitart="EM")
+        vms = [vm for vm in v if vm.offeneposten_set.filter(bezahlt=False)] 
+        vms = vms[0:5]
+        if vms:
+            for vm in vms:
+                make_invoice(vm)
+
+            pfade = [vm.rechnung.path for vm in vms]
+            merger(merged_filename, pfade)
+
+            f = open(merged_filename, 'r')
+            pdf = f.read()
+            f.close()
+            return Response(data=pdf, status=status.HTTP_200_OK)
+
+    @action(detail=False, methods=['get'])
+    def jubilare_pdf(self, request):
+        d = request.query_params.get('jahr')
+        if d:
+            year=int(d)
+            jubls=[50,60,70,75,80,85,90,95]
+            merged_filename = 'jubilare.pdf'
+            folder = str(uuid.uuid4())
+            path = '/tmp/{}'.format(folder)
+            os.mkdir(path)
+            os.chdir(path)
+    
+            vms=VereinsMitglied.aktive.order_by('gebdat').filter(gebdat__isnull=False)
+            for m in vms:
+                m.alter=year-m.gebdat.year
+                if m.alter in jubls or m.alter>99:
+                    mm = {'letter_date': m.gebdat.isoformat(), 'customer_salutation': 'Lieber', 
+                        'customer_name': '{} {}'.format(m.first_name, m.last_name),
+                        'customer_id': m.mitgliedsnummer, 'customer_anniversary': m.alter,
+                        'letter_street': m.wohnadresse.strasse, 'letter_zip': m.wohnadresse.plz,
+                        'letter_city': m.wohnadresse.ort, 'letter_country': m.wohnadresse.country.land,
+                         }
+                   
+                    x = create_anniversary(**mm)
+                    fname = str(uuid.uuid4())
+                    f = open(fname, 'wb')
+                    f.write(x)
+                    f.close()
+
+            pfade = os.listdir(path)
+            merger(merged_filename, pfade)
+
+            f = open(merged_filename, 'r')
+            pdf = f.read()
+            f.close()
+            shutil.rmtree(path)
+            return Response(data=pdf, status=status.HTTP_200_OK)
+        return Response(data="Sie haben kein gültiges Jahr übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
+
+    """
+    Args:
+        letter_date: Datum des Briefes (= Geburtsdatum),
+        letter_street: Strasse + Nr, 
+        letter_zip: Postleitzahl, 
+        letter_city: Stadt,
+        letter_country: Land,
+        customer_salutation: Anrede,
+        customer_name: Name inkl. Titel,
+        customer_id: Mitgliedsnummer,
+        customer_anniversary: nter Geburtstag,
+        generate_pdf: Soll ein PDF erzeugt werden, ansonst Buffer
+    """
+
+
+
 
 
 class InstitutionenViewSet(viewsets.ModelViewSet):
@@ -287,49 +425,8 @@ class offenePostenViewSet(viewsets.ModelViewSet):
         return ops
 
 
-class AbonnentViewSet(viewsets.ModelViewSet):
-    queryset = Abonnent.objects.all()
-    serializer_class = AbonnentSerializer
-    metadata_class = MyMetaData
-
-    def get_queryset(self):
-        if 'aktiv' in self.request. GET:
-            abos = Abonnent.aktive.all()
-        else:
-            abos = Abonnent.objects.all()
-        if 'wer' in self.request.GET:
-            abos = abos.filter(Q(name__icontains=self.request.GET['wer']))
-        return abos
 
 
-
-def jahresbeitrag_anlegen(request):
-    d = request.GET['jahr']
-    context = {}
-    if d!="":
-        year = int(d)
-        stud_gebjahr = year-30
-        vms = VereinsMitglied.aktive.exclude(mitgliedsart__mitart="EM")
-
-        juniors = vms.filter(gebdat__year__gt=stud_gebjahr)
-        for m in juniors:
-            o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=30, bezahlt=False, erstellt=dt.now())
-            o.save()
-
-        seniors = vms.filter(gebdat__year__lt=1945)
-        for m in seniors:
-            o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=30, bezahlt=False, erstellt=dt.now())
-            o.save()
-
-        normale = vms.exclude(id__in=[s.id for s in seniors]).exclude(id__in=[j.id for j in juniors])
-        for m in normale:
-            o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=55, bezahlt=False, erstellt=dt.now())
-            o.save()
-
-        context['success'] = 'Der Beitrag "{}" wurde {} x erfolgreich angelegt!'.format(d, vms.count())
-    else:
-        context['error'] = 'Sie haben ein leeres Feld übergeben!'
-    return JsonResponse(context)
 
 
 def dashboard(request):
@@ -352,24 +449,6 @@ def dashboard(request):
                 'jubilare': jubilare, 'kosten': Kosten.objects.count(), 'mitgliedsarten': Mitgliedsart.objects.count(), 'berufecount': Beruf.objects.count(), 'laendercount': Land.objects.count() }
     return JsonResponse(context)
 
-
-
-def makepdfs(vorlage, target, m):
-    template=get_template('mitglieder/'+vorlage)
-    context={'vm': m}
-    rendered_tmpl=template.render(context).encode('utf-8')
-    path='/home/bipo/ovgreact/backend/mitgliederverwaltung/latexfiles'
-    os.chdir(path)
-    fname=target+'.tex'
-    f=open(fname,'wb')
-    f.write(rendered_tmpl)
-    f.close()
-    subprocess.call(['pdflatex',fname])
-    pdffile=glob.glob(os.path.join(path,target+'.pdf'))
-    shutil.copy(pdffile[0], os.path.join(settings.STATIC_ROOT,'pdfs'))
-    files=glob.glob(os.path.join(path,target+'.*'))
-    for f in files:
-        os.remove(f)
 
 
 def pdf(request, was):

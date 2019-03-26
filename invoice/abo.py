@@ -17,8 +17,8 @@ from reportlab.platypus import Paragraph, Table, TableStyle
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
 
-from ovg import settings as s
-from ovg import utils as u
+from invoice import settings as s
+from invoice import utils as u
 
 
 def create_abo_invoice(**kwargs):
