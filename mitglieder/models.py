@@ -194,7 +194,14 @@ class AboHeft(Adresse):
     aboart = models.CharField(max_length=2, choices=ABO_CHOICES, default='DA')
     aboanfang = models.DateField(blank=True, null=True)
     aboende = models.DateField(blank=True, null=True)       
-    anmerkung = models.TextField(null=True, blank=True)       
+    anmerkung = models.TextField(null=True, blank=True)     
+
+    @property
+    def aktiv(self):
+        if self.aboende:
+            return False
+        return True  
+
 
 
 class VereinsMitglied(User):
@@ -278,3 +285,6 @@ class EmailId(models.Model):
     mitglied = models.ForeignKey(VereinsMitglied, on_delete=models.CASCADE)
     offeneposten = models.ManyToManyField(offenePosten)
     bezahltam = models.DateTimeField(default=timezone.now, editable=False)
+
+
+# class StandardTexte(models.Model):

@@ -77,7 +77,7 @@ def createInvoice(**kwargs):
     invoice_city = kwargs.get("invoice_city", "Wien")
     invoice_country = kwargs.get("invoice_country", "Österreich")
     show_country = kwargs.get("show_country", False)
-    ovg_news = kwargs.get("ovg_news", "")
+    ovg_news = kwargs.get("ovg_news", "").replace("\n", "<br />\n")
     ovg_dues = kwargs.get("ovg_dues", [])
     ovg_credit = kwargs.get("ovg_credit", 0.0)
     frame_visibility = FRAME_ON
@@ -243,6 +243,6 @@ if __name__ == "__main__":
         invoice_to="Dipl.-Ing. Jürgen Fredriksson",
         invoice_street="Steingrubenweg 4k",
         invoice_zip="2352", invoice_city="Gumpoldskirchen",
-        ovg_news="Sonst gibt es nichts neues am BEV<br />Wenn man mag, kann man einfach hier etwas dazuschreiben, ganz wie man mag oder eben nicht oder sonst irgendwas. Ganz wichtig... Zeilenumbrüche sind als HTML-Tags 'br/' anzugeben....",
+        ovg_news="Sonst gibt es nichts neues im BEV<br />Wenn man mag, kann man einfach hier etwas dazuschreiben, ganz wie man mag oder eben nicht oder sonst irgendwas. Ganz wichtig... Zeilenumbrüche sind als HTML-Tags 'br/' anzugeben....",
         ovg_dues=[("Beitrag 2017", 55.), ("Beitrag 2018", 55.),]
     )

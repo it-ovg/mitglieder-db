@@ -13,9 +13,9 @@ from rest_framework.relations import ManyRelatedField, RelatedField
 from rest_framework.permissions import AllowAny
 
 from datetime import datetime as dt
-from .serializers import UserSerializer, GroupSerializer, VereinsMitgliedSerializer, CountrySerializer, BerufeSerializer, MitgliedsartSerializer
-from .serializers import KostenSerializer, VortragsortSerializer, AdresseSerializer, InstitutionenSerializer
-from .serializers import AboHeftSerializer, AbonnentSerializer, offenePostenSerializer, CreateUserSerializer, LoginUserSerializer
+from api.serializers import UserSerializer, GroupSerializer, VereinsMitgliedSerializer, CountrySerializer, BerufeSerializer, MitgliedsartSerializer
+from api.serializers import KostenSerializer, VortragsortSerializer, AdresseSerializer, InstitutionenSerializer
+from api.serializers import AboHeftSerializer, AbonnentSerializer, offenePostenSerializer, CreateUserSerializer, LoginUserSerializer
 from django.utils.encoding import force_text
 from django.views import View
 from django.db.models import Q
@@ -50,18 +50,8 @@ class MyMetaData(SimpleMetadata):
         return field_info
 
 
-def sendmail(i):
-    html_content = """
-    <html><head></head><body>
-    <h2>Hallo %s %s</h2>
-    <h2>Danke, schön dass Sie am Geodätentag 2018 teilnehmen werden.</h2><br>
-    <br>
-    <p>Im Anhang der E-Mail befindet sich die pdf Rechnung.</p>
-    <br>Bis bald in Steyr!<br><br>
-    Ihr Geodätentag-Team<br>
-    #wirsehenmehr
-    </body></html>
-    """ % (i.first_name, i.last_name)
+def sendmail(i, content=""):
+    html_content = "<html><head></head><body><h2>Hallo {} {}</h2>{}</body></html>".format(i.first_name, i.last_name, content)
     text_content = 'Danke, schön dass Sie am Geodätentag 2018 teilnehmen werden.'
 
     email = EmailMultiAlternatives('OVG Mitgliedsbeitrag', text_content, 'noreply@ovg.at', [i.email] )
@@ -71,7 +61,7 @@ def sendmail(i):
     return s
 
 
-def make_invoice(vm):
+def make_invoice(vm, news='nix'):
     dues = [(x.description, x.offen) for x in vm.offeneposten_set.filter(bezahlt=False)]
 
     invoice_date = datetime.datetime.now()
@@ -81,7 +71,7 @@ def make_invoice(vm):
             'invoice_recipient': "{first_name} {last_name}".format(**vm.__dict__),
             'invoice_to': '', 'invoice_street': vm.rechnungsadresse.strasse,
             'invoice_zip': vm.rechnungsadresse.plz, 'invoice_city': vm.rechnungsadresse.ort,
-            'show_country': False, 'ovg_news': 'keine news', 'ovg_dues': dues
+            'show_country': False, 'ovg_news': news, 'ovg_dues': dues
             }
 
     x = createInvoice(**m)
@@ -249,139 +239,6 @@ class AbonnentViewSet(viewsets.ModelViewSet):
 
 
 
-class VereinsMitgliedViewSet(viewsets.ModelViewSet):
-    queryset = VereinsMitglied.objects.all()
-    serializer_class = VereinsMitgliedSerializer
-    metadata_class = MyMetaData
-
-
-    def get_queryset(self):
-        if 'aktiv' in self.request.GET:
-            vm = VereinsMitglied.aktive.all()
-        else:
-            vm = VereinsMitglied.objects.all()
-
-        if 'key' in self.request.GET and 'value' in self.request.GET:
-            kwargs = {'{}'.format(self.request.GET['key']): self.request.GET['value'] }
-            vm = vm.filter(**kwargs)
-
-        namefilter = self.request.query_params.get('namefilter')
-        if namefilter:
-            vm = vm.filter(Q(last_name__icontains=namefilter) | Q(first_name__icontains=namefilter))
-        return vm
-
-
-    @action(detail=True, methods=['get'])
-    def create_invoice(self, request, pk=None):
-        vm =self.get_object()
-        x = make_invoice(vm)
-        return HttpResponse(x)
-
-    @action(detail=True, methods=['get'])
-    def send_mail(self, request, pk=None):
-        vm =self.get_object()
-        x = make_invoice(vm)
-        s = sendmail(vm)
-        return HttpResponse("das war ok")
-
-    @action(detail=False, methods=['get'])
-    def jahresbeitrag_anlegen(self, request):
-        d = request.query_params.get('jahr')
-        if d:
-            year = int(d)
-            stud_gebjahr = year-30
-            vms = VereinsMitglied.aktive.exclude(mitgliedsart__mitart="EM")
-
-            juniors = vms.filter(gebdat__year__gt=stud_gebjahr)
-            for m in juniors:
-                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=30, bezahlt=False, erstellt=dt.now())
-                o.save()
-
-            seniors = vms.filter(gebdat__year__lt=1945)
-            for m in seniors:
-                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=30, bezahlt=False, erstellt=dt.now())
-                o.save()
-
-            normale = vms.exclude(id__in=[s.id for s in seniors]).exclude(id__in=[j.id for j in juniors])
-            for m in normale:
-                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=55, bezahlt=False, erstellt=dt.now())
-                o.save()
-
-            message = 'Der Beitrag "{}" wurde {} x erfolgreich angelegt!'.format(d, vms.count())
-            return Response(data=message, status=status.HTTP_200_OK)
-        return Response(data="Sie haben ein leeres Feld übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
-
-    @action(detail=False, methods=['get'])
-    def erlagscheine_anlegen(self, request):
-        merged_filename = 'merged_pdf.pdf'
-        v = VereinsMitglied.aktive.exclude(mitgliedsart__mitart="EM")
-        vms = [vm for vm in v if vm.offeneposten_set.filter(bezahlt=False)] 
-        vms = vms[0:5]
-        if vms:
-            for vm in vms:
-                make_invoice(vm)
-
-            pfade = [vm.rechnung.path for vm in vms]
-            merger(merged_filename, pfade)
-
-            f = open(merged_filename, 'r')
-            pdf = f.read()
-            f.close()
-            return Response(data=pdf, status=status.HTTP_200_OK)
-
-    @action(detail=False, methods=['get'])
-    def jubilare_pdf(self, request):
-        d = request.query_params.get('jahr')
-        if d:
-            year=int(d)
-            jubls=[50,60,70,75,80,85,90,95]
-            merged_filename = 'jubilare.pdf'
-            folder = str(uuid.uuid4())
-            path = '/tmp/{}'.format(folder)
-            os.mkdir(path)
-            os.chdir(path)
-    
-            vms=VereinsMitglied.aktive.order_by('gebdat').filter(gebdat__isnull=False)
-            for m in vms:
-                m.alter=year-m.gebdat.year
-                if m.alter in jubls or m.alter>99:
-                    mm = {'letter_date': m.gebdat.isoformat(), 'customer_salutation': 'Lieber', 
-                        'customer_name': '{} {}'.format(m.first_name, m.last_name),
-                        'customer_id': m.mitgliedsnummer, 'customer_anniversary': m.alter,
-                        'letter_street': m.wohnadresse.strasse, 'letter_zip': m.wohnadresse.plz,
-                        'letter_city': m.wohnadresse.ort, 'letter_country': m.wohnadresse.country.land,
-                         }
-                   
-                    x = create_anniversary(**mm)
-                    fname = str(uuid.uuid4())
-                    f = open(fname, 'wb')
-                    f.write(x)
-                    f.close()
-
-            pfade = os.listdir(path)
-            merger(merged_filename, pfade)
-
-            f = open(merged_filename, 'r')
-            pdf = f.read()
-            f.close()
-            shutil.rmtree(path)
-            return Response(data=pdf, status=status.HTTP_200_OK)
-        return Response(data="Sie haben kein gültiges Jahr übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
-
-    """
-    Args:
-        letter_date: Datum des Briefes (= Geburtsdatum),
-        letter_street: Strasse + Nr, 
-        letter_zip: Postleitzahl, 
-        letter_city: Stadt,
-        letter_country: Land,
-        customer_salutation: Anrede,
-        customer_name: Name inkl. Titel,
-        customer_id: Mitgliedsnummer,
-        customer_anniversary: nter Geburtstag,
-        generate_pdf: Soll ein PDF erzeugt werden, ansonst Buffer
-    """
-
 
 
 
@@ -411,6 +268,15 @@ class AboHeftViewSet(viewsets.ModelViewSet):
     serializer_class = AboHeftSerializer
     metadata_class = MyMetaData
 
+    def get_queryset(self):
+        if 'aktiv' in self.request. GET:
+            abos = AboHeft.objects.filter(aboende__isnull=True)
+        else:
+            abos = AboHeft.objects.all()
+        if 'wer' in self.request.GET:
+            abos = abos.filter(Q(name__icontains=self.request.GET['wer']))
+        return abos
+
 
 class offenePostenViewSet(viewsets.ModelViewSet):
     queryset = offenePosten.objects.all()
@@ -420,10 +286,22 @@ class offenePostenViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         ops = offenePosten.objects.all()
         if 'offen' in self.request.GET:
-            if self.request.GET['offen'].lower() == "true":
-                ops = ops.filter(bezahlt=False)
+            ops = ops.filter(bezahlt=False)
+
+        namefilter = self.request.query_params.get('namefilter')
+        if namefilter:
+            ops = ops.filter(Q(description__icontains=namefilter) | Q(mitglied__first_name__icontains=namefilter) | Q(mitglied__last_name__icontains=namefilter))
         return ops
 
+    @action(detail=True, methods=['get'])
+    def set_bezahlt(self, request, pk=None):
+        op =self.get_object()
+        op.bezahlt = True
+        op.bezahlt_am = datetime.datetime.now()
+        op.zahlung = op.offen
+        op.save()
+        serializer = offenePostenSerializer(op, context={'request': request})
+        return Response(data=serializer.data, status=status.HTTP_200_OK)
 
 
 

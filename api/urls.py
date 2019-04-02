@@ -3,13 +3,14 @@ from django.urls import path, re_path
 from django.contrib.auth.models import User
 from rest_framework import routers
 from knox import views as knox_views
-from . import views
+from api.views import views
+from api.views import mitglieder
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
-router.register(r'vereinsmitglieder', views.VereinsMitgliedViewSet)
+router.register(r'vereinsmitglieder', mitglieder.VereinsMitgliedViewSet)
 router.register(r'countries', views.CountryViewSet)
 router.register(r'berufe', views.BerufeViewSet)
 router.register(r'mitgliedsart', views.MitgliedsartViewSet)

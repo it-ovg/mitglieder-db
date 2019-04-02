@@ -135,16 +135,29 @@ class AdresseSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class AboHeftSerializer(serializers.HyperlinkedModelSerializer):
+    aktiv = serializers.ReadOnlyField()
+    # bezieher = serializers.ReadOnlyField()
+    id = serializers.ReadOnlyField(source='kundennummer.id')
+    abonnent = serializers.ReadOnlyField(source='kundennummer.name')
+
     class Meta:
         model = AboHeft
+        # fields = ('id', 'vorname', 'nachname', 'aktiv', 'kdnr', )
         fields = '__all__'
 
 
 class offenePostenSerializer(serializers.HyperlinkedModelSerializer):
+    id = serializers.ReadOnlyField(source='mitglied.id')
+    # name = serializers.ReadOnlyField(source='mitglied.last_name')
+    name = serializers.SerializerMethodField('get_mitglied_name')
+
+    def get_mitglied_name(self, obj):
+        return "{} {}".format(obj.mitglied.first_name, obj.mitglied.last_name)
+
     class Meta:
         model = offenePosten
-        fields = ('id', 'url', 'mitglied', 'erstellt', 'bezahltam', 'offen', 'zahlung', 'bezahlt', 'description', 'mname')
-        read_only_fields = ('id', 'url' )
+        fields = ('id', 'url', 'mitglied', 'erstellt', 'bezahltam', 'offen', 'zahlung', 'bezahlt', 'description', 'name')
+        read_only_fields = ('url', )
 
 
 class AbonnentSerializer(serializers.HyperlinkedModelSerializer):

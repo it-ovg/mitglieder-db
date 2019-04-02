@@ -26,7 +26,8 @@ SECRET_KEY = 'p+=w=*%d@tvsj=)kui-l8v%dyah*mnk58stbu)k!x72vblo*qw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '*']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'members.ovg.at']
+HOSTNAME = 'blabla'
 INTERNAL_IPS = ['localhost', '127.0.0.1']
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -47,7 +48,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'mitgliederverwaltung.middleware.CORSMiddleware',
+    'mitgliederverwaltung.middleware.HostForwarding',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -132,7 +133,6 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_ROOT = 'media/'
-
 
 
 ########### #   API   # ################### 
