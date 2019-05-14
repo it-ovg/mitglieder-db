@@ -7,19 +7,11 @@ import qrcode.image.svg
 
 from reportlab.lib.units import cm
 from reportlab.lib.utils import ImageReader
-from reportlab.platypus import Paragraph, Table, TableStyle, Image
+from reportlab.platypus import Table, Paragraph
 from reportlab.lib.enums import TA_RIGHT, TA_CENTER, TA_LEFT
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.lib import colors
 
 from . import settings as s
-
-
-def get_image(image_path, new_height):
-    img = ImageReader(image_path)
-    iw, ih = img.getSize()
-    aspect = iw / float(ih)
-    return Image(image_path, width=(aspect*new_height), height=new_height)
 
 
 def generate_qr(payload):
@@ -88,49 +80,24 @@ def generate_address(canvas, pos_x, pos_y,
     table.drawOn(canvas, pos_x, pos_y-h)
 
 
-def generate_footer(canvas, pos_x, pos_y):
-    # OVG Footer
-    footer_data = [
-        ["OVG - Herausgeber der einzigen Zeitschrift für Vermessung und Geoinformation in Österreich"],
-        ["Bank", s.BANK, "Web", s.OVG_SITE],
-        ["BIC", s.BIC, "ZVR-Zahl", s.OVG_ZVR],
-        ["IBAN", s.IBAN_NUMBER, "", ""],
-    ]
-    footer_table = Table(data=footer_data, colWidths=[1*cm, 12.5*cm, 1.5*cm, 2*cm])
-    footer_table.setStyle(TableStyle([
-        ('ALIGN', (0, 0), (-1, 0), 'CENTER'),
-        ('FONTSIZE', (0, 0), (-1, -1), 8),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 1),
-        ('TOPPADDING', (0, 0), (-1, -1), 1),
-        ('BOTTOMPADDING', (0, 0), (-1, 0), 2),
-        ('VALIGN', (0, 0), (-1, -1), "TOP"),
-        ('SPAN', (0, 0), (-1, 0)),
-        ('LINEABOVE', (0, 1), (-1, 1), 0.2, colors.black),
-    ]))
-    w, h = footer_table.wrapOn(canvas, 0, 0)
-    footer_table.drawOn(canvas, pos_x, pos_y)
-
 def generate_member_meta(canvas, 
     invoice_date_str, 
-    invoice_reference=None, 
-    member_id=None,
+    invoice_reference, 
+    member_id,
     vat_id=None,
     pos_x=10*cm, 
     pos_y=s.A4_WIDTH-1*cm):
 
     pos_y3 = pos_y - 3*cm
-
+    
     # Member Meta
-    member_meta_data = []
-    if invoice_date_str:
-        member_meta_data.append(["Datum", invoice_date_str])
-    if invoice_reference:
-        member_meta_data.append(["Rechnungsnr.", invoice_reference])
-    if member_id:
-        member_meta_data.append(["Kundennr.", member_id])
+    member_meta_data = [
+        ["Datum", invoice_date_str],
+        ["Rechnungsnr.", invoice_reference],
+        ["Kundennr.", member_id]
+    ]
     if vat_id:
-        member_meta_data.append(["Ihre UID", vat_id])
-        
+        member_meta_data += [["Ihre UID", vat_id]]
     # row_height = 0.5*cm
     member_meta_table = Table(data=member_meta_data, rowHeights=12)
     w, h = member_meta_table.wrapOn(canvas, 0, 0)

@@ -32,7 +32,6 @@ def create_abo_invoice(**kwargs):
         discount: Rabatt (default: 0)
         book_amount: Anzahl der Hefte (default: 1)
         invoice_date: Rechnungsdatum (default: today)
-        generate_pdf: Soll ein PDF erzeugt werden, ansonst Buffer
     """
     styles = getSampleStyleSheet()
     template_loader = jinja2.FileSystemLoader(searchpath=os.path.join(s.ROOT_DIR, s.TEMPLATE_DIR))
@@ -40,10 +39,6 @@ def create_abo_invoice(**kwargs):
     TEMPLATE_FILE = "abo.txt.j2"
     template = template_env.get_template(TEMPLATE_FILE)
 
-    # Outputoption
-    generate_pdf = kwargs.get("generate_pdf", False)
-    
-    # Other Options
     customer_id = kwargs.get("customer_id")
     customer_vat_id = kwargs.get("customer_vat_id")
     abo_id = "{:03d}".format(int(kwargs.get("abo_id", 0)))
@@ -88,7 +83,8 @@ def create_abo_invoice(**kwargs):
 
     buffer = BytesIO()
     canvas = Canvas(
-        invoice_filename if generate_pdf else buffer,
+        # invoice_filename,
+        buffer,
         pagesize=portrait(A4)
     )
 
@@ -184,26 +180,25 @@ def create_abo_invoice(**kwargs):
     p.drawOn(canvas, margin_left_text, s.A4_HEIGHT-15.0*cm-h1-h)
 
     # OVG Footer
-    # footer_data = [
-    #     ["OVG - Herausgeber der einzigen Zeitschrift für Vermessung und Geoinformation in Österreich"],
-    #     ["Bank", s.BANK, "Web", s.OVG_SITE],
-    #     ["BIC", s.BIC, "", ""],
-    #     ["IBAN", s.IBAN_NUMBER, "ZVR-Zahl", s.OVG_ZVR]
-    # ]
-    # print("W: {}")
-    # footer_table = Table(data=footer_data, colWidths=[1*cm, 12.5*cm, 1.5*cm, 2*cm], rowHeights=12)
-    # footer_table.setStyle(TableStyle([
-    #     ('ALIGN', (0, 0), (-1, 0), 'CENTER'),
-    #     ('FONTSIZE', (0, 0), (-1, -1), 8),
-    #     ('VALIGN', (0, 0), (-1, -1), "TOP"),
-    #     ('SPAN', (0, 0), (3, 0)),
-    #     ('LINEABOVE', (0, 1), (-1, 1), 1, colors.black),
-    # ]))
-    # #footer_table._argW[0]
-    # #footer_table._argW[1] = 2.5*cm
-    # w1, h1 = footer_table.wrapOn(canvas, 0, 0)
-    # footer_table.drawOn(canvas, margin_left, 1*cm)
-    u.generate_footer(canvas, margin_left, 1*cm)
+    footer_data = [
+        ["OVG - Herausgeber der einzigen Zeitschrift für Vermessung und Geoinformation in Österreich"],
+        ["Bank", s.BANK, "Web", s.OVG_SITE],
+        ["BIC", s.BIC, "", ""],
+        ["IBAN", s.IBAN_NUMBER, "ZVR-Zahl", s.OVG_ZVR]
+    ]
+    print("W: {}")
+    footer_table = Table(data=footer_data, colWidths=[1*cm, 12.5*cm, 1.5*cm, 2*cm], rowHeights=12)
+    footer_table.setStyle(TableStyle([
+        ('ALIGN', (0, 0), (-1, 0), 'CENTER'),
+        ('FONTSIZE', (0, 0), (-1, -1), 8),
+        ('VALIGN', (0, 0), (-1, -1), "TOP"),
+        ('SPAN', (0, 0), (3, 0)),
+        ('LINEABOVE', (0, 1), (-1, 1), 1, colors.black),
+    ]))
+    #footer_table._argW[0]
+    #footer_table._argW[1] = 2.5*cm
+    w1, h1 = footer_table.wrapOn(canvas, 0, 0)
+    footer_table.drawOn(canvas, margin_left, 1*cm)
 
     canvas.showPage()
     canvas.save()

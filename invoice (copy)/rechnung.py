@@ -23,8 +23,8 @@ from reportlab.lib.units import cm
 from reportlab.lib.enums import TA_RIGHT, TA_CENTER, TA_LEFT
 from reportlab.rl_config import defaultPageSize
 
-from . import utils as u
-from . import settings as s
+from invoice import utils as u
+from invoice import settings as s
 
 
 styles = getSampleStyleSheet()
@@ -55,7 +55,6 @@ def createInvoice(**kwargs):
     :params ovg_news: Zusätzliche Information für Rechnungsempfänger (News)
     :params ovg_dues: offene Beiträge [(YYYY, FFF.FF), (YYYY, FFF.FF), ...]
     :params ovg_credit: Gutschrift (0.00)
-    :params generate_pdf: Soll ein PDF erzeugt werden, sonst Buffer
 
     """
    
@@ -63,15 +62,13 @@ def createInvoice(**kwargs):
     member_id = kwargs.get("member_id")
 
     # obligatory arguments
-
-    generate_pdf = kwargs.get("generate_pdf", False)
     invoice_date_str = kwargs.get("invoice_date", datetime.date.today().strftime(s.ISO_DATE))
     invoice_date = datetime.datetime.strptime(invoice_date_str, s.ISO_DATE)
     invoice_deadline = invoice_date + datetime.timedelta(days=30*6)
     invoice_reference = kwargs.get("invoice_reference", "{}/{}".format(invoice_date.year, member_id))
     
     invoice_basename = "ovg_inv_{}".format(invoice_reference.replace("/", "_"))
-    invoice_filename = os.path.join(s.OUT_DIR, "{}.pdf".format(invoice_basename))
+    invoice_filename = os.path.join(s.ROOT_DIR, s.OUT_DIR, "{}.pdf".format(invoice_basename))
 
     invoice_recipient = kwargs.get("invoice_recipient", "Bundesamt f. Eich- und Vermessungswesen")
     invoice_to = kwargs.get("invoice_to", "Abteilung V1")
@@ -80,7 +77,7 @@ def createInvoice(**kwargs):
     invoice_city = kwargs.get("invoice_city", "Wien")
     invoice_country = kwargs.get("invoice_country", "Österreich")
     show_country = kwargs.get("show_country", False)
-    ovg_news = kwargs.get("ovg_news", "")
+    ovg_news = kwargs.get("ovg_news", "").replace("\n", "<br />\n")
     ovg_dues = kwargs.get("ovg_dues", [])
     ovg_credit = kwargs.get("ovg_credit", 0.0)
     frame_visibility = FRAME_ON
@@ -88,6 +85,7 @@ def createInvoice(**kwargs):
     print_folding = kwargs.get("print_folding", False)
 
     ovg_due_sum = sum(map(lambda d: d[1], ovg_dues))
+    print(ovg_due_sum)
     ovg_due_pay = ovg_due_sum - ovg_credit
 
     # Configs
@@ -96,7 +94,8 @@ def createInvoice(**kwargs):
 
     buffer = BytesIO()
     canvas = Canvas(
-        invoice_filename if generate_pdf else buffer,
+        # invoice_filename,
+        buffer,
         pagesize=landscape(A4)
     )
 
@@ -154,6 +153,7 @@ def createInvoice(**kwargs):
     fs = d["fontSize"]
     text_width = Canvas.stringWidth(canvas,text=text_string, fontName=fn, fontSize=fs)
     adjust_width = box - text_width
+    print(adjust_width)
     dueText.setTextOrigin((13+0.1)*cm, (7-0.5)*cm)
     dueText.textLine(text_string)
     canvas.drawText(dueText)
@@ -193,7 +193,9 @@ def createInvoice(**kwargs):
         iban_amount=ovg_due_pay,
         iban_reference=invoice_reference
     )
+
     qr_file = os.path.join(s.ROOT_DIR, s.OUT_DIR, "{}.svg".format(invoice_basename))
+    print(qr_file)
     qr_img = u.generate_qr(qr_payload)
     qr_img.save(qr_file)
     qr_drawing = svg2rlg(qr_file)
@@ -241,7 +243,6 @@ if __name__ == "__main__":
         invoice_to="Dipl.-Ing. Jürgen Fredriksson",
         invoice_street="Steingrubenweg 4k",
         invoice_zip="2352", invoice_city="Gumpoldskirchen",
-        ovg_news="Sonst gibt es nichts neues am BEV<br />Wenn man mag, kann man einfach hier etwas dazuschreiben, ganz wie man mag oder eben nicht oder sonst irgendwas. Ganz wichtig... Zeilenumbrüche sind als HTML-Tags 'br/' anzugeben....",
-        ovg_dues=[("Beitrag 2017", 55.), ("Beitrag 2018", 55.),],
-        generate_pdf=True
+        ovg_news="Sonst gibt es nichts neues im BEV<br />Wenn man mag, kann man einfach hier etwas dazuschreiben, ganz wie man mag oder eben nicht oder sonst irgendwas. Ganz wichtig... Zeilenumbrüche sind als HTML-Tags 'br/' anzugeben....",
+        ovg_dues=[("Beitrag 2017", 55.), ("Beitrag 2018", 55.),]
     )

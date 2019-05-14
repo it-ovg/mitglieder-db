@@ -81,15 +81,32 @@ WSGI_APPLICATION = 'mitgliederverwaltung.wsgi.application'
 
 
 DATABASES = {
-    'default': {
+    'debug': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '32768',
-    }
-}
+    },
+    'postgresql': {
+         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+         'NAME': 'postgres',
+         'USER': 'postgres',
+         'PASSWORD': 'postgres',
+         'HOST': 'localhost',
+         'PORT': '32771',
+     },
+     'sqlite': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+     }
+ }
+ 
+DATABASES['default'] = DATABASES['postgresql']
+DATABASES['default'] = DATABASES['sqlite']
+DATABASES['default'] = DATABASES['debug']
+
 
 
 # Password validation

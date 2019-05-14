@@ -27,6 +27,7 @@ from io import BytesIO
 from invoice.rechnung import createInvoice
 from invoice.abo import create_abo_invoice
 from invoice.anniversary import create_anniversary
+from invoice.envelope import create_envelope_bev, create_envelope_aut, create_envelope_int
 from django.core.files.base import ContentFile
 from PyPDF2 import PdfFileMerger
 from django.core.mail import EmailMultiAlternatives
@@ -110,6 +111,74 @@ def make_abo_invoice(vm):
     return x
 
 
+def make_etiketten(vms, abos, wohin='BEV'):
+    if wohin == 'BEV':
+        make_pdf = create_envelope_bev
+        merged_filename = 'etiketten_bev.pdf'
+    elif wohin == 'AUT':
+        make_pdf = create_envelope_aut
+        merged_filename = 'etiketten_aut.pdf'
+    elif wohin == 'INT':
+        make_pdf = create_envelope_int
+        merged_filename = 'etiketten_int.pdf'
+
+    folder = str(uuid.uuid4())
+    path = '/tmp/{}'.format(folder)
+    os.mkdir(path)
+    os.chdir(path)
+
+    for vm in vms:
+        if vm.lieferadresse:
+            print(vm.id)
+            land = 'Austria'
+            if vm.lieferadresse.country:
+                land = vm.lieferadresse.country.land
+            mm = {
+                "recipient_id": vm.mitgliedsnummer,
+                "recipient_name": "{} {}".format(vm.first_name,vm.last_name),
+                "recipient_extra": vm.namenszusatz,
+                "recipient_street": vm.lieferadresse.strasse,
+                "recipient_zip": vm.lieferadresse.plz,
+                "recipient_city": vm.lieferadresse.ort,
+                "recipient_country": land,
+            }
+
+            for i in range(vm.heftanzahl):
+                x = make_pdf(**mm)
+                fname = str(uuid.uuid4())
+                f = open(fname, 'wb')
+                f.write(x)
+                f.close()
+
+    for ab in abos:
+        land = 'Austria'
+        if ab.country:
+            land = ab.country.land
+            mm = {
+                "recipient_id": ab.kundennummer,
+                "recipient_name": "{} {}".format(ab.vorname, ab.nachname),
+                "recipient_extra": ab.surname2,
+                "recipient_street": ab.strasse,
+                "recipient_zip": ab.plz,
+                "recipient_city": ab.ort,
+                "recipient_country": land,
+            }
+
+            for i in range(ab.heftanzahl):
+                x = make_pdf(**mm)
+                fname = str(uuid.uuid4())
+                f = open(fname, 'wb')
+                f.write(x)
+                f.close()
+
+    pfade = os.listdir(path)
+    merger(merged_filename, pfade)
+
+    f = open(merged_filename, 'r')
+    pdf = f.read()
+    f.close()
+    shutil.rmtree(path)
+    return pdf
 
 
 
@@ -236,6 +305,35 @@ class AbonnentViewSet(viewsets.ModelViewSet):
         s = sendmail(vm)
         return HttpResponse("das war ok")
 
+    @action(detail=False, methods=['get'])
+    def etiketten(self, request):
+        if 'wohin' in self.request.GET:
+            wohin = self.request.GET['wohin']
+            if wohin in ['BEV', 'AUT', 'INT']:
+                vms = VereinsMitglied.aktive.all().filter(heftanzahl__gt=0)
+                abos = AboHeft.objects.filter(aboende__isnull=True)
+                if wohin == 'BEV':
+                    vms = vms.filter(versand='BEV')
+                    abos = []
+                else:
+                    vms = vms.filter(versand='POST')
+                    l = Land.objects.filter(land='AUSTRIA')
+
+                    if wohin == 'AUT':
+                        vms = vms.filter(lieferadresse__country__in=l)
+                        abos = abos.filter(country__in=l)
+                    elif wohin == 'INT':
+                        vms = vms.exclude(lieferadresse__country__in=l)
+                        abos = abos.exclude(country__in=l)
+
+                pdf = make_etiketten(vms, abos, wohin)
+                if abos:
+                    print("\n\n\nEs waren insgesamt {} abos".format(abos.count()))
+                return Response(data=pdf, status=status.HTTP_200_OK)
+
+        return Response(data="Sie haben keinen gültigen <<WOHIN>> Wert übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
+
+
 
 
 
@@ -253,12 +351,14 @@ class InstitutionenViewSet(viewsets.ModelViewSet):
             inst = Institution.aktive.all()
         else:
             inst = Institution.objects.all()
-        if 'wer' in self.request.GET:
-            sn = self.request.GET['wer']
-            inst = inst.filter(Q(institution_name__icontains=sn))
+        
         if 'key' in self.request.GET and 'value' in self.request.GET:
             kwargs = {'{}'.format(self.request.GET['key']): self.request.GET['value'] }
             inst = inst.filter(**kwargs)
+
+        namefilter = self.request.query_params.get('namefilter')
+        if namefilter:
+            inst = inst.filter(institution_name__icontains=namefilter)
         return inst
 
 
