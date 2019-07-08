@@ -62,6 +62,9 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         if 'zahlscheinText' in request.data:
             news = request.data['zahlscheinText'].replace("<br>", "<br />")
         vm =self.get_object()
+        if not vm.rechnungsadresse:
+            error = 'Ohne Rechnungsadresse kann kein Zahlschein ausgestellt werden.'
+            return Response(data=error, status=status.HTTP_400_BAD_REQUEST)
         x = make_invoice(vm, news=news)
         return HttpResponse(x)
 

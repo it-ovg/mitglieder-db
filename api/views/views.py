@@ -111,7 +111,7 @@ def make_abo_invoice(vm):
     return x
 
 
-def make_etiketten(vms, abos, wohin='BEV'):
+def make_etiketten(vms, abos, inst, wohin='BEV'):
     if wohin == 'BEV':
         make_pdf = create_envelope_bev
         merged_filename = 'etiketten_bev.pdf'
@@ -128,7 +128,7 @@ def make_etiketten(vms, abos, wohin='BEV'):
     os.chdir(path)
 
     for vm in vms:
-        if vm.lieferadresse:
+        if vm.lieferadresse and vm.heftanzahl:
             print(vm.id)
             land = 'Austria'
             if vm.lieferadresse.country:
@@ -143,8 +143,31 @@ def make_etiketten(vms, abos, wohin='BEV'):
                 "recipient_country": land,
             }
 
+            x = make_pdf(**mm)
             for i in range(vm.heftanzahl):
-                x = make_pdf(**mm)
+                fname = str(uuid.uuid4())
+                f = open(fname, 'wb')
+                f.write(x)
+                f.close()
+
+    for im in inst:
+        if im.lieferadresse and im.heftanzahl:
+            print(im.id)
+            land = 'Austria'
+            if im.lieferadresse.country:
+                land = im.lieferadresse.country.land
+            mm = {
+                "recipient_id": im.mitgliedsnummer,
+                "recipient_name": "inst "+im.institution_name,
+                "recipient_extra": im.name2,
+                "recipient_street": im.lieferadresse.strasse,
+                "recipient_zip": im.lieferadresse.plz,
+                "recipient_city": im.lieferadresse.ort,
+                "recipient_country": land,
+            }
+
+            x = make_pdf(**mm)
+            for i in range(im.heftanzahl):
                 fname = str(uuid.uuid4())
                 f = open(fname, 'wb')
                 f.write(x)
@@ -152,11 +175,11 @@ def make_etiketten(vms, abos, wohin='BEV'):
 
     for ab in abos:
         land = 'Austria'
-        if ab.country:
+        if ab.country and ab.heftanzahl:
             land = ab.country.land
             mm = {
                 "recipient_id": ab.kundennummer,
-                "recipient_name": "{} {}".format(ab.vorname, ab.nachname),
+                "recipient_name": "abo{} {} {}".format(ab.heftanzahl, ab.vorname, ab.nachname),
                 "recipient_extra": ab.surname2,
                 "recipient_street": ab.strasse,
                 "recipient_zip": ab.plz,
@@ -164,8 +187,8 @@ def make_etiketten(vms, abos, wohin='BEV'):
                 "recipient_country": land,
             }
 
+            x = make_pdf(**mm)
             for i in range(ab.heftanzahl):
-                x = make_pdf(**mm)
                 fname = str(uuid.uuid4())
                 f = open(fname, 'wb')
                 f.write(x)
@@ -312,21 +335,28 @@ class AbonnentViewSet(viewsets.ModelViewSet):
             if wohin in ['BEV', 'AUT', 'INT']:
                 vms = VereinsMitglied.aktive.all().filter(heftanzahl__gt=0)
                 abos = AboHeft.objects.filter(aboende__isnull=True)
+                inst = Institution.aktive.all()
+
+
                 if wohin == 'BEV':
                     vms = vms.filter(versand='BEV')
                     abos = []
+                    inst = inst.filter(versand='BEV')
                 else:
                     vms = vms.filter(versand='POST')
+                    inst = inst.filter(versand='POST')
                     l = Land.objects.filter(land='AUSTRIA')
 
                     if wohin == 'AUT':
                         vms = vms.filter(lieferadresse__country__in=l)
                         abos = abos.filter(country__in=l)
+                        inst = inst.filter(lieferadresse__country__in=l)
                     elif wohin == 'INT':
                         vms = vms.exclude(lieferadresse__country__in=l)
                         abos = abos.exclude(country__in=l)
+                        inst = inst.exclude(lieferadresse__country__in=l)
 
-                pdf = make_etiketten(vms, abos, wohin)
+                pdf = make_etiketten(vms, abos, inst, wohin)
                 if abos:
                     print("\n\n\nEs waren insgesamt {} abos".format(abos.count()))
                 return Response(data=pdf, status=status.HTTP_200_OK)
