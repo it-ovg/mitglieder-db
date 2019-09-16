@@ -20,7 +20,7 @@ from . import utils as u
 def create_anniversary(**kwargs):
     """
     Args:
-        letter_date: Datum des Briefes (= Geburtsdatum),
+        letter_date: Datum des Briefes (= aktuelles Datum),
         letter_street: Strasse + Nr, 
         letter_zip: Postleitzahl, 
         letter_city: Stadt,

@@ -158,7 +158,7 @@ def make_etiketten(vms, abos, inst, wohin='BEV'):
                 land = im.lieferadresse.country.land
             mm = {
                 "recipient_id": im.mitgliedsnummer,
-                "recipient_name": "inst "+im.institution_name,
+                "recipient_name": im.institution_name,
                 "recipient_extra": im.name2,
                 "recipient_street": im.lieferadresse.strasse,
                 "recipient_zip": im.lieferadresse.plz,
@@ -179,7 +179,7 @@ def make_etiketten(vms, abos, inst, wohin='BEV'):
             land = ab.country.land
             mm = {
                 "recipient_id": ab.kundennummer,
-                "recipient_name": "abo{} {} {}".format(ab.heftanzahl, ab.vorname, ab.nachname),
+                "recipient_name": "{} {}".format(ab.vorname, ab.nachname),
                 "recipient_extra": ab.surname2,
                 "recipient_street": ab.strasse,
                 "recipient_zip": ab.plz,
