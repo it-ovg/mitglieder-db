@@ -115,8 +115,8 @@ DATABASES = {
  
 DATABASES['default'] = DATABASES['sqlite']
 DATABASES['default'] = DATABASES['debug']
-DATABASES['default'] = DATABASES['productive']
 DATABASES['default'] = DATABASES['postgresql']
+DATABASES['default'] = DATABASES['productive']
 
 
 
