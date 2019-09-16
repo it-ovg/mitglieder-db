@@ -8,7 +8,7 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         self.stdout.write('Daten werden eingelesen')
         # import_olddb()
-        # import_abodb()
+        import_abodb()
         self.stdout.write('Einlesen erfolgreich')
         u,c = User.objects.get_or_create(username='bipo')
         u.save()
