@@ -339,12 +339,12 @@ class AbonnentViewSet(viewsets.ModelViewSet):
 
 
                 if wohin == 'BEV':
-                    vms = vms.filter(versand='BEV')
+                    vms = vms.filter(versand__iexact='BEV')
                     abos = []
-                    inst = inst.filter(versand='BEV')
+                    inst = inst.filter(versand__iexact='BEV')
                 else:
-                    vms = vms.filter(versand='POST')
-                    inst = inst.filter(versand='POST')
+                    vms = vms.filter(versand__iexact='POST')
+                    inst = inst.filter(versand__iexact='POST')
                     l = Land.objects.filter(land='AUSTRIA')
 
                     if wohin == 'AUT':

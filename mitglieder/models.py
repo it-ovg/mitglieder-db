@@ -258,7 +258,8 @@ class VereinsMitglied(User):
 
 
 class offenePosten(models.Model):
-    mitglied = models.ForeignKey(VereinsMitglied, on_delete=models.DO_NOTHING)
+    mitglied = models.ForeignKey(VereinsMitglied, null=True, blank=True, on_delete=models.DO_NOTHING)
+    institution = models.ForeignKey(Institution, null=True, blank=True, on_delete=models.DO_NOTHING, default=None)
     erstellt = models.DateTimeField(default=timezone.now,null=False,blank=False, editable=False)
     bezahltam = models.DateTimeField(null=True,blank=True)
     offen = models.FloatField(default=0)
