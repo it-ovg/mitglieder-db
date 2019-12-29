@@ -62,7 +62,7 @@ class InstitutionenViewSet(viewsets.ModelViewSet):
 
             for inst in ii:
                 o = offenePosten()
-                o = offenePosten(institution=inst, description="Beitrag {}".format(year), offen=55, bezahlt=False, erstellt=dt.now())
+                o = offenePosten(institution=inst, description="Beitrag {}".format(year), offen=55, bezahlt=False, erstellt=datetime.datetime.now())
                 o.save()
 
             message = 'Der Beitrag "{}" wurde {} x erfolgreich angelegt!'.format(d, ii.count())
