@@ -101,6 +101,7 @@ def create_anniversary(**kwargs):
    
     # Letter Text
     letter_text = template.render(
+        greetings=greetings,
         anniversary=customer_anniversary,
     )
     p = Paragraph(letter_text, styles["Normal"])

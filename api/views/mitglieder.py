@@ -149,9 +149,11 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
                 m.alter=year-m.gebdat.year
                 if m.alter in jubls or m.alter>99:
                     greetings = 'Lieber Jubilar'
+                    salutation = 'Lieber'
                     if m.anrede == 'Frau':
                         greetings = 'Liebe Jubilarin'
-                    mm = {'letter_date': datetime.date.today().isoformat(), 'customer_salutation': 'Lieber', 
+                        salutation = 'Liebe'
+                    mm = {'letter_date': datetime.date.today().isoformat(), 'customer_salutation': salutation, 
                         'customer_name': '{} {}'.format(m.first_name, m.last_name),
                         'customer_id': m.mitgliedsnummer, 'customer_anniversary': m.alter,
                         'letter_street': m.wohnadresse.strasse, 'letter_zip': m.wohnadresse.plz,
