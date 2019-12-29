@@ -55,6 +55,7 @@ def create_anniversary(**kwargs):
     letter_date = datetime.datetime.strptime(letter_date_str, s.ISO_DATE)
     letter_deadline = letter_date + datetime.timedelta(days=30*6)
     letter_reference = kwargs.get("letter_reference", "{}/{}".format(letter_date.year, customer_anniversary))
+    greetings = kwargs.get("greetings", "Lieber Jubilar")
     
     letter_basename = "ovg_anniversary_{}_{:03d}".format(customer_id, customer_anniversary)
     letter_filename = os.path.join(s.OUT_DIR, "{}.pdf".format(letter_basename))
