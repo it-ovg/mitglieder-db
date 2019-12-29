@@ -125,6 +125,7 @@ class Institution(models.Model):
     wohnadresse = models.ForeignKey(Adresse, on_delete=models.DO_NOTHING, related_name='Wohnadresse2')
     lieferadresse = models.ForeignKey(Adresse, on_delete=models.DO_NOTHING, related_name='Zustelladresse2')
     rechnungsadresse = models.ForeignKey(Adresse, on_delete=models.DO_NOTHING, related_name='Rechnungsadresse2')
+    rechnung = models.FileField(upload_to='invoices/', blank=True)
     dsgvo = models.BooleanField('Datenschutzgrundverordnung', default=False, blank=False, null=False, help_text='Mitglied hat zur Datenschutzgrundverordnung zugestimmt.')
     objects = models.Manager()
     aktive = AktivMitgliedManager()

@@ -5,6 +5,7 @@ from rest_framework import routers
 from knox import views as knox_views
 from api.views import views
 from api.views import mitglieder
+from api.views import institutionen
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
@@ -17,7 +18,7 @@ router.register(r'mitgliedsart', views.MitgliedsartViewSet)
 router.register(r'kosten', views.KostenViewSet)
 router.register(r'vortragsort', views.VortragsortViewSet)
 router.register(r'adresse', views.AdresseViewSet)
-router.register(r'institutionen', views.InstitutionenViewSet)
+router.register(r'institutionen', institutionen.InstitutionenViewSet)
 router.register(r'aboheft', views.AboHeftViewSet)
 router.register(r'abonnent', views.AbonnentViewSet)
 router.register(r'offeneposten', views.offenePostenViewSet)

@@ -371,25 +371,7 @@ class AbonnentViewSet(viewsets.ModelViewSet):
 
 
 
-class InstitutionenViewSet(viewsets.ModelViewSet):
-    queryset = Institution.objects.all()
-    serializer_class = InstitutionenSerializer
-    metadata_class = MyMetaData
 
-    def get_queryset(self):
-        if 'aktiv' in self.request.GET:
-            inst = Institution.aktive.all()
-        else:
-            inst = Institution.objects.all()
-        
-        if 'key' in self.request.GET and 'value' in self.request.GET:
-            kwargs = {'{}'.format(self.request.GET['key']): self.request.GET['value'] }
-            inst = inst.filter(**kwargs)
-
-        namefilter = self.request.query_params.get('namefilter')
-        if namefilter:
-            inst = inst.filter(institution_name__icontains=namefilter)
-        return inst
 
 
 
