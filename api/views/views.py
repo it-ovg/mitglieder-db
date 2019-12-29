@@ -62,7 +62,7 @@ def sendmail(i, content=""):
     return s
 
 
-def make_invoice(vm, news='nix'):
+def make_invoice(vm, news=''):
     dues = [(x.description, x.offen) for x in vm.offeneposten_set.filter(bezahlt=False)]
 
     invoice_date = datetime.datetime.now()

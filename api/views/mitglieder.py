@@ -145,7 +145,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
             for m in vms:
                 m.alter=year-m.gebdat.year
                 if m.alter in jubls or m.alter>99:
-                    mm = {'letter_date': datetime.datetime.now().isoformat(), 'customer_salutation': 'Lieber', 
+                    mm = {'letter_date': datetime.date.today().isoformat(), 'customer_salutation': 'Lieber', 
                         'customer_name': '{} {}'.format(m.first_name, m.last_name),
                         'customer_id': m.mitgliedsnummer, 'customer_anniversary': m.alter,
                         'letter_street': m.wohnadresse.strasse, 'letter_zip': m.wohnadresse.plz,

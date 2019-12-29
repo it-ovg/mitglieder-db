@@ -10,7 +10,7 @@ from api.views.views import merger
 from rest_framework.response import Response
 
 
-def make_invoice(inst, news='nix'):
+def make_invoice(inst, news=''):
     dues = [(x.description, x.offen) for x in inst.offeneposten_set.filter(bezahlt=False)]
 
     invoice_date = datetime.datetime.now()
@@ -58,7 +58,7 @@ class InstitutionenViewSet(viewsets.ModelViewSet):
         d = request.query_params.get('jahr')
         if d:
             year = int(d)
-            ii = Institution.aktive.exclude(mitgliedsart__mitart__in=["AD"])
+            ii = Institution.aktive.exclude(mitgliedsart__mitart__in=["AD"]).filter(kostenart__art__in=["M"])
 
             for inst in ii:
                 o = offenePosten()
