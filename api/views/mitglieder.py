@@ -59,13 +59,13 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['post'])
     def create_invoice(self, request, pk=None):
         news = ""
-        news = 'Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag 2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. Wir danken für Ihre Unterstützung und Ihre True zur OVG.'
         if 'zahlscheinText' in request.data:
             news = request.data['zahlscheinText'].replace("<br>", "<br />")
         vm =self.get_object()
         if not vm.rechnungsadresse:
             error = 'Ohne Rechnungsadresse kann kein Zahlschein ausgestellt werden.'
             return Response(data=error, status=status.HTTP_400_BAD_REQUEST)
+        news = 'Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag 2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. Wir danken für Ihre Unterstützung und Ihre True zur OVG.'
         x = make_invoice(vm, news=news)
         return HttpResponse(x)
 
@@ -81,6 +81,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         print("emailText: {}".format(emailText))
         print("zahlscheinText: {}".format(zahlscheinText))
         vm =self.get_object()
+        zahlscheinText = 'Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag 2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. Wir danken für Ihre Unterstützung und Ihre True zur OVG.'
         x = make_invoice(vm, news=zahlscheinText)
         s = sendmail(vm, content=emailText)
         return HttpResponse("das war ok")
@@ -120,7 +121,8 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         # vms = vms[0:5]
         if vms:
             for vm in vms:
-                make_invoice(vm)
+                news = 'Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag 2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. Wir danken für Ihre Unterstützung und Ihre True zur OVG.'
+                make_invoice(vm, news=news)
 
             pfade = [vm.rechnung.path for vm in vms]
             merger(merged_filename, pfade)
