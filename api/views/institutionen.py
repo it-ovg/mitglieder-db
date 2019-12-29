@@ -81,7 +81,8 @@ class InstitutionenViewSet(viewsets.ModelViewSet):
         # vms = vms[0:5]
         if insts:
             for inst in insts:
-                make_invoice(inst)
+                news = 'Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag 2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. Wir danken für Ihre Unterstützung und Ihre True zur OVG.'
+                make_invoice(inst, news)
 
             pfade = [inst.rechnung.path for inst in insts]
             merger(merged_filename, pfade)

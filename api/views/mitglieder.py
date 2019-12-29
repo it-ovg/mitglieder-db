@@ -59,6 +59,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['post'])
     def create_invoice(self, request, pk=None):
         news = ""
+        news = 'Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag 2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. Wir danken für Ihre Unterstützung und Ihre True zur OVG.'
         if 'zahlscheinText' in request.data:
             news = request.data['zahlscheinText'].replace("<br>", "<br />")
         vm =self.get_object()
