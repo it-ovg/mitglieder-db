@@ -72,8 +72,9 @@ def make_invoice(vm, news=''):
             'invoice_recipient': "{first_name} {last_name}".format(**vm.__dict__),
             'invoice_to': '', 'invoice_street': vm.rechnungsadresse.strasse,
             'invoice_zip': vm.rechnungsadresse.plz, 'invoice_city': vm.rechnungsadresse.ort,
-            'show_country': False, 'ovg_news': news, 'ovg_dues': dues
-            }
+            'show_country': False, 'ovg_news': news, 'ovg_dues': dues,
+            'invoice_deadline': datetime.date(2020,2,29)
+        }
 
     x = createInvoice(**m)
     invoice_filename = "ovg_inv_{}_{}.pdf".format(vm.id, invoice_date.strftime("%Y") )

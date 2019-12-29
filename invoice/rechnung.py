@@ -68,6 +68,8 @@ def createInvoice(**kwargs):
     invoice_date_str = kwargs.get("invoice_date", datetime.date.today().strftime(s.ISO_DATE))
     invoice_date = datetime.datetime.strptime(invoice_date_str, s.ISO_DATE)
     invoice_deadline = invoice_date + datetime.timedelta(days=30*6)
+    invoice_deadline = kwargs.get("invoice_deadline", invoice_date+datetime.timedelta(days=30*6))
+
     invoice_reference = kwargs.get("invoice_reference", "{}/{}".format(invoice_date.year, member_id))
     
     invoice_basename = "ovg_inv_{}".format(invoice_reference.replace("/", "_"))

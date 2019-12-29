@@ -20,7 +20,8 @@ def make_invoice(inst, news=''):
             'invoice_recipient': "{institution_name}".format(**inst.__dict__),
             'invoice_to': '', 'invoice_street': inst.rechnungsadresse.strasse,
             'invoice_zip': inst.rechnungsadresse.plz, 'invoice_city': inst.rechnungsadresse.ort,
-            'show_country': False, 'ovg_news': news, 'ovg_dues': dues
+            'show_country': False, 'ovg_news': news, 'ovg_dues': dues,
+            'invoice_deadline': datetime.date(2020,2,29)
             }
 
     x = createInvoice(**m)
