@@ -148,11 +148,15 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
             for m in vms:
                 m.alter=year-m.gebdat.year
                 if m.alter in jubls or m.alter>99:
+                    greetings = 'Lieber Jubilar'
+                    if m.anrede == 'Frau':
+                        greetings = 'Liebe Jubilarin'
                     mm = {'letter_date': datetime.date.today().isoformat(), 'customer_salutation': 'Lieber', 
                         'customer_name': '{} {}'.format(m.first_name, m.last_name),
                         'customer_id': m.mitgliedsnummer, 'customer_anniversary': m.alter,
                         'letter_street': m.wohnadresse.strasse, 'letter_zip': m.wohnadresse.plz,
                         'letter_city': m.wohnadresse.ort, 'letter_country': m.wohnadresse.country.land,
+                        'greetings': greetings,
                          }
                    
                     x = create_anniversary(**mm)
