@@ -75,7 +75,7 @@ class InstitutionenViewSet(viewsets.ModelViewSet):
     def erlagscheine_anlegen(self, request):
         merged_filename = '/tmp/merged_inst_pdf.pdf'
         ii = Institution.aktive.all()
-        ii = Institution.aktive.exclude(mitgliedsart__mitart__in=["AD", "DA"])
+        ii = Institution.aktive.exclude(mitgliedsart__mitart__in=["AD", "DA"]).filter(kostenart__art__in=["M"])
 
         insts = [i for i in ii if i.offeneposten_set.filter(bezahlt=False)] 
         # vms = vms[0:5]
