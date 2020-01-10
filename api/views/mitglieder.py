@@ -62,12 +62,15 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         if 'zahlscheinText' in request.data:
             news = request.data['zahlscheinText'].replace("<br>", "<br />")
         vm =self.get_object()
-        if not vm.rechnungsadresse:
-            error = 'Ohne Rechnungsadresse kann kein Zahlschein ausgestellt werden.'
-            return Response(data=error, status=status.HTTP_400_BAD_REQUEST)
-        news = 'Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag 2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. Wir danken für Ihre Unterstützung und Ihre True zur OVG.'
-        x = make_invoice(vm, news=news)
-        return HttpResponse(x)
+        if vm.aktiv and vm.offeneposten_set.filter(bezahlt=False):
+            if not vm.rechnungsadresse:
+                error = 'Ohne Rechnungsadresse kann kein Zahlschein ausgestellt werden.'
+                return Response(data=error, status=status.HTTP_400_BAD_REQUEST)
+            news = 'Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag 2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. Wir danken für Ihre Unterstützung und Ihre True zur OVG.'
+            x = make_invoice(vm, news=news)
+            return HttpResponse(x)
+        else:
+            return Response(data="Das Mitglied ist inaktiv oder es gibt keine offenen Posten.", status=status.HTTP_204_NO_CONTENT)
 
     @action(detail=True, methods=['post'])
     def send_mail(self, request, pk=None):
@@ -92,7 +95,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         if d:
             year = int(d)
             stud_gebjahr = year-30
-            vms = VereinsMitglied.aktive.exclude(mitgliedsart__mitart="EM")
+            vms = VereinsMitglied.aktive.filter(kostenart__art="M")
 
             juniors = vms.filter(gebdat__year__gt=stud_gebjahr)
             for m in juniors:
@@ -116,7 +119,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=['get'])
     def erlagscheine_anlegen(self, request):
         merged_filename = '/tmp/merged_pdf.pdf'
-        v = VereinsMitglied.aktive.exclude(mitgliedsart__mitart__in=["EM", "AD", "DA"])
+        v = VereinsMitglied.aktive.exclude(kostensart__art='M')
         vms = [vm for vm in v if vm.offeneposten_set.filter(bezahlt=False)] 
         # vms = vms[0:5]
         if vms:
