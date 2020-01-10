@@ -119,7 +119,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=['get'])
     def erlagscheine_anlegen(self, request):
         merged_filename = '/tmp/merged_pdf.pdf'
-        v = VereinsMitglied.aktive.exclude(kostensart__art='M')
+        v = VereinsMitglied.aktive.filter(kostenart__art='M')
         vms = [vm for vm in v if vm.offeneposten_set.filter(bezahlt=False)] 
         # vms = vms[0:5]
         if vms:
