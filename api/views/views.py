@@ -132,15 +132,21 @@ def make_etiketten(vms, abos, inst, wohin='BEV'):
         if vm.lieferadresse and vm.heftanzahl:
             print(vm.id)
             land = 'Austria'
+            if not vm.first_name:
+                rname = vm.last_name
+            else:
+                rname = "{} {}".format(vm.first_name,vm.last_name)
+
             if vm.lieferadresse.country:
                 land = vm.lieferadresse.country.land
             mm = {
                 "recipient_id": vm.mitgliedsnummer,
-                "recipient_name": "{} {}".format(vm.first_name,vm.last_name),
+                "recipient_name": rname,
                 "recipient_extra": vm.namenszusatz,
                 "recipient_street": vm.lieferadresse.strasse,
                 "recipient_zip": vm.lieferadresse.plz,
                 "recipient_city": vm.lieferadresse.ort,
+                "recipient_postbox": vm.lieferadresse.pobox,
                 "recipient_country": land,
             }
 
@@ -164,6 +170,7 @@ def make_etiketten(vms, abos, inst, wohin='BEV'):
                 "recipient_street": im.lieferadresse.strasse,
                 "recipient_zip": im.lieferadresse.plz,
                 "recipient_city": im.lieferadresse.ort,
+                "recipient_postbox": im.lieferadresse.pobox,
                 "recipient_country": land,
             }
 
@@ -178,13 +185,18 @@ def make_etiketten(vms, abos, inst, wohin='BEV'):
         land = 'Austria'
         if ab.country and ab.heftanzahl:
             land = ab.country.land
+            if not ab.vorname:
+                aname = ab.nachname
+            else:
+                "{} {}".format(ab.vorname, ab.nachname)
             mm = {
                 "recipient_id": ab.kundennummer,
-                "recipient_name": "{} {}".format(ab.vorname, ab.nachname),
+                "recipient_name": aname,
                 "recipient_extra": ab.surname2,
                 "recipient_street": ab.strasse,
                 "recipient_zip": ab.plz,
                 "recipient_city": ab.ort,
+                "recipient_postbox": ab.pobox,
                 "recipient_country": land,
             }
 
@@ -337,7 +349,6 @@ class AbonnentViewSet(viewsets.ModelViewSet):
                 vms = VereinsMitglied.aktive.all().filter(heftanzahl__gt=0)
                 abos = AboHeft.objects.filter(aboende__isnull=True)
                 inst = Institution.aktive.all()
-
 
                 if wohin == 'BEV':
                     vms = vms.filter(versand__iexact='BEV')
