@@ -99,16 +99,16 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
             stud_gebjahr = year-30
             vms = VereinsMitglied.aktive.filter(kostenart__art="M")
             if hauspost: 
-                vms = vms.filter(versand=='BEV')
+                vms = vms.filter(versand='BEV')
             else:
-                vms = vms.filter(versand=='POST')
+                vms = vms.filter(versand='POST')
 
             juniors = vms.filter(gebdat__year__gt=stud_gebjahr)
             for m in juniors:
                 o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=20, bezahlt=False, erstellt=dt.now())
                 o.save()
 
-            seniors = vms.filter(gebdat__year__lt=1945)
+            seniors = vms.filter(gebdat__year__lt=1943)
             for m in seniors:
                 o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=35, bezahlt=False, erstellt=dt.now())
                 o.save()
@@ -128,9 +128,9 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         merged_filename = '/tmp/merged_pdf.pdf'
         v = VereinsMitglied.aktive.filter(kostenart__art='M')
         if hauspost:
-            v = v.filter(versand=='BEV')
+            v = v.filter(versand='BEV')
         else:
-            v = v.filter(versand=='POST')
+            v = v.filter(versand='POST')
         vms = [vm for vm in v if vm.offeneposten_set.filter(bezahlt=False)] 
 
         vms = vms[0:5]
