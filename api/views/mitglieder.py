@@ -92,19 +92,25 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=['get'])
     def jahresbeitrag_anlegen(self, request):
         d = request.query_params.get('jahr')
+        hauspost = request.query_params.get('hauspost')
+
         if d:
             year = int(d)
             stud_gebjahr = year-30
             vms = VereinsMitglied.aktive.filter(kostenart__art="M")
+            if hauspost: 
+                vms = vms.filter(versand=='BEV')
+            else:
+                vms = vms.filter(versand=='POST')
 
             juniors = vms.filter(gebdat__year__gt=stud_gebjahr)
             for m in juniors:
-                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=30, bezahlt=False, erstellt=dt.now())
+                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=20, bezahlt=False, erstellt=dt.now())
                 o.save()
 
             seniors = vms.filter(gebdat__year__lt=1945)
             for m in seniors:
-                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=30, bezahlt=False, erstellt=dt.now())
+                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=35, bezahlt=False, erstellt=dt.now())
                 o.save()
 
             normale = vms.exclude(id__in=[s.id for s in seniors]).exclude(id__in=[j.id for j in juniors])
@@ -118,13 +124,40 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'])
     def erlagscheine_anlegen(self, request):
+        hauspost = request.query_params.get('hauspost')
         merged_filename = '/tmp/merged_pdf.pdf'
         v = VereinsMitglied.aktive.filter(kostenart__art='M')
         vms = [vm for vm in v if vm.offeneposten_set.filter(bezahlt=False)] 
-        # vms = vms[0:5]
+        if hauspost:
+            vms = vms.filter(versand=='BEV')
+        else:
+            vms = vms.filter(versand=='POST')
+
+        vms = vms[0:5]
         if vms:
             for vm in vms:
-                news = 'Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag 2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. Wir danken für Ihre Unterstützung und Ihre True zur OVG.'
+                news = """
+                Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag
+                2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. 
+                Wir danken für Ihre Unterstützung und Ihre True zur OVG.
+                """
+                news = """
+                Sehr geehrte Frau Kollegin, sehr geehrter Herr Kollege, liebes Vereinsmitglied,
+                
+                wir haben im Jahr 2019 unsere Mitgliederverwaltung auf neue Beine gestellt. Dies hat dann doch mehr Zeit in Anspruch genommen, als wir zu Beginn des Vorhabens dachten. Aus diesem Grund war es nicht möglich im vergangenen Jahr Zahlscheine für den Mitgliedsbeitrag auszusenden.
+
+                Nun sind wir aber so weit und können Ihnen die entsprechende Vorschreibung des Mitgliedsbeitrages übermitteln. Da eine Doppelaussendung innerhalb weniger Wochen wohl keinen Sinn hat, haben wir uns dazu entschlossen, die Mitgliedsbeiträge der Jahre 2019 (so Sie diesen nicht aus eigenem Antrieb überweisen haben) und 2020 auf einem Zahlschein gemeinsam vorzuschreiben. Wir danken für Ihre Geduld.
+
+                Wir bitten um Einzahlung des ausständigen Betrages bis Ende April 2020. Sollten Sie Telebanking verwenden, geben Sie bitte „MitgliedsNr/2020“ als Zahlungsreferenz ein.
+
+                Für die OVG
+                Wolfgang Gold – Schatzmeister
+ 
+
+                PS.: Sollte bei der Migration Ihrer Daten ein Fehler passiert sein, bitten wir um eine Nachricht an office@ovg.at um diesen korrigieren zu können – danke.
+                PPS.: Besuchen Sie uns doch auf unserer Homepage www.ovg.at oder auf unserer Facebookseite www.facebook.com/OVGAustria/ um neueste Informationen über die Tätigkeiten der OVG zur erhalten.
+                PPPS.: Bitte im Kalender eintragen: Geodätentag Steyr 13-16. April 2021. Wir freuen uns auf Ihr kommen!
+                """
                 make_invoice(vm, news=news)
 
             pfade = [vm.rechnung.path for vm in vms]

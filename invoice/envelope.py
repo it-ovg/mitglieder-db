@@ -12,8 +12,8 @@ from reportlab.lib.pagesizes import landscape
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 
-from ovg import settings as s
-from ovg import utils as u
+from . import settings as s
+from . import utils as u
 
 
 DEFAULT_SENDER = {
@@ -70,13 +70,20 @@ def create_envelope(**kwargs):
     rowHeights = 13
 
     envelope_type = kwargs.get("type", "any")
+    pobox = kwargs.get("recipient_postbox", "")
+    if type(pobox) == str:
+        pobox = pobox.strip()
+
+    extra = kwargs.get("recipient_extra", "")
+    if type(extra) == str:
+        extra = extra.strip()
 
     recipient = {
         "pk": kwargs.get("recipient_id"),
         "name": kwargs.get("recipient_name"),
-        "extra": kwargs.get("recipient_extra", ""),
+        "extra": extra,
         "street": kwargs.get("recipient_street", "").strip(),
-        "postbox": kwargs.get("recipient_postbox", "").strip(),
+        "postbox": pobox,
         "zip": kwargs.get("recipient_zip"),
         "city": kwargs.get("recipient_city"),
         "country": kwargs.get("recipient_country", "").upper()
