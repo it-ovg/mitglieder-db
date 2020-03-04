@@ -127,11 +127,11 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         hauspost = request.query_params.get('hauspost')
         merged_filename = '/tmp/merged_pdf.pdf'
         v = VereinsMitglied.aktive.filter(kostenart__art='M')
-        vms = [vm for vm in v if vm.offeneposten_set.filter(bezahlt=False)] 
         if hauspost:
-            vms = vms.filter(versand=='BEV')
+            v = v.filter(versand=='BEV')
         else:
-            vms = vms.filter(versand=='POST')
+            v = v.filter(versand=='POST')
+        vms = [vm for vm in v if vm.offeneposten_set.filter(bezahlt=False)] 
 
         vms = vms[0:5]
         if vms:

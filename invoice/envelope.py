@@ -70,18 +70,20 @@ def create_envelope(**kwargs):
     rowHeights = 13
 
     envelope_type = kwargs.get("type", "any")
+    
     pobox = kwargs.get("recipient_postbox", "")
     if type(pobox) == str:
-        pobox = pobox.strip()
+        pobox = "PO Box {}".format( pobox.strip() )
 
     extra = kwargs.get("recipient_extra", "")
     if type(extra) == str:
         extra = extra.strip()
 
+
     recipient = {
         "pk": kwargs.get("recipient_id"),
         "name": kwargs.get("recipient_name"),
-        "extra": extra,
+        "extra": kwargs.get("recipient_extra", ""),
         "street": kwargs.get("recipient_street", "").strip(),
         "postbox": pobox,
         "zip": kwargs.get("recipient_zip"),
@@ -180,7 +182,7 @@ def create_envelope(**kwargs):
 
     if recipient["postbox"]:
         recipient_meta_data.append(
-            [recipient["postbox"], ""] 
+            ["PO Box {}".format(recipient["postbox"]), ""] 
         )
 
     recipient_meta_data.append(
