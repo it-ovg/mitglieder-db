@@ -148,6 +148,7 @@ class AboHeftSerializer(serializers.HyperlinkedModelSerializer):
 
 class offenePostenSerializer(serializers.HyperlinkedModelSerializer):
     id = serializers.ReadOnlyField(source='mitglied.id')
+    mnr = serializers.ReadOnlyField(source='mitglied.mitgliedsnummer')
     # name = serializers.ReadOnlyField(source='mitglied.last_name')
     name = serializers.SerializerMethodField('get_mitglied_name')
 
@@ -156,7 +157,7 @@ class offenePostenSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = offenePosten
-        fields = ('id', 'url', 'mitglied', 'erstellt', 'bezahltam', 'offen', 'zahlung', 'bezahlt', 'description', 'name')
+        fields = ('id', 'mnr', 'url', 'mitglied', 'erstellt', 'bezahltam', 'offen', 'zahlung', 'bezahlt', 'description', 'name')
         read_only_fields = ('url', )
 
 

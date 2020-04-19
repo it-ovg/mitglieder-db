@@ -70,9 +70,10 @@ def make_invoice(vm, news=''):
     m = { 'member_id': vm.mitgliedsnummer, 'invoice_date_str': invoice_date,
             'invoice_reference': '{}-{}'.format(vm.mitgliedsnummer, invoice_date.year),
             'invoice_recipient': "{first_name} {last_name}".format(**vm.__dict__),
-            'invoice_to': '', 'invoice_street': vm.rechnungsadresse.strasse,
+            'invoice_to': vm.namenszusatz, 'invoice_street': vm.rechnungsadresse.strasse,
             'invoice_zip': vm.rechnungsadresse.plz, 'invoice_city': vm.rechnungsadresse.ort,
-            'show_country': False, 'ovg_news': news, 'ovg_dues': dues,
+            'invoice_country': vm.rechnungsadresse.country.land,
+            'show_country': True, 'ovg_news': news, 'ovg_dues': dues,
             'invoice_deadline': datetime.date(2020,2,29)
         }
 
@@ -415,7 +416,8 @@ class offenePostenViewSet(viewsets.ModelViewSet):
         namefilter = self.request.query_params.get('namefilter')
         if namefilter:
             ops = ops.filter(Q(description__icontains=namefilter) | Q(mitglied__first_name__icontains=namefilter) | Q(mitglied__last_name__icontains=namefilter))
-        return ops
+        return ops.filter(mitglied__isnull=False).filter(mitglied__in=VereinsMitglied.aktive.all())
+
 
     @action(detail=True, methods=['get'])
     def set_bezahlt(self, request, pk=None):

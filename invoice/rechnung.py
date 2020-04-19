@@ -118,6 +118,9 @@ def createInvoice(**kwargs):
         [invoice_street],
         ["{} {}".format(invoice_zip, invoice_city)],
     ]
+    if show_country:
+        billing_data.append([invoice_country])
+
     # row_height = 0.5*cm
     billing_table = Table(data=billing_data, rowHeights=12)
     w, h = billing_table.wrapOn(canvas, 0, 0)

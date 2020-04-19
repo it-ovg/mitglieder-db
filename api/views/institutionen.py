@@ -20,7 +20,7 @@ def make_invoice(inst, news=''):
             'invoice_recipient': "{institution_name}".format(**inst.__dict__),
             'invoice_to': '', 'invoice_street': inst.rechnungsadresse.strasse,
             'invoice_zip': inst.rechnungsadresse.plz, 'invoice_city': inst.rechnungsadresse.ort,
-            'show_country': False, 'ovg_news': news, 'ovg_dues': dues,
+            'show_country': True, 'ovg_news': news, 'ovg_dues': dues,
             'invoice_deadline': datetime.date(2020,2,29)
             }
 
@@ -82,6 +82,25 @@ class InstitutionenViewSet(viewsets.ModelViewSet):
         if insts:
             for inst in insts:
                 news = 'Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag 2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. Wir danken für Ihre Unterstützung und Ihre True zur OVG.'
+                news = """
+                wir haben im Jahr 2019 unsere Mitgliederverwaltung auf neue Beine gestellt. Dies hat dann doch mehr Zeit 
+                in Anspruch genommen, als wir zu Beginn des Vorhabens dachten. Aus diesem Grund war es nicht möglich im 
+                vergangenen Jahr Zahlscheine für den Mitgliedsbeitrag auszusenden.<br/>
+ 
+                Nun sind wir aber so weit und können Ihnen die entsprechende Vorschreibung des Mitgliedsbeitrages übermitteln. 
+                Da eine Doppelaussendung innerhalb weniger Wochen wohl keinen Sinn hat, haben wir uns dazu entschlossen, 
+                die Mitgliedsbeiträge der Jahre 2019 (so Sie diesen nicht aus eigenem Antrieb überweisen haben) und 2020 
+                auf einem Zahlschein gemeinsam vorzuschreiben. Wir danken für Ihre Geduld.<br/>
+
+                Wir bitten um Einzahlung des ausständigen Betrages bis Ende April 2020. Sollten Sie Telebanking verwenden, 
+                geben Sie bitte „MitgliedsNr/2020“ als Zahlungsreferenz ein.<br/><br/>
+
+                PS.: Sollte bei der Migration Ihrer Daten ein Fehler passiert sein, bitten wir um eine Nachricht an 
+                office@ovg.at um diesen korrigieren zu können – danke.<br/>
+
+		PPS.: Bitte im Kalender eintragen: Geodätentag Steyr 13-16. April 2021. Wir freuen uns auf Ihr kommen!
+                """
+
                 make_invoice(inst, news)
 
             pfade = [inst.rechnung.path for inst in insts]

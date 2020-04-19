@@ -98,7 +98,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
             year = int(d)
             stud_gebjahr = year-30
             vms = VereinsMitglied.aktive.filter(kostenart__art="M")
-            if hauspost: 
+            if hauspost == 'true': 
                 vms = vms.filter(versand='BEV')
             else:
                 vms = vms.filter(versand='POST')
@@ -127,13 +127,13 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         hauspost = request.query_params.get('hauspost')
         merged_filename = '/tmp/merged_pdf.pdf'
         v = VereinsMitglied.aktive.filter(kostenart__art='M')
-        if hauspost:
-            v = v.filter(versand='BEV')
+        if hauspost == 'true':
+            v = v.filter(versand__iexact='BEV')
         else:
-            v = v.filter(versand='POST')
+            v = v.filter(versand__iexact='POST')
         vms = [vm for vm in v if vm.offeneposten_set.filter(bezahlt=False)] 
 
-        vms = vms[0:5]
+        # vms = vms[0:5]
         if vms:
             for vm in vms:
                 news = """
@@ -142,25 +142,22 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
                 Wir danken für Ihre Unterstützung und Ihre True zur OVG.
                 """
                 news = """
-                Wir haben im Jahr 2019 unsere Mitgliederverwaltung auf neue Beine gestellt. Dies hat dann doch mehr Zeit 
+                wir haben im Jahr 2019 unsere Mitgliederverwaltung auf neue Beine gestellt. Dies hat dann doch mehr Zeit 
                 in Anspruch genommen, als wir zu Beginn des Vorhabens dachten. Aus diesem Grund war es nicht möglich im 
-                vergangenen Jahr Zahlscheine für den Mitgliedsbeitrag auszusenden.<br>
-
+                vergangenen Jahr Zahlscheine für den Mitgliedsbeitrag auszusenden.<br/>
+ 
                 Nun sind wir aber so weit und können Ihnen die entsprechende Vorschreibung des Mitgliedsbeitrages übermitteln. 
                 Da eine Doppelaussendung innerhalb weniger Wochen wohl keinen Sinn hat, haben wir uns dazu entschlossen, 
                 die Mitgliedsbeiträge der Jahre 2019 (so Sie diesen nicht aus eigenem Antrieb überweisen haben) und 2020 
-                auf einem Zahlschein gemeinsam vorzuschreiben. Wir danken für Ihre Geduld.<br>
+                auf einem Zahlschein gemeinsam vorzuschreiben. Wir danken für Ihre Geduld.<br/>
 
                 Wir bitten um Einzahlung des ausständigen Betrages bis Ende April 2020. Sollten Sie Telebanking verwenden, 
-                geben Sie bitte „MitgliedsNr/2020“ als Zahlungsreferenz ein.<br><br>
+                geben Sie bitte „MitgliedsNr/2020“ als Zahlungsreferenz ein.<br/><br/>
 
                 PS.: Sollte bei der Migration Ihrer Daten ein Fehler passiert sein, bitten wir um eine Nachricht an 
-                office@ovg.at um diesen korrigieren zu können – danke.<br><br>
+                office@ovg.at um diesen korrigieren zu können – danke.<br/>
 
-                PPS.: Besuchen Sie uns doch auf unserer Homepage www.ovg.at oder auf unserer Facebookseite 
-                www.facebook.com/OVGAustria/ um neueste Informationen über die Tätigkeiten der OVG zur erhalten.<br><br>
-                
-                PPPS.: Bitte im Kalender eintragen: Geodätentag Steyr 13-16. April 2021. Wir freuen uns auf Ihr kommen!
+		PPS.: Bitte im Kalender eintragen: Geodätentag Steyr 13-16. April 2021. Wir freuen uns auf Ihr kommen!
                 """
                 make_invoice(vm, news=news)
 
@@ -171,6 +168,8 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
             pdf = f.read()
             f.close()
             return Response(data=pdf, status=status.HTTP_200_OK)
+
+
 
     @action(detail=False, methods=['get'])
     def jubilare_pdf(self, request):
