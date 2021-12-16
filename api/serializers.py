@@ -2,7 +2,7 @@ from django.contrib.auth.models import User, Group
 from django.contrib.auth import authenticate
 from rest_framework import serializers
 from mitglieder.models import VereinsMitglied, Land, Beruf, Mitgliedsart, Kosten, Vortragsort, Adresse, Institution, offenePosten
-from mitglieder.models import AboHeft, Abonnent
+from mitglieder.models import AboHeft, Abonnent, offeneAboPosten
 
 # Serializers define the API representation.
 
@@ -134,11 +134,19 @@ class AdresseSerializer(serializers.HyperlinkedModelSerializer):
         fields = '__all__'
 
 
+
+class offeneAboPostenSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = offeneAboPosten
+        fields = '__all__'
+
+
 class AboHeftSerializer(serializers.HyperlinkedModelSerializer):
     aktiv = serializers.ReadOnlyField()
-    # bezieher = serializers.ReadOnlyField()
-    id = serializers.ReadOnlyField(source='kundennummer.id')
+    id = serializers.ReadOnlyField()
+    # id = serializers.ReadOnlyField(source='kundennummer.id')
     abonnent = serializers.ReadOnlyField(source='kundennummer.name')
+    offeneaboposten_set = offeneAboPostenSerializer(many=True, read_only=True)
 
     class Meta:
         model = AboHeft
@@ -153,7 +161,9 @@ class offenePostenSerializer(serializers.HyperlinkedModelSerializer):
     name = serializers.SerializerMethodField('get_mitglied_name')
 
     def get_mitglied_name(self, obj):
-        return "{} {}".format(obj.mitglied.first_name, obj.mitglied.last_name)
+        if obj.mitglied:
+            return "{} {}".format(obj.mitglied.first_name, obj.mitglied.last_name)
+        return ""
 
     class Meta:
         model = offenePosten
@@ -162,6 +172,8 @@ class offenePostenSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class AbonnentSerializer(serializers.HyperlinkedModelSerializer):
+    aboheft_set = AboHeftSerializer(many=True, read_only=True)
+
     class Meta:
         model = Abonnent
         # fields = '__all__'
@@ -207,9 +219,10 @@ class InstitutionenSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Institution
         fields = ('wohnadresse', 'lieferadresse', 'rechnungsadresse', 'email', 'url', 'id', 'mitgliedsnummer', 
-                    'institution_name', 'name2', 'name3', 'tel', 'fax', 'homepage',
+                    'institution_name', 'name2', 'name3', 'tel', 'fax', 'homepage', 'offeneposten_set',
                     'beigz', 'beidat', 'storndat', 'mitgliedsart', 'kostenart', 'versand', 'dsgvo',
                     'sub', 'berufsgruppe', 'heftanzahl', 'anmerkung', 'aktiv')
+        read_only_fields = ('offeneposten_set',)
   
 
 

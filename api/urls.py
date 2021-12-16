@@ -22,6 +22,7 @@ router.register(r'institutionen', institutionen.InstitutionenViewSet)
 router.register(r'aboheft', views.AboHeftViewSet)
 router.register(r'abonnent', views.AbonnentViewSet)
 router.register(r'offeneposten', views.offenePostenViewSet)
+router.register(r'offeneaboposten', views.OffeneAboPostenViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.

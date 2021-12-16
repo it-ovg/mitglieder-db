@@ -99,9 +99,9 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
             stud_gebjahr = year-30
             vms = VereinsMitglied.aktive.filter(kostenart__art="M")
             if hauspost == 'true': 
-                vms = vms.filter(versand='BEV')
+                vms = vms.filter(versand__iexact='BEV')
             else:
-                vms = vms.filter(versand='POST')
+                vms = vms.filter(versand__iexact='POST')
 
             juniors = vms.filter(gebdat__year__gt=stud_gebjahr)
             for m in juniors:
@@ -137,27 +137,15 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         if vms:
             for vm in vms:
                 news = """
-                Aufgrund von Umstellungsarbeiten der Mitgliedsdatenbank können wir den Mitgliedsbeitrag
-                2019 erst jetzt aussenden. Der Einfachheit halber schicken wir auch gleich jenen von 2020. 
-                Wir danken für Ihre Unterstützung und Ihre True zur OVG.
-                """
-                news = """
-                wir haben im Jahr 2019 unsere Mitgliederverwaltung auf neue Beine gestellt. Dies hat dann doch mehr Zeit 
-                in Anspruch genommen, als wir zu Beginn des Vorhabens dachten. Aus diesem Grund war es nicht möglich im 
-                vergangenen Jahr Zahlscheine für den Mitgliedsbeitrag auszusenden.<br/>
- 
-                Nun sind wir aber so weit und können Ihnen die entsprechende Vorschreibung des Mitgliedsbeitrages übermitteln. 
-                Da eine Doppelaussendung innerhalb weniger Wochen wohl keinen Sinn hat, haben wir uns dazu entschlossen, 
-                die Mitgliedsbeiträge der Jahre 2019 (so Sie diesen nicht aus eigenem Antrieb überweisen haben) und 2020 
-                auf einem Zahlschein gemeinsam vorzuschreiben. Wir danken für Ihre Geduld.<br/>
+		Liebe OVG Mitglieder,<br /><br />
 
-                Wir bitten um Einzahlung des ausständigen Betrages bis Ende April 2020. Sollten Sie Telebanking verwenden, 
-                geben Sie bitte „MitgliedsNr/2020“ als Zahlungsreferenz ein.<br/><br/>
+		wir dürfen Ihnen den Mitgliedsbeitrag für 2021 vorschreiben und uns gleichzeitig bei Ihnen für Ihre langjährige Treue zur OVG bedanken – ganz besonders in herausfordernden Zeiten. Darüber hinaus freuen wir uns auf den Österreichischen Geodätentag 2022, der von 26.-29. April 2022 in Steyr stattfinden wird, zu dem wir Sie hiermit recht herzlich einladen. Aus heutiger Sicht erfolgt die Veranstaltung in Präsenz, wie gewohnt mit Messe, Vorträgen und Standparty.<br /><br />
 
-                PS.: Sollte bei der Migration Ihrer Daten ein Fehler passiert sein, bitten wir um eine Nachricht an 
-                office@ovg.at um diesen korrigieren zu können – danke.<br/>
+		Beste Grüße und schönen Sommer,<br />
+		Ihre OVG<br /><br />
 
-		PPS.: Bitte im Kalender eintragen: Geodätentag Steyr 13-16. April 2021. Wir freuen uns auf Ihr kommen!
+		PS: Sollten sich Ihre Adressdaten ändern, einfach Email an office@ovg.at.<br />
+		PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende September 2021. Bei Telebanking bitte als Zahlungsreferenz „MitgliedsNr/2021“ angeben.<br /><br />
                 """
                 make_invoice(vm, news=news)
 
@@ -192,7 +180,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
                     if m.anrede == 'Frau':
                         greetings = 'Liebe Jubilarin'
                         salutation = 'Liebe'
-                    mm = {'letter_date': datetime.date.today().isoformat(), 'customer_salutation': salutation, 
+                    mm = {'letter_date': m.gebdat.replace(year=year).isoformat(), 'customer_salutation': salutation, 
                         'customer_name': '{} {}'.format(m.first_name, m.last_name),
                         'customer_id': m.mitgliedsnummer, 'customer_anniversary': m.alter,
                         'letter_street': m.wohnadresse.strasse, 'letter_zip': m.wohnadresse.plz,

@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from mitglieder.models import VereinsMitglied, offenePosten, Land, Beruf, Mitgliedsart, Kosten, Vortragsort, Adresse, Institution
-from mitglieder.models import offenePosten, AboHeft, Abonnent
+from mitglieder.models import offenePosten, AboHeft, Abonnent, offeneAboPosten
 from django.http import JsonResponse
 import uuid
 
@@ -15,7 +15,7 @@ from rest_framework.permissions import AllowAny
 from datetime import datetime as dt
 from api.serializers import UserSerializer, GroupSerializer, VereinsMitgliedSerializer, CountrySerializer, BerufeSerializer, MitgliedsartSerializer
 from api.serializers import KostenSerializer, VortragsortSerializer, AdresseSerializer, InstitutionenSerializer
-from api.serializers import AboHeftSerializer, AbonnentSerializer, offenePostenSerializer, CreateUserSerializer, LoginUserSerializer
+from api.serializers import AboHeftSerializer, AbonnentSerializer, offenePostenSerializer, CreateUserSerializer, LoginUserSerializer, offeneAboPostenSerializer
 from django.utils.encoding import force_text
 from django.views import View
 from django.db.models import Q
@@ -313,6 +313,11 @@ class AdresseViewSet(viewsets.ModelViewSet):
     metadata_class = MyMetaData
 
 
+class OffeneAboPostenViewSet(viewsets.ModelViewSet):
+    queryset = offeneAboPosten.objects.all()
+    serializer_class = offeneAboPostenSerializer
+    metadata_class = MyMetaData
+
 
 class AbonnentViewSet(viewsets.ModelViewSet):
     queryset = Abonnent.objects.all()
@@ -324,8 +329,14 @@ class AbonnentViewSet(viewsets.ModelViewSet):
             abos = Abonnent.aktive.all()
         else:
             abos = Abonnent.objects.all()
-        if 'wer' in self.request.GET:
-            abos = abos.filter(Q(name__icontains=self.request.GET['wer']))
+
+        if 'key' in self.request.GET and 'value' in self.request.GET:
+            kwargs = {'{}'.format(self.request.GET['key']): self.request.GET['value'] }
+            abos = abos.filter(**kwargs)
+
+        namefilter = self.request.query_params.get('namefilter')
+        if namefilter:
+            abos = abos.filter(Q(name__icontains=namefilter) | Q(name2__icontains=namefilter))
         return abos
 
 
@@ -402,6 +413,34 @@ class AboHeftViewSet(viewsets.ModelViewSet):
             abos = abos.filter(Q(name__icontains=self.request.GET['wer']))
         return abos
 
+   
+    @action(detail=False, methods=['get'])
+    def jahresbeitrag_anlegen(self, request):
+        d = request.query_params.get('jahr')
+        if d:
+            year = int(d)
+            i = 0
+            for a in Abonnent.aktive.all():
+                for heft in a.aboheft_set.all():
+                    if heft.aktiv:
+                        oap = offeneAboPosten(aboheft=heft)
+                        if heft.country.land.lower() == 'austria':
+                            oap.offen = 60 * heft.heftanzahl
+                        else:
+                            oap.offen = 75 * heft.heftanzahl
+                        oap.description = 'Abonnement ' + d
+                        oap.save()
+                        i += 1
+                  
+            message = 'Der Beitrag wurde {} x erfolgreich angelegt!'.format(i)
+            return Response(data=message, status=status.HTTP_200_OK)
+        return Response(data="Sie haben ein leeres Feld übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
+
+
+
+
+
+
 
 class offenePostenViewSet(viewsets.ModelViewSet):
     queryset = offenePosten.objects.all()
@@ -417,6 +456,7 @@ class offenePostenViewSet(viewsets.ModelViewSet):
         if namefilter:
             ops = ops.filter(Q(description__icontains=namefilter) | Q(mitglied__first_name__icontains=namefilter) | Q(mitglied__last_name__icontains=namefilter))
         return ops.filter(mitglied__isnull=False).filter(mitglied__in=VereinsMitglied.aktive.all())
+        return ops
 
 
     @action(detail=True, methods=['get'])
@@ -442,7 +482,7 @@ def dashboard(request):
         m.alter=year-m.gebdat.year
     jubls=[50,60,70,75,80,85,90,95]
     jubilare=[{'alter': m.alter, 'first_name': m.first_name, 'last_name': m.last_name, 'gebdat': m.gebdat, 'monat': m.gebdat.month} for m in mm if m.alter in jubls or m.alter>99]
-    oo=offenePosten.objects.filter(bezahlt=False)
+    oo=offenePosten.objects.filter(bezahlt=False).filter(mitglied__isnull=False).filter(mitglied__in=VereinsMitglied.aktive.all())
     summe=0
     for o in oo:
         if o.offen:

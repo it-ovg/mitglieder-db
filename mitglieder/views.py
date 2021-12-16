@@ -172,7 +172,7 @@ def mitgliedsbeitraege_neu(request):
     if request.method=="POST":
         d=request.POST['description']
         if d!="":
-            #das m muss noch auf alle anderen Mitglieder geändert werden
+            # TODO das m muss noch auf alle anderen Mitglieder geändert werden
             mm=VereinsMitglied.objects.filter(id=13699)
             for m in mm:
                 o=offenePosten(mitglied=m, description=d)
@@ -185,22 +185,22 @@ def mitgliedsbeitraege_neu(request):
 
 # @login_required
 def emails_ausschicken(request,pk):
-    if pk=="alle":
-        m=VereinsMitglied.objects.all()
+    if pk == "alle":
+        m = VereinsMitglied.objects.all()
         #muss man noch anpassen
     else:
-        m=VereinsMitglied.objects.get(id=pk)
+        m = VereinsMitglied.objects.get(id=pk)
 
-    e,c=EmailId.objects.get_or_create(mitglied=m)
+    e,c = EmailId.objects.get_or_create(mitglied=m)
     e.save()
-    uuid=e.uuid4
-    context={'title':'E-Mail ausschicken', 'uuid': uuid, 'm':m }
+    uuid = e.uuid4
+    context = {'title':'E-Mail ausschicken', 'uuid': uuid, 'm':m }
     if c:
         e.offeneposten.clear()
-    op=m.offeneposten_set.filter(bezahlt=False)
+    op = m.offeneposten_set.filter(bezahlt=False)
     if op:
         [e.offeneposten.add(o) for o in op]
-        html_text="""
+        html_text = """
         <html><head></head><body>
         <h2>Hallo %s %s</h2>
         <p>Bitte folge dem <a href="http://www.ovg.at/ovgmitglieder/beitragbezahlen/%s" target="_blank">
@@ -209,14 +209,14 @@ def emails_ausschicken(request,pk):
         <br>
         Dein OVG-IT-Team </body></html>
         """ % (m.vorname, m.nachname, uuid)
-        s=send_mail(subject='OVG - Österreichische Gesellschaft für Vermessung und Geoinformation', message='', html_message=html_text, from_email='noreply@ovg.at', recipient_list=[m.email] )
+        s = send_mail(subject='OVG - Österreichische Gesellschaft für Vermessung und Geoinformation', message='', html_message=html_text, from_email='noreply@ovg.at', recipient_list=[m.email] )
         context['s']=s
         if s:
-            context['mail']='Mail an {} wurde erfolgreich versendet'.format(m.email)
+            context['mail'] = 'Mail an {} wurde erfolgreich versendet'.format(m.email)
         else:
-            context['mail']='Mail an {} konnte nicht versendet werden'.format(m.email)
+            context['mail'] = 'Mail an {} konnte nicht versendet werden'.format(m.email)
     else:
-        context['error']='Es gibt keine offenen Posten'
+        context['error'] = 'Es gibt keine offenen Posten'
     return render(request, 'mitglieder/emails_ausschicken.html',context)
 
 

@@ -15,7 +15,8 @@ class AktivAbonnentManager(models.Manager):
     def get_queryset(self):
         # elf.aboheft_set.filter(aboende__isnull=True).count() > 0:
         hefte = AboHeft.objects.filter(aboende__isnull=True)
-        return super().get_queryset().filter(aboheft__in=hefte)
+        #return super().get_queryset().filter(aktiv=True)
+        return super().get_queryset().filter(aboheft__in=hefte).distinct()
 
 
 class Land(models.Model):
@@ -271,6 +272,18 @@ class offenePosten(models.Model):
     @property
     def mname(self):
         return "{} {}".format(self.mitglied.first_name, self.mitglied.nachname)
+
+    class Meta:
+        ordering = ['erstellt']
+
+class offeneAboPosten(models.Model):
+    aboheft = models.ForeignKey(AboHeft, null=True, blank=True, on_delete=models.DO_NOTHING)
+    erstellt = models.DateTimeField(default=timezone.now, null=False, blank=False, editable=False)
+    bezahltam = models.DateTimeField(null=True,blank=True)
+    offen = models.FloatField(default=0)
+    zahlung = models.FloatField(default=0, null=True, blank=True)
+    bezahlt = models.BooleanField(default=False)
+    description = models.CharField(max_length=100, null=True, blank=True)
 
     class Meta:
         ordering = ['erstellt']
