@@ -144,10 +144,13 @@ class offeneAboPostenSerializer(serializers.HyperlinkedModelSerializer):
 class AboHeftSerializer(serializers.HyperlinkedModelSerializer):
     aktiv = serializers.ReadOnlyField()
     id = serializers.ReadOnlyField()
-    # id = serializers.ReadOnlyField(source='kundennummer.id')
-    abonnent = serializers.ReadOnlyField(source='kundennummer.name')
+    abonnent_id = serializers.ReadOnlyField(source='kundennummer.id')
+    abonnent_name = serializers.ReadOnlyField(source='kundennummer.name')
     offeneaboposten_set = offeneAboPostenSerializer(many=True, read_only=True)
+    prozent = serializers.SerializerMethodField()
 
+    def get_prozent(self, obj):
+        return obj.kundennummer.prozent
     class Meta:
         model = AboHeft
         # fields = ('id', 'vorname', 'nachname', 'aktiv', 'kdnr', )

@@ -118,7 +118,7 @@ def create_anniversary(**kwargs):
 
     # OVG-Salute
     salute_data = [
-        ["Dipl.-Ing. Julius Ernst", "Dipl.-Ing. Franz Blauensteiner"],
+        ["Dipl.-Ing. Franz Blauensteiner", "Dr. Lothar Eysn"],
         ["(Präsident)", "(Generalsekretär)"],
     ]
     salute_cols_width = (s.A4_WIDTH - margin_left - margin_right)/2

@@ -143,14 +143,13 @@ def create_envelope(**kwargs):
     if envelope_type == "aut":
         sender_meta_data = [
             [
-                "Österreichiche Post AG Info.Mail Entgelt bezahlt", ""
+                "Österreichiche Post AG"
             ],
             [
-                Paragraph("<b>{}, {}, {}, {}</b>".format(
-                    sender["name"], sender["street"],
-                    sender["zip"], sender["city"]),
-                    style=styles["Normal"]
-                ), ""
+                "PZ 22Z042940 P"
+            ],
+            [
+                "{}, {}, {}, {}".format( sender["name"], sender["street"], sender["zip"], sender["city"]), ""
             ]
         ]
     else:

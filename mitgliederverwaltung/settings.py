@@ -27,10 +27,13 @@ SECRET_KEY = 'p+=w=*%d@tvsj=)kui-l8v%dyah*mnk58stbu)k!x72vblo*qw'
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'members.ovg.at', '46.163.79.47',]
-HOSTNAME = 'blabla'
+HOSTNAME = 'members.ovg.at'
 INTERNAL_IPS = ['localhost', '127.0.0.1']
 CORS_ORIGIN_ALLOW_ALL = True
+
 USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 
 
 # Application definition

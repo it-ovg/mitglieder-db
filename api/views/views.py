@@ -33,7 +33,7 @@ from PyPDF2 import PdfFileMerger
 from django.core.mail import EmailMultiAlternatives
 import os
 import shutil
-
+import numpy as np
 
 class MyMetaData(SimpleMetadata):
     def get_field_info(self, field):
@@ -85,30 +85,47 @@ def make_invoice(vm, news=''):
     return x
 
 
-def make_abo_invoice(vm):
+def make_abo_invoice(aboheft):
     book_price = 50.0
     invoice_date = datetime.datetime.now()
+    shp_company = ''
+    if aboheft.vorname:
+        shp_company += aboheft.vorname + ' '
+    shp_company += aboheft.nachname
 
-    m = { 'customer_id': vm.kundennummer, 'customer_vat_id': vm.uid,
-            'abo_id': vm.kundennummer,
-            'abo_year': 2019,
-            'debt_claim': 100, 'discount': vm.heftsum*book_price*vm.prozent,
-            'book_amount': vm.heftsum,
+    m = { 'customer_id': aboheft.kundennummer.kundennummer, 
+            'customer_vat_id': aboheft.kundennummer.uid,
+            'abo_id': aboheft.abonummer,
+            'offene_abo_posten': aboheft.offeneaboposten_set.filter(bezahlt=False),
+            'abo_year': invoice_date.year,
+            'debt_claim': 100, 
+            'discount': aboheft.kundennummer.prozent,
+            'book_amount': aboheft.heftanzahl,
             'book_price': book_price,
             'invoice_date_str': invoice_date,
-            'inv_company': vm.name,
-            'inv_department': vm.name2,
-            'inv_name': vm.name3,
-            'inv_street': vm.rechnungsanschrift.strasse,
-            'inv_zip':vm.rechnungsanschrift.plz ,
-            'inv_city': vm.rechnungsanschrift.ort,
-            'inv_country': vm.rechnungsanschrift.country.land,
+            'inv_company': aboheft.kundennummer.name,
+            'inv_department': aboheft.kundennummer.name2,
+            'inv_name': aboheft.kundennummer.name3,
+            'inv_street': aboheft.kundennummer.rechnungsanschrift.strasse,
+            'inv_zip':aboheft.kundennummer.rechnungsanschrift.plz ,
+            'inv_city': aboheft.kundennummer.rechnungsanschrift.ort,
+            'inv_country': aboheft.kundennummer.rechnungsanschrift.country.land,
+            'inv_pobox': aboheft.kundennummer.rechnungsanschrift.pobox,
+
+            'shp_company': shp_company,
+            'shp_department': aboheft.surname2,
+            'shp_name': aboheft.surname3,
+            'shp_street': aboheft.strasse,
+            'shp_zip':aboheft.plz ,
+            'shp_city': aboheft.ort,
+            'shp_country': aboheft.country.land,
+            'shp_pobox': aboheft.pobox,
             }
 
     x = create_abo_invoice(**m)
-    invoice_filename = "ovg_inv_abo_{}_{}.pdf".format(vm.id, invoice_date.strftime("%Y") )
 
-    vm.rechnung.save(invoice_filename, ContentFile(x))
+    #invoice_filename = "ovg_inv_abo_{}_{}.pdf".format(aboheft.id, invoice_date.strftime("%Y") )
+    #aboheft.rechnung.save(invoice_filename, ContentFile(x))
     
     return x
 
@@ -120,6 +137,7 @@ def make_etiketten(vms, abos, inst, wohin='BEV'):
     elif wohin == 'AUT':
         make_pdf = create_envelope_aut
         merged_filename = 'etiketten_aut.pdf'
+        fplz = []
     elif wohin == 'INT':
         make_pdf = create_envelope_int
         merged_filename = 'etiketten_int.pdf'
@@ -129,9 +147,11 @@ def make_etiketten(vms, abos, inst, wohin='BEV'):
     os.mkdir(path)
     os.chdir(path)
 
-    for vm in vms:
+    c = 0
+    for vm in vms.order_by('lieferadresse__plz'):
         if vm.lieferadresse and vm.heftanzahl:
-            print(vm.id)
+            if wohin == 'AUT':
+                fplz.append(vm.lieferadresse.plz)
             land = 'Austria'
             if not vm.first_name:
                 rname = vm.last_name
@@ -153,14 +173,18 @@ def make_etiketten(vms, abos, inst, wohin='BEV'):
 
             x = make_pdf(**mm)
             for i in range(vm.heftanzahl):
-                fname = str(uuid.uuid4())
+                c = c + i + 1
+                fname = "aaa_{:07}_{}".format(c, i)
                 f = open(fname, 'wb')
                 f.write(x)
                 f.close()
 
-    for im in inst:
+    c = 0
+    for im in inst.order_by('lieferadresse__plz'):
         if im.lieferadresse and im.heftanzahl:
             print(im.id)
+            if wohin == 'AUT':
+                fplz.append(im.lieferadresse.plz)
             land = 'Austria'
             if im.lieferadresse.country:
                 land = im.lieferadresse.country.land
@@ -177,44 +201,60 @@ def make_etiketten(vms, abos, inst, wohin='BEV'):
 
             x = make_pdf(**mm)
             for i in range(im.heftanzahl):
+                c = c + i + 1
                 fname = str(uuid.uuid4())
+                fname = "bbb_{:07}_{}".format(c, i)
                 f = open(fname, 'wb')
                 f.write(x)
                 f.close()
 
-    for ab in abos:
-        land = 'Austria'
-        if ab.country and ab.heftanzahl:
-            land = ab.country.land
-            if not ab.vorname:
-                aname = ab.nachname
-            else:
-                "{} {}".format(ab.vorname, ab.nachname)
-            mm = {
-                "recipient_id": ab.kundennummer,
-                "recipient_name": aname,
-                "recipient_extra": ab.surname2,
-                "recipient_street": ab.strasse,
-                "recipient_zip": ab.plz,
-                "recipient_city": ab.ort,
-                "recipient_postbox": ab.pobox,
-                "recipient_country": land,
-            }
+    c = 0
+    if abos:
+        for ab in abos.order_by('plz'):
+            land = 'Austria'
+            if ab.country and ab.heftanzahl:
+                if wohin == 'AUT':
+                    fplz.append(ab.plz)
+                land = ab.country.land
+                if not ab.vorname:
+                    aname = ab.nachname
+                else:
+                    aname = "{} {}".format(ab.vorname, ab.nachname)
+                mm = {
+                    "recipient_id": ab.kundennummer,
+                    "recipient_name": aname,
+                    "recipient_extra": ab.surname2,
+                    "recipient_street": ab.strasse,
+                    "recipient_zip": ab.plz,
+                    "recipient_city": ab.ort,
+                    "recipient_postbox": ab.pobox,
+                    "recipient_country": land,
+                }
+    
+                x = make_pdf(**mm)
+                for i in range(ab.heftanzahl):
+                    c = c + i + 1
+                    fname = str(uuid.uuid4())
+                    fname = "ccc_{:07}_{}".format(c, i)
+                    f = open(fname, 'wb')
+                    f.write(x)
+                    f.close()
 
-            x = make_pdf(**mm)
-            for i in range(ab.heftanzahl):
-                fname = str(uuid.uuid4())
-                f = open(fname, 'wb')
-                f.write(x)
-                f.close()
-
-    pfade = os.listdir(path)
+    pfade = np.sort(os.listdir(path))
     merger(merged_filename, pfade)
 
     f = open(merged_filename, 'r')
     pdf = f.read()
     f.close()
     shutil.rmtree(path)
+
+    if wohin == 'AUT':
+        os.chdir("/tmp")
+        ff = open('plz.csv', 'w')
+        ff.writelines(fplz)
+        ff.close()
+        print(os.listdir())
+        print(os.getcwd())
     return pdf
 
 
@@ -336,7 +376,7 @@ class AbonnentViewSet(viewsets.ModelViewSet):
 
         namefilter = self.request.query_params.get('namefilter')
         if namefilter:
-            abos = abos.filter(Q(name__icontains=namefilter) | Q(name2__icontains=namefilter))
+            abos = abos.filter(Q(name__icontains=namefilter) | Q(name2__icontains=namefilter) | Q(aboheft__nachname__icontains=namefilter))
         return abos
 
 
@@ -345,6 +385,15 @@ class AbonnentViewSet(viewsets.ModelViewSet):
         vm =self.get_object()
         x = make_abo_invoice(vm)
         return HttpResponse(x)
+
+    @action(detail=True, methods=['get'])
+    def add_aboheft(self, request, pk=None):
+        vm = self.get_object()
+        maxnr = max([a.abonummer for a in AboHeft.objects.all()])
+        h = AboHeft(abonummer=maxnr+1, kundennummer=vm)
+        h.save()
+        return HttpResponse("neues AboHeft angelegt")
+
 
     @action(detail=True, methods=['get'])
     def send_mail(self, request, pk=None):
@@ -358,9 +407,9 @@ class AbonnentViewSet(viewsets.ModelViewSet):
         if 'wohin' in self.request.GET:
             wohin = self.request.GET['wohin']
             if wohin in ['BEV', 'AUT', 'INT']:
-                vms = VereinsMitglied.aktive.all().filter(heftanzahl__gt=0)
-                abos = AboHeft.objects.filter(aboende__isnull=True)
-                inst = Institution.aktive.all()
+                vms = VereinsMitglied.aktive.all().filter(heftanzahl__gt=0).order_by('lieferadresse__plz')
+                abos = AboHeft.objects.filter(aboende__isnull=True).order_by('plz')
+                inst = Institution.aktive.all().order_by('lieferadresse__plz')
 
                 if wohin == 'BEV':
                     vms = vms.filter(versand__iexact='BEV')
@@ -372,15 +421,27 @@ class AbonnentViewSet(viewsets.ModelViewSet):
                     l = Land.objects.filter(land='AUSTRIA')
 
                     if wohin == 'AUT':
-                        vms = vms.filter(lieferadresse__country__in=l)
-                        abos = abos.filter(country__in=l)
-                        inst = inst.filter(lieferadresse__country__in=l)
+                        vms = vms.filter(lieferadresse__country__in=l).order_by('lieferadresse__plz')
+                        abos = abos.filter(country__in=l).order_by('plz')
+                        inst = inst.filter(lieferadresse__country__in=l).order_by('lieferadresse__plz')
                     elif wohin == 'INT':
                         vms = vms.exclude(lieferadresse__country__in=l)
                         abos = abos.exclude(country__in=l)
                         inst = inst.exclude(lieferadresse__country__in=l)
-
-                pdf = make_etiketten(vms, abos, inst, wohin)
+                
+                if 'plz' in self.request.GET:
+                    vms_plz = [vm.lieferadresse.plz for vm in vms]
+                    inst_plz = [ins.lieferadresse.plz for ins in inst]
+                    abos_plz = [abo.plz for abo in abos]
+                    x = "\n".join(vms_plz + inst_plz + abos_plz)
+                    f = open('/tmp/plz.csv', 'w')
+                    f.write(x)
+                    f.close()
+                    f = open('/tmp/plz.csv')
+                    pdf = f.read()
+                    f.close()
+                else:
+                    pdf = make_etiketten(vms, abos, inst, wohin)
                 if abos:
                     print("\n\n\nEs waren insgesamt {} abos".format(abos.count()))
                 return Response(data=pdf, status=status.HTTP_200_OK)
@@ -405,7 +466,7 @@ class AboHeftViewSet(viewsets.ModelViewSet):
     metadata_class = MyMetaData
 
     def get_queryset(self):
-        if 'aktiv' in self.request. GET:
+        if 'aktiv' in self.request.GET:
             abos = AboHeft.objects.filter(aboende__isnull=True)
         else:
             abos = AboHeft.objects.all()
@@ -413,6 +474,11 @@ class AboHeftViewSet(viewsets.ModelViewSet):
             abos = abos.filter(Q(name__icontains=self.request.GET['wer']))
         return abos
 
+    @action(detail=True, methods=['get'])
+    def create_invoice(self, request, pk=None):
+        h = self.get_object()
+        x = make_abo_invoice(h)
+        return HttpResponse(x)
    
     @action(detail=False, methods=['get'])
     def jahresbeitrag_anlegen(self, request):
@@ -437,6 +503,25 @@ class AboHeftViewSet(viewsets.ModelViewSet):
         return Response(data="Sie haben ein leeres Feld übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
 
 
+    @action(detail=False, methods=['get'])
+    def erlagscheine_anlegen(self, request):
+        merged_filename = '/tmp/merged_abo_pdf.pdf'
+        abos = AboHeft.objects.filter(aboende__isnull=True)
+        abos = Abonnent.aktive.all()
+        if abos:
+            for abo in abos:
+                x = make_abo_invoice(abo)
+
+            pfade = [abo.rechnung.path for abo in abos]
+            merger(merged_filename, pfade)
+
+            f = open(merged_filename, 'r')
+            pdf = f.read()
+            f.close()
+            return Response(data=pdf, status=status.HTTP_200_OK)
+
+
+
 
 
 
@@ -455,7 +540,7 @@ class offenePostenViewSet(viewsets.ModelViewSet):
         namefilter = self.request.query_params.get('namefilter')
         if namefilter:
             ops = ops.filter(Q(description__icontains=namefilter) | Q(mitglied__first_name__icontains=namefilter) | Q(mitglied__last_name__icontains=namefilter))
-        return ops.filter(mitglied__isnull=False).filter(mitglied__in=VereinsMitglied.aktive.all())
+        #return ops.filter(mitglied__isnull=False).filter(mitglied__in=VereinsMitglied.aktive.all())
         return ops
 
 
@@ -487,7 +572,8 @@ def dashboard(request):
     for o in oo:
         if o.offen:
             summe=summe+o.offen
-    context = { 'offenerbetrag': int(summe*100)/100, 'abonnentcount': Abonnent.objects.count(), 'aboheftcount': AboHeft.objects.count(),
+    context = { 'offenerbetrag': int(summe*100)/100, 
+                'abonnentcount': {'aktiv': Abonnent.aktive.count(), 'inaktiv': Abonnent.objects.count() - Abonnent.aktive.count()}, 'aboheftcount': AboHeft.objects.count(),
                 'mitgliedercount': {'aktiv': VereinsMitglied.aktive.count(), 'inaktiv': VereinsMitglied.objects.filter(storndat__isnull=False).count()}, 
                 'institutionencount': {'aktiv': Institution.objects.filter(storndat__isnull=True).count(), 'inaktiv': Institution.objects.filter(storndat__isnull=False).count() },
                 'jubilare': jubilare, 'kosten': Kosten.objects.count(), 'mitgliedsarten': Mitgliedsart.objects.count(), 'berufecount': Beruf.objects.count(), 'laendercount': Land.objects.count() }

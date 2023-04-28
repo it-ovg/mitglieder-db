@@ -53,6 +53,7 @@ def create_abo_invoice(**kwargs):
     book_amount = kwargs.get("book_amount", 1)
     book_price = kwargs.get("book_price", 60.0)
     vat_id = kwargs.get("vat_id", None)
+    offene_abo_posten = kwargs.get("offene_abo_posten", [])
 
     price_books = book_amount * book_price
     price_total = price_books - discount + debt_claim
@@ -74,13 +75,13 @@ def create_abo_invoice(**kwargs):
     inv_city = kwargs.get("inv_city", None)
     inv_country = kwargs.get("inv_country", None)
 
-    shp_company = kwargs.get("shp_company", inv_company)
-    shp_department = kwargs.get("shp_department", inv_department)
-    shp_name = kwargs.get("shp_name", inv_name)
-    shp_street = kwargs.get("shp_street", inv_street)
-    shp_zip = kwargs.get("shp_zip", inv_zip)
-    shp_city = kwargs.get("shp_city", inv_city)
-    shp_country = kwargs.get("shp_country", inv_country)
+    shp_company = kwargs.get("shp_company", None)
+    shp_department = kwargs.get("shp_department", None)
+    shp_name = kwargs.get("shp_name", None)
+    shp_street = kwargs.get("shp_street", None)
+    shp_zip = kwargs.get("shp_zip", None)
+    shp_city = kwargs.get("shp_city", None)
+    shp_country = kwargs.get("shp_country", None)
 
     margin_left = 2.0*cm
     margin_left_text = 2.0*cm
@@ -99,6 +100,7 @@ def create_abo_invoice(**kwargs):
         invoice_reference,
         customer_id,
         vat_id=vat_id,
+        abo_id=abo_id,
         pos_y=s.A4_HEIGHT-2.4*cm, 
         pos_x=s.A4_WIDTH/2+4.7*cm)
 
@@ -139,29 +141,47 @@ def create_abo_invoice(**kwargs):
     else:
         return 0, 0
     p.drawOn(canvas, margin_left_text, s.A4_HEIGHT - 11.5*cm)
+    
+    
+    
+    anschrift = "Sehr geehrte Damen und Herren,<br/>wir dürfen Ihnen das vgi-Abonnement für das Jahr {} in Rechnung stellen.".format(abo_year)
+    p = Paragraph(anschrift, styles["Normal"])
+    used_width, used_height = p.wrap(s.A4_WIDTH - margin_left_text - margin_right, 0*cm)
+    line_widths = p.getActualLineWidths0()
+    nol = len(line_widths)
+    if nol > 1:
+        actual_width = used_width
+    elif nol == 1:
+        actual_width = min(line_widths)
+    else:
+        return 0, 0
+    p.drawOn(canvas, margin_left_text, s.A4_HEIGHT - 13.5*cm)
+    
 
     # Invoice Detail
+    zwischensumme = sum([o.offen for o in offene_abo_posten])
     ovg_due_beauty = Paragraph("<para align=right><b>EUR {:.2f}</b></para>".format(price_total), style=styles["Normal"])
     
-    ovg_subscriptions_data = [["Heftanzahl", "{:d}".format(book_amount)]]
-    ovg_subscriptions_data.append(["Einzelpreis", "{:.2f}".format(book_price)])
-    ovg_subscriptions_data.append(["Gesamtpreis", "{:.2f}".format(price_books)])
+    tableStyles = [
+        ('ALIGN', (1, 0), (-1, -1), 'RIGHT'),
+        ('LINEABOVE', (0, -1), (-1, -1), 2, colors.black),
+        ('BACKGROUND', (1, -1), (-1, -1), colors.lavender),
+    ]
 
-    ovg_subscriptions_data.append(["Rabat", "-{:.2f}".format(discount)])
-    ovg_subscriptions_data.append(["Rückstand", "{:.2f}".format(debt_claim)])
-    
-    ovg_subscriptions_data.append(["Total", ovg_due_beauty])
+    ovg_subscriptions_data = [[o.description, "{:.2f}".format(o.offen)] for o in offene_abo_posten]
+    if discount > 0.0:
+        ovg_subscriptions_data.append(["Zwischensumme", "{:.2f}".format(zwischensumme)])
+        ovg_subscriptions_data.append(["Rabatt - {}%".format(int(discount*100)), "-{:.2f}".format(zwischensumme*discount)])
+        tableStyles.append(('LINEABOVE', (0, -3), (-1, -3), 2, colors.black))
+    ovg_subscriptions_data.append(["Gesamtsumme", "{:.2f}".format(zwischensumme*(1-discount))])
+
 
     subscription_table = Table(data=ovg_subscriptions_data, rowHeights=15)
-    subscription_table.setStyle(TableStyle([
-        ('ALIGN', (1, 0), (-1, -1), 'RIGHT'),
-        ('LINEABOVE', (0, -1), (-1, -1), 1, colors.black),
-        ('LINEABOVE', (0, -3), (-1, -3), 1, colors.black),
-        ('BACKGROUND', (1, -1), (-1, -1), colors.lavender),
-    ]))
+    subscription_table.setStyle(TableStyle(tableStyles))
+ 
     subscription_table._argW[1] = 2.5*cm
     w1, h1 = subscription_table.wrapOn(canvas, 0, 0)
-    subscription_table.drawOn(canvas, margin_left, s.A4_HEIGHT-h1-12*cm)
+    subscription_table.drawOn(canvas, margin_left+3*cm, s.A4_HEIGHT-h1-14*cm)
 
     # Invoice Text
     invoice_text = template.render(
@@ -181,7 +201,7 @@ def create_abo_invoice(**kwargs):
     else:
         return 0, 0
     w, h = subscription_table.wrapOn(canvas, 0, 0)
-    p.drawOn(canvas, margin_left_text, s.A4_HEIGHT-15.0*cm-h1-h)
+    p.drawOn(canvas, margin_left_text, s.A4_HEIGHT-17.0*cm-h1-h)
 
     # OVG Footer
     # footer_data = [

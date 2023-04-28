@@ -115,6 +115,7 @@ def generate_member_meta(canvas,
     invoice_reference=None, 
     member_id=None,
     vat_id=None,
+    abo_id=None,
     pos_x=10*cm, 
     pos_y=s.A4_WIDTH-1*cm):
 
@@ -130,6 +131,8 @@ def generate_member_meta(canvas,
         member_meta_data.append(["Kundennr.", member_id])
     if vat_id:
         member_meta_data.append(["Ihre UID", vat_id])
+    if abo_id:
+        member_meta_data.append(["Abonr.", abo_id])
         
     # row_height = 0.5*cm
     member_meta_table = Table(data=member_meta_data, rowHeights=12)

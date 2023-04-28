@@ -139,13 +139,14 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
                 news = """
 		Liebe OVG Mitglieder,<br /><br />
 
-		wir dürfen Ihnen den Mitgliedsbeitrag für 2021 vorschreiben und uns gleichzeitig bei Ihnen für Ihre langjährige Treue zur OVG bedanken – ganz besonders in herausfordernden Zeiten. Darüber hinaus freuen wir uns auf den Österreichischen Geodätentag 2022, der von 26.-29. April 2022 in Steyr stattfinden wird, zu dem wir Sie hiermit recht herzlich einladen. Aus heutiger Sicht erfolgt die Veranstaltung in Präsenz, wie gewohnt mit Messe, Vorträgen und Standparty.<br /><br />
+		wir dürfen Ihnen den Mitgliedsbeitrag für 2022 vorschreiben und uns gleichzeitig bei Ihnen für Ihre langjährige Treue zur OVG bedanken. Darüber hinaus freuen wir uns auf den Österreichischen Geodätentag 2023, der von 10.-11. Mai 2023 in Steyr stattfinden wird, zu dem wir Sie hiermit recht herzlich einladen. Die Veranstaltung erfolgt wie gewohnt mit Messe, Vorträgen und Standparty.<br /><br />
 
-		Beste Grüße und schönen Sommer,<br />
+		Beste Grüße<br />
 		Ihre OVG<br /><br />
 
 		PS: Sollten sich Ihre Adressdaten ändern, einfach Email an office@ovg.at.<br />
-		PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende September 2021. Bei Telebanking bitte als Zahlungsreferenz „MitgliedsNr/2021“ angeben.<br /><br />
+		PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende Juni 2022. Bei Telebanking bitte als Zahlungsreferenz „MitgliedsNr/2022“ angeben.<br />
+                PPPS: Am 30. Juni 2022 um 17:00 Uhr findet an der TU Wien im Kontaktraum (6ter Stock Gußhausstraße) die OVG-Hauptversammlung statt, zu der wir Sie recht herzlich einladen. Im Anschluss wird es Gelegenheit zu einem gemütlichen Beisammensein mit Speiß und Trank geben.<br /><br />
                 """
                 make_invoice(vm, news=news)
 
@@ -157,6 +158,21 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
             f.close()
             return Response(data=pdf, status=status.HTTP_200_OK)
 
+
+    @action(detail=False, methods=['get'])
+    def jubilare_csv(self, request):
+        out = 'Ater,Titel,Vorname,Nachname,Ort,Geburtsdatum\n'
+        d = request.query_params.get('jahr')
+        if d:
+            year=int(d)
+            jubls=[50,60,70,75,80,85,90,95]
+            vms=VereinsMitglied.aktive.order_by('gebdat').filter(gebdat__isnull=False)
+            for m in vms:
+                m.alter=year-m.gebdat.year
+                if m.alter in jubls or m.alter>99:
+                    out += '{},{},{},{},{},{}\n'.format(m.alter, m.titel, m.first_name, m.last_name, m.wohnadresse.ort, m.gebdat)
+            return Response(data=out, status=status.HTTP_200_OK)
+        return Response(data="Sie haben kein gültiges Jahr übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
 
 
     @action(detail=False, methods=['get'])
