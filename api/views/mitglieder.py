@@ -139,15 +139,16 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
                 news = """
 		Liebe OVG Mitglieder,<br /><br />
 
-		wir dürfen Ihnen den Mitgliedsbeitrag für 2022 vorschreiben und uns gleichzeitig bei Ihnen für Ihre langjährige Treue zur OVG bedanken. Darüber hinaus freuen wir uns auf den Österreichischen Geodätentag 2023, der von 10.-11. Mai 2023 in Steyr stattfinden wird, zu dem wir Sie hiermit recht herzlich einladen. Die Veranstaltung erfolgt wie gewohnt mit Messe, Vorträgen und Standparty.<br /><br />
+		wir dürfen ihnen den Mitgliedsbeitrag für das Jahr 2023 vorschreiben und uns recht herzlich für ihre jährliche Unterstützung der OVG bedanken. Darüber hinaus ersuchen wir sie die hinterlegte Emailadresse zu kontrollieren: <b>{}</b><br />
+                Sollte diese Emailadresse nicht korrekt sein, bitte Email an office@ovg.at. <br /><br />
+            
+                In der a.o. Hauptversammlung am Geodätentag wurde aufgrund der sehr stark gestiegenen Papier- und Druckkosten eine Erhöhung des Mitgliedsbeitrages ab dem kommenden Jahr 2024 auf 65€ beschlossen. Sollten Sie Daueraufträge eingerichtet haben, ersuchen wir sie diese für das kommende Jahr auf den neuen Betrag zu ändern.<br /><br />
 
-		Beste Grüße<br />
-		Ihre OVG<br /><br />
+		Beste Grüße, ihre OVG<br /><br />
 
-		PS: Sollten sich Ihre Adressdaten ändern, einfach Email an office@ovg.at.<br />
-		PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende Juni 2022. Bei Telebanking bitte als Zahlungsreferenz „MitgliedsNr/2022“ angeben.<br />
-                PPPS: Am 30. Juni 2022 um 17:00 Uhr findet an der TU Wien im Kontaktraum (6ter Stock Gußhausstraße) die OVG-Hauptversammlung statt, zu der wir Sie recht herzlich einladen. Im Anschluss wird es Gelegenheit zu einem gemütlichen Beisammensein mit Speiß und Trank geben.<br /><br />
-                """
+		PS: Sollten sich ihre Adressdaten ändern, einfach Email an office@ovg.at.<br />
+		PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende August 2023. Bei Telebanking bitte als Zahlungsreferenz „{}/2023“ angeben.<br />
+                """.format(vm.email, vm.mitgliedsnummer)
                 make_invoice(vm, news=news)
 
             pfade = [vm.rechnung.path for vm in vms]

@@ -89,8 +89,8 @@ def make_abo_invoice(aboheft):
     book_price = 50.0
     invoice_date = datetime.datetime.now()
     shp_company = ''
-    if aboheft.vorname:
-        shp_company += aboheft.vorname + ' '
+    #if aboheft.vorname:
+    #    shp_company += aboheft.vorname + ' '
     shp_company += aboheft.nachname
 
     m = { 'customer_id': aboheft.kundennummer.kundennummer, 

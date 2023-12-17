@@ -82,17 +82,20 @@ class InstitutionenViewSet(viewsets.ModelViewSet):
         if insts:
             for inst in insts:
                 news = """
-		Liebe OVG Mitglieder,<br /><br />
+                Liebe OVG Mitglieder,<br /><br />
 
-		wir dürfen Ihnen den Mitgliedsbeitrag für 2022 vorschreiben und uns gleichzeitig bei Ihnen für Ihre langjährige Treue zur OVG bedanken. Darüber hinaus freuen wir uns auf den Österreichischen Geodätentag 2023, der von 10.-11. Mai 2023 in Steyr stattfinden wird, zu dem wir Sie hiermit recht herzlich einladen. Die Veranstaltung erfolgt wie gewohnt mit Messe, Vorträgen und Standparty.<br /><br />
+                mit diesem Erlagschein dürfen wir Ihnen den Mitgliedsbeitrag für das Jahr 2023 vorschreiben und uns recht herzlich für ihre jährliche Unterstützung der OVG bedanken. Diese Aussendung bietet darüber hinaus die Gelegenheit ihre bei uns hinterlegte Emailadresse zu kontrollieren, über die sie registriert sind und viele interessante Infos zur OVG erhalten. <br />
+                Ihre Emailadresse lautet: {}<br />
+                Sollte diese Emailadresse nicht korrekt sein, ersuchen wir sie uns das per Email unter office@ovg.at mitzuteilen. <br /><br />
+            
+                In der a.o Hauptversammlung am diesjährigen Geodätentag wurde aufgrund der sehr stark gestiegenen Papier- und Druckkosten eine Erhöhung des Mitgliedsbeitrages ab dem kommenden Jahr 2024 auf 65€ beschlossen. Sollten Sie Daueraufträge eingerichtet haben, ersuchen wir sie diese für das kommende Jahr auf den neuen Betrag zu ändern.<br /><br />
 
-		Beste Grüße<br />
-		Ihre OVG<br /><br />
+                Beste Grüße<br />
+                Ihre OVG<br /><br />
 
-		PS: Sollten sich Ihre Adressdaten ändern, einfach Email an office@ovg.at.<br />
-		PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende Juni 2022. Bei Telebanking bitte als Zahlungsreferenz „MitgliedsNr/2022“ angeben.<br />
-                PPPS: Am 30. Juni 2022 um 17:00 Uhr findet an der TU Wien im Kontaktraum (6ter Stock Gußhausstraße) die OVG-Hauptversammlung statt, zu der wir Sie recht herzlich einladen. Im Anschluss wird es Gelegenheit zu einem gemütlichen Beisammensein mit Speiß und Trank geben.<br /><br />
-                """
+                PS: Sollten sich Ihre Adressdaten ändern, einfach Email an office@ovg.at.<br />
+                PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende August 2023. Bei Telebanking bitte als Zahlungsreferenz „{}/2023“ an    geben.<br />
+                """.format(inst.email, inst.mitgliedsnummer)
                 make_invoice(inst, news)
 
             pfade = [inst.rechnung.path for inst in insts]

@@ -187,6 +187,7 @@ def create_abo_invoice(**kwargs):
     invoice_text = template.render(
         invoice_reference=invoice_reference,
         invoice_deadline=invoice_deadline.strftime(s.ISO_DATE),
+	discount=(discount > 0.0),
         # ovg_news=ovg_news,
         ovg_treasurer=s.OVG_TREASURER
     )
@@ -201,7 +202,7 @@ def create_abo_invoice(**kwargs):
     else:
         return 0, 0
     w, h = subscription_table.wrapOn(canvas, 0, 0)
-    p.drawOn(canvas, margin_left_text, s.A4_HEIGHT-17.0*cm-h1-h)
+    p.drawOn(canvas, margin_left_text, s.A4_HEIGHT-17.0*cm-h1-3*cm)
 
     # OVG Footer
     # footer_data = [

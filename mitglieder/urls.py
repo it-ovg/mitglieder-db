@@ -10,7 +10,6 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^index/$', views.index, name='index'),
     url(r'^editdata/(?P<obj>[\w]+)/(?P<pk>[0-9]+)/$', views.edit, name='edit'),
-    url(r'^kontrollpunkt/(?P<ort>[\w]+)/$', views.kontrollpunkt, name='kontrollpunkt'),
     url(r'^saveform/(?P<obj>[\w]+)/(?P<pk>[0-9]+)/$', views.saveform, name='saveform'),
     url(r'^remove/(?P<obj>[\w]+)/(?P<pk>[0-9]+)/$', views.remove, name='remove'),
     url(r'^mitglieder/$', views.mitglieder, name='mitglieder'),
