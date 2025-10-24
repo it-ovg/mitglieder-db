@@ -153,8 +153,11 @@ class AboHeftSerializer(serializers.HyperlinkedModelSerializer):
         return obj.kundennummer.prozent
     class Meta:
         model = AboHeft
-        # fields = ('id', 'vorname', 'nachname', 'aktiv', 'kdnr', )
-        fields = '__all__'
+        fields = ('id', 'aboanfang', 'aboart', 'aboende', 'abonnent_id', 'abonnent_name', 'abonummer', 'aktiv', 'anmerkung',
+		'anrede', 'beidat', 'beigz', 'country', 'fax', 'gutschrift', 'heftanzahl', 'kundennummer', 'nachname', 'offeneaboposten_set',
+		'ort', 'plz', 'pobox', 'prozent', 'rueckstand', 'storndat', 'strasse', 'surname2', 'surname3', 'tel', 'titel',
+		'url', 'vorname', )
+        # fields = '__all__'
 
 
 class offenePostenSerializer(serializers.HyperlinkedModelSerializer):

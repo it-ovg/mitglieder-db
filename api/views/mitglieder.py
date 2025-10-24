@@ -115,7 +115,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
 
             normale = vms.exclude(id__in=[s.id for s in seniors]).exclude(id__in=[j.id for j in juniors])
             for m in normale:
-                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=55, bezahlt=False, erstellt=dt.now())
+                o = offenePosten(mitglied=m, description="Beitrag {}".format(d), offen=65, bezahlt=False, erstellt=dt.now())
                 o.save()
 
             message = 'Der Beitrag "{}" wurde {} x erfolgreich angelegt!'.format(d, vms.count())
@@ -139,15 +139,13 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
                 news = """
 		Liebe OVG Mitglieder,<br /><br />
 
-		wir dürfen ihnen den Mitgliedsbeitrag für das Jahr 2023 vorschreiben und uns recht herzlich für ihre jährliche Unterstützung der OVG bedanken. Darüber hinaus ersuchen wir sie die hinterlegte Emailadresse zu kontrollieren: <b>{}</b><br />
+		wir dürfen ihnen den Mitgliedsbeitrag für das Jahr 2024 vorschreiben und uns recht herzlich für ihre jährliche Unterstützung der OVG bedanken. Darüber hinaus ersuchen wir sie die hinterlegte Emailadresse zu kontrollieren: <b>{}</b><br />
                 Sollte diese Emailadresse nicht korrekt sein, bitte Email an office@ovg.at. <br /><br />
             
-                In der a.o. Hauptversammlung am Geodätentag wurde aufgrund der sehr stark gestiegenen Papier- und Druckkosten eine Erhöhung des Mitgliedsbeitrages ab dem kommenden Jahr 2024 auf 65€ beschlossen. Sollten Sie Daueraufträge eingerichtet haben, ersuchen wir sie diese für das kommende Jahr auf den neuen Betrag zu ändern.<br /><br />
-
 		Beste Grüße, ihre OVG<br /><br />
 
 		PS: Sollten sich ihre Adressdaten ändern, einfach Email an office@ovg.at.<br />
-		PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende August 2023. Bei Telebanking bitte als Zahlungsreferenz „{}/2023“ angeben.<br />
+		PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende Oktober 2024. Bei Telebanking bitte als Zahlungsreferenz „{}/2024“ angeben.<br />
                 """.format(vm.email, vm.mitgliedsnummer)
                 make_invoice(vm, news=news)
 

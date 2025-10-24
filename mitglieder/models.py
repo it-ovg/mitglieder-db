@@ -197,6 +197,7 @@ class AboHeft(Adresse):
     aboanfang = models.DateField(blank=True, null=True)
     aboende = models.DateField(blank=True, null=True)       
     anmerkung = models.TextField(null=True, blank=True)     
+    rechnung = models.FileField(upload_to='invoices/', blank=True)
 
     @property
     def aktiv(self):

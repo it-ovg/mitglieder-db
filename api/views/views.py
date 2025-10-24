@@ -89,8 +89,8 @@ def make_abo_invoice(aboheft):
     book_price = 50.0
     invoice_date = datetime.datetime.now()
     shp_company = ''
-    #if aboheft.vorname:
-    #    shp_company += aboheft.vorname + ' '
+    if aboheft.vorname:
+        shp_company += aboheft.vorname + ' '
     shp_company += aboheft.nachname
 
     m = { 'customer_id': aboheft.kundennummer.kundennummer, 
@@ -124,8 +124,8 @@ def make_abo_invoice(aboheft):
 
     x = create_abo_invoice(**m)
 
-    #invoice_filename = "ovg_inv_abo_{}_{}.pdf".format(aboheft.id, invoice_date.strftime("%Y") )
-    #aboheft.rechnung.save(invoice_filename, ContentFile(x))
+    invoice_filename = "ovg_inv_abo_{}_{}.pdf".format(aboheft.id, invoice_date.strftime("%Y") )
+    aboheft.rechnung.save(invoice_filename, ContentFile(x))
     
     return x
 
@@ -491,9 +491,9 @@ class AboHeftViewSet(viewsets.ModelViewSet):
                     if heft.aktiv:
                         oap = offeneAboPosten(aboheft=heft)
                         if heft.country.land.lower() == 'austria':
-                            oap.offen = 60 * heft.heftanzahl
+                            oap.offen = 70 * heft.heftanzahl
                         else:
-                            oap.offen = 75 * heft.heftanzahl
+                            oap.offen = 90 * heft.heftanzahl
                         oap.description = 'Abonnement ' + d
                         oap.save()
                         i += 1
@@ -506,8 +506,8 @@ class AboHeftViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=['get'])
     def erlagscheine_anlegen(self, request):
         merged_filename = '/tmp/merged_abo_pdf.pdf'
+        # abos = Abonnent.aktive.all()
         abos = AboHeft.objects.filter(aboende__isnull=True)
-        abos = Abonnent.aktive.all()
         if abos:
             for abo in abos:
                 x = make_abo_invoice(abo)

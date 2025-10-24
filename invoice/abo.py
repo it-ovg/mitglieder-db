@@ -51,7 +51,7 @@ def create_abo_invoice(**kwargs):
     debt_claim = kwargs.get("debt_claim", 0.0)
     discount = kwargs.get("discount", 0.0)
     book_amount = kwargs.get("book_amount", 1)
-    book_price = kwargs.get("book_price", 60.0)
+    book_price = kwargs.get("book_price", 70.0)
     vat_id = kwargs.get("vat_id", None)
     offene_abo_posten = kwargs.get("offene_abo_posten", [])
 

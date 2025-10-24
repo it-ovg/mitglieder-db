@@ -63,7 +63,7 @@ class InstitutionenViewSet(viewsets.ModelViewSet):
 
             for inst in ii:
                 o = offenePosten()
-                o = offenePosten(institution=inst, description="Beitrag {}".format(year), offen=55, bezahlt=False, erstellt=datetime.datetime.now())
+                o = offenePosten(institution=inst, description="Beitrag {}".format(year), offen=65, bezahlt=False, erstellt=datetime.datetime.now())
                 o.save()
 
             message = 'Der Beitrag "{}" wurde {} x erfolgreich angelegt!'.format(d, ii.count())
@@ -84,17 +84,15 @@ class InstitutionenViewSet(viewsets.ModelViewSet):
                 news = """
                 Liebe OVG Mitglieder,<br /><br />
 
-                mit diesem Erlagschein dürfen wir Ihnen den Mitgliedsbeitrag für das Jahr 2023 vorschreiben und uns recht herzlich für ihre jährliche Unterstützung der OVG bedanken. Diese Aussendung bietet darüber hinaus die Gelegenheit ihre bei uns hinterlegte Emailadresse zu kontrollieren, über die sie registriert sind und viele interessante Infos zur OVG erhalten. <br />
+                mit diesem Erlagschein dürfen wir Ihnen den Mitgliedsbeitrag für das Jahr 2024 vorschreiben und uns recht herzlich für ihre jährliche Unterstützung der OVG bedanken. Diese Aussendung bietet darüber hinaus die Gelegenheit ihre bei uns hinterlegte Emailadresse zu kontrollieren, über die sie registriert sind und viele interessante Infos zur OVG erhalten. <br />
                 Ihre Emailadresse lautet: {}<br />
                 Sollte diese Emailadresse nicht korrekt sein, ersuchen wir sie uns das per Email unter office@ovg.at mitzuteilen. <br /><br />
             
-                In der a.o Hauptversammlung am diesjährigen Geodätentag wurde aufgrund der sehr stark gestiegenen Papier- und Druckkosten eine Erhöhung des Mitgliedsbeitrages ab dem kommenden Jahr 2024 auf 65€ beschlossen. Sollten Sie Daueraufträge eingerichtet haben, ersuchen wir sie diese für das kommende Jahr auf den neuen Betrag zu ändern.<br /><br />
-
                 Beste Grüße<br />
                 Ihre OVG<br /><br />
 
                 PS: Sollten sich Ihre Adressdaten ändern, einfach Email an office@ovg.at.<br />
-                PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende August 2023. Bei Telebanking bitte als Zahlungsreferenz „{}/2023“ an    geben.<br />
+                PPS: Wir ersuchen um Einzahlung des ausständigen Betrages bis Ende Oktober 2024. Bei Telebanking bitte als Zahlungsreferenz „{}/2024“ an    geben.<br />
                 """.format(inst.email, inst.mitgliedsnummer)
                 make_invoice(inst, news)
 
