@@ -1,39 +1,40 @@
-from django.contrib.auth.models import User, Group
-from mitglieder.models import VereinsMitglied, offenePosten, Land, Beruf, Mitgliedsart, Kosten, Vortragsort, Adresse, Institution
-from mitglieder.models import offenePosten, AboHeft, Abonnent, offeneAboPosten
-from django.http import JsonResponse
+import os
+import shutil
+import numpy as np
 import uuid
+import datetime
+from datetime import datetime as dt
+from PyPDF2 import PdfFileMerger
 
-from rest_framework.decorators import api_view, permission_classes, action
+from django.contrib.auth.models import User, Group
+from django.http import JsonResponse
+from django.utils.encoding import force_str
+from django.db.models import Q
+from django.http import HttpResponse
+from django.core.files.base import ContentFile
+from django.core.mail import EmailMultiAlternatives
+from knox.models import AuthToken
+
+from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import viewsets, generics, status
-from rest_framework.views import APIView
 from rest_framework.metadata import SimpleMetadata
 from rest_framework.relations import ManyRelatedField, RelatedField
 from rest_framework.permissions import AllowAny
 
-from datetime import datetime as dt
-from api.serializers import UserSerializer, GroupSerializer, VereinsMitgliedSerializer, CountrySerializer, BerufeSerializer, MitgliedsartSerializer
-from api.serializers import KostenSerializer, VortragsortSerializer, AdresseSerializer, InstitutionenSerializer
+
+from mitglieder.models import VereinsMitglied, offenePosten, Land, Beruf, Mitgliedsart, Kosten, Vortragsort, Adresse, Institution
+from mitglieder.models import offenePosten, AboHeft, Abonnent, offeneAboPosten
+from api.serializers import UserSerializer, GroupSerializer, CountrySerializer, BerufeSerializer, MitgliedsartSerializer
+from api.serializers import KostenSerializer, VortragsortSerializer, AdresseSerializer
 from api.serializers import AboHeftSerializer, AbonnentSerializer, offenePostenSerializer, CreateUserSerializer, LoginUserSerializer, offeneAboPostenSerializer
-from django.utils.encoding import force_text
-from django.views import View
-from django.db.models import Q
-from knox.models import AuthToken
-from django.http import HttpResponse, FileResponse
-import datetime
-from reportlab.pdfgen import canvas
-from io import BytesIO
 from invoice.rechnung import createInvoice
 from invoice.abo import create_abo_invoice
-from invoice.anniversary import create_anniversary
 from invoice.envelope import create_envelope_bev, create_envelope_aut, create_envelope_int
-from django.core.files.base import ContentFile
-from PyPDF2 import PdfFileMerger
-from django.core.mail import EmailMultiAlternatives
-import os
-import shutil
-import numpy as np
+
+
+
+
 
 class MyMetaData(SimpleMetadata):
     def get_field_info(self, field):
@@ -44,7 +45,7 @@ class MyMetaData(SimpleMetadata):
                     field_info['choices'] = [
                         {
                             'value': choice_value,
-                            'display_name': force_text(choice_name, strings_only=True)
+                            'display_name': force_str(choice_name, strings_only=True)
                         }
                         for choice_value, choice_name in field.get_choices().items()
                     ]
@@ -258,8 +259,6 @@ def make_etiketten(vms, abos, inst, wohin='BEV'):
     return pdf
 
 
-
-
 def merger(output_path, input_paths):
     pdf_merger = PdfFileMerger()
     file_handles = []
@@ -270,9 +269,6 @@ def merger(output_path, input_paths):
     with open(output_path, 'wb') as fileobj:
         pdf_merger.write(fileobj)
  
-
-
-
 
 
 
@@ -449,17 +445,6 @@ class AbonnentViewSet(viewsets.ModelViewSet):
         return Response(data="Sie haben keinen gültigen <<WOHIN>> Wert übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
 
 
-
-
-
-
-
-
-
-
-
-
-
 class AboHeftViewSet(viewsets.ModelViewSet):
     queryset = AboHeft.objects.all()
     serializer_class = AboHeftSerializer
@@ -521,12 +506,6 @@ class AboHeftViewSet(viewsets.ModelViewSet):
             return Response(data=pdf, status=status.HTTP_200_OK)
 
 
-
-
-
-
-
-
 class offenePostenViewSet(viewsets.ModelViewSet):
     queryset = offenePosten.objects.all()
     serializer_class = offenePostenSerializer
@@ -555,9 +534,6 @@ class offenePostenViewSet(viewsets.ModelViewSet):
         return Response(data=serializer.data, status=status.HTTP_200_OK)
 
 
-
-
-
 def dashboard(request):
     year=dt.now().year
     if 'jahr' in request.GET:
@@ -580,7 +556,7 @@ def dashboard(request):
     return JsonResponse(context)
 
 
-
+"""
 def pdf(request, was):
     vms = VereinsMitglied.aktive.filter(heftanzahl>0)
     if was == "hauspost":
@@ -603,3 +579,4 @@ def pdf(request, was):
         international=vms.filter(wohnadresse__country__in=l)
 
     return render(request, 'mitglieder/vgiuebersicht.html', context)
+"""

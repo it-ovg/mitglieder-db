@@ -1,37 +1,22 @@
-from mitglieder.models import VereinsMitglied, offenePosten, Adresse
-from mitglieder.models import offenePosten, AboHeft, Abonnent
-from django.http import JsonResponse
-import uuid
-
-from rest_framework.decorators import api_view, permission_classes, action
-from rest_framework.response import Response
-from rest_framework import viewsets, generics, status
-from rest_framework.views import APIView
-from rest_framework.metadata import SimpleMetadata
-from rest_framework.relations import ManyRelatedField, RelatedField
-from rest_framework.permissions import AllowAny
-
-from datetime import datetime as dt
-from api.serializers import VereinsMitgliedSerializer
-from api.serializers import AboHeftSerializer, AbonnentSerializer, offenePostenSerializer
-from django.utils.encoding import force_text
-from django.views import View
-from django.db.models import Q
-from knox.models import AuthToken
-from django.http import HttpResponse, FileResponse
-import datetime
-from reportlab.pdfgen import canvas
-from invoice.rechnung import createInvoice
-from invoice.abo import create_abo_invoice
-from invoice.anniversary import create_anniversary
-from django.core.files.base import ContentFile
-from PyPDF2 import PdfFileMerger
-from django.core.mail import EmailMultiAlternatives
 import os
 import shutil
-from .views import merger, sendmail
-from api.views.views import MyMetaData, make_abo_invoice, make_invoice
+import uuid
+from datetime import datetime as dt
 
+from django.db.models import Q
+from django.http import HttpResponse
+
+from rest_framework.decorators import action
+from rest_framework.response import Response
+from rest_framework import viewsets, status
+
+
+from mitglieder.models import VereinsMitglied, offenePosten
+from mitglieder.models import offenePosten
+from api.serializers import VereinsMitgliedSerializer
+from invoice.anniversary import create_anniversary
+from .views import merger, sendmail
+from api.views.views import MyMetaData, make_invoice
 
 
 class VereinsMitgliedViewSet(viewsets.ModelViewSet):
@@ -72,6 +57,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         else:
             return Response(data="Das Mitglied ist inaktiv oder es gibt keine offenen Posten.", status=status.HTTP_204_NO_CONTENT)
 
+
     @action(detail=True, methods=['post'])
     def send_mail(self, request, pk=None):
         zahlscheinText = ""
@@ -88,6 +74,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
         x = make_invoice(vm, news=zahlscheinText)
         s = sendmail(vm, content=emailText)
         return HttpResponse("das war ok")
+
 
     @action(detail=False, methods=['get'])
     def jahresbeitrag_anlegen(self, request):
@@ -121,6 +108,7 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
             message = 'Der Beitrag "{}" wurde {} x erfolgreich angelegt!'.format(d, vms.count())
             return Response(data=message, status=status.HTTP_200_OK)
         return Response(data="Sie haben ein leeres Feld übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
+
 
     @action(detail=False, methods=['get'])
     def erlagscheine_anlegen(self, request):
@@ -219,17 +207,4 @@ class VereinsMitgliedViewSet(viewsets.ModelViewSet):
             return Response(data=pdf, status=status.HTTP_200_OK)
         return Response(data="Sie haben kein gültiges Jahr übergeben.", status=status.HTTP_406_NOT_ACCEPTABLE)
 
-    """
-    Args:
-        letter_date: Datum des Briefes (= Geburtsdatum),
-        letter_street: Strasse + Nr, 
-        letter_zip: Postleitzahl, 
-        letter_city: Stadt,
-        letter_country: Land,
-        customer_salutation: Anrede,
-        customer_name: Name inkl. Titel,
-        customer_id: Mitgliedsnummer,
-        customer_anniversary: nter Geburtstag,
-        generate_pdf: Soll ein PDF erzeugt werden, ansonst Buffer
-    """
 

@@ -1,10 +1,13 @@
 from django.contrib.auth.models import User, Group
 from django.contrib.auth import authenticate
+
 from rest_framework import serializers
+
 from mitglieder.models import VereinsMitglied, Land, Beruf, Mitgliedsart, Kosten, Vortragsort, Adresse, Institution, offenePosten
 from mitglieder.models import AboHeft, Abonnent, offeneAboPosten
 
 # Serializers define the API representation.
+
 
 class LoginUserSerializer(serializers.Serializer):
     username = serializers.CharField()
@@ -36,6 +39,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         #fields = '__all__'
         fields = ('url', 'username', 'email', 'id', 'groups', 'is_superuser', 'is_active', 'is_staff', 'date_joined', 'last_login' )
         read_only_fields = ('date_joined', 'last_login')
+
 
 class BerufeSerializer(serializers.HyperlinkedModelSerializer):
     vereinsmitglied_inactive_count = serializers.SerializerMethodField('get_inactive_members_count')
@@ -95,7 +99,6 @@ class MitgliedsartSerializer(serializers.HyperlinkedModelSerializer):
         read_only_fields = ('id', 'vereinsmitglied_count', 'institution_count', 'vereinsmitglied_inactive_count', 'institution_inactive_count')
 
 
-
 class KostenSerializer(serializers.HyperlinkedModelSerializer):
     vereinsmitglied_inactive_count = serializers.SerializerMethodField('get_inactive_members_count')
     vereinsmitglied_count = serializers.SerializerMethodField('get_members_count')
@@ -132,7 +135,6 @@ class AdresseSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Adresse
         fields = '__all__'
-
 
 
 class offeneAboPostenSerializer(serializers.HyperlinkedModelSerializer):
@@ -215,8 +217,6 @@ class VereinsMitgliedSerializer(serializers.HyperlinkedModelSerializer):
         read_only_fields = ('date_joined', 'last_login', 'offeneposten_set',)
 
 
-
-
 class InstitutionenSerializer(serializers.HyperlinkedModelSerializer):
     wohnadresse  = AdresseSerializer
     lieferadresse = AdresseSerializer
@@ -230,8 +230,6 @@ class InstitutionenSerializer(serializers.HyperlinkedModelSerializer):
                     'sub', 'berufsgruppe', 'heftanzahl', 'anmerkung', 'aktiv')
         read_only_fields = ('offeneposten_set',)
   
-
-
 
 class CountrySerializer(serializers.HyperlinkedModelSerializer):
     vereinsmitglied_inactive_count = serializers.SerializerMethodField('get_inactive_members_count')
@@ -257,4 +255,3 @@ class CountrySerializer(serializers.HyperlinkedModelSerializer):
              'vereinsmitglied_count', 'vereinsmitglied_inactive_count', 'institution_count', 'institution_inactive_count',
           )
         read_only_fields = ('id', )
-

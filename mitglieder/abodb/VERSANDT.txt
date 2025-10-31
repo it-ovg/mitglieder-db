@@ -1,3 +1,0 @@
-Versandt;Bezeichnung
-P;POST
-B;BEV

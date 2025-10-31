@@ -4,17 +4,15 @@
 import datetime
 import jinja2
 import os
-import qrcode
-import qrcode.image.svg
 
-from svglib.svglib import svg2rlg
+
 from io import BytesIO
 
 from reportlab.lib.pagesizes import A4, portrait
 from reportlab.pdfgen.canvas import Canvas
 from reportlab.lib.units import cm
 from reportlab.platypus import Paragraph, Table, TableStyle
-from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib import colors
 
 from invoice import settings as s

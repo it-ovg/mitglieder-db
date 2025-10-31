@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from mitglieder.importfunctions import import_olddb, import_abodb
+from backend.mitgliederverwaltung.mitglieder.management.importfunctions import import_olddb, import_abodb
 from django.contrib.auth.models import User
 
 class Command(BaseCommand):

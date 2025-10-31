@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User, AbstractUser
+from django.contrib.auth.models import User
 from django.utils import timezone
 import uuid
 from django.db.models import Sum
@@ -226,7 +226,7 @@ class VereinsMitglied(User):
     diplomort = models.CharField(max_length=100, blank=True, null=True)
     sub = models.CharField(max_length=10, blank=True, null=True, editable=False)       
     vortragold = models.CharField(max_length=10, blank=True, null=True)       
-    vortrag = models.ManyToManyField(Vortragsort, blank=True, null=True)       
+    vortrag = models.ManyToManyField(Vortragsort, blank=True)       
     berufsgruppe = models.ForeignKey(Beruf, blank=True, null=True, on_delete=models.DO_NOTHING)
     heftanzahl = models.IntegerField(null=False, blank=False, default=0)       
     anmerkung = models.TextField(null=True, blank=True)       

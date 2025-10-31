@@ -1,6 +1,5 @@
-from django.conf.urls import url, include
-from django.urls import path, re_path
-from django.contrib.auth.models import User
+from django.conf.urls import include
+from django.urls import include, re_path
 from rest_framework import routers
 from knox import views as knox_views
 from api.views import views
@@ -27,12 +26,12 @@ router.register(r'offeneaboposten', views.OffeneAboPostenViewSet)
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    url(r'^', include(router.urls)),
-    url(r'^dashboard/$', views.dashboard, name='dashboard'),
-    url(r'^auth/register/$', views.RegistrationAPI.as_view()),
-    url(r'^auth/login/$', views.LoginAPI.as_view()),
-    url(r'^auth/user/$', views.UserAPI.as_view()),
-    url(r'^auth/logout/$', knox_views.LogoutView.as_view()),
+    re_path(r'^', include(router.urls)),
+    re_path(r'^dashboard/$', views.dashboard, name='dashboard'),
+    re_path(r'^auth/register/$', views.RegistrationAPI.as_view()),
+    re_path(r'^auth/login/$', views.LoginAPI.as_view()),
+    re_path(r'^auth/user/$', views.UserAPI.as_view()),
+    re_path(r'^auth/logout/$', knox_views.LogoutView.as_view()),
 
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    re_path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

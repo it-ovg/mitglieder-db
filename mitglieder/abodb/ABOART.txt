@@ -1,3 +1,0 @@
-ABOART;BEZEICHNUNG
-DA;Dauerauftrag
-JB;Jahresbestellung

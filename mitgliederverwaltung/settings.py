@@ -33,7 +33,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 
 
 # Application definition
@@ -88,11 +88,11 @@ WSGI_APPLICATION = 'mitgliederverwaltung.wsgi.application'
 DATABASES = {
     'debug': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '32768',
+        'NAME': os.environ['POSTGRES_DB'],
+        'USER': os.environ['POSTGRES_USER'],
+        'PASSWORD': os.environ['POSTGRES_PW'],
+        'HOST': os.environ['POSTGRES_HOST'],
+        'PORT': os.environ['POSTGRES_PORT'],
     },
     'postgresql': {
          'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -116,11 +116,11 @@ DATABASES = {
     },
  }
  
-DATABASES['default'] = DATABASES['sqlite']
-DATABASES['default'] = DATABASES['postgresql']
-DATABASES['default'] = DATABASES['debug']
-DATABASES['default'] = DATABASES['productive']
 
+DATABASES['default'] = DATABASES['productive']
+DATABASES['default'] = DATABASES['postgresql']
+DATABASES['default'] = DATABASES['sqlite']
+DATABASES['default'] = DATABASES['debug']
 
 
 # Password validation

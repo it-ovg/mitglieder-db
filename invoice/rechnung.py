@@ -10,18 +10,13 @@ from io import BytesIO
 
 from reportlab.graphics import renderPDF
 from reportlab.pdfgen.canvas import Canvas
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
-from reportlab.platypus.doctemplate import PageTemplate, BaseDocTemplate
-from reportlab.platypus.flowables import Flowable
-from reportlab.platypus import Frame
-from reportlab.platypus import KeepInFrame
-from reportlab.lib.utils import ImageReader
+from reportlab.platypus import Paragraph, Table, TableStyle
+
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4, landscape
-from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.units import cm
-from reportlab.lib.enums import TA_RIGHT, TA_CENTER, TA_LEFT
-from reportlab.rl_config import defaultPageSize
+
 
 from . import utils as u
 from . import settings as s
