@@ -1,5 +1,0 @@
-KOSTEN;BEZEICHNUNG
-M;Mitgliedsbeitrag
-F;Frei
-T;Tausch
--;Kein Eintrag

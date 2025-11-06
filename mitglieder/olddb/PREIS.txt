@@ -1,4 +1,0 @@
-PID;BIS;BEITRAG
-1;30;20
-2;über 30;55
-3;Jahrgang 1943;35
