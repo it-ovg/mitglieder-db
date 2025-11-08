@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ${{ env.FULL_IMAGE_NAME }} --platform linux/arm64
+      run: docker build . --file Dockerfile --tag ${{ env.FULL_IMAGE_NAME }}
 
 
     # Login against a Docker registry except on PR
