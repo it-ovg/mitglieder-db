@@ -6,6 +6,15 @@ on:
   pull_request:
     branches: [ "dev" ]
 
+env:
+  # Use docker.io for Docker Hub if empty
+  REGISTRY: ghcr.io
+  # github.repository as <account>/<repo>
+  IMAGE_NAME: ${{ github.repository }}
+  FULL_IMAGE_NAME: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:sieben
+
+
+
 jobs:
 
   build:
@@ -15,4 +24,19 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag members/backend:$(date +%s)
+      run: docker build . --file Dockerfile --tag ${{ env.FULL_IMAGE_NAME }} --platform linux/arm64
+
+
+    # Login against a Docker registry except on PR
+    # https://github.com/docker/login-action
+    - name: Log into registry ${{ env.REGISTRY }}
+      if: github.event_name != 'pull_request'
+      uses: docker/login-action@343f7c4344506bcbf9b4de18042ae17996df046d # v3.0.0
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+
+    - name: push to registry
+      run: docker push ${{ env.FULL_IMAGE_NAME }}
